@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="draw_rectangle_view" type="RESOURCE"/>
+  <resource name="draw_rectangle_width" type="RESOURCE"/>
+  <resource name="draw_rectangle_single_color" type="RESOURCE"/>
+  <resource name="draw_text_transformed_outline" type="RESOURCE"/>
+</resources>

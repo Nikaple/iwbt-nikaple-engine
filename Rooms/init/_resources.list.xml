@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="rInit" type="RESOURCE"/>
+  <resource name="rTitle" type="RESOURCE"/>
+  <resource name="rLobby" type="RESOURCE"/>
+  <resource name="rRoom" type="RESOURCE"/>
+  <resource name="rMenu" type="RESOURCE"/>
+  <resource name="rLoad" type="RESOURCE"/>
+  <resource name="rOptions" type="RESOURCE"/>
+  <resource name="rSelectStage" type="RESOURCE"/>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="_cmd_encode" type="RESOURCE"/>
+  <resource name="_cmd_extract_key" type="RESOURCE"/>
+  <resource name="_cmd_list_max_index" type="RESOURCE"/>
+  <resource name="_cmd_encode_list" type="RESOURCE"/>
+  <resource name="_cmd_destroy_list" type="RESOURCE"/>
+  <resource name="_cmd_encode_map" type="RESOURCE"/>
+  <resource name="_cmd_destroy_map" type="RESOURCE"/>
+  <resource name="_cmd_encode_primitive" type="RESOURCE"/>
+  <resource name="_cmd_mark_as_list" type="RESOURCE"/>
+  <resource name="_cmd_mark_as_ds" type="RESOURCE"/>
+  <resource name="_cmd_check_key" type="RESOURCE"/>
+</resources>

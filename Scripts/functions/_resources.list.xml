@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="drawSelf" type="RESOURCE"/>
+  <resource name="drawLife" type="RESOURCE"/>
+  <resource name="fadeIn" type="RESOURCE"/>
+  <resource name="fadeOut" type="RESOURCE"/>
+  <resource name="flashObject" type="RESOURCE"/>
+  <resource name="splitObject" type="RESOURCE"/>
+  <resource name="autoSpikeSprite" type="RESOURCE"/>
+  <resource name="spikeSprite" type="RESOURCE"/>
+  <resource name="screenShake" type="RESOURCE"/>
+  <resource name="screenFlash" type="RESOURCE"/>
+  <resource name="createShadow" type="RESOURCE"/>
+  <resource name="setScale" type="RESOURCE"/>
+</resources>

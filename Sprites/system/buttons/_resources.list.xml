@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sprButton" type="RESOURCE"/>
+  <resource name="sprButtonShoot" type="RESOURCE"/>
+  <resource name="sprButtonLeft" type="RESOURCE"/>
+  <resource name="sprButtonJump" type="RESOURCE"/>
+  <resource name="sprButtonRight" type="RESOURCE"/>
+  <resource name="sprVolumeBar" type="RESOURCE"/>
+  <resource name="sprMusic" type="RESOURCE"/>
+  <resource name="sprSound" type="RESOURCE"/>
+</resources>

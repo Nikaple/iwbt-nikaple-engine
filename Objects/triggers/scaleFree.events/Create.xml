@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">// this object will scale up or down when triggered
+// you can specify the origin to use when scaling (see below)
+// tarx, tary can be negative number, too.
+//
+// in the creation code, put:
+//      sprite_index : sprite
+//      trg : trigger number
+//      tarx : target xscale
+//      tary : target yscale
+//      origin : as below
+//  there are 2 ways of triggering
+//
+//  scaling speed triggering :
+//      xsp  : xscale speed 
+//      ysp  : yscale speed
+//
+//  scaling time triggering :
+//      time : the time to scale to target scale
+//
+//    origins :
+//
+//      1  2  3
+//      4  5  6
+//      7  8  9
+//
+
+width = sprite_get_width(sprite_index);
+height = sprite_get_height(sprite_index);
+xoff = sprite_get_xoffset(sprite_index);
+yoff = sprite_get_yoffset(sprite_index);
+depth = 1000002;
+
+if (spr) {
+    sprite_index = spr
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sprCherry" type="RESOURCE"/>
+  <resource name="sprCherryBig" type="RESOURCE"/>
+  <resource name="sprCherryPink" type="RESOURCE"/>
+  <resource name="sprCherryOrange" type="RESOURCE"/>
+  <resource name="sprCherryMagenta" type="RESOURCE"/>
+  <resource name="sprCherryViolet" type="RESOURCE"/>
+  <resource name="sprCherryBlue" type="RESOURCE"/>
+  <resource name="sprCherryAzure" type="RESOURCE"/>
+  <resource name="sprCherryCyan" type="RESOURCE"/>
+  <resource name="sprCherryEmerald" type="RESOURCE"/>
+  <resource name="sprCherryGreen" type="RESOURCE"/>
+  <resource name="sprCherryChartreuse" type="RESOURCE"/>
+  <resource name="sprCherryYellow" type="RESOURCE"/>
+  <resource name="sprCherryGray" type="RESOURCE"/>
+  <resource name="sprCherryWhite" type="RESOURCE"/>
+  <resource name="sprCherryBlack" type="RESOURCE"/>
+  <resource name="sprRotatingCherry" type="RESOURCE"/>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="player">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!onCollide) exit;
+
+with (player) {
+    instance_destroy()
+}
+
+instance_create(0, 0, warpSyncWaitingBG)
+argCount = 2
+
+var map;
+map = ds_map_create()
+ds_map_add_if_exists(map, 'room', room)
+ds_map_add_if_exists(map, 'roomTo', roomTo)
+ds_map_add_if_exists(map, 'kind', kind)
+ds_map_add_if_exists(map, 'warpX', warpX)
+ds_map_add_if_exists(map, 'warpY', warpY)
+ds_map_add_if_exists(map, 'screens', screens)
+ds_map_add_if_exists(map, 'clearSpeed', clearSpeed)
+
+ns_send_event_map('warp_wait', map)
+ds_map_destroy(map)
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

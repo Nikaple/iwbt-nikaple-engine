@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<path>
+  <points>
+    <point speed="100" x="0" y="0"/>
+    <point speed="100" x="32" y="0"/>
+    <point speed="100" x="32" y="32"/>
+    <point speed="100" x="0" y="32"/>
+  </points>
+  <backgroundRoom/>
+  <closed>true</closed>
+  <precision>4</precision>
+  <smooth>false</smooth>
+  <snap x="16" y="16"/>
+</path>

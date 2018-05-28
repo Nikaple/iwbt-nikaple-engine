@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="blockHost" type="RESOURCE"/>
+  <resource name="spikeDownHost" type="RESOURCE"/>
+  <resource name="spikeLeftHost" type="RESOURCE"/>
+  <resource name="spikeUpHost" type="RESOURCE"/>
+  <resource name="spikeRightHost" type="RESOURCE"/>
+  <resource name="warpHost" type="RESOURCE"/>
+  <resource name="playerStartHost" type="RESOURCE"/>
+  <resource name="freeButtonHost" type="RESOURCE"/>
+</resources>

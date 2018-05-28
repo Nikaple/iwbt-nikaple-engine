@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="scrWorldInit" type="RESOURCE"/>
+  <resource name="scrWorldInitPlugins" type="RESOURCE"/>
+  <resource name="scrWorldInitFont" type="RESOURCE"/>
+  <resource name="scrWorldInitMessageBox" type="RESOURCE"/>
+  <resource name="scrWorldUpdateCaption" type="RESOURCE"/>
+  <resource name="scrWorldAppendDifficulty" type="RESOURCE"/>
+  <resource name="scrWorldUpdateTime" type="RESOURCE"/>
+  <resource name="scrWorldAntiCheat" type="RESOURCE"/>
+  <resource name="scrWorldCleanmem" type="RESOURCE"/>
+  <resource name="scrWorldCenterMessage" type="RESOURCE"/>
+  <resource name="scrWorldRestart" type="RESOURCE"/>
+  <resource name="scrWorldStopDeathSound" type="RESOURCE"/>
+  <resource name="scrWorldPause" type="RESOURCE"/>
+  <resource name="scrWorldFixBug" type="RESOURCE"/>
+</resources>

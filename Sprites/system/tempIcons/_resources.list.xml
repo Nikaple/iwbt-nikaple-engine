@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sprScaleFree" type="RESOURCE"/>
+  <resource name="sprPathFree" type="RESOURCE"/>
+  <resource name="sprKillFree" type="RESOURCE"/>
+  <resource name="sprMultiplePath" type="RESOURCE"/>
+  <resource name="sprRotateFree" type="RESOURCE"/>
+  <resource name="sprBossItem" type="RESOURCE"/>
+  <resource name="sprSecretItem" type="RESOURCE"/>
+  <resource name="sprBossItemView" type="RESOURCE"/>
+  <resource name="sprSecretItemView" type="RESOURCE"/>
+  <resource name="sprBossBlock" type="RESOURCE"/>
+  <resource name="sprResetSync" type="RESOURCE"/>
+  <resource name="sprite155" type="RESOURCE"/>
+</resources>

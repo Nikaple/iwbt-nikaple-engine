@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="objGravDown" type="RESOURCE"/>
+  <resource name="objGravUp" type="RESOURCE"/>
+  <resource name="objInfiniteJump" type="RESOURCE"/>
+  <resource name="objInfiniteJumpDisable" type="RESOURCE"/>
+  <resource name="objWater" type="RESOURCE"/>
+  <resource name="objWater2" type="RESOURCE"/>
+  <resource name="WalljumpR" type="RESOURCE"/>
+  <resource name="WalljumpL" type="RESOURCE"/>
+  <resource name="movingPlatform" type="RESOURCE"/>
+  <resource name="pathPlatform" type="RESOURCE"/>
+  <resource name="borderKiller" type="RESOURCE"/>
+  <resource name="objResetSyncRoom" type="RESOURCE"/>
+  <resource name="objgameclear" type="RESOURCE"/>
+</resources>

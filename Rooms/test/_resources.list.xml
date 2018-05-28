@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="rOnlineHub" type="RESOURCE"/>
+  <resource name="rOnlineSpike" type="RESOURCE"/>
+  <resource name="rOnlinePlatforms" type="RESOURCE"/>
+  <resource name="rOnlineTriggerAndButton" type="RESOURCE"/>
+  <resource name="rOnlineHostGuestBlock" type="RESOURCE"/>
+  <resource name="rOnlineHostGuestSpike" type="RESOURCE"/>
+  <resource name="rOnlineHostGuestPlayerStart" type="RESOURCE"/>
+  <resource name="rOnlineWarpSyncAll" type="RESOURCE"/>
+  <resource name="rOnlineWarpSync" type="RESOURCE"/>
+  <resource name="rOnlineSaveSync" type="RESOURCE"/>
+  <resource name="rOnlineResetSync" type="RESOURCE"/>
+  <resource name="rOnlineBossSample" type="RESOURCE"/>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="world" type="GROUP"/>
+  <resource name="setGlobals" type="RESOURCE"/>
+  <resource name="loadGame" type="RESOURCE"/>
+  <resource name="saveGame" type="RESOURCE"/>
+  <resource name="saveExe" type="RESOURCE"/>
+  <resource name="saveDeathTime" type="RESOURCE"/>
+  <resource name="loadIcons" type="RESOURCE"/>
+  <resource name="dataEncrypt" type="RESOURCE"/>
+  <resource name="dataDecrypt" type="RESOURCE"/>
+  <resource name="vigenere_ascii" type="RESOURCE"/>
+  <resource name="gamePause" type="RESOURCE"/>
+  <resource name="gameResume" type="RESOURCE"/>
+  <resource name="gameReset" type="RESOURCE"/>
+  <resource name="getBossRoom" type="RESOURCE"/>
+  <resource name="isInGameRoom" type="RESOURCE"/>
+  <resource name="scrWarpRoom" type="RESOURCE"/>
+  <resource name="scrSealRoom" type="RESOURCE"/>
+</resources>

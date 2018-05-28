@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="normal" type="GROUP"/>
+  <resource name="mini" type="GROUP"/>
+  <resource name="slope" type="GROUP"/>
+  <resource name="green" type="GROUP"/>
+  <resource name="red" type="GROUP"/>
+  <resource name="cyan" type="GROUP"/>
+  <resource name="other" type="GROUP"/>
+</resources>

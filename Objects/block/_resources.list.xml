@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="bulletBlock" type="RESOURCE"/>
+  <resource name="blockFall" type="RESOURCE"/>
+  <resource name="blockRise" type="RESOURCE"/>
+  <resource name="blockInvisible" type="RESOURCE"/>
+  <resource name="blockFake" type="RESOURCE"/>
+  <resource name="blockConveyorL" type="RESOURCE"/>
+  <resource name="blockConveyorR" type="RESOURCE"/>
+  <resource name="demobock" type="RESOURCE"/>
+  <resource name="miniblock" type="RESOURCE"/>
+</resources>

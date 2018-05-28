@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="pD1" type="RESOURCE"/>
+  <resource name="pL1" type="RESOURCE"/>
+  <resource name="pR1" type="RESOURCE"/>
+  <resource name="pU1" type="RESOURCE"/>
+  <resource name="p9_1" type="RESOURCE"/>
+  <resource name="p5_1" type="RESOURCE"/>
+  <resource name="p1_1" type="RESOURCE"/>
+  <resource name="p_boss1" type="RESOURCE"/>
+  <resource name="path28" type="RESOURCE"/>
+</resources>

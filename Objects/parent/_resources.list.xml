@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="platform" type="RESOURCE"/>
+  <resource name="block" type="RESOURCE"/>
+  <resource name="playerKiller" type="RESOURCE"/>
+  <resource name="playerKillerHost" type="RESOURCE"/>
+  <resource name="playerKillerGuest" type="RESOURCE"/>
+  <resource name="roomChanger" type="RESOURCE"/>
+  <resource name="roomChangerSync" type="RESOURCE"/>
+</resources>

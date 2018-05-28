@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<object id="42">
+  <sprite>maskWall</sprite>
+  <solid>true</solid>
+  <visible>false</visible>
+  <depth>-200</depth>
+  <persistent>false</persistent>
+  <parent/>
+  <mask/>
+</object>

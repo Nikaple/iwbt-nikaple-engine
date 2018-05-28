@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="ns_recv" type="RESOURCE"/>
+  <resource name="ns_recv_player" type="RESOURCE"/>
+  <resource name="ns_recv_instance" type="RESOURCE"/>
+  <resource name="ns_recv_event" type="RESOURCE"/>
+  <resource name="ns_recv_event_trigger" type="RESOURCE"/>
+  <resource name="ns_recv_event_player_shoot" type="RESOURCE"/>
+  <resource name="ns_recv_event_player_death" type="RESOURCE"/>
+  <resource name="ns_recv_event_warp" type="RESOURCE"/>
+  <resource name="ns_recv_event_warp_wait" type="RESOURCE"/>
+  <resource name="ns_recv_event_reset_wait" type="RESOURCE"/>
+  <resource name="ns_recv_event_save_sync" type="RESOURCE"/>
+  <resource name="ns_recv_event_boss_hit" type="RESOURCE"/>
+</resources>

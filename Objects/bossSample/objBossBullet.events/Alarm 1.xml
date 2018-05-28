@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="1">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">///homing
+move_towards_point(player.x,player.y,7)
+//acceleration 
+friction = -0.1;
+
+//buff here !
+if(objBossSampleBuffed.buff == true){
+    friction = -0.2;
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

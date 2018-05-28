@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">// this is almost the same with pathFree
+// but it can be triggered multiple times sequentially
+// see rTraps for creation code help
+
+// maximum trigger times
+maxTraps = 5;
+depth = 1000002;
+
+if (spr) {
+    sprite_index = spr
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

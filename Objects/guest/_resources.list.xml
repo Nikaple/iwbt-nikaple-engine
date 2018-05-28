@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="blockGuest" type="RESOURCE"/>
+  <resource name="spikeDownGuest" type="RESOURCE"/>
+  <resource name="spikeLeftGuest" type="RESOURCE"/>
+  <resource name="spikeUpGuest" type="RESOURCE"/>
+  <resource name="spikeRightGuest" type="RESOURCE"/>
+  <resource name="warpGuest" type="RESOURCE"/>
+  <resource name="playerStartGuest" type="RESOURCE"/>
+  <resource name="freeButtonGuest" type="RESOURCE"/>
+</resources>

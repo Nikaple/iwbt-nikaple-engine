@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if(global.triggered == trg){
+    var inst;
+    inst = instance_create(x,y,blockInvisible);
+    inst.sprite_index = sprite_index;
+    inst.image_index = image_index;
+    inst.image_xscale = image_xscale;
+    inst.image_yscale = image_yscale;
+    inst.image_speed = image_speed;
+    inst.image_angle = image_angle;
+    inst.image_blend = image_blend;
+    inst.image_alpha = image_alpha;
+    inst.depth = depth;
+    instance_destroy();
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sprGreenButtonRight" type="RESOURCE"/>
+  <resource name="sprRedButtonRight" type="RESOURCE"/>
+  <resource name="sprBlueButtonRight" type="RESOURCE"/>
+  <resource name="sprFreeButtonLeft" type="RESOURCE"/>
+  <resource name="sprRedButtonLeft" type="RESOURCE"/>
+  <resource name="sprBlueButtonLeft" type="RESOURCE"/>
+  <resource name="maskTrigger" type="RESOURCE"/>
+  <resource name="maskSequenceTrigger" type="RESOURCE"/>
+  <resource name="maskKeyTrigger" type="RESOURCE"/>
+</resources>

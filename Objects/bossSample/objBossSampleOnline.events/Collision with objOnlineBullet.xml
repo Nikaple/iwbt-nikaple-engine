@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="objOnlineBullet">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">// this is a fake bullet, will not decrease boss' HP.
+// It's responsible for the visual effects, to make
+// the animation more natural and smooth
+
+//destroy the bullet
+with(other){
+    instance_destroy();
+}
+//when the boss is not invincible
+if(flash == 0 &amp;&amp; curHP != 0){
+    // only trigger visual effects
+    event_user(0)
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

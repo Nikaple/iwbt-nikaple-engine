@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//  move : whether the object will continue moving if player died (prevent spoilers)
+//
+// two modes:
+//
+// 1. normal mode
+//      creation code:
+//          path_start(pth,spd,enda,abso);
+//
+// 2. touch mode
+//      the platform starts moving when player touches it
+//      creation code:
+//          touch = true;
+//          pth = path name;
+//          spd = path speed;
+//          enda = endaction;
+//          scl = scale;
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

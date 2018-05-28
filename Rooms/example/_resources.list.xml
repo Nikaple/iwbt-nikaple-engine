@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="rHub" type="RESOURCE"/>
+  <resource name="rTraps" type="RESOURCE"/>
+  <resource name="rSlopes" type="RESOURCE"/>
+  <resource name="rAvoidance" type="RESOURCE"/>
+  <resource name="rBossSample" type="RESOURCE"/>
+  <resource name="rBossSampleBuffed" type="RESOURCE"/>
+  <resource name="rEnd" type="RESOURCE"/>
+</resources>

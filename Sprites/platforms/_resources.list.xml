@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="maskPlatform" type="RESOURCE"/>
+  <resource name="sprDynamicPlatform01" type="RESOURCE"/>
+  <resource name="sprJumpThrough01" type="RESOURCE"/>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="ns_get_player_name" type="RESOURCE"/>
+  <resource name="ns_get_player_index" type="RESOURCE"/>
+  <resource name="ns_get_other_player_name" type="RESOURCE"/>
+  <resource name="ns_get_other_player_index" type="RESOURCE"/>
+  <resource name="ns_get_lobby_id" type="RESOURCE"/>
+  <resource name="ns_get_lobby_name" type="RESOURCE"/>
+  <resource name="ns_get_game_id" type="RESOURCE"/>
+</resources>

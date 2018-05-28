@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="maskPlayer" type="RESOURCE"/>
+  <resource name="sprBlood" type="RESOURCE"/>
+  <resource name="sprBow" type="RESOURCE"/>
+  <resource name="sprBullet" type="RESOURCE"/>
+  <resource name="sprPlayerFall" type="RESOURCE"/>
+  <resource name="sprPlayerIdle" type="RESOURCE"/>
+  <resource name="sprPlayerJump" type="RESOURCE"/>
+  <resource name="sprPlayerRunning" type="RESOURCE"/>
+  <resource name="sprPlayerSliding" type="RESOURCE"/>
+  <resource name="sprPlayerBack" type="RESOURCE"/>
+  <resource name="sprPlayerLadderUpDown" type="RESOURCE"/>
+  <resource name="sprPlayerLadderLeftRight" type="RESOURCE"/>
+  <resource name="sprPlayerHead" type="RESOURCE"/>
+</resources>

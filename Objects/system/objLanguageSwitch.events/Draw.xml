@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">drawSelf()
+
+draw_set_color(c_white)
+fw_draw_set_halign(fa_center)
+draw_set_halign(fa_center)
+fw_draw_set_valign(fa_middle)
+draw_set_valign(fa_middle)
+if (i18n_get_lang() == 'en') {
+    fw_draw_text(
+        x + sprite_width/ 2,
+        y + sprite_height / 2,
+        "切换语言"
+    )
+} else {
+    draw_text(x + sprite_width/ 2, y + sprite_height / 2, "Language Select")
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

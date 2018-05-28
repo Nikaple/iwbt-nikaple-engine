@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="6">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">///homing attack
+sprite_index = sprCherryEmerald;
+
+var inst;
+inst = instance_create(x,y,objBossBullet);
+inst.speed = 6;
+inst.direction = random(360);
+inst.friction = 0.2;
+// set alarms for the instance
+inst.alarm[0] = 35;
+// see alarm[1] of objBossBullet for buff !
+inst.alarm[1] = 35;
+inst.sprite_index = sprite_index;
+//play sound effect
+audio_playsound(sndShoot)
+alarm[6] = 5;
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="objHPBar" type="RESOURCE"/>
+  <resource name="objShake" type="RESOURCE"/>
+  <resource name="objScreenFlash" type="RESOURCE"/>
+  <resource name="objShadow" type="RESOURCE"/>
+  <resource name="objSmoothView" type="RESOURCE"/>
+</resources>

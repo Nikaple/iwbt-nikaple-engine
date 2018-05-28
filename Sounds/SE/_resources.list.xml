@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sndBlockChange" type="RESOURCE"/>
+  <resource name="sndBossHit" type="RESOURCE"/>
+  <resource name="sndCherry" type="RESOURCE"/>
+  <resource name="sndDeath" type="RESOURCE"/>
+  <resource name="sndDJump" type="RESOURCE"/>
+  <resource name="sndJump" type="RESOURCE"/>
+  <resource name="sndShoot" type="RESOURCE"/>
+  <resource name="sndSpikeTrap" type="RESOURCE"/>
+  <resource name="sndWallJump" type="RESOURCE"/>
+  <resource name="sndGlass" type="RESOURCE"/>
+  <resource name="sndItem" type="RESOURCE"/>
+  <resource name="sndBreak" type="RESOURCE"/>
+  <resource name="sndClick" type="RESOURCE"/>
+</resources>

@@ -1,0 +1,22 @@
+// lobby pop up
+i18n_add('lobby_name', '房间名', 'Lobby name')
+i18n_add('lobby_id', '房间ID', 'Lobby id')
+i18n_add('input_lobby_name', '请输入房间名：', 'Input lobby name:')
+i18n_add('input_lobby_id', '请输入房间ID：', 'Input lobby id:')
+i18n_add('default_lobby_name', "'s room", "'s room")
+
+// lobby response
+i18n_add('lobby_create_success_self', '成功创建房间！房间号为：', 'Succesfully created the lobby. Lobby id: ')
+i18n_add('lobby_create_success_other', '创建了一个房间。房间ID：', ' created a lobby. Lobby id: ')
+i18n_add('lobby_join_success_self', '成功加入房间！', 'Successfully joined the lobby.')
+i18n_add('lobby_join_success_other', '加入了房间。', ' joined the lobby.')
+i18n_add('lobby_leave_success_self', '成功离开房间。', 'Successfullly left the lobby.')
+i18n_add('lobby_leave_success_other', '离开了房间。', ' left the lobby.')
+i18n_add('lobby_leave_success_host', '房间已解散。', 'The lobby has been dismissed.')
+i18n_add('lobby_not_exists', '该房间号不存在。', 'Lobby does not exist.')
+i18n_add('lobby_not_found', '你还没有加入房间。', 'You are not in any lobby.')
+i18n_add('lobby_pass_not_valid', '房间密码错误。', 'Lobby password not valid.')
+i18n_add('lobby_same_id', '不能重复加入房间。', 'You can not join a lobby twice.')
+i18n_add('lobby_not_authorized', '非房主不能开始游戏。', 'Guests are not allowed to start a game.')
+i18n_add('lobby_is_full', '房间已满', 'Lobby is full.')
+i18n_add('not_in_lobby', '您没有加入任何房间。', 'You are not in any lobby!')

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="warp" type="RESOURCE"/>
+  <resource name="warpText" type="RESOURCE"/>
+  <resource name="warpSync" type="RESOURCE"/>
+  <resource name="warpBoth" type="RESOURCE"/>
+  <resource name="invisibleWarp" type="RESOURCE"/>
+  <resource name="invisibleWarpBoth" type="RESOURCE"/>
+  <resource name="warpStart" type="RESOURCE"/>
+  <resource name="bossWarp" type="RESOURCE"/>
+  <resource name="bossWarpSync" type="RESOURCE"/>
+  <resource name="warpCount" type="RESOURCE"/>
+  <resource name="warpSyncWaitingBG" type="RESOURCE"/>
+</resources>

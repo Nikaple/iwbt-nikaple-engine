@@ -1,0 +1,1 @@
+return global.__current_lobby_name

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="freeTrigger" type="RESOURCE"/>
+  <resource name="keyTrigger" type="RESOURCE"/>
+  <resource name="sequenceTrigger" type="RESOURCE"/>
+  <resource name="freeButton" type="RESOURCE"/>
+  <resource name="killFree" type="RESOURCE"/>
+  <resource name="pathFree" type="RESOURCE"/>
+  <resource name="multiplePath" type="RESOURCE"/>
+  <resource name="scaleFree" type="RESOURCE"/>
+  <resource name="rotateFree" type="RESOURCE"/>
+  <resource name="pathFreeBlock" type="RESOURCE"/>
+  <resource name="freeBlockFake" type="RESOURCE"/>
+  <resource name="freeBlockInvisible" type="RESOURCE"/>
+</resources>

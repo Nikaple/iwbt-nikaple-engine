@@ -1,0 +1,1 @@
+global.language = argument0

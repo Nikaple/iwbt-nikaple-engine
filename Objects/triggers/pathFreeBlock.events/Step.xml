@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (global.triggered == trg &amp;&amp; !flag) {
+    path_start(pth, spd, enda, 0)
+    if (scl != 0) {
+        path_scale = scl
+    }
+    flag = 1
+}
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

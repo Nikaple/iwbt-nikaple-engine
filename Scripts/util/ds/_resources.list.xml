@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="ds_map_init" type="RESOURCE"/>
+  <resource name="ds_map_append" type="RESOURCE"/>
+  <resource name="ds_map_add_if_exists" type="RESOURCE"/>
+  <resource name="ds_map_clone" type="RESOURCE"/>
+  <resource name="ds_map_log" type="RESOURCE"/>
+  <resource name="ds_list_init" type="RESOURCE"/>
+  <resource name="ds_list_append" type="RESOURCE"/>
+  <resource name="ds_list_clone" type="RESOURCE"/>
+  <resource name="ds_list_log" type="RESOURCE"/>
+  <resource name="ds_list_remove" type="RESOURCE"/>
+  <resource name="ds_list_replace_item" type="RESOURCE"/>
+</resources>

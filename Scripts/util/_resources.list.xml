@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="ds" type="GROUP"/>
+  <resource name="debug" type="RESOURCE"/>
+  <resource name="equals_any" type="RESOURCE"/>
+  <resource name="set_default" type="RESOURCE"/>
+  <resource name="ensure_not_empty" type="RESOURCE"/>
+  <resource name="destroy_if_exists" type="RESOURCE"/>
+  <resource name="font_load" type="RESOURCE"/>
+  <resource name="move_contact_object" type="RESOURCE"/>
+  <resource name="clamp" type="RESOURCE"/>
+</resources>

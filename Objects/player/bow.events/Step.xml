@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if(global.difficulty!=0 || room == rSelectStage || room == rOptions){
+    instance_destroy();
+}
+x=player.x;
+y=player.y;
+image_xscale = player.image_xscale;
+image_yscale = player.image_yscale;
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

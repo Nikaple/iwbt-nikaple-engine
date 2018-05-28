@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sprInfJump" type="RESOURCE"/>
+  <resource name="sprInfJumpDisable" type="RESOURCE"/>
+  <resource name="sprWallJumpL" type="RESOURCE"/>
+  <resource name="sprWallJumpR" type="RESOURCE"/>
+  <resource name="sprGravityDown" type="RESOURCE"/>
+  <resource name="sprGravityUp" type="RESOURCE"/>
+</resources>

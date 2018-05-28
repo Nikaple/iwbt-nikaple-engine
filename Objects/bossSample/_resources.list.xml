@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="miku" type="GROUP"/>
+  <resource name="objBossSample" type="RESOURCE"/>
+  <resource name="objBossSampleOnline" type="RESOURCE"/>
+  <resource name="objBossSampleBuffed" type="RESOURCE"/>
+  <resource name="objBossBullet" type="RESOURCE"/>
+</resources>

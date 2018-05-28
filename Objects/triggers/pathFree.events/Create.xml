@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">// this object will move along a path when triggered
+// in the creation code , put:
+//
+//      sprite_index : sprite
+//      trg : trigger number
+//      pth : path index
+//      spd  : moving speed
+//      move : whether the object will continue moving if player died (prevent spoilers)
+//      enda : endaction
+//
+// endactions :
+//  0 : stop the path
+//  1: continue from the start position (if the path is not closed we jump to the start position)
+//  2: continue from the current position
+//  3: reverse the path, that is change the sign of the speed
+
+
+depth = 1000002;
+if (spr) {
+    sprite_index = spr
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

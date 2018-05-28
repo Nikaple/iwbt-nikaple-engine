@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="bacJumpThrough" type="RESOURCE"/>
+  <resource name="background_tree" type="RESOURCE"/>
+  <resource name="background65" type="RESOURCE"/>
+  <resource name="background72" type="RESOURCE"/>
+  <resource name="background70" type="RESOURCE"/>
+  <resource name="background71" type="RESOURCE"/>
+  <resource name="Alltiles" type="RESOURCE"/>
+  <resource name="backgroundMessageBox" type="RESOURCE"/>
+</resources>

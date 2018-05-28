@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="cmd_init" type="RESOURCE"/>
+  <resource name="cmd_destroy" type="RESOURCE"/>
+  <resource name="cmd_log" type="RESOURCE"/>
+  <resource name="cmd_add" type="GROUP"/>
+  <resource name="cmd_list_add" type="GROUP"/>
+  <resource name="internal" type="GROUP"/>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="ns_send" type="RESOURCE"/>
+  <resource name="ns_send_player" type="RESOURCE"/>
+  <resource name="ns_send_instance" type="RESOURCE"/>
+  <resource name="ns_send_event" type="RESOURCE"/>
+  <resource name="ns_send_event_map" type="RESOURCE"/>
+</resources>

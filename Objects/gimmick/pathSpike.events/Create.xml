@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//Creates spikes moving along a path
+//
+//  in the creation code, put:
+//
+//      num     the total nuumber of spikes
+//      pth     the path spikes moving along, closed
+//      spd     the moving speed of spikes
+//      spr     the sprite of the spikes(optional), default sprite is sprSpikeUp
+//      off     the offset of the path
+//
+
+//creating at least 1 spike
+if(!num){
+    num = 1;
+}
+for(i=0;i&lt;num;i+=1){
+    inst = instance_create(x,y,playerKiller);
+    inst.depth = 1000002;
+    with(inst){
+        path_start(other.pth,other.spd,1,0);
+    }
+    if(spr){
+        inst.sprite_index = spr;
+    }
+    else{
+        inst.sprite_index = sprSpikeUp;
+    }
+    inst.path_position = frac(i/num + off);
+}
+instance_destroy();
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

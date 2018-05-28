@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//锟斤拷論x锟絇锟饺忥拷艒韽滐拷锟斤拷锟絑锟絒锟絬锟絴锟紺锟斤拷锟絞
+image_speed=0;
+saveTimer = -1; //锟絑锟絒锟絬锟絕锟紺锟絵锟絒
+if(global.difficulty &gt; 0){
+  instance_destroy();
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

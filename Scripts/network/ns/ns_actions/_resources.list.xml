@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="ns_register" type="RESOURCE"/>
+  <resource name="ns_login" type="RESOURCE"/>
+  <resource name="ns_logout" type="RESOURCE"/>
+  <resource name="ns_fetch_lobby" type="RESOURCE"/>
+  <resource name="ns_create_lobby" type="RESOURCE"/>
+  <resource name="ns_join_lobby" type="RESOURCE"/>
+  <resource name="ns_leave_lobby" type="RESOURCE"/>
+  <resource name="ns_start_game" type="RESOURCE"/>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="player">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">player.speed = 0
+
+//load game
+if(dif == 4){
+    if (!file_exists(global.saving_directory+"SaveData"+string(global.savenum))){
+        with(player){
+            instance_destroy();
+        }
+        room_restart();
+    }
+    else{
+        with(player) {
+            instance_destroy()
+        }
+        room_goto(rLoad);
+    }
+}
+//new game
+else{
+    global.difficulty = dif;
+    if(file_exists(global.saving_directory+"SaveData"+string(global.savenum)) == true){
+        file_delete(global.saving_directory+"SaveData"+string(global.savenum));
+    }
+    global.death = 0;
+    global.timestep = 0;
+    roomTo = global.first_stage;
+    room_goto(roomTo);
+    with(player){
+        instance_destroy();
+    }
+}
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

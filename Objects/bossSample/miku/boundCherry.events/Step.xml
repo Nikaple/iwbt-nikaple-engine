@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//global.reset=0锟斤拷sprite锟斤拷锟絆锟斤拷锟絒锟教怓锟脚偼側傦拷锟狡傦拷锟角偵掞拷锟剿曉傦拷B
+
+if(global.reset=0 &amp;&amp; sprite_index!=sprCherryGray){
+move_bounce_solid(0)
+}
+
+
+//global.reset2锟斤拷1锟教偲傦拷锟紸sprite锟斤拷O锟斤拷锟絒锟缴傦拷锟侥嶏拷锟斤拷10锟教戯拷锟絰锟脚堏擄拷
+
+if(global.reset2=1){
+sprite_index=sprCherryGray
+vspeed=0
+hspeed=-10
+}
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

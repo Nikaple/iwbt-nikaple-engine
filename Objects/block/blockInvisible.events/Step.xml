@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//锟斤拷锟斤拷锟饺傦拷锟斤拷锟角岋拷锟斤拷锟铰傦拷锟絬锟斤拷锟絙锟絅
+
+if (!visible) {
+    if (distance_to_object(player) &lt; 2){
+        audio_playsound(sndBlockChange);
+        visible = 1;
+        ns_send_instance(1, 'vis', visible)
+    }
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

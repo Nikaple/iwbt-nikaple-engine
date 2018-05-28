@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="json_init" type="RESOURCE"/>
+  <resource name="json_decode" type="RESOURCE"/>
+  <resource name="json_destroy" type="RESOURCE"/>
+  <resource name="json_free" type="RESOURCE"/>
+  <resource name="json_pick" type="RESOURCE"/>
+  <resource name="json_get" type="RESOURCE"/>
+  <resource name="json_log" type="RESOURCE"/>
+  <resource name="parser" type="GROUP"/>
+  <resource name="helper" type="GROUP"/>
+</resources>

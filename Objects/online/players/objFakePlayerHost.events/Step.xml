@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (reverse) {
+    image_yscale = -1
+    yflag = -1
+} else {
+    image_yscale = 1
+    yflag = 1
+}
+
+onPlatform = place_meeting(x, y + yflag * 4, platform)
+onBlock =
+    place_meeting(x, y + yflag, objBlock) ||
+    place_meeting(x, y + yflag, blockHost) ||
+    place_meeting(x, y + yflag, obj_wall)
+onIvyL = place_meeting(x - 1, y, WalljumpL) &amp;&amp; !onBlock
+onIvyR = place_meeting(x + 1, y, WalljumpR) &amp;&amp; !onBlock
+onIvy = onIvyL || onIvyR
+
+if (!onIvy) {
+    if (h != 0) {
+        image_xscale = h
+        hspeed = maxSpeed * h
+        spr = RUNNING
+    } else {
+        hspeed = 0
+        spr = IDLING
+    }
+}
+
+//jumping sprites
+if (!onIvy &amp;&amp; abs(vspeed) &gt; gravity &amp;&amp; !onPlatform) {
+    if (vspeed * yflag &lt; 0) {
+        spr = JUMPING
+    } else if (vspeed * yflag &gt; 0) {
+        spr = FALLING
+    }
+}
+
+//vertical speed limitations 
+if(vspeed*yflag &gt; maxVspeed){
+  vspeed = sign(vspeed)*maxVspeed;
+}
+
+if (ivyL) {
+    vspeed = yflag * 2
+    spr = SLIDING
+    image_xscale = 1
+}
+//wall jump right
+if (ivyR) {
+    vspeed = yflag * 2
+    spr = SLIDING
+    image_xscale = -1
+}
+
+sprite_index = sprite[spr]
+
+fakePlayerCollideBlock(blockHost)
+fakePlayerCollideBlock(objBlock)
+playerPlatform()
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

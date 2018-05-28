@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="objButton" type="RESOURCE"/>
+  <resource name="objMusicBar" type="RESOURCE"/>
+  <resource name="objSoundBar" type="RESOURCE"/>
+  <resource name="objMusic" type="RESOURCE"/>
+  <resource name="objSound" type="RESOURCE"/>
+</resources>

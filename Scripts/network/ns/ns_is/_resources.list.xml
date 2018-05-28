@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="ns_is_online_mode" type="RESOURCE"/>
+  <resource name="ns_is_connected" type="RESOURCE"/>
+  <resource name="ns_is_logged_in" type="RESOURCE"/>
+  <resource name="ns_is_in_lobby" type="RESOURCE"/>
+  <resource name="ns_is_host" type="RESOURCE"/>
+  <resource name="ns_is_guest" type="RESOURCE"/>
+  <resource name="ns_is_in_game" type="RESOURCE"/>
+</resources>

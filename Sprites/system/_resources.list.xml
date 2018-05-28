@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="buttons" type="GROUP"/>
+  <resource name="tempIcons" type="GROUP"/>
+  <resource name="player" type="GROUP"/>
+  <resource name="maskNothing" type="RESOURCE"/>
+  <resource name="sprCamera" type="RESOURCE"/>
+  <resource name="sprPlayerStart" type="RESOURCE"/>
+  <resource name="sprPlayerStartHost" type="RESOURCE"/>
+  <resource name="sprPlayerStartGuest" type="RESOURCE"/>
+  <resource name="sprPlayerKiller" type="RESOURCE"/>
+  <resource name="sprPlayerKillerHost" type="RESOURCE"/>
+  <resource name="sprPlayerKillerGuest" type="RESOURCE"/>
+  <resource name="sprGAMEOVER" type="RESOURCE"/>
+  <resource name="sprPause" type="RESOURCE"/>
+  <resource name="sprMessageButton" type="RESOURCE"/>
+  <resource name="sprControlButton" type="RESOURCE"/>
+  <resource name="sprLobbyRoom" type="RESOURCE"/>
+  <resource name="sprLobbyRoomLock" type="RESOURCE"/>
+</resources>

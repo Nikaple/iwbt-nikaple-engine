@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//  this trigger won't be triggered if the freetrigger with 
+//  the trg value of 'key' is not triggered
+//
+//
+//      in the creation code, put:
+//          key                         key number
+//          trg                         trigger number;
+//          snd                         sound effect(optional);
+//          setScale(xscale,yscale)     region scaling(optional);
+//
+//
+
+//make the triggers visible in debug mode (F6)
+if(debug_mode){
+    visible = true;
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

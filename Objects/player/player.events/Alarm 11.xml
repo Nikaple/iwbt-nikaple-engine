@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="11">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">// sync room
+eventSync = true
+
+var ys
+if (global.reverse) {
+    ys = -1
+} else {
+    ys = 1
+}
+debug('alarm[11]: syncing room', room)
+
+if (global.__sync_position) {
+    ns_send_event(
+        'warp', 6,
+        'roomTo', room,
+        'x', x,
+        'y', floor(y),
+        'xs', image_xscale,
+        'ys', ys,
+        'sync', true
+    )
+    global.__sync_position = false
+} else {
+    ns_send_event(
+        'warp', 5,
+        'roomTo', room,
+        'x', x,
+        'y', floor(y),
+        'xs', image_xscale,
+        'ys', ys
+    )
+}
+
+// auto save
+if (global.__player_auto_save) {
+    saveGame()
+    global.__save_id = -1
+    global.__save_room = -1
+    global.__save_x = -1
+    global.__save_y = -1
+    global.__save_xs = 0
+    global.__player_auto_save = false
+}
+
+// set blockHost &amp; blockGuest
+if (ns_is_host()) {
+    object_set_parent(blockHost, block)
+    object_set_parent(blockGuest, noone)
+    with (blockHost) {
+        solid = true
+    }
+    with (blockGuest) {
+        solid = false
+    }
+} else {
+    object_set_parent(blockGuest, block)
+    object_set_parent(blockHost, noone)
+    with (blockHost) {
+        solid = false
+    }
+    with (blockGuest) {
+        solid = true
+    }
+}
+
+// init triggers
+global.triggered = 0;
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

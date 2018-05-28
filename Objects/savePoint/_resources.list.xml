@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="savePointTouch" type="RESOURCE"/>
+  <resource name="savePointSync" type="RESOURCE"/>
+  <resource name="savePointMedium" type="RESOURCE"/>
+  <resource name="savePointVHard" type="RESOURCE"/>
+</resources>

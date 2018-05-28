@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sprRedSpikeUp" type="RESOURCE"/>
+  <resource name="sprRedSpikeRight" type="RESOURCE"/>
+  <resource name="sprRedSpikeDown" type="RESOURCE"/>
+  <resource name="sprRedSpikeLeft" type="RESOURCE"/>
+</resources>

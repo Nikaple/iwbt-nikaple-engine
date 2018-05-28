@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="_json_parse_value" type="RESOURCE"/>
+  <resource name="_json_parse_object" type="RESOURCE"/>
+  <resource name="_json_parse_array" type="RESOURCE"/>
+  <resource name="_json_parse_string" type="RESOURCE"/>
+  <resource name="_json_parse_number" type="RESOURCE"/>
+  <resource name="_json_parse_true" type="RESOURCE"/>
+  <resource name="_json_parse_false" type="RESOURCE"/>
+  <resource name="_json_parse_null" type="RESOURCE"/>
+</resources>

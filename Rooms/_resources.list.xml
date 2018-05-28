@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="init" type="GROUP"/>
+  <resource name="example" type="GROUP"/>
+  <resource name="rTemplate" type="RESOURCE"/>
+  <resource name="test" type="GROUP"/>
+</resources>

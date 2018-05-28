@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">// this warp will be available when certain 
+// amount of bosses (or items) are defeated(obtained)
+
+//Creation Code:
+// countBoss = true/false.      set to true when bosses should be counted
+// countItem = true/false.      set to true when items should be counted
+// total = the number of bosses/items player should defeat/obtain to get access to the warp
+//
+// roomTo = roomToWarp;
+// kind = transition_kind(0~21);
+// if you want to use warpX and warpY
+// go to roomChanger for more help
+onCollide = true;
+
+if(countBoss == true){
+    for(i=1;i&lt;=global.boss_number;i+=1){
+        count += global.boss[i];
+    }
+}
+if(countItem == true){
+    for(i=1;i&lt;=global.item_number;i+=1){
+        count += global.item[i];
+    }
+}
+if(count &gt;= total){
+    visible = true;
+}
+else{
+    visible = false;
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>
