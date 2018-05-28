@@ -4,5 +4,5 @@
   <resource name="ns_send_player" type="RESOURCE"/>
   <resource name="ns_send_instance" type="RESOURCE"/>
   <resource name="ns_send_event" type="RESOURCE"/>
-  <resource name="ns_send_event_map" type="RESOURCE"/>
+  <resource name="ns_send_event_direct" type="RESOURCE"/>
 </resources>

@@ -32,7 +32,7 @@ ds_map_add_if_exists(map, 'warpY', warpY)
 ds_map_add_if_exists(map, 'screens', screens)
 ds_map_add_if_exists(map, 'clearSpeed', clearSpeed)
 
-ns_send_event_map('warp_wait', map)
+ns_send_event_direct('warp_wait', map)
 ds_map_destroy(map)
 </argument>
       </arguments>
