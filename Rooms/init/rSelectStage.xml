@@ -96,15 +96,11 @@
   <enableViews>false</enableViews>
   <instances>
     <instance>
-      <object>blockHost</object>
-      <position x="320" y="480"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>blockGuest</object>
-      <position x="448" y="480"/>
-      <creationCode/>
+      <object>warpText</object>
+      <position x="384" y="160"/>
+      <creationCode>roomTo = rOptions;
+text = "options"
+</creationCode>
       <locked>false</locked>
     </instance>
     <instance>
@@ -121,14 +117,6 @@ text = "start";
       <position x="384" y="416"/>
       <creationCode>dif = 4;
 text = "load";
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>warpText</object>
-      <position x="384" y="160"/>
-      <creationCode>roomTo = rOptions;
-text = "options"
 </creationCode>
       <locked>false</locked>
     </instance>

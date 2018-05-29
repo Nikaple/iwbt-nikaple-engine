@@ -1,1 +1,1 @@
-show_message('Connect failed. Please try again...')
+i18n_show_message('connect_failed')

@@ -8,16 +8,16 @@ debug('Register fail msg: ' + msg)
 
 switch(msg) {
     case 'username_exists':
-        show_message(i18n_get('register_failed_username_exists'))
+        i18n_show_message('register_failed_username_exists')
         break;
     case 'username_not_valid':
-        show_message(i18n_get('register_failed_username_not_valid'))
+        i18n_show_message('register_failed_username_not_valid')
         break;
     case 'password_not_valid':
-        show_message(i18n_get('register_failed_password_not_valid'))
+        i18n_show_message('register_failed_password_not_valid')
         break;
     default:
-        show_message(i18n_get('register_failed'))
+        i18n_show_message('register_failed')
         break;
 }
 

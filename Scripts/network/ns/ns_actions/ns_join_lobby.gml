@@ -6,13 +6,13 @@ if (!ns_is_logged_in()) {
     exit
 }
 
-lobbyId = get_integer(i18n_get('input_lobby_id'), 0)
-password = get_string(i18n_get('password'), '')
+lobbyId = i18n_get_integer('input_lobby_id', 0)
+password = i18n_get_string('password', '')
 
-ensure_not_empty(lobbyId, 'Lobby id')
+ensure_not_empty(lobbyId, 'lobby_id')
 
 if (lobbyId == 0) {
-    retry = show_message_ext(i18n_get('retry'), '&Yes', '', '&No')
+    retry = i18n_show_message_ext('retry', '&Yes', '', '&No')
     if (retry == 1) {
         ns_join_lobby()
     }

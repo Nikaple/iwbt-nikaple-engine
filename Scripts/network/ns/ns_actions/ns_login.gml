@@ -1,14 +1,14 @@
 // login
 var name, password, cmd, retry;
 
-name = get_string(i18n_get('username'), 'username')
-password = get_string(i18n_get('password'), 'password')
+name = i18n_get_string('username', 'username')
+password = i18n_get_string('password', 'password')
 
-ensure_not_empty(name, i18n_get('username'))
-ensure_not_empty(password, i18n_get('password'))
+ensure_not_empty(name, 'username')
+ensure_not_empty(password, 'password')
 
 if (name == '' or password == '') {
-    retry = show_message_ext(i18n_get('retry'), '&Yes', '', '&No')
+    retry = i18n_show_message_ext('retry', '&Yes', '', '&No')
     if (retry == 1) {
         ns_login()
     }

@@ -6,16 +6,16 @@ if (!ns_is_logged_in()) {
     exit
 }
 
-lobbyName = get_string(
-    i18n_get('input_lobby_name'),
+lobbyName = i18n_get_string(
+    'input_lobby_name',
     global.__player_name + i18n_get('default_lobby_name')
 )
-password = get_string(i18n_get('password'), '')
+password = i18n_get_string('password', '')
 
-ensure_not_empty(lobbyName, i18n_get('lobby_name'))
+ensure_not_empty(lobbyName, 'lobby_name')
 
 if (lobbyName == '') {
-    retry = show_message_ext('Retry?', '&Yes', '', '&No')
+    retry = i18n_show_message_ext('retry', '&Yes', '', '&No')
     if (retry == 1) {
         ns_create_lobby()
     }

@@ -17,7 +17,7 @@
 drawSelf();
 //draw the difficulty text
 i18n_draw_set_color(c_black);
-i18n_draw_set_font(font12);
+i18n_draw_set_font(fontMsyh12);
 i18n_draw_set_halign(fa_center)
 i18n_draw_set_valign(fa_bottom)
 i18n_draw_text(x+16,y-4,text);

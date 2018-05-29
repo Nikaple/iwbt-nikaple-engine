@@ -15,6 +15,7 @@
   <resource name="sprPause" type="RESOURCE"/>
   <resource name="sprMessageButton" type="RESOURCE"/>
   <resource name="sprControlButton" type="RESOURCE"/>
+  <resource name="sprLanguageSelect" type="RESOURCE"/>
   <resource name="sprLobbyRoom" type="RESOURCE"/>
   <resource name="sprLobbyRoomLock" type="RESOURCE"/>
 </resources>

@@ -15,10 +15,10 @@ debug('Logout reason: ' + reason)
 
 switch (reason) {
     case 'user_intent':
-        show_message(i18n_get('logout_user_intent'))
+        i18n_show_message('logout_user_intent')
         break;
     case 'another_device':
-        show_message(i18n_get('logout_another_device'))
+        i18n_show_message('logout_another_device')
         break;
 }
 

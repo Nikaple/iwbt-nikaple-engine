@@ -38,9 +38,7 @@ if (x == xprevious && y == yprevious) {
 }
 
 syncThreshold = set_default(syncThreshold, global.maxSyncCycle)
-if (syncThreshold == 0) {
-    show_message(syncThreshold)
-}
+
 timer = (timer + 1) mod syncThreshold
 
 if ((shouldSync && timer == 0) || eventSync) {
