@@ -14,20 +14,21 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">//spiral attacks
-sprite_index = sprCherryViolet;
-repeat(2){
-    inst = instance_create(x,y,objBossBullet);
-    inst.speed = random_range(2,8);
-    inst.direction = dir0+dir+random(15);
-    inst.sprite_index = sprite_index;
+sprite_index = sprCherryViolet
+repeat (2) {
+    inst = instance_create(x, y, objBossBullet)
+    inst.speed = random_range(2, 8)
+    inst.direction = dir0 + dir + random(15)
+    inst.sprite_index = sprite_index
 }
 //play sound effect
 audio_playsound(sndShoot)
 //stop the attack after spinning for 360 degrees
-if dir&lt;360{
-    dir+=6;
-    alarm[5] = 2;
+if (dir &lt; 360) {
+    dir += 6
+    alarm[5] = 2
 }
+
 </argument>
       </arguments>
     </action>

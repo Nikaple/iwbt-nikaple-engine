@@ -147,43 +147,43 @@
   <instances>
     <instance>
       <object>blockConveyorL</object>
-      <position x="480" y="224"/>
+      <position x="480" y="256"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
       <object>blockConveyorL</object>
-      <position x="512" y="224"/>
+      <position x="512" y="256"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
       <object>blockConveyorL</object>
-      <position x="544" y="224"/>
+      <position x="544" y="256"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
       <object>blockConveyorL</object>
-      <position x="576" y="224"/>
+      <position x="576" y="256"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
       <object>blockConveyorL</object>
-      <position x="608" y="224"/>
+      <position x="608" y="256"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
       <object>blockConveyorL</object>
-      <position x="640" y="224"/>
+      <position x="640" y="256"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
       <object>blockConveyorL</object>
-      <position x="672" y="224"/>
+      <position x="672" y="256"/>
       <creationCode/>
       <locked>false</locked>
     </instance>

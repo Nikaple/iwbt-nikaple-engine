@@ -34,6 +34,10 @@ depth = 1000002;
 if (spr) {
     sprite_index = spr
 }
+
+ensure('trg', trg)
+ensure('pth', pth)
+ensure('spd', spd)
 </argument>
       </arguments>
     </action>

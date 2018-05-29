@@ -45,6 +45,8 @@ xoff = sprite_get_xoffset(sprite_index);
 yoff = sprite_get_yoffset(sprite_index);
 depth = 1000002;
 
+ensure('trg', trg)
+
 if (spr) {
     sprite_index = spr
 }

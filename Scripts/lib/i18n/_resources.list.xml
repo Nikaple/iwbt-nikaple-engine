@@ -5,6 +5,8 @@
   <resource name="i18n_init_user" type="RESOURCE"/>
   <resource name="i18n_init_lobby" type="RESOURCE"/>
   <resource name="i18n_init_warp" type="RESOURCE"/>
+  <resource name="i18n_font_init" type="RESOURCE"/>
+  <resource name="i18n_font_add" type="RESOURCE"/>
   <resource name="i18n_add" type="RESOURCE"/>
   <resource name="i18n_get" type="RESOURCE"/>
   <resource name="i18n_set_lang" type="RESOURCE"/>

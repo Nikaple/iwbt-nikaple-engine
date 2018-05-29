@@ -11,5 +11,6 @@
   <resource name="sprSecretItemView" type="RESOURCE"/>
   <resource name="sprBossBlock" type="RESOURCE"/>
   <resource name="sprResetSync" type="RESOURCE"/>
-  <resource name="sprite155" type="RESOURCE"/>
+  <resource name="sprResetWait" type="RESOURCE"/>
+  <resource name="sprEditMe" type="RESOURCE"/>
 </resources>

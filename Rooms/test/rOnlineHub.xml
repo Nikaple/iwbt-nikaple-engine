@@ -146,8 +146,63 @@
   </views>
   <instances>
     <instance>
+      <object>warpText</object>
+      <position x="128" y="320"/>
+      <creationCode>text = "host_guest_block"
+color = c_red
+roomTo = rOnlineHostGuestBlock
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>warpText</object>
+      <position x="128" y="416"/>
+      <creationCode>text = "triggers_and_buttons"
+roomTo = rOnlineTriggerAndButton
+color = c_green
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>warpText</object>
+      <position x="640" y="416"/>
+      <creationCode>text = "test_warp_spikes"
+color = c_teal
+roomTo = rOnlineSpike
+warpX = 384
+warpY = 288
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>warpText</object>
+      <position x="384" y="320"/>
+      <creationCode>text = "host_guest_spike_warp"
+color = c_purple
+roomTo = rOnlineHostGuestSpike
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>warpText</object>
+      <position x="128" y="224"/>
+      <creationCode>text = "sync_save"
+roomTo = rOnlineSaveSync
+color = c_maroon
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>warpText</object>
+      <position x="384" y="544"/>
+      <creationCode>text = "return_hub"
+roomTo = rHub
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
       <object>camera</object>
-      <position x="32" y="32"/>
+      <position x="64" y="32"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
@@ -158,26 +213,8 @@
       <locked>false</locked>
     </instance>
     <instance>
-      <object>warpText</object>
-      <position x="128" y="384"/>
-      <creationCode>text = "host_guest_block"
-color = c_red
-roomTo = rOnlineHostGuestBlock
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>warpText</object>
-      <position x="128" y="480"/>
-      <creationCode>text = "triggers_and_buttons"
-roomTo = rOnlineTriggerAndButton
-color = c_green
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
       <object>objInfiniteJump</object>
-      <position x="32" y="64"/>
+      <position x="32" y="32"/>
       <creationCode>noSound = true
 setScale(25, 19)
 </creationCode>
@@ -688,64 +725,26 @@ setScale(25, 19)
       <locked>false</locked>
     </instance>
     <instance>
-      <object>warpText</object>
-      <position x="640" y="480"/>
-      <creationCode>text = "test_warp_spikes"
-color = c_teal
-roomTo = rOnlineSpike
-warpX = 384
-warpY = 288
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>warpText</object>
-      <position x="384" y="384"/>
-      <creationCode>text = "host_guest_spike_warp"
-color = c_purple
-roomTo = rOnlineHostGuestSpike
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>warpBoth</object>
-      <position x="384" y="192"/>
-      <creationCode>text = "sync_warp_all"
-color = c_fuchsia
-roomTo = rOnlineWarpSyncAll
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>warpText</object>
-      <position x="128" y="288"/>
-      <creationCode>text = "sync_save"
-roomTo = rOnlineSaveSync
-color = c_maroon
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>warpBoth</object>
-      <position x="384" y="288"/>
-      <creationCode>text = "sync_reset"
-roomTo = rOnlineResetSync
+      <object>warpWait</object>
+      <position x="384" y="128"/>
+      <creationCode>text = "wait_warp"
+roomTo = rOnlineWarpWait
 color = c_navy
 </creationCode>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>warpText</object>
-      <position x="640" y="384"/>
-      <creationCode>text = "host_guest_player_start"
-color = c_olive
-roomTo = rOnlineHostGuestPlayerStart
+      <object>warpWait</object>
+      <position x="640" y="128"/>
+      <creationCode>text = "wait_reset"
+roomTo = rOnlineResetWait
+color = c_navy
 </creationCode>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>warpBoth</object>
-      <position x="128" y="192"/>
+      <object>warpWait</object>
+      <position x="640" y="320"/>
       <creationCode>text = "online_boss"
 roomTo = rOnlineBossSample
 color = c_teal
@@ -754,7 +753,7 @@ color = c_teal
     </instance>
     <instance>
       <object>warpSync</object>
-      <position x="640" y="288"/>
+      <position x="384" y="224"/>
       <creationCode>text = "sync_warp"
 color = merge_color(c_red, c_black, 0.5)
 roomTo = rOnlineWarpSync
@@ -762,8 +761,8 @@ roomTo = rOnlineWarpSync
       <locked>false</locked>
     </instance>
     <instance>
-      <object>warpBoth</object>
-      <position x="384" y="480"/>
+      <object>warpWait</object>
+      <position x="384" y="416"/>
       <creationCode>text = "test_warp_platforms"
 roomTo = rOnlinePlatforms
 color = c_blue

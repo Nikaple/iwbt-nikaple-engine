@@ -17,6 +17,10 @@
 if (global.frozen2 == 0) {
     playerCheckKeyboard()
     playerMove()
+    playerShoot()
+    if (!global.frozen &amp;&amp; !onIvy) {
+        playerJump()
+    }
     playerWallJump()
     playerMisc()
 } else {

@@ -29,6 +29,9 @@
 if(debug_mode){
     visible = true;
 }
+
+ensure('trg', trg)
+ensure('key', key)
 </argument>
       </arguments>
     </action>

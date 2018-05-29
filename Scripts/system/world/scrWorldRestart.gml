@@ -2,17 +2,11 @@
 if (pauseon == false) {
     scrWorldStopDeathSound()
     // restart function
-    if (
-        room != rInit &&
-        room != rTitle &&
-        room != rMenu &&
-        room != rSelectStage &&
-        room != rOptions &&
-        room != rLobby
-    ) {
-        //make up for the frame that player presses 'R'
-        if (resetSync && instance_exists(objResetSyncRoom)) {
+    if (isInGameRoom()) {
+        if (resetWait && instance_exists(objResetWait)) {
             ns_send_event('reset_wait')
+        } else if (resetSync && instance_exists(objResetSync)) {
+            ns_send_event('reset_sync')
         } else {
             // reset the game
             alarm[0] = 1

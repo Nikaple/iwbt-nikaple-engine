@@ -2,6 +2,7 @@
 <resources>
   <resource name="platform" type="RESOURCE"/>
   <resource name="block" type="RESOURCE"/>
+  <resource name="blockConveyor" type="RESOURCE"/>
   <resource name="playerKiller" type="RESOURCE"/>
   <resource name="playerKillerHost" type="RESOURCE"/>
   <resource name="playerKillerGuest" type="RESOURCE"/>

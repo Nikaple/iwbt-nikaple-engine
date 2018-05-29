@@ -1,6 +1,10 @@
 // Scripts for internationalization <- i18n
 
+fw_init()
+
 global.__i18n_map = ds_map_create()
+
+i18n_font_init()
 
 i18n_add("network_disconnect", "网络已断开，正在重新连接...", "Network disconnected. Reconnecting...")
 

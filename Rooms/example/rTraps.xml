@@ -4,7 +4,7 @@
   <size height="1216" width="1600"/>
   <grid>
     <isometric>false</isometric>
-    <snap x="16" y="16"/>
+    <snap x="32" y="16"/>
   </grid>
   <speed>50</speed>
   <persistent>false</persistent>
@@ -201,6 +201,13 @@ trg=9;</creationCode>
       <creationCode>trg = 10;
 setScale(1,2);
 snd = sndBreak;
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>freeTrigger</object>
+      <position x="448" y="304"/>
+      <creationCode>trg = 7
 </creationCode>
       <locked>false</locked>
     </instance>
@@ -1295,13 +1302,6 @@ move = 1;
     </instance>
     <instance>
       <object>objBlock</object>
-      <position x="448" y="304"/>
-      <creationCode>trg = 7
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objBlock</object>
       <position x="32" y="448"/>
       <creationCode/>
       <locked>false</locked>
@@ -1376,6 +1376,30 @@ move = 1;
       <object>objBlock</object>
       <position x="448" y="176"/>
       <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>blockRise</object>
+      <position x="736" y="544"/>
+      <creationCode>spr = sprfloor
+v = -6
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>blockRise</object>
+      <position x="736" y="576"/>
+      <creationCode>spr = sprfloor3
+v = -4
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>blockRise</object>
+      <position x="736" y="704"/>
+      <creationCode>spr = sprfloor
+v = -2
+</creationCode>
       <locked>false</locked>
     </instance>
     <instance>
@@ -1921,9 +1945,10 @@ move = 1;
       <creationCode>sprite_index = sprGreenSpikeUp;
 trg = 7;
 cx = 0;
-cy = 31;
-angle = radtodeg(pi-arctan(2));
-time = 20;</creationCode>
+cy = 32;
+angle = radtodeg(pi - arctan(2));
+time = 20;
+</creationCode>
       <locked>false</locked>
     </instance>
     <instance>

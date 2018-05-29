@@ -910,6 +910,12 @@ text = "return_hub"
       <locked>false</locked>
     </instance>
     <instance>
+      <object>objResetSync</object>
+      <position x="64" y="32"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
       <object>playerStart</object>
       <position x="352" y="544"/>
       <creationCode>wrap = true

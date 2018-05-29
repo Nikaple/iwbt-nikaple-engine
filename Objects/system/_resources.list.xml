@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
-  <resource name="Options" type="GROUP"/>
+  <resource name="options" type="GROUP"/>
+  <resource name="rTitle, rLobby, rRoom" type="GROUP"/>
+  <resource name="online" type="GROUP"/>
   <resource name="init" type="RESOURCE"/>
   <resource name="world" type="RESOURCE"/>
   <resource name="effect_parent" type="RESOURCE"/>
@@ -10,7 +12,6 @@
   <resource name="objGameover" type="RESOURCE"/>
   <resource name="objDeathSound" type="RESOURCE"/>
   <resource name="objLoad" type="RESOURCE"/>
-  <resource name="objLanguageSwitch" type="RESOURCE"/>
   <resource name="objNothing" type="RESOURCE"/>
   <resource name="objDebug" type="RESOURCE"/>
 </resources>

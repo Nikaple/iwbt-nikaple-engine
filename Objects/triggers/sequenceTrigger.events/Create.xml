@@ -28,6 +28,8 @@
 if(debug_mode){
     visible = true;
 }
+
+ensure('trg[1]', trg[1])
 </argument>
       </arguments>
     </action>

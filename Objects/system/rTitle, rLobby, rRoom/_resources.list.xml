@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="objLanguageSwitch" type="RESOURCE"/>
+  <resource name="objControllerButton" type="RESOURCE"/>
+  <resource name="objTitleController" type="RESOURCE"/>
+  <resource name="objLobbyController" type="RESOURCE"/>
+  <resource name="objLobbyRoomDrawer" type="RESOURCE"/>
+  <resource name="objRoomController" type="RESOURCE"/>
+  <resource name="objRoomProfile" type="RESOURCE"/>
+</resources>

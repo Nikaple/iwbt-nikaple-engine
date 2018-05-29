@@ -25,11 +25,16 @@
 //      angle : total degrees to rotate(positive = counter-clockwise)
 //      time : the time it takes to rotate given degrees
 
-depth = 1000002;
+depth = 1000002
+timer = 0
 
 if (spr) {
     sprite_index = spr
 }
+
+ensure('trg', trg)
+ensure('angle', angle)
+ensure('time', time)
 </argument>
       </arguments>
     </action>

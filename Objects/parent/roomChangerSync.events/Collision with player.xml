@@ -19,7 +19,7 @@ with (player) {
     instance_destroy()
 }
 
-instance_create(0, 0, warpSyncWaitingBG)
+instance_create(0, 0, warpWaitingBG)
 argCount = 2
 
 var map;

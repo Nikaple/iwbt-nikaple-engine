@@ -16,7 +16,7 @@
         <argument kind="STRING">// this object will move along a path when triggered, and kills the player only when it's moving
 // in the creation code , put:
 //
-//      sprite_index : sprite
+//      spr : sprite
 //      trg : trigger number
 //      pth : path index
 //      spd  : moving speed
@@ -28,6 +28,10 @@
 //  1: continue from the start position (if the path is not closed we jump to the start position)
 //  2: continue from the current position
 //  3: reverse the path, that is change the sign of the speed
+if (spr) {
+    sprite_index = spr
+}
+ensure('trg', trg)
 </argument>
       </arguments>
     </action>

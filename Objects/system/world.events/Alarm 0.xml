@@ -13,9 +13,7 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">// If you want the `reset` event, uncomment the line below.
-// objClient.reset = true
-
+        <argument kind="STRING">//make up for the frame that player presses 'R'
 global.timestep += 2
 saveDeathTime()
 with (player) {
@@ -26,7 +24,6 @@ with (bow) {
 }
 global.frozen = 0
 global.frozen2 = 0
-debug('randomize')
 randomize()
 loadGame()
 </argument>

@@ -25,6 +25,5 @@
   <resource name="effect" type="GROUP"/>
   <resource name="parent" type="GROUP"/>
   <resource name="bossSample" type="GROUP"/>
-  <resource name="online" type="GROUP"/>
   <resource name="object121" type="RESOURCE"/>
 </resources>

@@ -23,10 +23,12 @@
 //
 //
 
-//make the triggers visible in debug mode (F6)
-if(debug_mode){
+// make the triggers visible in debug mode (F6)
+if (debug_mode) {
     visible = true;
 }
+
+ensure('trg', trg)
 </argument>
       </arguments>
     </action>

@@ -16,7 +16,7 @@
         <argument kind="STRING">//锟斤拷锟斤拷锟饺傦拷锟斤拷锟角岋拷锟斤拷锟铰傦拷锟絬锟斤拷锟絙锟絅
 
 if (!visible) {
-    if (distance_to_object(player) &lt; 2){
+    if (collision_rectangle(bbox_left - 1, bbox_top - 1, bbox_right + 1, bbox_bottom + 1, player, 0, 1)){
         audio_playsound(sndBlockChange);
         visible = 1;
         ns_send_instance(1, 'vis', visible)

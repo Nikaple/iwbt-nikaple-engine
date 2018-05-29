@@ -16,6 +16,10 @@
         <argument kind="STRING">// set the game speed, 1 second = 50 steps
 room_speed = 50;
 
+// set reset behavior
+resetWait = instance_exists(objResetWait)
+resetSync = instance_exists(objResetSync)
+
 // set room captions
 room_caption = global.game_title;
 if(global.lite=0){

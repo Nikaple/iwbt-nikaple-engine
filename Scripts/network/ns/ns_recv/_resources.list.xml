@@ -9,6 +9,7 @@
   <resource name="ns_recv_event_warp" type="RESOURCE"/>
   <resource name="ns_recv_event_warp_wait" type="RESOURCE"/>
   <resource name="ns_recv_event_reset_wait" type="RESOURCE"/>
+  <resource name="ns_recv_event_reset_sync" type="RESOURCE"/>
   <resource name="ns_recv_event_save_sync" type="RESOURCE"/>
   <resource name="ns_recv_event_boss_hit" type="RESOURCE"/>
 </resources>

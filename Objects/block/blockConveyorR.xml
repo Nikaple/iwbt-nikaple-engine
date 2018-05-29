@@ -5,6 +5,6 @@
   <visible>true</visible>
   <depth>100</depth>
   <persistent>false</persistent>
-  <parent>block</parent>
+  <parent>blockConveyor</parent>
   <mask/>
 </object>

@@ -670,7 +670,7 @@ setScale(25, 19)
       <locked>false</locked>
     </instance>
     <instance>
-      <object>warpBoth</object>
+      <object>warpSync</object>
       <position x="384" y="448"/>
       <creationCode>roomTo = rOnlineHub
 text = "room_online_sync_text"

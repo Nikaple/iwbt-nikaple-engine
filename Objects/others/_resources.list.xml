@@ -11,6 +11,7 @@
   <resource name="movingPlatform" type="RESOURCE"/>
   <resource name="pathPlatform" type="RESOURCE"/>
   <resource name="borderKiller" type="RESOURCE"/>
-  <resource name="objResetSyncRoom" type="RESOURCE"/>
+  <resource name="objResetWait" type="RESOURCE"/>
+  <resource name="objResetSync" type="RESOURCE"/>
   <resource name="objgameclear" type="RESOURCE"/>
 </resources>

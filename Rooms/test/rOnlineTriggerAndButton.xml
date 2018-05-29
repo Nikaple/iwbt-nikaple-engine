@@ -154,25 +154,23 @@ setScale(1, 6)
       <locked>false</locked>
     </instance>
     <instance>
-      <object>freeButton</object>
-      <position x="672" y="128"/>
+      <object>freeButtonHost</object>
+      <position x="672" y="384"/>
       <creationCode>trg = 2
 </creationCode>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>keyTrigger</object>
-      <position x="224" y="280"/>
-      <creationCode>setScale(15, 1)
-trg = 3
-key = 2
+      <object>freeButtonGuest</object>
+      <position x="672" y="160"/>
+      <creationCode>trg = 3
 </creationCode>
       <locked>false</locked>
     </instance>
     <instance>
       <object>killFree</object>
       <position x="192" y="224"/>
-      <creationCode>spr = sprSpike
+      <creationCode>sprite_index = sprSpike
 trg = 1
 v = 10
 </creationCode>
@@ -182,92 +180,14 @@ v = 10
       <object>killFree</object>
       <position x="384" y="480"/>
       <creationCode>sprite_index = sprSpikeUp
-trg = 2
+trg = 3
 v = -10
 </creationCode>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>killFree</object>
-      <position x="704" y="96"/>
-      <creationCode>spr = sprSpikeLeft
-h = -5
-trg = 3
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>killFree</object>
-      <position x="704" y="128"/>
-      <creationCode>spr = sprSpikeLeft
-h = -5
-trg = 3
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>killFree</object>
-      <position x="704" y="160"/>
-      <creationCode>spr = sprSpikeLeft
-h = -5
-trg = 3
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>killFree</object>
-      <position x="704" y="192"/>
-      <creationCode>spr = sprSpikeLeft
-h = -5
-trg = 3
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>killFree</object>
-      <position x="704" y="224"/>
-      <creationCode>spr = sprSpikeLeft
-h = -5
-trg = 3
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>killFree</object>
-      <position x="704" y="256"/>
-      <creationCode>spr = sprSpikeLeft
-h = -5
-trg = 3
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
       <object>savePointSync</object>
-      <position x="64" y="544"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objGravUp</object>
-      <position x="736" y="448"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>movingPlatform</object>
-      <position x="32" y="448"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>movingPlatform</object>
-      <position x="32" y="320"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>movingPlatform</object>
-      <position x="32" y="192"/>
+      <position x="128" y="480"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
@@ -1334,7 +1254,49 @@ trg = 3
       <locked>false</locked>
     </instance>
     <instance>
-      <object>warpText</object>
+      <object>objBlock</object>
+      <position x="64" y="160"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="64" y="416"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>savePoint</object>
+      <position x="128" y="256"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="384" y="256"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="384" y="224"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="384" y="192"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="384" y="96"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>warpWait</object>
       <position x="576" y="192"/>
       <creationCode>text = "return_hub"
 roomTo = rOnlineHub
@@ -1342,17 +1304,11 @@ roomTo = rOnlineHub
       <locked>false</locked>
     </instance>
     <instance>
-      <object>warpText</object>
+      <object>warpWait</object>
       <position x="576" y="416"/>
       <creationCode>text = "return_hub"
 roomTo = rOnlineHub
 </creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>playerStart</object>
-      <position x="32" y="544"/>
-      <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
@@ -1365,6 +1321,34 @@ roomTo = rOnlineHub
       <object>spikeDown</object>
       <position x="384" y="448"/>
       <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>playerStartHost</object>
+      <position x="96" y="480"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>playerStartGuest</object>
+      <position x="96" y="256"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>spikeUp</object>
+      <position x="384" y="160"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>pathFree</object>
+      <position x="384" y="128"/>
+      <creationCode>sprite_index = sprSpike
+pth = pU1
+spd = 4
+trg = 2
+</creationCode>
       <locked>false</locked>
     </instance>
   </instances>
@@ -1772,7 +1756,7 @@ roomTo = rOnlineHub
     <tile>
       <background>Alltiles</background>
       <backgroundPosition x="0" y="0"/>
-      <roomPosition x="384" y="288"/>
+      <roomPosition x="384" y="192"/>
       <size height="32" width="32"/>
       <depth>1000000</depth>
       <locked>false</locked>
@@ -2764,14 +2748,6 @@ roomTo = rOnlineHub
     <tile>
       <background>Alltiles</background>
       <backgroundPosition x="0" y="0"/>
-      <roomPosition x="64" y="192"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>Alltiles</background>
-      <backgroundPosition x="0" y="0"/>
       <roomPosition x="192" y="288"/>
       <size height="32" width="32"/>
       <depth>1000000</depth>
@@ -2779,8 +2755,64 @@ roomTo = rOnlineHub
     </tile>
     <tile>
       <background>Alltiles</background>
-      <backgroundPosition x="0" y="0"/>
+      <backgroundPosition x="32" y="0"/>
+      <roomPosition x="64" y="192"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>Alltiles</background>
+      <backgroundPosition x="32" y="0"/>
+      <roomPosition x="64" y="160"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>Alltiles</background>
+      <backgroundPosition x="32" y="0"/>
+      <roomPosition x="64" y="416"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>Alltiles</background>
+      <backgroundPosition x="32" y="0"/>
       <roomPosition x="64" y="448"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>Alltiles</background>
+      <backgroundPosition x="32" y="0"/>
+      <roomPosition x="384" y="224"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>Alltiles</background>
+      <backgroundPosition x="32" y="0"/>
+      <roomPosition x="384" y="256"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>Alltiles</background>
+      <backgroundPosition x="32" y="0"/>
+      <roomPosition x="384" y="288"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>Alltiles</background>
+      <backgroundPosition x="32" y="0"/>
+      <roomPosition x="384" y="96"/>
       <size height="32" width="32"/>
       <depth>1000000</depth>
       <locked>false</locked>

@@ -15,19 +15,19 @@
       <arguments>
         <argument kind="STRING">///simple boss intro
 //play sound effects
-if(image_xscale==1){
-    audio_playsound(sndBlockChange);
+if (image_xscale == 1) {
+    audio_playsound(sndBlockChange)
 }
 //increase x&amp;yscale until 6 times bigger
-if(image_xscale&lt;6){
-    image_xscale += 0.2;
+if (image_xscale &lt; 6) {
+    image_xscale += 0.2
     image_yscale = image_xscale
-    alarm[1] = 1;
-}
-else{
+    alarm[1] = 1
+} else {
     //go to next action
-    alarm[2] = 20;
+    alarm[2] = 20
 }
+
 </argument>
       </arguments>
     </action>

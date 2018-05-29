@@ -17,21 +17,28 @@
 //
 //  in the creation code, put:
 //
-//      num     the total nuumber of fruits
-//      rad     the radius of rorating circle
-//      ang     the start angle of fruits
+//      num     the total number of fruits
+//      rad     the radius of rotating circle
 //      spd     the angle turning speed of fruits, degrees per step
+//      ang     the start angle of fruits (optional)
 //      spr     the sprite of the fruits(optional)
 //
-for(i=0;i&lt;num;i+=1){
-    xx = x + lengthdir_x(rad,360/num*i+ang);
-    yy = y + lengthdir_y(rad,360/num*i+ang);
-    inst[i] = instance_create(xx,yy,deliciousFruit);
-    inst[i].notDestroy = 1;
-    if(spr){
-        inst[i].sprite_index = spr;
+
+ensure('num', num)
+ensure('rad', rad)
+ensure('spd', spd)
+
+for (i = 0; i &lt; num; i += 1) {
+    xx = x + lengthdir_x(rad, 360 / num * i + ang)
+    yy = y + lengthdir_y(rad, 360 / num * i + ang)
+    inst[i] = instance_create(xx, yy, deliciousFruit)
+    inst[i].notDestroy = 1
+    if (spr) {
+        inst[i].sprite_index = spr
     }
 }
+
+
 </argument>
       </arguments>
     </action>

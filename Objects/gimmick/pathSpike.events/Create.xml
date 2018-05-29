@@ -17,32 +17,45 @@
 //
 //  in the creation code, put:
 //
-//      num     the total nuumber of spikes
+//      num     the total number of spikes
 //      pth     the path spikes moving along, closed
 //      spd     the moving speed of spikes
 //      spr     the sprite of the spikes(optional), default sprite is sprSpikeUp
 //      off     the offset of the path
 //
 
-//creating at least 1 spike
-if(!num){
-    num = 1;
+// creating at least 1 spike
+ensure('pth', pth)
+ensure('spd', spd)
+if (!path_get_closed(pth)) {
+    show_error(
+        'pth of `pathSpike` has to be closed. Current path: ' +
+            path_get_name(pth) +
+            'room: ' +
+            room_get_name(room) +
+            ', position: (' +
+            string(x) +
+            ', ' +
+            string(y) +
+            ').',
+        0
+    )
 }
-for(i=0;i&lt;num;i+=1){
-    inst = instance_create(x,y,playerKiller);
-    inst.depth = 1000002;
-    with(inst){
-        path_start(other.pth,other.spd,1,0);
+
+num = set_default(num, 1)
+spr = set_default(spr, sprSpikeUp)
+
+for (i = 0; i &lt; num; i += 1) {
+    inst = instance_create(x, y, playerKiller)
+    inst.depth = 1000002
+    with (inst) {
+        path_start(other.pth, other.spd, 1, 0)
     }
-    if(spr){
-        inst.sprite_index = spr;
-    }
-    else{
-        inst.sprite_index = sprSpikeUp;
-    }
-    inst.path_position = frac(i/num + off);
+    inst.sprite_index = spr
+    inst.path_position = frac(i / num + off)
 }
-instance_destroy();
+instance_destroy()
+
 </argument>
       </arguments>
     </action>

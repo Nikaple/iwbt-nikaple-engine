@@ -1,13 +1,21 @@
-// i18n_draw_set_font(enFont, cnFont)
+// i18n_draw_set_font(fontMap)
 
-var enFont, cnFont;
-enFont = argument0
-cnFont = argument1
+var font, fontCN, fontEN, fontJP;
+font = argument0
+fontCN = json_pick(fontMap, 'cn')
+fontEN = json_pick(fontMap, 'en')
+fontJP = json_pick(fontMap, 'jp')
 
-if (!cnFont) {
-    cnFont = fontMsyh12
+switch(i18n_get_lang()) {
+    case 'cn':
+        fw_draw_set_font(fontCN)
+        break
+    case 'en':
+        fw_draw_set_font(fontEN)
+        break
+    case 'jp':
+        fw_draw_set_font(fontJP)
+        break
+    default:
+        break
 }
-
-fw_draw_set_font(cnFont)
-draw_set_font(enFont)
-

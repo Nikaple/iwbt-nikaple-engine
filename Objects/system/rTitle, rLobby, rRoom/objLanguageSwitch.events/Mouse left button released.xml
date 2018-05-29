@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="MOUSE" id="7">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">i18n_draw_auto_encoding()
+
+lang = show_message_ext('Select Language: ', 'Chinese', 'English', 'Japanese')
+
+if (lang == 1) {
+    i18n_set_lang('cn')
+} else if (lang == 2) {
+    i18n_set_lang('en')
+} else {
+    i18n_set_lang('jp')
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

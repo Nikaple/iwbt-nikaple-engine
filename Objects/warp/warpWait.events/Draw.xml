@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//draw the original sprite
+drawSelf();
+//draw the text
+if (is_string(text)) {
+    i18n_draw_set_color(color)
+    i18n_draw_set_font(font12);
+    i18n_draw_set_halign(fa_center)
+    i18n_draw_set_valign(fa_bottom)
+    i18n_draw_text(x+16,y-4,text);
+    i18n_draw_set_color(c_black)
+}
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

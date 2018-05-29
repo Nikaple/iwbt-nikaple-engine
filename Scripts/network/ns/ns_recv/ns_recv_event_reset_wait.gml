@@ -6,7 +6,7 @@ isAllPlayersReset = json_pick(data, 'fin')
 
 if (isAllPlayersReset) {
     with (world) {
-        resetSync = false
+        resetWait = false
         alarm[0] = 2
     }
 }

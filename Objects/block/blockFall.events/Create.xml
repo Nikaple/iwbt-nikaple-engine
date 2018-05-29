@@ -14,11 +14,16 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">//creation code :
+//      spr = sprite
 //      v = vertical speed;
 
 shouldMove = true
 
 v = set_default(v, 2)
+
+if (spr) {
+    sprite_index = spr
+}
 </argument>
       </arguments>
     </action>

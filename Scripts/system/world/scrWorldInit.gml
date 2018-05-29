@@ -10,6 +10,5 @@ global.death = 0
 global.timestep = 0
 
 scrWorldInitPlugins()
-scrWorldInitFont()
 scrWorldInitMessageBox()
 

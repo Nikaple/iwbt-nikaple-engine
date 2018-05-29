@@ -13,7 +13,7 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">/// this is just a normal warp with text.
+        <argument kind="STRING">/// Synchronize the teleportation to everyone.
 //
 //  Creation Code:
 //    roomTo = roomToWarp;

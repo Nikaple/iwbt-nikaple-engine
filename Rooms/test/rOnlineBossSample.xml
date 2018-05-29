@@ -658,7 +658,7 @@ image_xscale = 23;
       <locked>false</locked>
     </instance>
     <instance>
-      <object>objResetSyncRoom</object>
+      <object>objResetWait</object>
       <position x="64" y="0"/>
       <creationCode/>
       <locked>false</locked>

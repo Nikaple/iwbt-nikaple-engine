@@ -3,17 +3,23 @@ onBlock =
     place_meeting(x, y + yflag, objBlock) ||
     place_meeting(x, y + yflag, activeBlock) ||
     place_meeting(x, y + yflag, obj_wall)
+onConveyor = place_meeting(x, y + yflag, blockConveyor)
 onIvyL = place_meeting(x - 1, y, WalljumpL) && !onBlock && !onPlatform
 onIvyR = place_meeting(x + 1, y, WalljumpR) && !onBlock && !onPlatform
 onIvy = onIvyL || onIvyR
 
 if (!onIvy) {
+    if (onConveyor) {
+        conveyorSpeed = instance_place(x, y + yflag, blockConveyor).h
+    } else {
+        conveyorSpeed = 0
+    }
     if (h != 0) {
         image_xscale = h
-        hspeed = maxSpeed * h
+        hspeed = maxSpeed * h + conveyorSpeed
         spr = RUNNING
     } else {
-        hspeed = 0
+        hspeed = conveyorSpeed
         spr = IDLING
     }
 }
@@ -36,9 +42,5 @@ if (onBlock) {
 if (vspeed * yflag > maxVspeed) {
     vspeed = sign(vspeed) * maxVspeed
 }
-//shooting and jumping
-if (!global.frozen && !ivyL && !ivyR) {
-    playerShoot()
-    playerJump()
-}
+
 

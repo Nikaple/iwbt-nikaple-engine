@@ -14,7 +14,11 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">if (global.triggered == trg) {
-    if (sign(theta - angle) != 0 &amp;&amp; time != 0) {
+    triggered = true
+}
+if (triggered) {
+    if (timer &lt; time) {
+        timer += 1
         theta += angle / time
     }
     image_angle = theta

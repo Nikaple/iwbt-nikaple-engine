@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">draw_set_halign(fa_center)
+draw_set_color(c_black)
+
+if (i18n_get_lang() == 'cn') {
+  fw_draw_text(400, 64, '房间名：' + ns_get_lobby_name() + 
+  " 房间ID：" + string(ns_get_lobby_id()))
+} else {
+  draw_text(400, 64, 'Lobby name: ' + ns_get_lobby_name() + 
+  ". Lobby id: " + string(ns_get_lobby_id()))
+}
+
+size = ds_list_size(global.__current_lobby_players)
+for (i = 0; i &lt; 8; i += 1) {
+    profile[i].name = ds_list_find_value(global.__current_lobby_players, i)
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -19,7 +19,13 @@
 //creation code:
 //
 //      trg = trigger number;
-//      sprite_index = sprite;
+//      spr = sprite;
+
+if (spr) {
+    sprite_index = spr
+}
+
+ensure('trg', trg)
 </argument>
       </arguments>
     </action>

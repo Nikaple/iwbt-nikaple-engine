@@ -2,7 +2,6 @@
 <resources>
   <resource name="scrWorldInit" type="RESOURCE"/>
   <resource name="scrWorldInitPlugins" type="RESOURCE"/>
-  <resource name="scrWorldInitFont" type="RESOURCE"/>
   <resource name="scrWorldInitMessageBox" type="RESOURCE"/>
   <resource name="scrWorldUpdateCaption" type="RESOURCE"/>
   <resource name="scrWorldAppendDifficulty" type="RESOURCE"/>

@@ -13,10 +13,15 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">//Creation Code: h = ?
-if(h==0){
-    h=-2;
+        <argument kind="STRING">// Creation code:
+//      spr = sprite
+//      h = acceleration
+
+if (spr) {
+    sprite_index = spr
 }
+
+h = set_default(h, -2)
 </argument>
       </arguments>
     </action>

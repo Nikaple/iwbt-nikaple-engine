@@ -24,6 +24,8 @@
 //
 
 image_speed = 0
+
+ensure('trg', trg)
 </argument>
       </arguments>
     </action>
