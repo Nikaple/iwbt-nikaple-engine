@@ -18,6 +18,7 @@
 for(i = 1; i &lt;= 3; i += 1){
     draw_set_color(c_black);
     draw_set_halign(fa_left);
+    draw_set_valign(fa_top)
     draw_set_font(font24);
     // draw "Data x"
     draw_text(x+21+(i-1)*239,y+9,str[i]);

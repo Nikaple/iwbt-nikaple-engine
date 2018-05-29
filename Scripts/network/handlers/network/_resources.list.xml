@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="handler_connected" type="RESOURCE"/>
+  <resource name="handler_connect_failed" type="RESOURCE"/>
+  <resource name="handler_udp_shakehand" type="RESOURCE"/>
+</resources>

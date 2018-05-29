@@ -201,6 +201,24 @@ roomTo = rHub
       <locked>false</locked>
     </instance>
     <instance>
+      <object>warpText</object>
+      <position x="128" y="128"/>
+      <creationCode>text = "wait_save"
+roomTo = rOnlineSaveWait
+color = c_navy
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>warpText</object>
+      <position x="640" y="224"/>
+      <creationCode>text = "sync_reset"
+color = merge_color(c_red, c_black, 0.5)
+roomTo = rOnlineResetSync
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
       <object>camera</object>
       <position x="64" y="32"/>
       <creationCode/>

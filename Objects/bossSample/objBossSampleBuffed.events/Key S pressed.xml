@@ -14,13 +14,13 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">///skip intro
-if(global.frozen == true){
-    image_xscale = 6;
-    image_yscale = image_xscale;
-    alarm[1] = 0;
-    alarm[2] = 1;
-    audio_playsound(sndGlass);
-    screenFlash();
+if (global.frozen) {
+    image_xscale = 6
+    image_yscale = image_xscale
+    alarm[1] = 0
+    alarm[2] = 1
+    audio_playsound(sndGlass)
+    screenFlash()
 }
 
 </argument>

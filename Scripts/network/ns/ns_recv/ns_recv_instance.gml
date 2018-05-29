@@ -14,6 +14,8 @@ for (i = 0; i < size; i += 1) {
         variable_local_set(cur, json_pick(data, cur))
     }
 }
+
+_id.fromName = fromName
 with (_id) {
     event_user(15)
 }

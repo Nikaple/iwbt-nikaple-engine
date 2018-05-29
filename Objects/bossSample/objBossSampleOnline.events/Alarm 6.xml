@@ -14,21 +14,21 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">///homing attack
-sprite_index = sprCherryEmerald;
+sprite_index = sprCherryEmerald
 
-var inst;
-inst = instance_create(x,y,objBossBullet);
-inst.speed = 6;
-inst.direction = random(360);
+inst = instance_create(x, y, objBossBullet)
+inst.speed = 6
+inst.direction = random(360)
 //setting the friction makes the cherry slow down
-inst.friction = 0.2;
+inst.friction = 0.2
 // set alarms for the instance, make it accelerate
-inst.alarm[0] = 35;
-inst.alarm[1] = 35;
-inst.sprite_index = sprite_index;
+inst.alarm[0] = 35
+inst.alarm[1] = 35
+inst.sprite_index = sprite_index
 //play sound effect
 audio_playsound(sndShoot)
-alarm[6] = 5;
+alarm[6] = 5
+
 </argument>
       </arguments>
     </action>

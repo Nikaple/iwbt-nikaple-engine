@@ -14,19 +14,20 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">//restart game
-if(pauseon){
-    gameResume();
+if (pauseon) {
+    gameResume()
 }
-SS_StopSound(curMusic);
-SS_StopSound(SE_Death);
-sound_stop_all();
-if(room != rInit &amp;&amp; room != rMenu &amp;&amp; room != rSelectStage &amp;&amp; room != rTitle &amp;&amp; room != rOptions){
-    saveDeathTime();
+SS_StopSound(curMusic)
+SS_StopSound(SE_Death)
+sound_stop_all()
+if (isInGameRoom()) {
+    saveDeathTime()
 }
-with(player){
-    instance_destroy();
+with (player) {
+    instance_destroy()
 }
-gameReset();
+gameReset()
+
 </argument>
       </arguments>
     </action>

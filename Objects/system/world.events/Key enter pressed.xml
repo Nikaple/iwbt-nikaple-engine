@@ -14,14 +14,14 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">//Alt+Enter - switch between screen modes
-if(keyboard_check(vk_alt) &amp;&amp; global.enable_fullscreen){
-    if(window_get_fullscreen()){
-        window_set_fullscreen(false);
-    }
-    else{
-        window_set_fullscreen(true);
+if (keyboard_check(vk_alt) &amp;&amp; global.enable_fullscreen) {
+    if (window_get_fullscreen()) {
+        window_set_fullscreen(false)
+    } else {
+        window_set_fullscreen(true)
     }
 }
+
 </argument>
       </arguments>
     </action>

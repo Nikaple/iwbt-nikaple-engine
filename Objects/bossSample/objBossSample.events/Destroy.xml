@@ -15,14 +15,15 @@
       <arguments>
         <argument kind="STRING">//create the boss item
 var inst;
-inst = instance_create(688,544,bossItem);
-inst.num = 2;
-inst.sprite_index = bossicon2;
+inst = instance_create(688, 544, bossItem)
+inst.num = 2
+inst.sprite_index = bossicon2
 //create the warp to teleport out
-inst = instance_create(160,416,bossWarp);
-inst.roomTo = rHub;
+inst = instance_create(160, 416, bossWarp)
+inst.roomTo = rHub
 //stop the music
-SS_StopSound(curMusic);
+SS_StopSound(curMusic)
+
 </argument>
       </arguments>
     </action>

@@ -13,19 +13,22 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if saveTimer &gt; 0{
-    saveTimer -= 1;
+        <argument kind="STRING">if (saveTimer &gt; 0) {
+    saveTimer -= 1
 }
-if place_meeting(x,y,bullet) || (place_meeting(x,y,player) &amp;&amp; keyboard_check_pressed(global.shootbutton)){
-    if(saveTimer &lt;= 0 &amp;&amp; instance_exists(player) == true){
-        saveTimer = 30;
-        image_index = 1;
-        image_speed = 0.017;
-        saveGame();
-        // if you need `save` event, uncomment the line below
+if (
+    place_meeting(x, y, bullet) ||
+    (place_meeting(x, y, player) &amp;&amp; keyboard_check_pressed(global.shootbutton))
+) {
+    if (saveTimer &lt;= 0 &amp;&amp; instance_exists(player) == true) {
+        saveTimer = 30
+        image_index = 1
+        image_speed = 0.017
         ns_send_instance()
+        saveGame()
     }
 }
+
 </argument>
       </arguments>
     </action>

@@ -19,7 +19,6 @@ windy = true
 //change sprite
 sprite_index = sprCherryCyan
 //shoot bullet
-var inst;
 inst = instance_create(x, y, objBossBullet)
 inst.hspeed = random_range(2, 3)
 inst.vspeed = random_range(-4, 4)

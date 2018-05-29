@@ -13,7 +13,11 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">wy = y
+        <argument kind="STRING">if (_room != room) {
+    exit;
+}
+
+wy = y
 wSpeed = vspeed
 
 

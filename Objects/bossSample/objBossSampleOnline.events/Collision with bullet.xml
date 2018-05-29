@@ -14,21 +14,19 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">// destroy the bullet
-with(other){
-    instance_destroy();
+with (other) {
+    instance_destroy()
 }
 // when the boss is not invincible
-if(flash == 0 &amp;&amp; curHP != 0){
+if (flash == 0 &amp;&amp; curHP != 0) {
     // trigger visual effects
     event_user(0)
     // update boss status
     event_user(1)
     // tell other players we hit the boss
-    ns_send_event(
-        'boss_hit', 1,
-        'id', id
-    )
+    ns_send_event('boss_hit', 1, 'id', id)
 }
+
 </argument>
       </arguments>
     </action>

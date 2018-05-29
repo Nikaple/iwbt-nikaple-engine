@@ -14,7 +14,8 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">//creates a screen shaking effect
-screenShake(300,4,2);
+screenShake(300, 4, 2)
+
 </argument>
       </arguments>
     </action>

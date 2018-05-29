@@ -16,9 +16,9 @@
         <argument kind="STRING">// visual effects when bullet hits the boss
 
 //flash the object, so it's invincible
-flashObject(3,3);
+flashObject(3, 3)
 //play the sound effect when boss get hit
-audio_playsound(sndBossHit);
+audio_playsound(sndBossHit)
 
 </argument>
       </arguments>

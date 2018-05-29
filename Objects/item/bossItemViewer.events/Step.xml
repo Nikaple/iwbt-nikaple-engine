@@ -13,7 +13,8 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">visible=global.boss[num];
+        <argument kind="STRING">visible = global.boss[num]
+
 </argument>
       </arguments>
     </action>

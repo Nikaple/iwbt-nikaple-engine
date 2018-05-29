@@ -1,7 +1,7 @@
 //load the icons using on the menu room
-{
-    var f,list,i,pos,inst,j,data;
-    for (i = 1; i <= 3; i += 1) {
+
+var f, list, i, pos, inst, j, data
+for (i = 1; i <= 3; i += 1) {
     if (file_exists(global.saving_directory + 'SaveData' + string(i))) {
         //open save data to read
         f = file_text_open_read(
@@ -37,4 +37,3 @@
     }
 }
 
-}

@@ -15,18 +15,19 @@
       <arguments>
         <argument kind="STRING">// return to a room when press backspace
 
-if (!debug_mode) exit;
+if (!debug_mode) exit
 
 roomTo = rHub
 
-if(isInGameRoom()){
+if (isInGameRoom()) {
     global.frozen = false
     global.frozen2 = false
-    room_goto(roomTo);
-    with(player){
-        instance_destroy();
+    room_goto(roomTo)
+    with (player) {
+        instance_destroy()
     }
 }
+
 </argument>
       </arguments>
     </action>

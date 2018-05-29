@@ -15,27 +15,27 @@
       <arguments>
         <argument kind="STRING">///spam fruits
 //change sprite of the boss
-sprite_index = sprCherryAzure;
-//spam!
-var inst;
+sprite_index = sprCherryAzure
+
 //create the instance to spam
-inst = instance_create(x,y,objBossBullet);
+inst = instance_create(x, y, objBossBullet)
 //set the speed of the instance
-inst.speed = random_range(6,8);
+inst.speed = random_range(6, 8)
 //spam the direction of the instance
-inst.direction = random(360);
+inst.direction = random(360)
 //set the sprite of the instance
-inst.sprite_index = sprite_index;
+inst.sprite_index = sprite_index
 //spin the bullets!
-if(buff){
+if (buff) {
     //turn_spd is the turning speed
-    inst.turn_spd = random_range(-1,1);
-    inst.alarm[3] = 1;
+    inst.turn_spd = random_range(-1, 1)
+    inst.alarm[3] = 1
 }
 //play sound effect
 audio_playsound(sndShoot)
 //more spam!
-alarm[4] = 2 - buff*0.5;
+alarm[4] = 2 - buff * 0.5
+
 </argument>
       </arguments>
     </action>

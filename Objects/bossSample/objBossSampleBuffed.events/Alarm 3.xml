@@ -15,46 +15,47 @@
       <arguments>
         <argument kind="STRING">///stop current attack and choose next one
 //stop the attacks
-alarm[4] = 0;
-alarm[5] = 0;
-alarm[6] = 0;
-alarm[7] = 0;
-alarm[8] = 0;
+alarm[4] = 0
+alarm[5] = 0
+alarm[6] = 0
+alarm[7] = 0
+alarm[8] = 0
 //stop the wind
-windy = false;
+windy = false
 //continue moving
-move = true;
+move = true
 //change the sprite back
-sprite_index = sprCherryGray;
+sprite_index = sprCherryGray
 //choose next attack, see the create event for more info
-nextAttack = choose(SPAM,SPIRAL,HOMING,LINE,WINDY);
+nextAttack = choose(SPAM, SPIRAL, HOMING, LINE, WINDY)
 //nextAttack = WINDY;
-if(nextAttack == SPAM){
-    alarm[SPAM] = 50;
+if (nextAttack == SPAM) {
+    alarm[SPAM] = 50
     //return to this alarm to choose next attack after 6 seconds
-    alarm[CHOOSE] = 300;
+    alarm[CHOOSE] = 300
 }
-if(nextAttack == SPIRAL){
-    alarm[SPIRAL] = 50;
+if (nextAttack == SPIRAL) {
+    alarm[SPIRAL] = 50
     //initialize the direction to be used in spiral attack
-    dir0 = random(360);
-    dir = 0;
-    alarm[CHOOSE] = 250;
+    dir0 = random(360)
+    dir = 0
+    alarm[CHOOSE] = 250
 }
-if(nextAttack == HOMING){
-    alarm[HOMING] = 50;
-    alarm[CHOOSE] = 175;
+if (nextAttack == HOMING) {
+    alarm[HOMING] = 50
+    alarm[CHOOSE] = 175
 }
-if(nextAttack == LINE){
-    alarm[LINE] = 50;
+if (nextAttack == LINE) {
+    alarm[LINE] = 50
     //initialize the counter to be used in line attack
-    shoot_count = -1;
-    alarm[CHOOSE] = 300;
+    shoot_count = -1
+    alarm[CHOOSE] = 300
 }
-if(nextAttack == WINDY){
-    alarm[WINDY] = 50;
-    alarm[CHOOSE] = 300;
+if (nextAttack == WINDY) {
+    alarm[WINDY] = 50
+    alarm[CHOOSE] = 300
 }
+
 </argument>
       </arguments>
     </action>

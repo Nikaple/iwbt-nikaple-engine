@@ -26,7 +26,7 @@ i18n_add("sync_save", "同步存档", "Synchronized Save", "同期するセー�
 i18n_add("online_boss", "同步Boss攻击方式", "Synchronized Boss Attacks", "同期するボス弾幕")
 
 i18n_add("room_online_sync_text", "哇！同步了！", "WOW, IT IS SYNCING!", "すごい！シンクロナイゼーション！")
-i18n_add("room_online_save_text", "双人同时存档才能生效哦！", "You should both shoot the save in order to save the game.", "両方ともゲームを保存する必要があります")
+i18n_add("room_online_save_text", "所有人都存档之后才能生效哦！以最后一个存档的为准", "This savePoint will only take effect after everyone has saved! Save position is based on the position of the last player.", "両方ともゲームを保存する必要があります。")
 i18n_add(
     "room_online_save_text",
     "当您在这里保存之后，其他玩家可以通过按R快速传送到这里",

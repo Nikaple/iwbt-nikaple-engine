@@ -13,8 +13,7 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">var inst;
-///initialize variables
+        <argument kind="STRING">///initialize variables
 image_speed = 1 / 15
 //initialize hp
 maxHP = 30

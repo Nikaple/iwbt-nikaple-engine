@@ -14,43 +14,64 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">// set the game speed, 1 second = 50 steps
-room_speed = 50;
+room_speed = 50
 
 // set reset behavior
 resetWait = instance_exists(objResetWait)
 resetSync = instance_exists(objResetSync)
 
 // set room captions
-room_caption = global.game_title;
-if(global.lite=0){
+room_caption = global.game_title
+if (global.lite == 0) {
     scrWorldAppendDifficulty()
 }
-global.room_caption_def = room_caption;
+global.room_caption_def = room_caption
 
 //play music
-musicFunctions();
-
-//anti-cheat initialize
-date_time_previous = date_current_time();
-date_time = date_current_time();
+musicFunctions()
 
 //enable the use of views
-if(!view_enabled){
-    view_enabled = true;
-    view_visible[0] = true;
-    if(instance_exists(playerStart)){
-        view_xview[0] = floor(playerStart.x/800)*800;
-        view_yview[0] = floor(playerStart.y/608)*608;
+if (!view_enabled) {
+    view_enabled = true
+    view_visible[0] = true
+    if (instance_exists(playerStart)) {
+        view_xview[0] = floor(playerStart.x / 800) * 800
+        view_yview[0] = floor(playerStart.y / 608) * 608
     }
-    if(instance_exists(player)){
-        view_xview[0] = floor(player.x/800)*800;
-        view_yview[0] = floor(player.y/608)*608;
+    if (instance_exists(player)) {
+        view_xview[0] = floor(player.x / 800) * 800
+        view_yview[0] = floor(player.y / 608) * 608
     }
-    view_wview[0] = 800;
-    view_hview[0] = 608;
-    view_wport[0] = 800;
-    view_hport[0] = 608;
+    view_wview[0] = 800
+    view_hview[0] = 608
+    view_wport[0] = 800
+    view_hport[0] = 608
 }
+
+// set blockHost &amp; blockGuest
+if (ns_is_host()) {
+    object_set_parent(blockHost, block)
+    object_set_parent(blockGuest, noone)
+    with (blockHost) {
+        solid = true
+    }
+    with (blockGuest) {
+        solid = false
+    }
+} else {
+    object_set_parent(blockGuest, block)
+    object_set_parent(blockHost, noone)
+    with (blockHost) {
+        solid = false
+    }
+    with (blockGuest) {
+        solid = true
+    }
+}
+
+// init triggers
+global.triggered = 0
+
 </argument>
       </arguments>
     </action>

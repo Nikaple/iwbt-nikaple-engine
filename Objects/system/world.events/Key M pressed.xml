@@ -15,9 +15,10 @@
       <arguments>
         <argument kind="STRING">//Ctrl+M to turn on/off music
 
-if(keyboard_check(vk_control) == true){
-    audio_togglemusicmuted();
+if (keyboard_check(vk_control) == true) {
+    audio_togglemusicmuted()
 }
+
 </argument>
       </arguments>
     </action>

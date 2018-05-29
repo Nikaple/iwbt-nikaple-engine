@@ -22,6 +22,9 @@ with (player) {
 with (bow) {
     instance_destroy()
 }
+with (bloodEmitter) {
+    instance_destroy()
+}
 global.frozen = 0
 global.frozen2 = 0
 randomize()

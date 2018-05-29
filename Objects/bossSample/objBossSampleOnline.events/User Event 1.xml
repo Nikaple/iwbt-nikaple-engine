@@ -16,28 +16,29 @@
         <argument kind="STRING">// boss status when bullet hit boss
 
 // decrease current HP by 1
-curHP -= 1;
+curHP -= 1
 // if the boss is going to die
-if(curHP &lt;= 0){
+if (curHP &lt;= 0) {
     //stop all the alarms
-    for(i = 0;i &lt;= 11;i += 1){
-        alarm[i] = 0;
+    for (i = 0; i &lt;= 11; i += 1) {
+        alarm[i] = 0
     }
     //destroy the HP bar
-    with(objHPBar){
-        instance_destroy();
+    with (objHPBar) {
+        instance_destroy()
     }
     //change sprite back
-    sprite_index = sprCherryGray;
+    sprite_index = sprCherryGray
     //stop moving
-    move = false;
+    move = false
     //stop wind
-    windy = false;
+    windy = false
     //start spamming before death
-    alarm[9] = 50;
+    alarm[9] = 50
     //screen shake
-    alarm[10] = 50;
+    alarm[10] = 50
 }
+
 </argument>
       </arguments>
     </action>

@@ -13,18 +13,18 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if(collision_line(x,y,x+hspeed,y,block,0,0)){
-    a=instance_place(x+hspeed,y,block);
-    if(a!=noone &amp;&amp; a.object_index=block){
-        instance_destroy();
-    }
-    else if(a.visible=1){
-        instance_destroy();
+        <argument kind="STRING">if (collision_line(x, y, x + hspeed, y, block, 0, 0)) {
+    a = instance_place(x + hspeed, y, block)
+    if (a != noone &amp;&amp; a.object_index == block) {
+        instance_destroy()
+    } else if ((a.visible = 1)) {
+        instance_destroy()
     }
 }
-if(collision_line(x,y,x+hspeed,y,obj_wall,0,0)){
+if (collision_line(x, y, x + hspeed, y, obj_wall, 0, 0)) {
     instance_destroy()
 }
+
 </argument>
       </arguments>
     </action>

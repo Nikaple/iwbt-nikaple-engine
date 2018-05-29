@@ -14,30 +14,33 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">//spam after get killed
-var inst;
-repeat(2){
-    inst = instance_create(x,y,objBossBullet);
-    inst.speed = random_range(1,7);
-    inst.direction = random(360);
-    inst.sprite_index = sprite_index;
-    inst.image_xscale = 0.5;
-    inst.image_yscale = 0.5;
-    inst.sprite_index = choose(sprCherry,sprCherryPink,sprCherryOrange,sprCherryMagenta,
-        sprCherryViolet,sprCherryBlue,sprCherryAzure,sprCherryCyan,
-        sprCherryEmerald,sprCherryGreen,sprCherryChartreuse,sprCherryYellow);
+var inst
+repeat (2) {
+    inst = instance_create(x, y, objBossBullet)
+    inst.speed = random_range(1, 7)
+    inst.direction = random(360)
+    inst.sprite_index = sprite_index
+    inst.image_xscale = 0.5
+    inst.image_yscale = 0.5
+    inst.sprite_index = choose(
+        sprCherry, sprCherryPink, sprCherryOrange,
+        sprCherryMagenta, sprCherryViolet, sprCherryBlue,
+        sprCherryAzure, sprCherryCyan, sprCherryEmerald,
+        sprCherryGreen, sprCherryChartreuse, sprCherryYellow
+    )
 }
 //play sound effects
-audio_playsound(sndShoot);
+audio_playsound(sndShoot)
 //size decrease
-if image_xscale&gt;0{
-    image_xscale -= 0.02;
-    image_yscale = image_xscale;
-    alarm[9] = 1;
+if (image_xscale &gt; 0) {
+    image_xscale -= 0.02
+    image_yscale = image_xscale
+    alarm[9] = 1
+} else {
+    audio_playsound(sndDeath)
+    instance_destroy()
 }
-else{
-    audio_playsound(sndDeath);
-    instance_destroy();
-}
+
 </argument>
       </arguments>
     </action>

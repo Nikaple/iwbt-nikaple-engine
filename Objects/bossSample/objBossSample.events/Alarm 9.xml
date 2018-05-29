@@ -14,7 +14,6 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">//spam after get killed
-var inst
 with (2) {
     inst = instance_create(x, y, objBossBullet)
     inst.speed = random_range(1, 7)

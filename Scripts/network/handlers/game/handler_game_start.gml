@@ -17,5 +17,10 @@ debug(
 global.__current_lobby_id = 0
 global.__current_lobby_name = ''
 
-room_goto(rSelectStage)
+if (debug_mode) {
+    room_goto(rSelectStage)
+} else {
+    room_goto(rMenu)
+}
+
 

@@ -16,35 +16,19 @@
         <argument kind="STRING">// sync room
 eventSync = true
 
-var ys
-if (global.reverse) {
-    ys = -1
-} else {
-    ys = 1
-}
 debug('alarm[11]: syncing room', room)
 
-if (global.__sync_position) {
-    ns_send_event(
-        'warp', 6,
-        'roomTo', room,
-        'x', x,
-        'y', floor(y),
-        'xs', image_xscale,
-        'ys', ys,
-        'sync', true
-    )
-    global.__sync_position = false
-} else {
-    ns_send_event(
-        'warp', 5,
-        'roomTo', room,
-        'x', x,
-        'y', floor(y),
-        'xs', image_xscale,
-        'ys', ys
-    )
-}
+eventMap = ds_map_init(
+    5,
+    'roomTo', room,
+    'x', x,
+    'y', floor(y),
+    'xs', image_xscale,
+    'ys', yflag
+)
+ds_map_add_if_exists(eventMap, 'sync', global.__sync_position)
+ns_send_event_direct('warp', eventMap)
+ds_map_destroy(eventMap)
 
 // auto save
 if (global.__player_auto_save) {
@@ -57,29 +41,6 @@ if (global.__player_auto_save) {
     global.__player_auto_save = false
 }
 
-// set blockHost &amp; blockGuest
-if (ns_is_host()) {
-    object_set_parent(blockHost, block)
-    object_set_parent(blockGuest, noone)
-    with (blockHost) {
-        solid = true
-    }
-    with (blockGuest) {
-        solid = false
-    }
-} else {
-    object_set_parent(blockGuest, block)
-    object_set_parent(blockHost, noone)
-    with (blockHost) {
-        solid = false
-    }
-    with (blockGuest) {
-        solid = true
-    }
-}
-
-// init triggers
-global.triggered = 0;
 </argument>
       </arguments>
     </action>

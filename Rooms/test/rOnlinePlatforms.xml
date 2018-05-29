@@ -146,6 +146,15 @@
   </views>
   <instances>
     <instance>
+      <object>warpText</object>
+      <position x="448" y="432"/>
+      <creationCode>color = c_white
+roomTo = rOnlineHub
+text = "return_hub"
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
       <object>camera</object>
       <position x="32" y="32"/>
       <creationCode/>
@@ -810,15 +819,6 @@
       <locked>false</locked>
     </instance>
     <instance>
-      <object>warpText</object>
-      <position x="96" y="544"/>
-      <creationCode>color = c_white
-roomTo = rOnlineHub
-text = "return_hub"
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
       <object>pathPlatform</object>
       <position x="96" y="96"/>
       <creationCode>path_start(path28, 3, 1, false)
@@ -906,12 +906,6 @@ text = "return_hub"
     <instance>
       <object>movingPlatform</object>
       <position x="480" y="464"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objResetSync</object>
-      <position x="64" y="32"/>
       <creationCode/>
       <locked>false</locked>
     </instance>

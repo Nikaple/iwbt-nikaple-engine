@@ -29,7 +29,7 @@ if (roomTo != -1) {
 if (warpX != 0 || warpY != 0) {
     h = player.h
     v = player.v
-    
+
     if (!instance_exists(player)) {
         instance_create(warpX, warpY, player)
     }

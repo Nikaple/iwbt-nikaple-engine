@@ -14,13 +14,13 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">///quit
-if(pauseon){ 
-    gameResume();
+if (pauseon) {
+    gameResume()
+} else {
+    saveDeathTime()
+    game_end()
 }
-else{
-    saveDeathTime();
-    game_end();
-}
+
 </argument>
       </arguments>
     </action>

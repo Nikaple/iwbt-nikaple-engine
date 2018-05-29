@@ -13,7 +13,7 @@
   <resource name="gamePause" type="RESOURCE"/>
   <resource name="gameResume" type="RESOURCE"/>
   <resource name="gameReset" type="RESOURCE"/>
-  <resource name="getBossRoom" type="RESOURCE"/>
+  <resource name="isBossRoom" type="RESOURCE"/>
   <resource name="isInGameRoom" type="RESOURCE"/>
   <resource name="scrWarpRoom" type="RESOURCE"/>
   <resource name="scrSealRoom" type="RESOURCE"/>

@@ -4,5 +4,5 @@
   <resource name="objFakePlayerParent" type="RESOURCE"/>
   <resource name="objFakePlayerHost" type="RESOURCE"/>
   <resource name="objFakePlayerGuest" type="RESOURCE"/>
-  <resource name="objOnlineBullet" type="RESOURCE"/>
+  <resource name="objFakeBullet" type="RESOURCE"/>
 </resources>

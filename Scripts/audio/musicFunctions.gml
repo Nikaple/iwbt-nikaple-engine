@@ -1,5 +1,5 @@
 // play music in each room
-if (getBossRoom()) {
+if (isBossRoom()) {
     audio_playmusic(BGM_Null)
     exit
 }

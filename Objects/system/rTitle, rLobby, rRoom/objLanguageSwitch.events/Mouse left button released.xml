@@ -13,16 +13,12 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">i18n_draw_auto_encoding()
-
-lang = show_message_ext('Select Language: ', 'Chinese', 'English', 'Japanese')
-
-if (lang == 1) {
-    i18n_set_lang('cn')
-} else if (lang == 2) {
+        <argument kind="STRING">if (i18n_get_lang() == 'cn') {
     i18n_set_lang('en')
-} else {
+} else if (i18n_get_lang() == 'en') {
     i18n_set_lang('jp')
+} else {
+    i18n_set_lang('cn')
 }
 </argument>
       </arguments>

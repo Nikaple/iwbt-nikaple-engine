@@ -6,7 +6,6 @@
   <resource name="scrWorldUpdateCaption" type="RESOURCE"/>
   <resource name="scrWorldAppendDifficulty" type="RESOURCE"/>
   <resource name="scrWorldUpdateTime" type="RESOURCE"/>
-  <resource name="scrWorldAntiCheat" type="RESOURCE"/>
   <resource name="scrWorldCleanmem" type="RESOURCE"/>
   <resource name="scrWorldCenterMessage" type="RESOURCE"/>
   <resource name="scrWorldRestart" type="RESOURCE"/>

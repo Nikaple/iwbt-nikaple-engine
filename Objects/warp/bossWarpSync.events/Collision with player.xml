@@ -16,6 +16,7 @@
         <argument kind="STRING">if (visible) {
     if (!noSave) {
         global.__sync_position = true
+        global.__sync_boss_number = num
     }
 
     event_inherited()

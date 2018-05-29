@@ -13,7 +13,11 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if (reverse) {
+        <argument kind="STRING">if (_room != room) {
+    exit;
+}
+
+if (reverse) {
     image_yscale = -1
     yflag = -1
 } else {

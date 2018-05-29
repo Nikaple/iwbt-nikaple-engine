@@ -16,11 +16,12 @@
         <argument kind="STRING">//create the boss item
 var inst;
 inst = instance_create(688, 544, bossItem);
-inst.num = 2;
+inst.num = 4;
 inst.sprite_index = bossicon2;
 //create the warp to teleport out
 inst = instance_create(160, 416, bossWarpSync);
 inst.roomTo = rHub;
+inst.num = 4
 //stop the music
 SS_StopSound(curMusic);
 </argument>

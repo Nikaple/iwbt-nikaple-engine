@@ -16,8 +16,7 @@
         <argument kind="STRING">///spam fruits
 //change sprite of the boss
 sprite_index = sprCherryAzure;
-//spam!
-var inst;
+
 //create the instance to spam
 inst = instance_create(x,y,objBossBullet);
 //set the speed of the instance

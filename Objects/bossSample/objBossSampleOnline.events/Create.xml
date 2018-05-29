@@ -24,7 +24,6 @@
 // uncomment the line below:
 // randomize()
 
-var inst;
 ///initialize variables
 image_speed = 1/15;
 //initialize hp

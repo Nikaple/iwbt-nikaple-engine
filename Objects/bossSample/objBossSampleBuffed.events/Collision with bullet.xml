@@ -14,45 +14,46 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">//destroy the bullet
-with(other){
-    instance_destroy();
+with (other) {
+    instance_destroy()
 }
 //when the boss is not invincible
-if(flash == 0 &amp;&amp; curHP != 0){
+if (flash == 0 &amp;&amp; curHP != 0) {
     //decrease current HP by 1
-    curHP -= 1;
+    curHP -= 1
     //flash the object, so it's invincible
-    flashObject(3,3);
+    flashObject(3, 3)
     //play the sound effect when boss get hit
-    audio_playsound(sndBossHit);
-    if(curHP == 35){
+    audio_playsound(sndBossHit)
+    if (curHP == 35) {
         //activate second phase
         //now code the second phase using this 'buff' variable
-        buff = true;
-        audio_playsound(sndBlockChange);
+        buff = true
+        audio_playsound(sndBlockChange)
     }
     //if the boss is going to die
-    if(curHP == 0){
+    if (curHP == 0) {
         //stop all the alarms
-        for(i=0;i&lt;=11;i+=1){
-            alarm[i] = 0;
+        for (i = 0; i &lt;= 11; i += 1) {
+            alarm[i] = 0
         }
         //destroy the HP bar
-        with(objHPBar){
-            instance_destroy();
+        with (objHPBar) {
+            instance_destroy()
         }
         //change sprite back
-        sprite_index = sprCherryGray;
+        sprite_index = sprCherryGray
         //stop moving
-        move = false;
+        move = false
         //stop wind
-        windy = false;
+        windy = false
         //start spamming before death
-        alarm[9] = 50;
+        alarm[9] = 50
         //screen shake
-        alarm[10] = 50;
+        alarm[10] = 50
     }
 }
+
 </argument>
       </arguments>
     </action>

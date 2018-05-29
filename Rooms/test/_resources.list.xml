@@ -8,7 +8,9 @@
   <resource name="rOnlineHostGuestSpike" type="RESOURCE"/>
   <resource name="rOnlineWarpWait" type="RESOURCE"/>
   <resource name="rOnlineWarpSync" type="RESOURCE"/>
+  <resource name="rOnlineSaveWait" type="RESOURCE"/>
   <resource name="rOnlineSaveSync" type="RESOURCE"/>
   <resource name="rOnlineResetWait" type="RESOURCE"/>
+  <resource name="rOnlineResetSync" type="RESOURCE"/>
   <resource name="rOnlineBossSample" type="RESOURCE"/>
 </resources>

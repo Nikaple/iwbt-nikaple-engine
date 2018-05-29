@@ -14,32 +14,30 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">if (pauseon == true) {
-  draw_background(pauseback, view_xview[0], view_yview[0]);
-  draw_set_alpha(0.5);
-  draw_set_color(c_black)
-  draw_rectangle_view();
-  draw_set_alpha(1);
-  draw_set_color(c_white);
-  draw_set_blend_mode(bm_normal);
-  draw_sprite(sprPause, -1, view_xview[0] + 400, view_yview[0] + 304);
-  draw_set_font(font2);
-  draw_set_halign(fa_left);
-  draw_set_valign(fa_top);
-  draw_text(
-    38,
-    500,
-    "Time  : " +
-      string(hour) +
-      ":" +
-      string(muni) +
-      ":" +
-      string(sec) +
-      "#Death : " +
-      string(global.death)
-  );
+    draw_background(pauseback, view_xview[0], view_yview[0])
+    draw_set_alpha(0.5)
+    draw_set_color(c_black)
+    draw_rectangle_view()
+    draw_set_alpha(1)
+    draw_set_color(c_white)
+    draw_set_blend_mode(bm_normal)
+    draw_sprite(sprPause, -1, view_xview[0] + 400, view_yview[0] + 304)
+    draw_set_font(font2)
+    draw_set_halign(fa_left)
+    draw_set_valign(fa_top)
+    draw_text(
+        38,
+        500,
+        'Time  : ' +
+            string(hour) +
+            ':' +
+            string(muni) +
+            ':' +
+            string(sec) +
+            '#Death : ' +
+            string(global.death)
+    )
 }
-
-
 
 </argument>
       </arguments>

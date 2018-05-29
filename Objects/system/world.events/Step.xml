@@ -17,7 +17,6 @@
     scrWorldUpdateTime()
     scrWorldUpdateCaption()
     scrWorldPause()
-    scrWorldAntiCheat()
         
     if (keyboard_check_pressed(global.restartbutton)) {
         scrWorldRestart()

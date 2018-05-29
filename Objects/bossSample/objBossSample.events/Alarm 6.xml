@@ -16,7 +16,6 @@
         <argument kind="STRING">///homing attack
 sprite_index = sprCherryEmerald
 
-var inst;
 inst = instance_create(x, y, objBossBullet)
 inst.speed = 6
 inst.direction = random(360)

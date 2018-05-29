@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
   <resource name="sprSave" type="RESOURCE"/>
+  <resource name="sprSaveWait" type="RESOURCE"/>
   <resource name="sprSaveMedium" type="RESOURCE"/>
   <resource name="sprSaveVhard" type="RESOURCE"/>
 </resources>

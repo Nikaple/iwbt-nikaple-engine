@@ -16,12 +16,13 @@
         <argument kind="STRING">//play boss music
 audio_loopmusic(BGM_BOSS2)
 //start moving
-path_start(p_boss1,4,1,0);
-move = true;
+path_start(p_boss1, 4, 1, 0)
+move = true
 //unfreeze the player
-global.frozen = false;
+global.frozen = false
 //go to choose attacks
-alarm[CHOOSE] = 1;
+alarm[CHOOSE] = 1
+
 </argument>
       </arguments>
     </action>

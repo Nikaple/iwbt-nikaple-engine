@@ -13,9 +13,17 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">global.boss[num]=1;
-audio_playsound(sndItem);
-instance_destroy();
+        <argument kind="STRING">global.boss[num] = true
+audio_playsound(sndItem)
+
+ns_send_instance(
+    2, 
+    'num', num,
+    'des', true
+)
+
+instance_destroy()
+
 </argument>
       </arguments>
     </action>

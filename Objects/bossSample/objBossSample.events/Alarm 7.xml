@@ -26,7 +26,6 @@ if ((shoot_count = 0)) {
     dir = point_direction(x, y, player.x, player.y)
 }
 // create bullets
-var inst;
 inst = instance_create(x, y, objBossBullet)
 inst.speed = 12
 inst.direction = dir
