@@ -7,6 +7,9 @@ eventName = argument0
 kvCount = argument1
 debug('Adding event... event name:', argument0)
 
+error_kv('ns_send_event', kvCount)
+error_kv_zero('ns_send_event', kvCount, argument[kvCount * 2 + 2])
+
 if (ds_map_exists(global.__cmd_sync, 'e')) {
     eventMap = json_pick(global.__cmd_sync, 'e')
 } else {

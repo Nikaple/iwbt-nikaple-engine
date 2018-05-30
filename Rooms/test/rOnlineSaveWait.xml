@@ -149,7 +149,7 @@
     <instance>
       <object>warpText</object>
       <position x="384" y="448"/>
-      <creationCode>text = "room_online_save_text"
+      <creationCode>text = "room_online_save_wait_text"
 roomTo = rOnlineHub
 </creationCode>
       <locked>false</locked>

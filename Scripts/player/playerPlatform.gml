@@ -10,9 +10,9 @@ if(yflag == 1)
     else
         tempvpf = 0;
         
-    pf = collision_line(bbox_left, bbox_top, bbox_left + hspeed, bbox_bottom + vspeed + gravity + abs(tempvpf) + 1, platform, 1, 1);
+    pf = collision_line(bbox_left + 2, bbox_top, bbox_left + hspeed + 2, bbox_bottom + vspeed + gravity + abs(tempvpf) + 1, platform, 1, 1);
     if(pf == noone)
-        pf = collision_line(bbox_right, bbox_top, bbox_right + hspeed - 1, bbox_bottom + vspeed + gravity + abs(tempvpf) + 1, platform, 1, 1);
+        pf = collision_line(bbox_right - 1, bbox_top, bbox_right + hspeed - 1, bbox_bottom + vspeed + gravity + abs(tempvpf) + 1, platform, 1, 1);
     
     if(pf == noone)
     {
@@ -41,14 +41,14 @@ if(yflag == 1)
         y -= bbox_bottom - pf.bbox_top;
         y -= 1;
         
-        var cb;
+        //var cb;
         cb = instance_place(x + pf.hspeed, y + pf.vspeed, objBlock);
         if(cb == noone || cb == pf)
         {
             x += pf.hspeed;
             y += pf.vspeed;
         }
-        else
+        else if (pf.hspeed != 0)
         {
             move_contact_object(pf.direction, pf.speed, objBlock);
         }

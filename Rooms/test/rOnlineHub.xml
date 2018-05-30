@@ -220,7 +220,7 @@ roomTo = rOnlineResetSync
     </instance>
     <instance>
       <object>camera</object>
-      <position x="64" y="32"/>
+      <position x="32" y="32"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
@@ -228,14 +228,6 @@ roomTo = rOnlineResetSync
       <object>savePointVHard</object>
       <position x="32" y="544"/>
       <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objInfiniteJump</object>
-      <position x="32" y="32"/>
-      <creationCode>noSound = true
-setScale(25, 19)
-</creationCode>
       <locked>false</locked>
     </instance>
     <instance>
@@ -766,6 +758,7 @@ color = c_navy
       <creationCode>text = "online_boss"
 roomTo = rOnlineBossSample
 color = c_teal
+seed = true
 </creationCode>
       <locked>false</locked>
     </instance>
@@ -790,7 +783,8 @@ color = c_blue
     <instance>
       <object>playerStart</object>
       <position x="64" y="544"/>
-      <creationCode/>
+      <creationCode>infJump = true
+</creationCode>
       <locked>false</locked>
     </instance>
   </instances>

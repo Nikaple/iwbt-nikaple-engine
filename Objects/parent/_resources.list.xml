@@ -7,6 +7,6 @@
   <resource name="playerKillerHost" type="RESOURCE"/>
   <resource name="playerKillerGuest" type="RESOURCE"/>
   <resource name="roomChanger" type="RESOURCE"/>
-  <resource name="roomChangerSync" type="RESOURCE"/>
+  <resource name="roomChangerWait" type="RESOURCE"/>
   <resource name="bulletParent" type="RESOURCE"/>
 </resources>

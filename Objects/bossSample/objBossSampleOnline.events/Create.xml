@@ -27,7 +27,7 @@
 ///initialize variables
 image_speed = 1/15;
 //initialize hp
-maxHP = 30;
+maxHP = 1;
 curHP = maxHP;
 //create the HP bar
 inst = instance_create(0,0,objHPBar);

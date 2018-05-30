@@ -13,11 +13,11 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if (des) {
+        <argument kind="STRING">global.boss[num] = true
+
+if (des) {
     instance_destroy()
 }
-
-global.boss[num] = true
 </argument>
       </arguments>
     </action>

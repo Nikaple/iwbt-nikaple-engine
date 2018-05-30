@@ -13,15 +13,12 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">//create the boss item
-var inst;
-inst = instance_create(688, 544, bossItem);
-inst.num = 4;
-inst.sprite_index = bossicon2;
-//create the warp to teleport out
-inst = instance_create(160, 416, bossWarpSync);
-inst.roomTo = rHub;
-inst.num = 4
+        <argument kind="STRING">// Show item and warp
+// Avoid creating them dynamically because 
+// we need fixed instance id to sync them.
+bossItem.visible = true
+bossWarpSync.visible = true
+
 //stop the music
 SS_StopSound(curMusic);
 </argument>

@@ -56,18 +56,22 @@ global.__FUCK_GAMEMAKER_LIST__ = ds_list_create()
 // init handlers, max scripts = 2048
 var handlerPrefix, handlerPrefixLength, eventPrefix, eventPrefixLength, i;
 // internal event handler map
+global.__ns_cmd_handler_map = ds_map_create()
 global.__ns_event_handler_map = ds_map_create()
-global.__ns_recv_event_map = ds_map_create()
+global.__ns_wait_handler_map = ds_map_create()
 
-handlerPrefix = 'handler_'
-handlerPrefixLength = string_length(handlerPrefix)
+cmdPrefix = 'handler_'
+cmdPrefixLength = string_length(cmdPrefix)
 eventPrefix = 'handler_event_'
 eventPrefixLength = string_length(eventPrefix)
+waitPrefix = 'handler_wait_'
+waitPrefixLength = string_length(waitPrefix)
 
 for (i = 0; i < 2048; i += 1) {
     if (script_exists(i)) {
-        _ns_add_handler(global.__ns_event_handler_map, i, handlerPrefix)
-        _ns_add_handler(global.__ns_recv_event_map, i, eventPrefix)
+        _ns_add_handler(global.__ns_cmd_handler_map, i, cmdPrefix)
+        _ns_add_handler(global.__ns_event_handler_map, i, eventPrefix)
+        _ns_add_handler(global.__ns_wait_handler_map, i, waitPrefix)
     }
 }
 

@@ -2,7 +2,7 @@ i18n_add("options", "设置", "Options", "ゲーム設定")
 i18n_add("return", "返回", "Return", "戻る")
 i18n_add("start", "开始游戏", "Start Game", "スタートゲーム")
 i18n_add("load", "载入游戏", "Load Game", "ロードゲーム")
-i18n_add("wait_other_player", "等待其他玩家...", "Waiting for other players...", "他のプレイヤーを待っています...")
+i18n_add("wait_other_player", "等待其他玩家...", "Waiting for other players...", "他のプレイヤーを" + chr(13) + "待っています...")
 
 i18n_add("sample_boss", "示例Boss", "Boss Sample", "ボスサンプル")
 i18n_add("sample_avoidance", "示例耐久", "Avoidance Sample", "耐久サンプル")
@@ -26,9 +26,9 @@ i18n_add("sync_save", "同步存档", "Synchronized Save", "同期するセー�
 i18n_add("online_boss", "同步Boss攻击方式", "Synchronized Boss Attacks", "同期するボス弾幕")
 
 i18n_add("room_online_sync_text", "哇！同步了！", "WOW, IT IS SYNCING!", "すごい！シンクロナイゼーション！")
-i18n_add("room_online_save_text", "所有人都存档之后才能生效哦！以最后一个存档的为准", "This savePoint will only take effect after everyone has saved! Save position is based on the position of the last player.", "両方ともゲームを保存する必要があります。")
+i18n_add("room_online_save_wait_text", "所有人都存档之后才能生效哦！以最后一个存档的为准", "This savePoint will only take effect after everyone has saved!" + chr(13) + "Save position is based on the position of the last player.", "両方ともゲームを保存する必要があります。")
 i18n_add(
-    "room_online_save_text",
+    "room_online_save_sync_text",
     "当您在这里保存之后，其他玩家可以通过按R快速传送到这里",
     "If you save here, the other player will be able to warp here by pressing R",
     "ここでセーブすると、他のプレイヤーはRキーを押してすぐにここに送ることができます。"

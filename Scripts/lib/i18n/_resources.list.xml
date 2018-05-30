@@ -6,6 +6,7 @@
   <resource name="i18n_init_lobby" type="RESOURCE"/>
   <resource name="i18n_init_warp" type="RESOURCE"/>
   <resource name="i18n_font_init" type="RESOURCE"/>
+  <resource name="i18n_font_load" type="RESOURCE"/>
   <resource name="i18n_font_add" type="RESOURCE"/>
   <resource name="i18n_add" type="RESOURCE"/>
   <resource name="i18n_get" type="RESOURCE"/>

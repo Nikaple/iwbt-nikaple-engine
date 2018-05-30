@@ -9,7 +9,7 @@
   <speed>30</speed>
   <persistent>false</persistent>
   <creationCode/>
-  <backgroundColor>0C0532</backgroundColor>
+  <backgroundColor>FEF4FF</backgroundColor>
   <drawBackgroundColor>true</drawBackgroundColor>
   <backgrounds>
     <backgroundDef>
@@ -910,6 +910,19 @@ text = "return_hub"
       <locked>false</locked>
     </instance>
     <instance>
+      <object>movingPlatform</object>
+      <position x="736" y="480"/>
+      <creationCode>v = -2
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="736" y="384"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
       <object>playerStart</object>
       <position x="352" y="544"/>
       <creationCode>wrap = true
@@ -1738,6 +1751,14 @@ text = "return_hub"
       <background>Alltiles</background>
       <backgroundPosition x="64" y="96"/>
       <roomPosition x="512" y="464"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>Alltiles</background>
+      <backgroundPosition x="64" y="96"/>
+      <roomPosition x="736" y="384"/>
       <size height="32" width="32"/>
       <depth>1000000</depth>
       <locked>false</locked>

@@ -212,6 +212,12 @@ snd = sndBreak;
       <locked>false</locked>
     </instance>
     <instance>
+      <object>warp</object>
+      <position x="736" y="192"/>
+      <creationCode>roomTo=rHub;</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
       <object>camera</object>
       <position x="64" y="512"/>
       <creationCode/>
@@ -221,12 +227,6 @@ snd = sndBreak;
       <object>savePoint</object>
       <position x="64" y="544"/>
       <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>warp</object>
-      <position x="736" y="192"/>
-      <creationCode>roomTo=rHub;</creationCode>
       <locked>false</locked>
     </instance>
     <instance>
@@ -1396,9 +1396,16 @@ v = -4
     </instance>
     <instance>
       <object>blockRise</object>
-      <position x="736" y="704"/>
+      <position x="608" y="752"/>
       <creationCode>spr = sprfloor
 v = -2
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>movingPlatform</object>
+      <position x="736" y="720"/>
+      <creationCode>v = -2
 </creationCode>
       <locked>false</locked>
     </instance>

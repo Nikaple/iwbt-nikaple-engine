@@ -1,6 +1,5 @@
 /// @desc Sends the command to the server as JSON
-/// @param {ds_map} OptionalCommandID
-/// Note: If no argument is passed in, uses the most recently created net data
+/// @param {ds_map} command map
 
 if (!ns_is_connected()) {
     i18n_show('network_disconnect')

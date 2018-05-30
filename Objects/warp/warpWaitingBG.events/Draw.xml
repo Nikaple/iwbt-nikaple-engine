@@ -20,10 +20,12 @@ i18n_draw_set_halign(fa_center)
 i18n_draw_set_valign(fa_middle)
 i18n_draw_set_color(c_white)
 i18n_draw_set_font(fontMsyh40)
-i18n_draw_text_transformed(
+i18n_draw_text_ext_transformed(
     view_xview[view_current] + 400,
     view_yview[view_current] + 304,
     "wait_other_player",
+    16,
+    -1,
     1,
     1,
     view_angle[view_current]

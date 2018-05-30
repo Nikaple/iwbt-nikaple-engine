@@ -4,6 +4,6 @@
   <resource name="user" type="GROUP"/>
   <resource name="lobby" type="GROUP"/>
   <resource name="game" type="GROUP"/>
-  <resource name="sync" type="GROUP"/>
   <resource name="events" type="GROUP"/>
+  <resource name="wait" type="GROUP"/>
 </resources>

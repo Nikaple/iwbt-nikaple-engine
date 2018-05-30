@@ -31,7 +31,6 @@ if (global.frozen2 == 0) {
 
 playerPlatform()
 
-
 </argument>
       </arguments>
     </action>

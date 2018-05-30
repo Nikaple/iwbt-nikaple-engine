@@ -5,6 +5,18 @@ fromName = argument0
 _id = argument1
 data = argument2
 
+if (!instance_exists(_id)) {
+    show_error(
+        'Trying to sync an unexisting instance, id: ' +
+            string(_id) +
+            '. Was the instance created dynamically? ' +
+            '(dynamically means that you did not place the instance in room, but creates it from `instance_create`). ' +
+            'Current sync data: ' +
+            ds_map_log(data),
+        0
+    )
+}
+
 obj = _id.object_index
 
 size = ds_map_size(data)

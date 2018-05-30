@@ -13,8 +13,8 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">image_index = 1;
-image_speed = 0.017;
+        <argument kind="STRING">sprite_index = sprSaveOthers
+alarm[0] = 50
 </argument>
       </arguments>
     </action>

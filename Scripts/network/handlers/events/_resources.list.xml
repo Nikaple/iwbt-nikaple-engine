@@ -3,10 +3,7 @@
   <resource name="handler_event_player_shoot" type="RESOURCE"/>
   <resource name="handler_event_player_death" type="RESOURCE"/>
   <resource name="handler_event_warp" type="RESOURCE"/>
-  <resource name="handler_event_warp_wait" type="RESOURCE"/>
-  <resource name="handler_event_reset_wait" type="RESOURCE"/>
   <resource name="handler_event_reset_sync" type="RESOURCE"/>
-  <resource name="handler_event_save_wait" type="RESOURCE"/>
   <resource name="handler_event_save_sync" type="RESOURCE"/>
   <resource name="handler_event_boss_hit" type="RESOURCE"/>
 </resources>

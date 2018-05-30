@@ -13,9 +13,7 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if (!instance_exists(bossItem) &amp;&amp; !visible){
-    visible = 1;
-}
+        <argument kind="STRING">visible = !instance_exists(bossItem)
 </argument>
       </arguments>
     </action>

@@ -1,4 +1,7 @@
-// ns_send_player(itemCount, ...items)
+// PLAYER SYNC SCRIPT
+// DO NOT MODIFY UNLESS YOU KNOW WHAT YOU ARE DOING
+
+// ns_send_player(id)
 // Send a command to sync player status
 if (!ns_is_in_game()) exit
 
@@ -11,7 +14,6 @@ spr = _id.spr
 h = _id.h + 1
 v = round(_id.vspeed * 100)
 
-// debug('Sending sync packet: ', _room, _x, _y, 'h: ' + string(h), 'v: ' + string(v))
 var CMD_TYPE_SYNC;
 CMD_TYPE_SYNC = 1
 

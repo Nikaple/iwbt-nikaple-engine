@@ -23,12 +23,13 @@ if place_meeting(x,y,bullet) || (place_meeting(x,y,player) &amp;&amp; keyboard_c
         image_speed = 0.017;
         // sync save
         ns_send_event(
-            'save_sync', 5,
+            'save_sync', 6,
             'id', id,
             'room', room,
             'x', player.x,
             'y', player.y,
-            'xs', player.image_xscale
+            'xs', player.image_xscale,
+            'scope', 'other'
         )
         saveGame();
     }

@@ -28,6 +28,9 @@ if (wrap) {
     player.shouldDieWhenOutsideRoom = false
 }
 
+if (infJump) {
+    player.infJump = true
+}
 </argument>
       </arguments>
     </action>

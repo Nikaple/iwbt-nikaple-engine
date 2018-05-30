@@ -13,7 +13,9 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">global.boss[num] = true
+        <argument kind="STRING">if (!visible) exit;
+
+global.boss[num] = true
 audio_playsound(sndItem)
 
 ns_send_instance(

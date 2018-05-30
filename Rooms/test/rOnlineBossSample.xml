@@ -4,7 +4,7 @@
   <size height="608" width="800"/>
   <grid>
     <isometric>false</isometric>
-    <snap x="32" y="16"/>
+    <snap x="16" y="16"/>
   </grid>
   <speed>30</speed>
   <persistent>false</persistent>
@@ -661,6 +661,22 @@ image_xscale = 23;
       <object>objResetWait</object>
       <position x="64" y="0"/>
       <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>bossItem</object>
+      <position x="688" y="544"/>
+      <creationCode>num = 4;
+sprite_index = bossicon2;
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>bossWarpSync</object>
+      <position x="160" y="416"/>
+      <creationCode>roomTo = rHub;
+num = 4
+</creationCode>
       <locked>false</locked>
     </instance>
     <instance>

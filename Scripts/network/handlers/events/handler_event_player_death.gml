@@ -1,4 +1,4 @@
-var fromName, fakePlayer;
+var fromName, fakePlayer, emitter;
 fromName = argument0
 
 with (objOnlinePlayers) {

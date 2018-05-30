@@ -1,10 +1,14 @@
 // ns_send_event_direct(eventName, mapId) 
 // Send a command to sync an event directly with mapId
+// WARNING: this script will not destroy the ds_map for you,
+// you must DESTROY THE MAP BY YOURSELF!
+
 if (!ns_is_in_game()) exit
 
-var kvCount, i, map, eventMap, eventName, mapId, size, current;
+var eventName, mapId, eventMap, map, i, size, current;
 eventName = argument0
 mapId = argument1
+
 debug('Adding event... event name:', argument0)
 
 if (ds_map_exists(global.__cmd_sync, 'e')) {

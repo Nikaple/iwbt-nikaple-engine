@@ -32,19 +32,8 @@ if (!instance_exists(bow)) {
 if (debug_mode) {
     //mouse warp (left button)
     if (mouse_check_button(mb_left)) {
-        player.x = mouse_x
-        player.y = mouse_y
-    }
-    // right button
-    if (mouse_check_button(mb_right)) {
-        if (!instance_exists(objFakePlayerGuest)) {
-            var inst;
-            inst = instance_create(mouse_x, mouse_y, objFakePlayerGuest)
-            inst._room = room
-        } else {
-            objFakePlayerGuest.x = mouse_x
-            objFakePlayerGuest.y = mouse_y
-        }
+        x = mouse_x
+        y = mouse_y
     }
     //"S" save
     if (keyboard_check_pressed(ord('S'))) {
@@ -59,6 +48,12 @@ if (debug_mode) {
         } else {
             show_message('god mode off!')
         }
+    }
+    if (keyboard_check_pressed(ord('A'))) {
+        x -= 1
+    }
+    if (keyboard_check_pressed(ord('D'))) {
+        x += 1
     }
 }
 

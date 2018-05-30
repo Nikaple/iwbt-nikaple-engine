@@ -21,6 +21,7 @@ if (
     (place_meeting(x, y, player) &amp;&amp; keyboard_check_pressed(global.shootbutton))
 ) {
     if (saveTimer &lt;= 0 &amp;&amp; instance_exists(player) == true) {
+        sprite_index = sprSave
         saveTimer = 30
         image_index = 1
         image_speed = 0.017

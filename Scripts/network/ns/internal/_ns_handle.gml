@@ -8,8 +8,8 @@ cmdName = argument0
 data = argument1
 debug('received command: ', cmdName)
 
-if (ds_map_exists(global.__ns_event_handler_map, cmdName)) {
-    handler = json_pick(global.__ns_event_handler_map, cmdName)
+if (ds_map_exists(global.__ns_cmd_handler_map, cmdName)) {
+    handler = json_pick(global.__ns_cmd_handler_map, cmdName)
     script_execute(handler, data)
 } else {
     debug('Handler of command', cmdName, 'does not exist!')

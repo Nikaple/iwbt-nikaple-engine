@@ -146,6 +146,14 @@
   </views>
   <instances>
     <instance>
+      <object>warpText</object>
+      <position x="640" y="448"/>
+      <creationCode>text = "return_hub"
+roomTo = rOnlineHub
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
       <object>WalljumpL</object>
       <position x="0" y="416"/>
       <creationCode/>
@@ -1046,14 +1054,6 @@
       <locked>false</locked>
     </instance>
     <instance>
-      <object>objInfiniteJump</object>
-      <position x="32" y="32"/>
-      <creationCode>setScale(25, 19)
-noSound = true
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
       <object>objBlock</object>
       <position x="96" y="352"/>
       <creationCode/>
@@ -1237,14 +1237,6 @@ noSound = true
       <object>objBlock</object>
       <position x="96" y="480"/>
       <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>warpText</object>
-      <position x="640" y="448"/>
-      <creationCode>text = "return_hub"
-roomTo = rOnlineHub
-</creationCode>
       <locked>false</locked>
     </instance>
     <instance>

@@ -1,6 +1,6 @@
 ///collision with blocks
 //horizontal
-if (place_free(x + hspeed, y) == false) {
+if (!place_free(x + hspeed, y)) {
     if (hspeed <= 0) {
         move_contact_solid(180, abs(hspeed))
     }
@@ -10,7 +10,7 @@ if (place_free(x + hspeed, y) == false) {
     hspeed = 0
 }
 //vertical
-if (place_free(x, y + vspeed) == false) {
+if (!place_free(x, y + vspeed)) {
     if (vspeed <= 0) {
         move_contact_solid(90, abs(vspeed))
     }
@@ -20,7 +20,7 @@ if (place_free(x, y + vspeed) == false) {
     vspeed = 0
     gravity = 0
 }
-if (place_free(x + hspeed, y + vspeed) == false) {
+if (!place_free(x + hspeed, y + vspeed)) {
     hspeed = 0
 }
 

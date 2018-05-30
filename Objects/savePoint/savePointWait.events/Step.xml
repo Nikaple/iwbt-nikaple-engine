@@ -24,8 +24,8 @@ if (
         saveTimer = 30
         image_index = 1
         save = false
-        ns_send_event(
-            'save_wait', 3,
+        ns_send_wait(
+            'save', -1, 3,
             'id', id,
             'x', player.xprevious,
             'y', player.yprevious
