@@ -15,6 +15,7 @@
       <arguments>
         <argument kind="STRING">times = 0
 event_user(0)
+objClient.handshake_sent = true
 </argument>
       </arguments>
     </action>

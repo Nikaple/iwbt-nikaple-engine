@@ -152,12 +152,6 @@
       <locked>false</locked>
     </instance>
     <instance>
-      <object>savePointVHard</object>
-      <position x="352" y="544"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
       <object>objInfiniteJump</object>
       <position x="32" y="64"/>
       <creationCode>noSound = true
@@ -679,8 +673,14 @@ text = "room_online_sync_text"
       <locked>false</locked>
     </instance>
     <instance>
-      <object>playerStart</object>
+      <object>savePoint</object>
       <position x="384" y="544"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>playerStart</object>
+      <position x="224" y="544"/>
       <creationCode/>
       <locked>false</locked>
     </instance>

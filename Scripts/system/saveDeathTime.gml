@@ -1,11 +1,9 @@
-var f, list, obj;
+var fname, f, list, obj;
+fname = get_save_file(global.savenum)
 //open save data
-f = file_text_open_read(
-    global.saving_directory + 'SaveData' + string(global.savenum)
-)
+f = file_text_open_read(fname)
 // prevent error
 if (!f) exit
-
 //create the save data list
 list = ds_list_create()
 //saving game data to the list
@@ -14,9 +12,7 @@ ds_list_replace(list, 0, global.death)
 ds_list_replace(list, 1, global.timestep)
 file_text_close(f)
 //write the encrypted string to save file
-f = file_text_open_write(
-    global.saving_directory + 'SaveData' + string(global.savenum)
-)
+f = file_text_open_write(fname)
 if (!f) exit
 file_text_write_string(f, dataEncrypt(ds_list_write(list)))
 //destroy the list

@@ -19,7 +19,7 @@ if (!visible) {
     if (collision_rectangle(bbox_left - 1, bbox_top - 1, bbox_right + 1, bbox_bottom + 1, player, 0, 1)){
         audio_playsound(sndBlockChange);
         visible = 1;
-        ns_send_instance(1, 'vis', visible)
+        ns_send_instance()
     }
 }
 </argument>

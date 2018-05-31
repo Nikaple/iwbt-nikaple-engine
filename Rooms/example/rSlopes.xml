@@ -196,12 +196,6 @@ image_xscale=31;
       <locked>false</locked>
     </instance>
     <instance>
-      <object>savePointVHard</object>
-      <position x="64" y="512"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
       <object>warp</object>
       <position x="176" y="64"/>
       <creationCode>roomTo = rHub;
@@ -245,12 +239,6 @@ off = 0.09;
       <locked>false</locked>
     </instance>
     <instance>
-      <object>savePointMedium</object>
-      <position x="640" y="512"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
       <object>roundingCherry</object>
       <position x="640" y="96"/>
       <creationCode>rad = 180;
@@ -277,6 +265,12 @@ spr = sprCherryYellow;
       <object>objGravDown</object>
       <position x="0" y="512"/>
       <creationCode>visible = 0;</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>savePoint</object>
+      <position x="32" y="512"/>
+      <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>

@@ -3,7 +3,7 @@ global.game_title = 'I wanna be the Engine Nikaple Edition'
 // language
 global.language = 'cn'
 // use built-in draw functions or not
-global.useBuiltInDrawing = false
+global.use_builtin_drawing = false
 //first room
 global.first_stage = rHub
 //lite mode (set to true for convenient testing & debugging, set to false when you want release your game)

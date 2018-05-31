@@ -1,7 +1,6 @@
 // player variables
-isFocus = focus_get()
-leftKey = keyboard_check_direct(global.leftbutton) && isFocus
-rightKey = keyboard_check_direct(global.rightbutton) && isFocus
+leftKey = keyboard_check_direct(global.leftbutton)
+rightKey = keyboard_check_direct(global.rightbutton)
 leftPressed = keyboard_check_pressed(global.leftbutton)
 rightPressed = keyboard_check_pressed(global.rightbutton)
 jumpKey = keyboard_check(global.jumpbutton)

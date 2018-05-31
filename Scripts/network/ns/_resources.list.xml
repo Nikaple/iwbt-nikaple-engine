@@ -7,6 +7,5 @@
   <resource name="ns_is" type="GROUP"/>
   <resource name="ns_actions" type="GROUP"/>
   <resource name="ns_send" type="GROUP"/>
-  <resource name="ns_recv" type="GROUP"/>
   <resource name="internal" type="GROUP"/>
 </resources>

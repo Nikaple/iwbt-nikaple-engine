@@ -13,7 +13,7 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">visible = vis
+        <argument kind="STRING">visible = true
 </argument>
       </arguments>
     </action>

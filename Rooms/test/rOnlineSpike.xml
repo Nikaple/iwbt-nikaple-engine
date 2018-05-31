@@ -2458,13 +2458,6 @@ roomTo = rOnlineHub
       <locked>false</locked>
     </instance>
     <instance>
-      <object>objInfiniteJump</object>
-      <position x="640" y="32"/>
-      <creationCode>setScale(25, 19)
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
       <object>objBlock</object>
       <position x="96" y="352"/>
       <creationCode/>
@@ -2822,6 +2815,12 @@ roomTo = rOnlineHub
     <instance>
       <object>blockFake</object>
       <position x="672" y="128"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objJumpRefresher</object>
+      <position x="288" y="320"/>
       <creationCode/>
       <locked>false</locked>
     </instance>

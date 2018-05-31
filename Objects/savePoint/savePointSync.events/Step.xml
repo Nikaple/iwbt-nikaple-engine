@@ -29,7 +29,7 @@ if place_meeting(x,y,bullet) || (place_meeting(x,y,player) &amp;&amp; keyboard_c
             'x', player.x,
             'y', player.y,
             'xs', player.image_xscale,
-            'scope', 'other'
+            'scope', SCOPE_OTHERS
         )
         saveGame();
     }

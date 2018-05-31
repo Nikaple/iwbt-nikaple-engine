@@ -6,8 +6,7 @@
   <constant name="JUMPING" value="3"/>
   <constant name="SLIDING" value="4"/>
   <constant name="LADDER" value="5"/>
-  <constant name="c_pink" value="make_color_rgb(226, 139, 139)"/>
-  <constant name="CMD_NEWLINE" value="chr(13) + chr(10)"/>
+  <constant name="CMD_DELIMITER" value="chr(10)"/>
   <constant name="CMD_PREFIX" value="&quot;@@&quot;"/>
   <constant name="CMD_NULL" value="CMD_PREFIX+&quot;null&quot;"/>
   <constant name="CMD_TRUE" value="CMD_PREFIX+&quot;true&quot;"/>
@@ -15,4 +14,12 @@
   <constant name="CMD_KEY" value="CMD_PREFIX+&quot;key_&quot;"/>
   <constant name="CMD_LIST" value="CMD_PREFIX+&quot;list&quot;"/>
   <constant name="CMD_MAP" value="CMD_PREFIX+&quot;map&quot;"/>
+  <constant name="CMD_TYPE_INIT" value="0"/>
+  <constant name="CMD_TYPE_SYNC" value="1"/>
+  <constant name="UDP_OBJECT_PLAYER" value="1"/>
+  <constant name="UDP_OBJECT_OTHER" value="15"/>
+  <constant name="UDP_CMD_SHAKEHAND" value="0"/>
+  <constant name="SCOPE_DEFAULT" value="0"/>
+  <constant name="SCOPE_OTHERS" value="1"/>
+  <constant name="SCOPE_ALL" value="2"/>
 </constants>

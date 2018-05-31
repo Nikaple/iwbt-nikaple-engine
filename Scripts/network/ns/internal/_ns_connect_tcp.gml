@@ -9,12 +9,11 @@ ip = set_default(argument0, global.__ip)
 port = set_default(argument1, global.__tcp_port)
 
 
-global.sockId = tcpconnect(ip, port, 2)
+global.sockId = socket_create()
+socket_connect(global.sockId, ip, port)
 
 if (global.sockId < 0) {
     _ns_handle("connect_failed", "")
 }
-
-setformat(global.sockId, 1, CMD_NEWLINE)
 
 return global.sockId

@@ -13,12 +13,16 @@ dataMap = argument0
 content = _cmd_encode(dataMap)
 
 // Create the content buffer
-clearbuffer()
-writestring(content)
+buffer_clear(global.bufId)
+buffer_write_data(global.bufId, content)
+
+// As commands are pretty short, compressing will actually cost
+// most space. Do not compress unless the command size is larger than 100.
+// buffer_zlib_compress(global.bufId)
 
 // Send the content
-sendmessage(global.sockId, 0, 0)
+socket_write_data(global.sockId, global.bufId)
 
 // Clean up
-clearbuffer()
+buffer_clear(global.bufId)
 

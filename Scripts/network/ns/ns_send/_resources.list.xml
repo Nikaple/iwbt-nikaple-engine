@@ -2,9 +2,12 @@
 <resources>
   <resource name="ns_send" type="RESOURCE"/>
   <resource name="ns_send_player" type="RESOURCE"/>
+  <resource name="ns_send_udp_begin" type="RESOURCE"/>
+  <resource name="ns_send_udp_end" type="RESOURCE"/>
   <resource name="ns_send_instance" type="RESOURCE"/>
   <resource name="ns_send_event" type="RESOURCE"/>
   <resource name="ns_send_wait" type="RESOURCE"/>
+  <resource name="ns_send_instance_direct" type="RESOURCE"/>
   <resource name="ns_send_event_direct" type="RESOURCE"/>
   <resource name="ns_send_wait_direct" type="RESOURCE"/>
 </resources>

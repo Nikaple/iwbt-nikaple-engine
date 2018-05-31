@@ -7,7 +7,7 @@ waitName = argument0
 flag = argument1
 kvCount = argument2
 
-debug('Adding wait... wait name:', argument0)
+debug('Syncing `wait`... `wait` name:', argument0)
 
 error_kv('ns_send_wait', kvCount)
 error_kv_zero('ns_send_wait', kvCount, argument[kvCount * 2 + 3])

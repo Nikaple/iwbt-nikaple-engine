@@ -13,8 +13,8 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">dllfree()
-closesocket(global.sockId)
+        <argument kind="STRING">//dllfree()
+socket_destroy(global.sockId)
 </argument>
       </arguments>
     </action>

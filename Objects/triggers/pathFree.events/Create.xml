@@ -36,6 +36,11 @@ if (spr) {
 }
 
 ensure('trg', trg)
+// the following statement may report an error when you
+// rebuild the gmk with `import resource` or `gmk split`.
+// If that happens, duplicate your first path and delete
+// the original one. (You can use path_get_name(0) to find
+// out the name of your first path.)
 ensure('pth', pth)
 ensure('spd', spd)
 </argument>

@@ -13,11 +13,15 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">player.speed = 0
+        <argument kind="STRING">if (!noSave) {
+    global.__sync_position = true
+}
+
+player.speed = 0
 
 //load game
 if(dif == 4){
-    if (!file_exists(global.saving_directory+"SaveData"+string(global.savenum))){
+    if (!file_exists(get_save_file(global.savenum))){
         with(player){
             instance_destroy();
         }
@@ -33,8 +37,8 @@ if(dif == 4){
 //new game
 else{
     global.difficulty = dif;
-    if(file_exists(global.saving_directory+"SaveData"+string(global.savenum)) == true){
-        file_delete(global.saving_directory+"SaveData"+string(global.savenum));
+    if(file_exists(get_save_file(global.savenum)) == true){
+        file_delete(get_save_file(global.savenum));
     }
     global.death = 0;
     global.timestep = 0;

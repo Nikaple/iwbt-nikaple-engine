@@ -91,7 +91,7 @@ else
         gravity = 0;
         y +=  pf.bbox_bottom - bbox_top;
         
-        var cb;
+        //var cb;
         cb = instance_place(x + pf.hspeed, y + pf.vspeed, objBlock);
         if(cb == noone || cb == pf)
         {

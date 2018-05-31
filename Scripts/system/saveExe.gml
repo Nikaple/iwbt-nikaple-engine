@@ -1,8 +1,8 @@
-var f, list, i, pos, roomTo, xx, yy, xs;
+var fname, f, list, i, pos, roomTo, xx, yy, xs;
+// save file name
+fname = get_save_file(global.savenum)
 //open save data to read
-f = file_text_open_read(
-    global.saving_directory + 'SaveData' + string(global.savenum)
-)
+f = file_text_open_read(fname)
 if (!f) exit
 //create the save data list
 list = ds_list_create()

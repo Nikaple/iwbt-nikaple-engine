@@ -28,8 +28,8 @@ if (global.frozen2 == 0) {
     image_speed = 0
     speed = 0
 }
-
 playerPlatform()
+playerCollideBlock()
 
 </argument>
       </arguments>

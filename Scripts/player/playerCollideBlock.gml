@@ -23,4 +23,6 @@ if (!place_free(x, y + vspeed)) {
 if (!place_free(x + hspeed, y + vspeed)) {
     hspeed = 0
 }
-
+if (pf != noone && vspeed < 0) {
+    y += pf.vspeed
+}

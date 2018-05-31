@@ -6,7 +6,7 @@
   <resource name="warpWaitingBG" type="RESOURCE"/>
   <resource name="warpSync" type="RESOURCE"/>
   <resource name="invisibleWarp" type="RESOURCE"/>
-  <resource name="invisibleWarpBoth" type="RESOURCE"/>
+  <resource name="invisibleWarpWait" type="RESOURCE"/>
   <resource name="warpStart" type="RESOURCE"/>
   <resource name="bossWarp" type="RESOURCE"/>
   <resource name="bossWarpSync" type="RESOURCE"/>

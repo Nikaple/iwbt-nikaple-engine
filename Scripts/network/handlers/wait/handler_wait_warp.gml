@@ -12,7 +12,8 @@ seed = json_pick(data, 'seed')
 IsAllPlayersInWarp = json_pick(data, 'fin')
 
 if (ds_map_exists(objOnlinePlayers.dsPlayerInfo, fromName)) {
-    info = ds_map_find_value(objOnlinePlayers.dsPlayerInfo, fromName)
+    info = json_pick(objOnlinePlayers.dsPlayerInfo, fromName)
+    ds_map_replace(info, 'room', roomTo)
     with (objOnlinePlayers) {
         fakePlayer = variable_local_get(fromName)
         fakePlayer._room = roomTo

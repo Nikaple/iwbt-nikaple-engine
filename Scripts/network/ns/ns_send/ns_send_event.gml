@@ -5,7 +5,7 @@ if (!ns_is_in_game()) exit
 var kvCount, i, map, eventMap, eventName;
 eventName = argument0
 kvCount = argument1
-debug('Adding event... event name:', argument0)
+debug('Syncing event... event name:', argument0)
 
 error_kv('ns_send_event', kvCount)
 error_kv_zero('ns_send_event', kvCount, argument[kvCount * 2 + 2])

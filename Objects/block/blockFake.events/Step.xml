@@ -15,7 +15,7 @@
       <arguments>
         <argument kind="STRING">if (distance_to_object(player)&lt;2) {
     audio_playsound(sndBlockChange);
-    ns_send_instance(1, 'des', 1)
+    ns_send_instance()
     instance_destroy();
 }
 </argument>

@@ -7,6 +7,8 @@ syncId = string(id - 100000)
 kvCount = argument0
 map = cmd_add_map(global.__cmd_sync, syncId)
 
+debug('Syncing instance... instance name:', object_get_name(id.object_index))
+
 error_kv('ns_send_instance', kvCount)
 error_kv_zero('ns_send_instance', kvCount, argument[kvCount * 2 + 1])
 

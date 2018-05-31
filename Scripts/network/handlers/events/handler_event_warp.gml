@@ -37,6 +37,7 @@ if (sync) {
     global.__save_y = _y
     global.__save_xs = xs
     global.__player_auto_save = true
+    global.__sync_position = false
     world.alarm[0] = 1
     world.resetSync = false
 }

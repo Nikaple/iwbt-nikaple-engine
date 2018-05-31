@@ -281,12 +281,6 @@ num = 1;
       <locked>false</locked>
     </instance>
     <instance>
-      <object>savePointMedium</object>
-      <position x="736" y="352"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
       <object>savePoint</object>
       <position x="32" y="32"/>
       <creationCode/>
@@ -1407,6 +1401,12 @@ v = -2
       <position x="736" y="720"/>
       <creationCode>v = -2
 </creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>savePoint</object>
+      <position x="736" y="416"/>
+      <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>

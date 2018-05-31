@@ -1,14 +1,12 @@
-// ns_connect_udp(ip, port, mode = 1)
-/// @desc Connects to a server via a socket.
-/// @param {String} ServerIP      An IP to connect to as a string. e.g. "127.0.0.1"
-/// @param {Real} Port            Local port to send udp packet, default is random available port
-/// @param {Boolean} Mode         0: blocking, 1: non-blocking
+// _ns_connect_udp(ip, port)
+/// @desc Connects to a server via a udp socket.
 
 var port;
 
 // randomly choose an available udp port
 port = argument0
-global.udpSockId = udpconnect(port, 1)
-setformat(global.udpSockId, 0)
+global.udpSockId = udpsocket_create()
+udpsocket_set_destination(global.udpSockId, global.__ip, global.__udp_port)
+udpsocket_start(global.udpSockId, false, port)
 
 return global.udpSockId

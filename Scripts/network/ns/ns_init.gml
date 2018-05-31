@@ -10,6 +10,8 @@ global.minSyncCycle = 3
 
 // remote
 //global.__ip = '139.199.18.59'
+// local docker
+//global.__ip = '192.168.99.100'
 // local dev
 global.__ip = '127.0.0.1'
 // remote tcp port
@@ -26,8 +28,11 @@ global.__debug_guest_pass = 'test'
 // Below is the script for system initialization, DO NOT MODIFY if you are not expert.
 
 // load 39dll
-dllinit(global.plugin_directory + '39dll.dll', true, true)
-// load json
+//dllinit(global.plugin_directory + '39dll.dll', true, true)
+http_dll_init(global.plugin_directory + 'http_dll_2_3.dll', true, true)
+global.bufId = buffer_create()
+global.udpBufId = buffer_create()
+// load json library
 json_init()
 // init global variables
 global.__player_id = ''
@@ -47,7 +52,7 @@ global.__save_x = -1
 global.__save_y = -1
 global.__save_xs = 0
 
-// used in warp
+// used in warpSync
 global.__sync_position = false
 
 // make ds_list id start from 1, so that if(id) return true when first list is created
@@ -60,7 +65,7 @@ global.__ns_cmd_handler_map = ds_map_create()
 global.__ns_event_handler_map = ds_map_create()
 global.__ns_wait_handler_map = ds_map_create()
 
-cmdPrefix = 'handler_'
+cmdPrefix = 'handler_cmd_'
 cmdPrefixLength = string_length(cmdPrefix)
 eventPrefix = 'handler_event_'
 eventPrefixLength = string_length(eventPrefix)

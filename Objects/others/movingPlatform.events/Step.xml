@@ -32,6 +32,8 @@ if (isPlayerOnPlatform &amp;&amp; isTouchPlatform) {
     v = 0
     h = 0
 }
+
+
 if (!place_free(x + hspeed, y)) {
     hspeed = -hspeed
 }

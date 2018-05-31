@@ -13,7 +13,10 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">ns_recv()
+        <argument kind="STRING">_ns_recv_tcp()
+if (handshake_sent) {
+    _ns_recv_udp()
+}
 
 </argument>
       </arguments>

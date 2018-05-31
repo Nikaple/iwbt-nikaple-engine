@@ -152,12 +152,6 @@
       <locked>false</locked>
     </instance>
     <instance>
-      <object>savePointVHard</object>
-      <position x="352" y="544"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
       <object>objInfiniteJump</object>
       <position x="32" y="64"/>
       <creationCode>noSound = true

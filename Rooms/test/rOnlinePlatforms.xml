@@ -148,8 +148,7 @@
     <instance>
       <object>warpText</object>
       <position x="448" y="432"/>
-      <creationCode>color = c_white
-roomTo = rOnlineHub
+      <creationCode>roomTo = rOnlineHub
 text = "return_hub"
 </creationCode>
       <locked>false</locked>
@@ -157,12 +156,6 @@ text = "return_hub"
     <instance>
       <object>camera</object>
       <position x="32" y="32"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>savePointVHard</object>
-      <position x="384" y="544"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
@@ -741,7 +734,7 @@ text = "return_hub"
     </instance>
     <instance>
       <object>movingPlatform</object>
-      <position x="64" y="480"/>
+      <position x="32" y="528"/>
       <creationCode>vspeed = 1
 
 </creationCode>
@@ -919,6 +912,25 @@ text = "return_hub"
     <instance>
       <object>objBlock</object>
       <position x="736" y="384"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>savePoint</object>
+      <position x="448" y="544"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>blockPush</object>
+      <position x="128" y="272"/>
+      <creationCode>wrap = true
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objResetSync</object>
+      <position x="64" y="32"/>
       <creationCode/>
       <locked>false</locked>
     </instance>

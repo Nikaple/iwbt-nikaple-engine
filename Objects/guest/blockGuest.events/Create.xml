@@ -13,7 +13,11 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">//see the blocks in debug mode
+        <argument kind="STRING">// The behavior of host and guest blocks
+// are defined in the `room start` event
+// of object `world`.
+
+//see the blocks in debug mode
 if(debug_mode){
   visible = true;
 }

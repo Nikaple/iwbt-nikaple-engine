@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">colBlock = instance_place(x, y + 1, objBlock)
+isRightFree = !place_meeting(x + 1, y, objBlock)
+isLeftFree = !place_meeting(x - 1, y, objBlock)
+playerOnLeft = collision_line(x - 1, y, x - 1, y + 32, player, true, false)
+playerOnRight = collision_line(x + 32, y, x + 32, y + 32, player, true, false)
+
+if (colBlock != noone) {
+    gravity = 0
+    vspeed = 0
+    y = colBlock.y - 32
+    if (isRightFree &amp;&amp; isLeftFree) {
+        if (playerOnLeft) {
+            hspeed = spd
+            event_user(0)
+        }
+        if (playerOnRight) {
+            hspeed = -spd
+            event_user(0)
+        }
+    }
+} else {
+    gravity = grav * player.yflag
+    if (speed &gt; maxVspeed) {
+        speed = maxVspeed
+    }
+}
+
+if (place_meeting(x, y, player) &amp;&amp; vspeed != 0) {
+    with (player) {
+        killPlayer()
+    }
+}
+if (hspeed &gt; frc) {
+    hspeed -= frc
+} else if (hspeed &lt; -frc) {
+    hspeed += frc
+} else {
+    hspeed = 0
+}
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

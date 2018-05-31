@@ -225,12 +225,6 @@ roomTo = rOnlineResetSync
       <locked>false</locked>
     </instance>
     <instance>
-      <object>savePointVHard</object>
-      <position x="32" y="544"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
       <object>objBlock</object>
       <position x="0" y="32"/>
       <creationCode/>
@@ -778,6 +772,18 @@ roomTo = rOnlineWarpSync
 roomTo = rOnlinePlatforms
 color = c_blue
 </creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>bulletBlock</object>
+      <position x="96" y="544"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>savePoint</object>
+      <position x="32" y="544"/>
+      <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>

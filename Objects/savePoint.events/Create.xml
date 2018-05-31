@@ -13,11 +13,12 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">//锟斤拷論x锟絈锟饺忥拷艒韽滐拷锟斤拷锟絑锟絒锟絬锟絴锟紺锟斤拷锟絞
-image_speed=0;
-saveTimer = -1; //锟絑锟絒锟絬锟絕锟紺锟絵锟絒
-if(global.difficulty &gt; 1){
-  instance_destroy();
+        <argument kind="STRING">image_speed = 0
+saveTimer = -1
+spr = sprite_index
+
+if (global.difficulty &gt; 1) {
+    instance_destroy()
 }
 </argument>
       </arguments>

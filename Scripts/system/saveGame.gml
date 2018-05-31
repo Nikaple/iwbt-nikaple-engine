@@ -7,9 +7,7 @@ saveY = set_default(argument1, player.y)
 xs = set_default(player.image_xscale, 1)
 
 //open save data
-f = file_text_open_write(
-    global.saving_directory + 'SaveData' + string(global.savenum)
-)
+f = file_text_open_write(get_save_file(global.savenum))
 if (!f) exit
 
 //create the save data list
@@ -30,14 +28,14 @@ for (i = 1; i <= global.boss_number; i += 1) {
 for (i = 1; i <= global.item_number; i += 1) {
     ds_list_add(list, global.item[i])
 }
-//for more saving data, add your code here
-
 //write the encrypted string to save file
 file_text_write_string(f, dataEncrypt(ds_list_write(list)))
 //destroy the list
 ds_list_destroy(list)
 //close save data
-file_text_close(f) // clear global save
+file_text_close(f) 
+
+// clear global save
 if (global.__save_id == id) {
     global.__save_id = -1
     global.__save_room = -1

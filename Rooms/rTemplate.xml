@@ -158,12 +158,6 @@
       <locked>false</locked>
     </instance>
     <instance>
-      <object>savePointVHard</object>
-      <position x="32" y="544"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
       <object>objBlock</object>
       <position x="0" y="0"/>
       <creationCode/>

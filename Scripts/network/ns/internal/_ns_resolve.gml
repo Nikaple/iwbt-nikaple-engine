@@ -10,7 +10,6 @@ if (ds_map_exists(netResponse, 'batch')) {
     for (i = 0; i < commandCount; i += 1) {
         thisCommandMap = ds_list_find_value(commandList, i)
         thisCommand = json_pick(thisCommandMap, 'cmd')
-        debug('BATCH COMMAND', thisCommand, thisCommandMap)
         _ns_handle(thisCommand, thisCommandMap)
     }
 } else {

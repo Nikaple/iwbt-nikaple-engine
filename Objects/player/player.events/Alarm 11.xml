@@ -28,6 +28,7 @@ eventMap = ds_map_init(
 )
 ds_map_add_if_exists(eventMap, 'sync', global.__sync_position)
 ns_send_event_direct('warp', eventMap)
+global.__sync_position = false
 ds_map_destroy(eventMap)
 
 // auto save

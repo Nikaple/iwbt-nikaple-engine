@@ -12,4 +12,5 @@
   <resource name="icons" type="GROUP"/>
   <resource name="system" type="GROUP"/>
   <resource name="sprite145" type="RESOURCE"/>
+  <resource name="sprite162" type="RESOURCE"/>
 </resources>

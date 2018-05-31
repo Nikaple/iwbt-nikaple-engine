@@ -16,23 +16,8 @@
         <argument kind="STRING">if (!dsPlayerInfo) exit
 if (!shouldSync) exit
 
-var playerInfo,
-    _room,
-    _x,
-    _y,
-    xprev,
-    yprev,
-    spr,
-    name,
-    size,
-    xs,
-    ys,
-    h,
-    v,
-    reverse,
-    idx,
-    isHost,
-    fakePlayer
+var playerInfo, _room, _x, _y, xprev, yprev, spr, isHost;
+var name, size, xs, ys, h, v, reverse, idx, fakePlayer;
 
 draw_set_color(c_white)
 draw_set_font(font12)

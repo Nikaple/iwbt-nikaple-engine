@@ -10,7 +10,7 @@ fw_set_font_offset(fontMsyh40cn, -2, -8)
 fontMsyh12jp = fontMsyh12cn
 fontMsyh40jp = fontMsyh40cn
 
-if (global.useBuiltInDrawing) {
+if (global.use_builtin_drawing) {
     fontMsyh12en = font12
     fontMsyh40en = font40
 } else {
