@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (isTouchPlatform) {
+    path_start(pth, spd, enda, 0)
+    if (scl != 0) {
+        path_scale = scl
+    }
+    isTouchPlatform = 0
+}
+
+//end the path and continue moving if player died
+if (!instance_exists(player)){
+    if(move){
+        speed = path_speed;
+        path_end();
+        move = false;
+    }
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

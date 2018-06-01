@@ -20,11 +20,13 @@ v = round(_id.vspeed * 100)
 // room: <= 255, playerIdx <= 15, object <= 15
 
 // UDP_OBJECT_PLAYER is defined in Resources -> Define Constants
+if (global.__debug_verbose_mode) {
+    debug('sending packet:', 'room', room, 'xy', _id.x, _id.y, 'sp: ' + string(_id.v) + ',' + string(_id.vspeed))
+}
 
 buffer = ns_send_udp_begin(UDP_OBJECT_PLAYER)
 buffer_write_int16(buffer, _x)
 buffer_write_int16(buffer, _y)
-debug('send packet:', (spr << 4) + (global.reverse << 2) + h)
 buffer_write_int8(buffer, (spr << 4) + (global.reverse << 2) + h)
 buffer_write_int16(buffer, v)
 ns_send_udp_end(buffer)

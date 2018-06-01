@@ -17,7 +17,7 @@
     mask_index = maskNothing
     image_alpha = 0.5
 }
-
+depth = 1000002
 autoSpikeSprite();
 </argument>
       </arguments>

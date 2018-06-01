@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">// set the movement(move faster!)
+path_speed = (4 + 2 * buff) * move
+if (windy) {
+    with (player) {
+        // more wind hype!
+        if (!place_meeting(x - (1 + buff), y, objBlock)) {
+            x -= 1 + buff
+        }
+    }
+}
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -14,6 +14,12 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">global.triggered = trg[10]
+with (objTriggerable) {
+    if (trg == other.trg[10]) {
+        triggered = true
+        event_user(0)
+    }
+}
 if (snd[10] != 0) {
     audio_playsound(snd)
 }

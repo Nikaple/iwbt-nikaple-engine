@@ -9,6 +9,7 @@
   <resource name="playerJump" type="RESOURCE"/>
   <resource name="playerVJump" type="RESOURCE"/>
   <resource name="playerPlatform" type="RESOURCE"/>
+  <resource name="playerPlatformBackUp" type="RESOURCE"/>
   <resource name="playerShoot" type="RESOURCE"/>
   <resource name="playerCollideBlock" type="RESOURCE"/>
   <resource name="fakePlayerCollideBlock" type="RESOURCE"/>

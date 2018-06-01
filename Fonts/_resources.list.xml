@@ -3,4 +3,5 @@
   <resource name="font40" type="RESOURCE"/>
   <resource name="font24" type="RESOURCE"/>
   <resource name="font12" type="RESOURCE"/>
+  <resource name="font9" type="RESOURCE"/>
 </resources>

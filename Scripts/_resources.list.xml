@@ -9,4 +9,5 @@
   <resource name="util" type="GROUP"/>
   <resource name="draw" type="GROUP"/>
   <resource name="lib" type="GROUP"/>
+  <resource name="plugins" type="GROUP"/>
 </resources>

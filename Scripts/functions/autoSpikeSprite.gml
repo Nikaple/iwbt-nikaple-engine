@@ -7,7 +7,6 @@ if (global.auto_spike_sprite) {
             break
         //add code here
         default:
-            spikeSprite(sprSpikeM, sprMiniSpikeM)
             break
     }
 }

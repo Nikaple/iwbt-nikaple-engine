@@ -4,6 +4,7 @@
   <resource name="i18n_draw_set_alpha" type="RESOURCE"/>
   <resource name="i18n_draw_set_color" type="RESOURCE"/>
   <resource name="i18n_draw_set_font" type="RESOURCE"/>
+  <resource name="i18n_draw_set_align" type="RESOURCE"/>
   <resource name="i18n_draw_set_halign" type="RESOURCE"/>
   <resource name="i18n_draw_set_valign" type="RESOURCE"/>
   <resource name="i18n_draw_text" type="RESOURCE"/>

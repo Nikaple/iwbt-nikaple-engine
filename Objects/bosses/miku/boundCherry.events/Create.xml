@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//锟斤拷锟剿曉傦拷虄o锟絆锟斤拷锟絅锟斤拷锟饺傦拷锟芥偆锟缴傾锟絡锟斤拷锟絒锟絍锟斤拷锟斤拷锟斤拷锟絰锟斤拷0锟缴傦拷锟斤拷
+image_speed=0
+
+//global.speed锟斤拷0锟斤拷1锟斤拷锟缴傦拷锟斤拷膬X锟絪锟絒锟絟锟斤拷蟼锟斤拷锟紹
+//锟絧锟絰锟斤拷360锟絰锟斤拷锟斤拷锟界儔锟斤拷锟絖锟斤拷锟缴戯拷锟�
+
+if(global.speedup=0){
+speed=2;
+direction=random(360)
+}
+if(global.speedup=1){
+speed=3;
+direction=random(360)
+}
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

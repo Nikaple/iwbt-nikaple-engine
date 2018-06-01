@@ -14,7 +14,7 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">if (debug_mode) {
-    global.__debug_raw_json = !global.debug_raw_json
+    global.__debug_verbose_mode = !global.__debug_verbose_mode
 }
 </argument>
       </arguments>

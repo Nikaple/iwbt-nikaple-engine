@@ -13,38 +13,52 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">colBlock = instance_place(x, y + 1, objBlock)
-isRightFree = !place_meeting(x + 1, y, objBlock)
-isLeftFree = !place_meeting(x - 1, y, objBlock)
-playerOnLeft = collision_line(x - 1, y, x - 1, y + 32, player, true, false)
-playerOnRight = collision_line(x + 32, y, x + 32, y + 32, player, true, false)
+        <argument kind="STRING">//colBlock = collision_line(x, y + 32 , x + 31, y + 32, objBlock, false, true)
+//yy = y + vspeed - 1 + 33 * (!global.reverse)
+if (global.reverse) {
+    yflag = -1
+    yy = y + vspeed - 1
+} else {
+    yflag = 1
+    yy = y + vspeed + 32
+}
+colBlock = collision_line(x + 1, yy, x + 30, yy, block, false, true)
+isRightFree = !place_meeting(x + 1, y, block)
+isLeftFree = !place_meeting(x - 1, y, block)
+conveyor = instance_place(x, y + yflag, blockConveyor)
+playerOnLeft = collision_line(x - 1, y, x - 1, y + 31, player, true, false)
+playerOnRight = collision_line(x + 32, y, x + 32, y + 31, player, true, false)
 
 if (colBlock != noone) {
     gravity = 0
     vspeed = 0
-    y = colBlock.y - 32
-    if (isRightFree &amp;&amp; isLeftFree) {
-        if (playerOnLeft) {
-            hspeed = spd
-            event_user(0)
-        }
-        if (playerOnRight) {
-            hspeed = -spd
-            event_user(0)
-        }
+    y = colBlock.y - 32 * yflag
+    h = conveyor.h
+    if (colBlock.hspeed != 0 &amp;&amp; !place_meeting(x + colBlock.hspeed, y, block)) {
+        x += colBlock.hspeed
     }
+    if (isRightFree &amp;&amp; playerOnLeft &amp;&amp; player.image_xscale == 1) {
+        h += player.hsp
+    }
+    if (isLeftFree &amp;&amp; playerOnRight &amp;&amp; player.image_xscale == -1) {
+        h += player.hsp
+    }
+    hspeed = h
 } else {
-    gravity = grav * player.yflag
-    if (speed &gt; maxVspeed) {
-        speed = maxVspeed
+    gravity = grav * yflag
+    if (vspeed * yflag &gt; maxVspeed) {
+        vspeed = yflag * maxVspeed
     }
 }
 
+// collides with player
 if (place_meeting(x, y, player) &amp;&amp; vspeed != 0) {
     with (player) {
         killPlayer()
     }
 }
+
+// horizontal friction setup
 if (hspeed &gt; frc) {
     hspeed -= frc
 } else if (hspeed &lt; -frc) {

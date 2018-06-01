@@ -1,7 +1,7 @@
 // handle udp packets in objClient step event
 var cmd, times, idxAndObj, obj, idx, fromName;
 
-while (udpsocket_receive(global.sockId, global.udpBufId)) {
+if (udpsocket_receive(global.sockId, global.udpBufId)) {
     // read the buffer
     cmd = buffer_read_uint8(global.udpBufId)
     // server command: 127 ~ 255
@@ -22,12 +22,11 @@ while (udpsocket_receive(global.sockId, global.udpBufId)) {
             obj = idxAndObj & 15
             switch (obj) {
                 case UDP_OBJECT_PLAYER:
-                    handler_sync_player(fromName, global.udpBufId)
+                    handler_sync_player(idx, fromName, global.udpBufId)
                     break
                 case UDP_OBJECT_OTHER:
                     _id._room = buffer_read_uint16(global.udpBufId)
                     _id = buffer_read_uint16(global.udpBufId) + 100000
-                    debug('sync id:', _id)
                     _id.buffer = global.udpBufId
                     with (_id) {
                         event_user(14)

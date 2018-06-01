@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="4">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">///spam fruits
+//change sprite of the boss
+sprite_index = sprCherryAzure
+
+//create the instance to spam
+inst = instance_create(x, y, objBossBullet)
+//set the speed of the instance
+inst.speed = random_range(6, 8)
+//spam the direction of the instance
+inst.direction = random(360)
+//set the sprite of the instance
+inst.sprite_index = sprite_index
+//play sound effect
+audio_playsound(sndShoot)
+//continue to spam next instance
+alarm[4] = 2
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

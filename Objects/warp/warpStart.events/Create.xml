@@ -13,9 +13,9 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">//only use this object in the rSelectStage room !
+        <argument kind="STRING">//only use this object in the room `rSelectStage`!
 
-onCollide = true;
+event_inherited()
 </argument>
       </arguments>
     </action>

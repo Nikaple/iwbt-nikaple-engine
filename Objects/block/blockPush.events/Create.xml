@@ -13,11 +13,10 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">spd = set_default(spd, 4)
-frc = set_default(frc, 2)
+        <argument kind="STRING">frc = set_default(frc, 1)
 wrap = set_default(wrap, false)
 grav = set_default(grav, 0.5)
-maxVspeed = set_default(maxVspeed, 9)
+maxVspeed = set_default(maxVspeed, 10)
 </argument>
       </arguments>
     </action>

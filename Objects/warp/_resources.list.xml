@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
   <resource name="warp" type="RESOURCE"/>
-  <resource name="warpText" type="RESOURCE"/>
+  <resource name="warpSync" type="RESOURCE"/>
   <resource name="warpWait" type="RESOURCE"/>
   <resource name="warpWaitingBG" type="RESOURCE"/>
-  <resource name="warpSync" type="RESOURCE"/>
   <resource name="invisibleWarp" type="RESOURCE"/>
   <resource name="invisibleWarpWait" type="RESOURCE"/>
   <resource name="warpStart" type="RESOURCE"/>

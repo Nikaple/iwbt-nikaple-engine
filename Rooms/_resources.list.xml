@@ -2,6 +2,6 @@
 <resources>
   <resource name="init" type="GROUP"/>
   <resource name="example" type="GROUP"/>
-  <resource name="test" type="GROUP"/>
+  <resource name="online" type="GROUP"/>
   <resource name="rTemplate" type="RESOURCE"/>
 </resources>

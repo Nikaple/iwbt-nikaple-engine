@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">// first jump speed
+jump[1] = 8.5;
+// second jump speed
+jump[2] = 7;
+// maximum jump times
+// you should have variables such as jump[3] if you need 3 jumps or more
+maxJumps = 2
+// horizontal speed
+maxSpeed = 3;
+// gravity
+grav = 0.4;
+// maximum speed when falling
+maxAirSpeed = 9;
+// maximum speed when in water
+maxWaterSpeed = 2;
+//reverse gravity
+if(reverse == 0){
+    yflag = 1;
+}
+if(reverse == 1){
+    yflag = -1;
+    y -= 4;
+    curJumps = 1;
+}
+
+image_yscale = yflag;
+image_speed = 0.5;
+image_alpha = 0.5;
+gravity = grav;
+
+// sprite
+playerSprite(
+    sprPlayerIdle,
+    sprPlayerRunning,
+    sprPlayerFall,
+    sprPlayerJump,
+    sprPlayerSliding
+)
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

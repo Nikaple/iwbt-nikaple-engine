@@ -15,11 +15,15 @@
       <arguments>
         <argument kind="STRING">///unload the dlls
 
+SS_StopSound(curMusic)
+if (SS_IsSoundPlaying(SE_Death)) {
+    SS_StopSound(SE_Death)
+}
 SS_Unload();
 cleanmem_init(1);
 ns_free()
 i18n_free()
-fw_cleanup()
+
 </argument>
       </arguments>
     </action>

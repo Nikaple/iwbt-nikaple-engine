@@ -150,7 +150,8 @@
       <position x="192" y="480"/>
       <creationCode>trg=1;
 snd=sndBlockChange;
-setScale(1,2)</creationCode>
+setScale(1,2)
+</creationCode>
       <locked>false</locked>
     </instance>
     <instance>
@@ -214,7 +215,8 @@ snd = sndBreak;
     <instance>
       <object>warp</object>
       <position x="736" y="192"/>
-      <creationCode>roomTo=rHub;</creationCode>
+      <creationCode>roomTo = rHub
+</creationCode>
       <locked>false</locked>
     </instance>
     <instance>
@@ -1373,30 +1375,6 @@ move = 1;
       <locked>false</locked>
     </instance>
     <instance>
-      <object>blockRise</object>
-      <position x="736" y="544"/>
-      <creationCode>spr = sprfloor
-v = -6
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>blockRise</object>
-      <position x="736" y="576"/>
-      <creationCode>spr = sprfloor3
-v = -4
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>blockRise</object>
-      <position x="608" y="752"/>
-      <creationCode>spr = sprfloor
-v = -2
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
       <object>movingPlatform</object>
       <position x="736" y="720"/>
       <creationCode>v = -2
@@ -1656,127 +1634,6 @@ origin=8;
       <locked>false</locked>
     </instance>
     <instance>
-      <object>pathFree</object>
-      <position x="352" y="544"/>
-      <creationCode>pth=pD1;
-spd=4;
-trg=2;
-sprite_index=sprGreenSpikeUp;
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>pathFree</object>
-      <position x="384" y="544"/>
-      <creationCode>pth=pD1;
-spd=4;
-trg=2;
-sprite_index=sprGreenSpikeUp;
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>pathFree</object>
-      <position x="416" y="544"/>
-      <creationCode>pth=pD1;
-spd=4;
-trg=2;
-sprite_index=sprGreenSpikeUp;
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>pathFree</object>
-      <position x="448" y="544"/>
-      <creationCode>pth=pD1;
-spd=4;
-trg=2;
-sprite_index=sprGreenSpikeUp;
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>pathFree</object>
-      <position x="352" y="448"/>
-      <creationCode>pth=pD1;
-spd=4;
-trg=2;
-sprite_index=sprGreenSpikeDown;
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>pathFree</object>
-      <position x="384" y="448"/>
-      <creationCode>pth=pD1;
-spd=4;
-trg=2;
-sprite_index=sprGreenSpikeDown;
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>pathFree</object>
-      <position x="448" y="448"/>
-      <creationCode>pth=pD1;
-spd=4;
-trg=2;
-sprite_index=sprGreenSpikeDown;
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>pathFree</object>
-      <position x="416" y="448"/>
-      <creationCode>pth=pD1;
-spd=4;
-trg=2;
-sprite_index=sprGreenSpikeDown;
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>pathFree</object>
-      <position x="608" y="384"/>
-      <creationCode>sprite_index=sprGreenSpikeUp;
-pth=pU1;
-spd=4;
-trg=3;
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>pathFree</object>
-      <position x="352" y="416"/>
-      <creationCode>sprite_index=sprGreenSpikeUp;
-trg=4;
-pth=pU1;
-spd=15;
-scl=5;
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>pathFree</object>
-      <position x="608" y="160"/>
-      <creationCode>pth=pU1;
-spd=4;
-trg=5;
-sprite_index=sprGreenSpikeUp;
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>pathFree</object>
-      <position x="640" y="160"/>
-      <creationCode>pth=pU1;
-spd=4;
-trg=5;
-sprite_index=sprGreenSpikeUp;
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
       <object>multiplePath</object>
       <position x="224" y="320"/>
       <creationCode>sprite_index = sprGreenSpikeUp;
@@ -1911,18 +1768,6 @@ spd[2] = 6;
       <locked>false</locked>
     </instance>
     <instance>
-      <object>pathFree</object>
-      <position x="128" y="128"/>
-      <creationCode>sprite_index = sprGreenSpikeLeft;
-trg = 10;
-pth = pR1;
-scl = 2;
-spd = 6;
-move = 1;
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
       <object>borderKiller</object>
       <position x="256" y="608"/>
       <creationCode/>
@@ -1959,16 +1804,148 @@ time = 20;
       <locked>false</locked>
     </instance>
     <instance>
+      <object>spikeUp</object>
+      <position x="352" y="544"/>
+      <creationCode>pth = pD1
+spd = 4
+trg = 2
+
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>spikeUp</object>
+      <position x="384" y="544"/>
+      <creationCode>pth = pD1
+spd = 4
+trg = 2
+
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>spikeUp</object>
+      <position x="416" y="544"/>
+      <creationCode>pth = pD1
+spd = 4
+trg = 2
+
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>spikeUp</object>
+      <position x="448" y="544"/>
+      <creationCode>pth = pD1
+spd = 4
+trg = 2
+
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>spikeDown</object>
+      <position x="384" y="448"/>
+      <creationCode>pth = pD1
+spd = 4
+trg = 2
+
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>spikeDown</object>
+      <position x="416" y="448"/>
+      <creationCode>pth = pD1
+spd = 4
+trg = 2
+
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>spikeDown</object>
+      <position x="352" y="448"/>
+      <creationCode>pth = pD1
+spd = 4
+trg = 2
+
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>spikeDown</object>
+      <position x="448" y="448"/>
+      <creationCode>pth = pD1
+spd = 4
+trg = 2
+
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>spikeUp</object>
+      <position x="352" y="416"/>
+      <creationCode>trg = 4
+pth = pU1
+spd = 15
+scl = 5
+
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>spikeUp</object>
+      <position x="608" y="384"/>
+      <creationCode>pth = pU1
+spd = 4
+trg = 3
+
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>spikeUp</object>
+      <position x="608" y="160"/>
+      <creationCode>pth = pU1
+spd = 4
+trg = 5
+
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>spikeUp</object>
+      <position x="640" y="160"/>
+      <creationCode>pth = pU1
+spd = 4
+trg = 5
+
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>spikeLeft</object>
+      <position x="128" y="128"/>
+      <creationCode>trg = 10
+pth = pR1
+scl = 2
+spd = 6
+move = 1
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
       <object>objWater</object>
       <position x="256" y="592"/>
-      <creationCode>setScale(2,0.5)
+      <creationCode>setScale(2, 0.5)
 </creationCode>
       <locked>false</locked>
     </instance>
     <instance>
       <object>objWater</object>
       <position x="512" y="592"/>
-      <creationCode>setScale(2,0.5)
+      <creationCode>setScale(2, 0.5)
 </creationCode>
       <locked>false</locked>
     </instance>

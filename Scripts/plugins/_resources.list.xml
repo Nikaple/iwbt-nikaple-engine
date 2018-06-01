@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="fw" type="GROUP"/>
+  <resource name="httpdll" type="GROUP"/>
+  <resource name="supersound" type="GROUP"/>
+  <resource name="cleanmem" type="GROUP"/>
+</resources>

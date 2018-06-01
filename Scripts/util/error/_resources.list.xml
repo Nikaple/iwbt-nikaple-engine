@@ -4,4 +4,5 @@
   <resource name="error_kv" type="RESOURCE"/>
   <resource name="error_kv_zero" type="RESOURCE"/>
   <resource name="error_info" type="RESOURCE"/>
+  <resource name="error_arg_exceed" type="RESOURCE"/>
 </resources>

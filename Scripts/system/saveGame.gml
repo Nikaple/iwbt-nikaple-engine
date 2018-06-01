@@ -2,8 +2,8 @@
 
 var f, list, i, xs, saveX, saveY;
 
-saveX = set_default(argument0, player.x)
-saveY = set_default(argument1, player.y)
+saveX = set_default(argument0, player.xprevious)
+saveY = set_default(argument1, player.yprevious)
 xs = set_default(player.image_xscale, 1)
 
 //open save data

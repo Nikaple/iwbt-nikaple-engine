@@ -13,10 +13,7 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if (global.triggered == trg) {
-    triggered = true
-}
-if (triggered) {
+        <argument kind="STRING">if (triggered) {
     if (timer &lt; time) {
         timer += 1
         theta += angle / time

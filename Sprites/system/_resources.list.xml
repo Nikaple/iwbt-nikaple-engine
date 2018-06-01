@@ -5,12 +5,11 @@
   <resource name="player" type="GROUP"/>
   <resource name="maskNothing" type="RESOURCE"/>
   <resource name="sprCamera" type="RESOURCE"/>
+  <resource name="sprite163" type="RESOURCE"/>
   <resource name="sprPlayerStart" type="RESOURCE"/>
   <resource name="sprPlayerStartHost" type="RESOURCE"/>
   <resource name="sprPlayerStartGuest" type="RESOURCE"/>
-  <resource name="sprPlayerKiller" type="RESOURCE"/>
-  <resource name="sprPlayerKillerHost" type="RESOURCE"/>
-  <resource name="sprPlayerKillerGuest" type="RESOURCE"/>
+  <resource name="sprTriggerable" type="RESOURCE"/>
   <resource name="sprGAMEOVER" type="RESOURCE"/>
   <resource name="sprPause" type="RESOURCE"/>
   <resource name="sprMessageButton" type="RESOURCE"/>

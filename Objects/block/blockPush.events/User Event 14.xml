@@ -13,7 +13,8 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">x = buffer_read_int16(buffer)
+        <argument kind="STRING">// sync through udp
+x = buffer_read_int16(buffer)
 y = buffer_read_int16(buffer)
 hspeed = buffer_read_int8(buffer)
 

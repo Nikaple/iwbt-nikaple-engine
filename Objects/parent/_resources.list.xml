@@ -3,10 +3,12 @@
   <resource name="platform" type="RESOURCE"/>
   <resource name="block" type="RESOURCE"/>
   <resource name="blockConveyor" type="RESOURCE"/>
+  <resource name="objTriggerable" type="RESOURCE"/>
   <resource name="playerKiller" type="RESOURCE"/>
   <resource name="playerKillerHost" type="RESOURCE"/>
   <resource name="playerKillerGuest" type="RESOURCE"/>
   <resource name="roomChanger" type="RESOURCE"/>
   <resource name="roomChangerWait" type="RESOURCE"/>
   <resource name="bulletParent" type="RESOURCE"/>
+  <resource name="objWaterParent" type="RESOURCE"/>
 </resources>

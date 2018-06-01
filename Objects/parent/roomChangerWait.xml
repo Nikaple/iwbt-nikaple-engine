@@ -5,6 +5,6 @@
   <visible>false</visible>
   <depth>-9999999</depth>
   <persistent>false</persistent>
-  <parent/>
+  <parent>roomChanger</parent>
   <mask/>
 </object>

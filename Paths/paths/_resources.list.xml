@@ -8,5 +8,5 @@
   <resource name="p5_1" type="RESOURCE"/>
   <resource name="p1_1" type="RESOURCE"/>
   <resource name="p_boss1" type="RESOURCE"/>
-  <resource name="path28" type="RESOURCE"/>
+  <resource name="p_circle" type="RESOURCE"/>
 </resources>

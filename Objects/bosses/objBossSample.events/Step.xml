@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//set the movement
+path_speed = 4 * move
+//the wind blows!
+if (windy) {
+    with (player) {
+        if (!place_meeting(x - 1, y, objBlock)) {
+            x -= 1
+        }
+    }
+}
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

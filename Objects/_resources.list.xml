@@ -6,24 +6,22 @@
   <resource name="spikeLeft" type="RESOURCE"/>
   <resource name="spikeUp" type="RESOURCE"/>
   <resource name="spikeRight" type="RESOURCE"/>
-  <resource name="camera" type="RESOURCE"/>
   <resource name="playerStart" type="RESOURCE"/>
   <resource name="savePoint" type="RESOURCE"/>
+  <resource name="block" type="GROUP"/>
+  <resource name="triggers" type="GROUP"/>
+  <resource name="gimmick" type="GROUP"/>
   <resource name="host" type="GROUP"/>
   <resource name="guest" type="GROUP"/>
-  <resource name="triggers" type="GROUP"/>
   <resource name="spikes" type="GROUP"/>
-  <resource name="block" type="GROUP"/>
-  <resource name="savePoint" type="GROUP"/>
-  <resource name="gimmick" type="GROUP"/>
-  <resource name="slope" type="GROUP"/>
-  <resource name="others" type="GROUP"/>
+  <resource name="saves" type="GROUP"/>
   <resource name="warp" type="GROUP"/>
+  <resource name="slope" type="GROUP"/>
   <resource name="item" type="GROUP"/>
   <resource name="system" type="GROUP"/>
-  <resource name="player" type="GROUP"/>
-  <resource name="effect" type="GROUP"/>
+  <resource name="room" type="GROUP"/>
+  <resource name="visual" type="GROUP"/>
   <resource name="parent" type="GROUP"/>
-  <resource name="bossSample" type="GROUP"/>
+  <resource name="bosses" type="GROUP"/>
   <resource name="object121" type="RESOURCE"/>
 </resources>

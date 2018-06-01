@@ -13,7 +13,13 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">image_speed=1/15;</argument>
+        <argument kind="STRING">image_speed = 1 / 15
+
+if (spr) {
+    sprite_index = spr
+}
+
+</argument>
       </arguments>
     </action>
   </actions>

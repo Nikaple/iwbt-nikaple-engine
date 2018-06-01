@@ -20,6 +20,7 @@
   <resource name="sprredblock" type="RESOURCE"/>
   <resource name="sprwater" type="RESOURCE"/>
   <resource name="sprwater2" type="RESOURCE"/>
+  <resource name="sprwaternojump" type="RESOURCE"/>
   <resource name="sprSlope1" type="RESOURCE"/>
   <resource name="sprSlope2" type="RESOURCE"/>
   <resource name="sprSlope3" type="RESOURCE"/>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="2">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//play boss music
+audio_loopmusic(BGM_BOSS2)
+//start moving
+path_start(p_boss1, 4, 1, 0)
+move = true
+//unfreeze the player
+global.frozen = false
+//go to choose attacks
+alarm[CHOOSE] = 1
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

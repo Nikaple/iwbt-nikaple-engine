@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="camera" type="RESOURCE"/>
+  <resource name="objSmoothView" type="RESOURCE"/>
+  <resource name="objResetSync" type="RESOURCE"/>
+  <resource name="objResetWait" type="RESOURCE"/>
+  <resource name="objGameClear" type="RESOURCE"/>
+</resources>

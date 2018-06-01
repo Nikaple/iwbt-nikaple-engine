@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">// This is a sample boss with synchronized attacks
+// for both players. You should check the collision
+// events with bullets. When the boss is shot by
+// bullet, or received an event that boss' hit,
+// decrease the boss' hp. If it's shot by objOnlineBullet
+// only visual effects are shown, no hp decrease.
+
+// If you don't want to synchronize boss attacks,
+// uncomment the line below:
+// randomize()
+
+///initialize variables
+image_speed = 1/15;
+//initialize hp
+maxHP = 1;
+curHP = maxHP;
+//create the HP bar
+inst = instance_create(0,0,objHPBar);
+//use the object itself as the 'boss_obj' in HP bar
+inst.boss_obj = id;
+//
+alarm[0] = 1;
+alarm[1] = 40;
+//initialize the attack names
+CHOOSE = 3;
+SPAM = 4;
+SPIRAL = 5;
+HOMING = 6;
+LINE = 7;
+WINDY = 8;
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

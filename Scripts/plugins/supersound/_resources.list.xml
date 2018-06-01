@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="SS_Init" type="RESOURCE"/>
+  <resource name="SS_FreeSound" type="RESOURCE"/>
+  <resource name="SS_GetSoundBytesPerSecond" type="RESOURCE"/>
+  <resource name="SS_GetSoundFreq" type="RESOURCE"/>
+  <resource name="SS_GetSoundLength" type="RESOURCE"/>
+  <resource name="SS_GetSoundPan" type="RESOURCE"/>
+  <resource name="SS_GetSoundPosition" type="RESOURCE"/>
+  <resource name="SS_GetSoundVol" type="RESOURCE"/>
+  <resource name="SS_IsHandleValid" type="RESOURCE"/>
+  <resource name="SS_IsSoundLooping" type="RESOURCE"/>
+  <resource name="SS_IsSoundPaused" type="RESOURCE"/>
+  <resource name="SS_IsSoundPlaying" type="RESOURCE"/>
+  <resource name="SS_LoadSound" type="RESOURCE"/>
+  <resource name="SS_LoopSound" type="RESOURCE"/>
+  <resource name="SS_PauseSound" type="RESOURCE"/>
+  <resource name="SS_PlaySound" type="RESOURCE"/>
+  <resource name="SS_ResumeSound" type="RESOURCE"/>
+  <resource name="SS_SetSoundFreq" type="RESOURCE"/>
+  <resource name="SS_SetSoundPan" type="RESOURCE"/>
+  <resource name="SS_SetSoundPosition" type="RESOURCE"/>
+  <resource name="SS_SetSoundVol" type="RESOURCE"/>
+  <resource name="SS_StopSound" type="RESOURCE"/>
+  <resource name="SS_Unload" type="RESOURCE"/>
+</resources>

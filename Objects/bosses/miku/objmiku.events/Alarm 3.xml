@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="3">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//creates leeks from left or right
+i=choose(0,1)
+if(i=0){
+    a=instance_create(0,random(608),objnegi)
+    a.hspeed=2
+}
+else{
+    a=instance_create(800,random(608),objnegi)
+    a.hspeed=-2
+    a.image_xscale=-1
+}
+alarm[3]=SPB;
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

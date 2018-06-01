@@ -14,7 +14,7 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">str = ''
-global.__debug_raw_json = false
+global.__debug_verbose_mode = false
 </argument>
       </arguments>
     </action>

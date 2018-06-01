@@ -3,6 +3,7 @@
   <resource name="options" type="GROUP"/>
   <resource name="rTitle, rLobby, rRoom" type="GROUP"/>
   <resource name="online" type="GROUP"/>
+  <resource name="player" type="GROUP"/>
   <resource name="init" type="RESOURCE"/>
   <resource name="world" type="RESOURCE"/>
   <resource name="effect_parent" type="RESOURCE"/>

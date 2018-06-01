@@ -17,7 +17,7 @@
 if (!shouldSync) exit
 
 var playerInfo, _room, _x, _y, xprev, yprev, spr, isHost;
-var name, size, xs, ys, h, v, reverse, idx, fakePlayer;
+var inst, name, size, xs, ys, h, v, reverse, idx, fakePlayer, activeBlock;
 
 draw_set_color(c_white)
 draw_set_font(font12)
@@ -29,7 +29,7 @@ size = ds_map_size(dsPlayerInfo)
 shouldSync = false
 
 for (i = 0; i &lt; size; i += 1) {
-    debug('syncing fake player')
+    debug('sync fake player')
     playerInfo = ds_map_find_value(dsPlayerInfo, name)
     if (!playerInfo) exit
     fakePlayer = variable_local_get(name)
@@ -44,19 +44,21 @@ for (i = 0; i &lt; size; i += 1) {
     if (_room == room) {
         if (!variable_local_get(name)) {
             if (idx == 1) {
-                fakePlayer = objFakePlayerHost
+                activeBlock = blockHost
             } else {
-                fakePlayer = objFakePlayerGuest
+                activeBlock = blockGuest
             }
-            variable_local_set(name, instance_create(_x, _y, fakePlayer))
+            inst = instance_create(_x, _y, objFakePlayer)
+            inst.activeBlock = activeBlock
+            variable_local_set(name, inst)
         }
         fakePlayer._room = _room
         fakePlayer.spr = spr
         fakePlayer.x = _x
         fakePlayer.y = _y
-        if (h != 0) {
+        /*if (h != 0) {
             fakePlayer.image_xscale = h
-        }
+        }*/
         fakePlayer.h = h
         fakePlayer.vspeed = v
         fakePlayer.reverse = reverse

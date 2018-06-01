@@ -17,7 +17,7 @@ while (
     response = buffer_read_data(global.bufId, size)
     command = json_decode(response)
 
-    if (global.__debug_raw_json) {
+    if (global.__debug_verbose_mode) {
         debug('_ns_recv response: ' + json_log(response))
     }
 

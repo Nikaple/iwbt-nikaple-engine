@@ -21,6 +21,12 @@
     flag = 1
 }
 
+if (path_position &gt; 0 &amp;&amp; path_position &lt; 1 &amp;&amp; place_meeting(x, y, player)) {
+    with (player) {
+        killPlayer()
+    }
+}
+
 </argument>
       </arguments>
     </action>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">/// warp's parent.
+//
+//  Creation Code:
+//    roomTo = roomToWarp;
+//    kind = transition_kind(0~21);
+//    text = "textToDisplay"
+
+onCollide = true;
+
+if (!color) {
+  color = c_black
+}
+alpha = set_default(alpha, 1)
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

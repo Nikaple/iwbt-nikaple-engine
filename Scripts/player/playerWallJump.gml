@@ -1,4 +1,4 @@
-//wall jump left
+//wall jump
 
 if (onIvy) {
     vspeed = yflag * 2
@@ -16,9 +16,10 @@ if (onIvy) {
             vspeed = -yflag * 9
             hspeed = 15 * image_xscale
             audio_playsound(sndWallJump)
+            eventSync = true
             alarm[0] = 1
         } else {
-            hspeed = maxSpeed * h
+            hspeed = maxSpeed * image_xscale
             spr = FALLING
         }
     }

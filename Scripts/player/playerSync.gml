@@ -1,14 +1,15 @@
 if (
-    keyboard_check_pressed(global.jumpbutton) ||
-    keyboard_check_pressed(global.leftbutton) ||
-    keyboard_check_pressed(global.rightbutton) ||
-    keyboard_check_released(global.jumpbutton) ||
-    keyboard_check_released(global.leftbutton) ||
-    keyboard_check_released(global.rightbutton)
+    leftPressed ||
+    rightPressed ||
+    jumpPressed ||
+    leftReleased ||
+    rightReleased ||
+    jumpReleased
 ) {
     eventSync = true
     syncTimer = 0
 }
+
 
 // an option to force sync player
 if (forceSync) {

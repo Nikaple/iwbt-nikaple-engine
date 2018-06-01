@@ -25,7 +25,8 @@
 // kind = transition_kind(0~21);
 // if you want to use warpX and warpY
 // go to roomChanger for more help
-onCollide = true;
+
+event_inherited()
 
 if(countBoss == true){
     for(i=1;i&lt;=global.boss_number;i+=1){

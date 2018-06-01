@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">image_speed=1/15;
+
+//锟斤拷锟紷锟絖锟斤拷锟斤拷锟斤拷锟角奼锟経锟斤拷锟斤拷锟斤拷
+//锟斤拷锟紷锟教夛拷锟�128锟教傦拷锟斤拷锟斤拷锟斤拷锟絖锟斤拷锟饺埵抲锟斤拷w锟斤拷
+xx=player.x+random_range(-128,128)
+yy=player.y+random_range(-128,128)
+
+
+//global.speedup锟斤拷0锟斤拷1锟斤拷锟缴傦拷锟斤拷膬X锟絪锟絒锟絟锟斤拷蟼锟斤拷锟�
+//锟斤拷锟絞锟斤拷xx,yy锟狡偺妏锟絰锟斤拷锟斤拷邅A锟斤拷锟教曪拷锟斤拷锟缴堏擄拷
+if(global.speedup=0){
+speed=4;
+direction=point_direction(x,y,xx,yy)
+}
+if(global.speedup=1){
+speed=6;
+direction=point_direction(x,y,xx,yy)
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

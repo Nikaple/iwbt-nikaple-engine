@@ -18,6 +18,7 @@
 //
 //      in the creation code, put:
 //          trg                         trigger number;
+//          key                         key trigger number;
 //          snd                         sound effect(optional);
 //          setScale(xscale,yscale)     region scaling(optional);
 //
@@ -26,9 +27,13 @@
 // make the triggers visible in debug mode (F6)
 if (debug_mode) {
     visible = true;
+    image_alpha = 0.5
+    depth = -10
 }
 
 ensure('trg', trg)
+
+keyTriggered = false
 </argument>
       </arguments>
     </action>

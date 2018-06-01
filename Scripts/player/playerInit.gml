@@ -20,8 +20,18 @@ maxSpeed = 3
 // gravity
 grav = 0.4
 // maximum speed when falling
-maxVspeed = 9
+maxAirSpeed = 9
+// maximum speed when in water
+maxWaterSpeed = 2
 // self explanatory
 shouldDieWhenOutsideRoom = true
 shouldWrapWhenOutsideRoom = false
+// kid's sprite
+playerSprite(
+    sprPlayerIdle,
+    sprPlayerRunning,
+    sprPlayerFall,
+    sprPlayerJump,
+    sprPlayerSliding
+)
 

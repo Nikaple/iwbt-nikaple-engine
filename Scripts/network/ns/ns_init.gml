@@ -5,10 +5,9 @@
 // globals
 global.__online_mode = true
 // sync player status every ? frame
-global.maxSyncCycle = 8
-global.minSyncCycle = 3
+global.maxSyncCycle = 3
 
-// remote
+// remote ip
 //global.__ip = '139.199.18.59'
 // local docker
 //global.__ip = '192.168.99.100'

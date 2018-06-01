@@ -21,6 +21,7 @@ for (i = 0; i &lt; size; i += 1) {
     snd[i + 1] = ds_list_find_value(snd, i)
     time[i + 1] = ds_list_find_value(time, i)
 }
+ds_list_destroy(t)
 alarm[0] = 1
 
 </argument>

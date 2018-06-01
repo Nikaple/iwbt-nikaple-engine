@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="1">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">///simple boss intro
+//play sound effects
+if (image_xscale == 1) {
+    audio_playsound(sndBlockChange)
+}
+//increase x&amp;yscale until 6 times bigger
+if (image_xscale &lt; 6) {
+    image_xscale += 0.2
+    image_yscale = image_xscale
+    alarm[1] = 1
+} else {
+    //go to next action
+    alarm[2] = 20
+}
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

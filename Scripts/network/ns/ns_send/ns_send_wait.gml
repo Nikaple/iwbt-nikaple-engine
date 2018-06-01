@@ -7,6 +7,10 @@ waitName = argument0
 flag = argument1
 kvCount = argument2
 
+if (flag == -1) {
+    flag = id - 100000
+}
+
 debug('Syncing `wait`... `wait` name:', argument0)
 
 error_kv('ns_send_wait', kvCount)

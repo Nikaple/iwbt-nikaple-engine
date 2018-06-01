@@ -13,7 +13,13 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if (place_meeting(x, y, player) &amp;&amp; global.triggered != trg) {
+        <argument kind="STRING">if (global.triggered == key &amp;&amp; !keyTriggered) {
+    keyTriggered = true
+}
+
+if (key != 0 &amp;&amp; !keyTriggered) exit;
+
+if (place_meeting(x, y, player) &amp;&amp; global.triggered != trg) {
     ns_send_instance(
         2,
         'trg', trg,

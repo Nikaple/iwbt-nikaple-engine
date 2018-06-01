@@ -96,7 +96,7 @@
   <enableViews>false</enableViews>
   <instances>
     <instance>
-      <object>warpText</object>
+      <object>warp</object>
       <position x="192" y="112"/>
       <creationCode>roomTo = rBossSample;
 text = "sample_boss"
@@ -104,7 +104,7 @@ text = "sample_boss"
       <locked>false</locked>
     </instance>
     <instance>
-      <object>warpText</object>
+      <object>warp</object>
       <position x="576" y="112"/>
       <creationCode>roomTo = rAvoidance;
 kind = 20;
@@ -113,7 +113,7 @@ text = "sample_avoidance"
       <locked>false</locked>
     </instance>
     <instance>
-      <object>warpText</object>
+      <object>warp</object>
       <position x="576" y="368"/>
       <creationCode>roomTo = rSlopes
 text = "sample_slopes"
@@ -121,7 +121,7 @@ text = "sample_slopes"
       <locked>false</locked>
     </instance>
     <instance>
-      <object>warpText</object>
+      <object>warp</object>
       <position x="192" y="368"/>
       <creationCode>roomTo = rTraps;
 kind = 21;
@@ -130,7 +130,7 @@ text = "sample_traps"
       <locked>false</locked>
     </instance>
     <instance>
-      <object>warpText</object>
+      <object>warp</object>
       <position x="384" y="480"/>
       <creationCode>roomTo = rOnlineHub
 text = "sample_online"

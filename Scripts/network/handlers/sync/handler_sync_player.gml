@@ -1,6 +1,7 @@
-var fromName, buffer, _room, _x, _y, spr, xs, ys, h, v, tmp, reverse;
-fromName = argument0
-buffer = argument1
+var fromIdx, fromName, buffer, _room, _x, _y, spr, xs, ys, h, v, tmp, reverse;
+fromIdx = argument0
+fromName = argument1
+buffer = argument2
 
 // read data from buffer
 _room = buffer_read_int16(buffer)
@@ -14,7 +15,7 @@ h = (tmp & 3) - 1
 v = buffer_read_int16(global.udpBufId) / 100
 
 // raw debug message
-if (global.__debug_raw_json) {
+if (global.__debug_verbose_mode) {
     sprite[IDLING] = "Idle"
     sprite[RUNNING] = "Run"
     sprite[FALLING] = "Fall"

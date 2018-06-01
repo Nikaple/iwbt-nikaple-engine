@@ -2,8 +2,7 @@
 <resources>
   <resource name="bulletBlock" type="RESOURCE"/>
   <resource name="blockPush" type="RESOURCE"/>
-  <resource name="blockFall" type="RESOURCE"/>
-  <resource name="blockRise" type="RESOURCE"/>
+  <resource name="blockMove" type="RESOURCE"/>
   <resource name="blockInvisible" type="RESOURCE"/>
   <resource name="blockFake" type="RESOURCE"/>
   <resource name="blockConveyorL" type="RESOURCE"/>

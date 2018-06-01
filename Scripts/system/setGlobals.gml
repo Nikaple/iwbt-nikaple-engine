@@ -37,12 +37,4 @@ global.auto_spike_sprite = true
 global.boss_number = 8
 // total item number
 global.item_number = 8
-// kid's sprite
-playerSprite(
-    sprPlayerIdle,
-    sprPlayerRunning,
-    sprPlayerFall,
-    sprPlayerJump,
-    sprPlayerSliding
-)
 

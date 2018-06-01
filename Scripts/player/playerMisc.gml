@@ -1,5 +1,15 @@
+if (global.reverse == 0) {
+    yflag = 1
+    L = leftKey
+    R = rightKey
+} else {
+    yflag = -1
+    R = leftKey
+    L = rightKey
+}
+image_yscale = yflag
 // set sprite
-sprite_index = global.sprite[spr]
+sprite_index = sprite[spr]
 //player die
 if (place_meeting(x, y, playerKiller)) {
     killPlayer()
@@ -34,6 +44,14 @@ if (debug_mode) {
     if (mouse_check_button(mb_left)) {
         x = mouse_x
         y = mouse_y
+    }
+    if (mouse_check_button(mb_right)) {
+        if (!instance_exists(objFakePlayer)) {
+            a = instance_create(x, y, objFakePlayer)
+        }
+        objFakePlayer._room = room
+        objFakePlayer.x = mouse_x
+        objFakePlayer.y = mouse_y
     }
     //"S" save
     if (keyboard_check_pressed(ord('S'))) {

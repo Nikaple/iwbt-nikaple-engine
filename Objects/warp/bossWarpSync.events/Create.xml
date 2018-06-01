@@ -14,9 +14,8 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">///this object will only appear when there's no boss item in the room
-//
-// it should be created along with bossItem, in the destroy event of a boss
-onCollide = true;
+
+event_inherited()
 
 sync = true;
 </argument>

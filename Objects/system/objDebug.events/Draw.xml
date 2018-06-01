@@ -17,7 +17,7 @@
     draw_set_halign(fa_left)
     draw_set_valign(fa_bottom)
     draw_set_color(c_black)
-    draw_set_alpha(0.5)
+    draw_set_alpha(0.3)
     draw_rectangle(
         view_xview[0], view_yview[0],
         view_xview[0] + view_wview[0], view_yview[0] + view_hview[0], 0    
@@ -25,7 +25,7 @@
     draw_set_color(c_white)
     draw_set_alpha(1)
     draw_set_font(font12)
-    draw_text_ext(10, view_yview + view_hview - 10, str, -1, 600)
+    draw_text_ext(10, view_yview + view_hview - 10, str, -1, 750)
     
     draw_set_valign(fa_top)
 }

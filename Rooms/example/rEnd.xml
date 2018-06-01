@@ -158,7 +158,7 @@
       <locked>false</locked>
     </instance>
     <instance>
-      <object>objgameclear</object>
+      <object>objGameClear</object>
       <position x="352" y="512"/>
       <creationCode>setScale(3,2);
 </creationCode>

@@ -13,7 +13,7 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if (global.triggered == trg) {
+        <argument kind="STRING">if (triggered) {
     if (tarx != 0) {
         if (time == 0) {
             if (tarx * (image_xscale - (tarx - xsp)) &lt; 0) {

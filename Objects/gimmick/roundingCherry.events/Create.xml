@@ -32,6 +32,7 @@ for (i = 0; i &lt; num; i += 1) {
     xx = x + lengthdir_x(rad, 360 / num * i + ang)
     yy = y + lengthdir_y(rad, 360 / num * i + ang)
     inst[i] = instance_create(xx, yy, deliciousFruit)
+    inst[i].depth = depth
     inst[i].notDestroy = 1
     if (spr) {
         inst[i].sprite_index = spr

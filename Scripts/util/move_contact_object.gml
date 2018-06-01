@@ -14,11 +14,10 @@ if (
         _obj
     )
 ) {
-     speed = _maxspd
-     direction = _dir
-    //x += lengthdir_x(_maxspd, _dir)
-    //y += lengthdir_y(_maxspd, _dir)
-    
+    speed = _maxspd
+    direction = _dir
+    // x += lengthdir_x(_maxspd, _dir)
+    // y += lengthdir_y(_maxspd, _dir)
     return false
 } else {
     x = round(x)
@@ -30,8 +29,9 @@ if (
                 y + lengthdir_y(_sublength, _dir),
                 _obj
             )
-        )
+        ) {
             break
+        }
     }
     _dx = lengthdir_x(_sublength, _dir)
     _dy = lengthdir_y(_sublength, _dir)
