@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<path>
+  <points>
+    <point speed="100" x="224" y="448"/>
+    <point speed="100" x="640" y="448"/>
+    <point speed="100" x="640" y="384"/>
+    <point speed="100" x="480" y="384"/>
+    <point speed="100" x="480" y="288"/>
+  </points>
+  <backgroundRoom>rSeamlessWarping</backgroundRoom>
+  <closed>false</closed>
+  <precision>4</precision>
+  <smooth>false</smooth>
+  <snap x="32" y="32"/>
+</path>

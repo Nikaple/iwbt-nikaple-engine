@@ -18,7 +18,7 @@
 //flash the object, so it's invincible
 flashObject(3, 3)
 //play the sound effect when boss get hit
-audio_playsound(sndBossHit)
+music_play(sndBossHit)
 
 </argument>
       </arguments>

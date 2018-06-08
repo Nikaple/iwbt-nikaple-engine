@@ -170,6 +170,34 @@
       <locked>false</locked>
     </instance>
     <instance>
+      <object>objResetWait</object>
+      <position x="64" y="0"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>bossItem</object>
+      <position x="688" y="544"/>
+      <creationCode>num = 4;
+sprite_index = sprBossIcon2;
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>bossWarpSync</object>
+      <position x="160" y="416"/>
+      <creationCode>roomTo = rHub;
+num = 4
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>playerStart</object>
+      <position x="32" y="544"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
       <object>objBlock</object>
       <position x="32" y="0"/>
       <creationCode>y -= 32;
@@ -654,34 +682,6 @@ image_xscale = 23;
     <instance>
       <object>objBlock</object>
       <position x="224" y="96"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objResetWait</object>
-      <position x="64" y="0"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>bossItem</object>
-      <position x="688" y="544"/>
-      <creationCode>num = 4;
-sprite_index = bossicon2;
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>bossWarpSync</object>
-      <position x="160" y="416"/>
-      <creationCode>roomTo = rHub;
-num = 4
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>playerStart</object>
-      <position x="32" y="544"/>
       <creationCode/>
       <locked>false</locked>
     </instance>

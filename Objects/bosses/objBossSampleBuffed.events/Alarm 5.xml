@@ -23,7 +23,7 @@ repeat (2 + buff) {
     inst.sprite_index = sprite_index
 }
 //play sound effect
-audio_playsound(sndShoot)
+music_play(sndShoot)
 //stop the attack after spinning for 360 degrees
 if (dir &lt; 360) {
     dir += 6

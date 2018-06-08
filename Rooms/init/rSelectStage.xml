@@ -115,9 +115,15 @@ text = "start";
     <instance>
       <object>warpStart</object>
       <position x="384" y="416"/>
-      <creationCode>dif = 4;
+      <creationCode>dif = -1;
 text = "load";
 </creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>playerStart</object>
+      <position x="384" y="512"/>
+      <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
@@ -765,12 +771,6 @@ text = "load";
     <instance>
       <object>objBlock</object>
       <position x="96" y="192"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>playerStart</object>
-      <position x="384" y="512"/>
       <creationCode/>
       <locked>false</locked>
     </instance>

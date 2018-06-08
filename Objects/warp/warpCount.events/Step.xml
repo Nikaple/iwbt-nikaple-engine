@@ -13,23 +13,23 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">count = 0;
-if(countBoss == true){
-    for(i=1;i&lt;=global.boss_number;i+=1){
-        count += global.boss[i];
+        <argument kind="STRING">count = 0
+if (countBoss == true) {
+    for (i = 1; i &lt;= global.boss_number; i += 1) {
+        count += global.boss[i]
     }
 }
-if(countItem == true){
-    for(i=1;i&lt;=global.item_number;i+=1){
-        count += global.item[i];
+if (countItem == true) {
+    for (i = 1; i &lt;= global.item_number; i += 1) {
+        count += global.item[i]
     }
 }
-if(count &gt;= total){
-    visible = true;
+if (count &gt;= total) {
+    visible = true
+} else {
+    visible = false
 }
-else{
-    visible = false;
-}
+
 </argument>
       </arguments>
     </action>

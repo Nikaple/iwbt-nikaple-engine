@@ -146,7 +146,7 @@
   </views>
   <instances>
     <instance>
-      <object>freeTrigger</object>
+      <object>objTrigger</object>
       <position x="160" y="320"/>
       <creationCode>trg = 1
 setScale(1, 6)
@@ -165,12 +165,6 @@ setScale(1, 6)
       <position x="672" y="160"/>
       <creationCode>trg = 3
 </creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>savePointSync</object>
-      <position x="128" y="480"/>
-      <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
@@ -1291,6 +1285,12 @@ roomTo = rOnlineHub
       <creationCode>text = "return_hub"
 roomTo = rOnlineHub
 </creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>savePoint</object>
+      <position x="128" y="480"/>
+      <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>

@@ -9,13 +9,20 @@ global.frozen = 0
 global.frozen2 = 0
 global.savenum = 1
 global.reverse = 0
+view_angle[0] = 0
 global.clear = 0
 global.difficulty = 1
+
+curMusic = BGM_Null
 
 // leave current lobby
 if (ns_is_in_lobby()) {
     ns_leave_lobby(true)
 }
+if (ns_is_in_game()) {
+    ns_logout()
+}
+
 global.__player_index = 0
 global.__is_host = false
 global.__current_lobby_id = 0

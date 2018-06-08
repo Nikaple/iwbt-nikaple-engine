@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
-  <resource name="bossicon1" type="RESOURCE"/>
-  <resource name="bossicon2" type="RESOURCE"/>
-  <resource name="bossicon3" type="RESOURCE"/>
+  <resource name="sprBossIcon1" type="RESOURCE"/>
+  <resource name="sprBossIcon2" type="RESOURCE"/>
+  <resource name="sprBossIcon3" type="RESOURCE"/>
 </resources>

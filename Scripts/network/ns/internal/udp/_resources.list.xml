@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="_ns_connect_udp" type="RESOURCE"/>
+  <resource name="_ns_send_udp_init" type="RESOURCE"/>
+  <resource name="_ns_recv_udp" type="RESOURCE"/>
+  <resource name="_ns_recv_player" type="RESOURCE"/>
+</resources>

@@ -18,7 +18,12 @@ path_speed = 4 * move
 //the wind blows!
 if (windy) {
     with (player) {
-        if (!place_meeting(x - 1, y, objBlock)) {
+        if (!place_meeting(x - 1 + player.hspeed, y, objBlock)) {
+            x -= 1
+        }
+    }
+    with (objFakePlayer) {
+        if (!place_meeting(x - 1 + objFakePlayer.hspeed, y, objBlock)) {
             x -= 1
         }
     }

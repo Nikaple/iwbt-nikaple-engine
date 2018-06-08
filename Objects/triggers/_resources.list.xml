@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
-  <resource name="freeTrigger" type="RESOURCE"/>
-  <resource name="sequenceTrigger" type="RESOURCE"/>
-  <resource name="freeButtonRight" type="RESOURCE"/>
-  <resource name="multiplePath" type="RESOURCE"/>
-  <resource name="scaleFree" type="RESOURCE"/>
-  <resource name="rotateFree" type="RESOURCE"/>
-  <resource name="pathFreeBlock" type="RESOURCE"/>
-  <resource name="freeBlockFake" type="RESOURCE"/>
-  <resource name="freeBlockInvisible" type="RESOURCE"/>
+  <resource name="objTrigger" type="RESOURCE"/>
+  <resource name="objSequenceTrigger" type="RESOURCE"/>
+  <resource name="objButton" type="RESOURCE"/>
+  <resource name="trgMultiplePath" type="RESOURCE"/>
+  <resource name="trgScale" type="RESOURCE"/>
+  <resource name="trgRotate" type="RESOURCE"/>
+  <resource name="trgPathBlock" type="RESOURCE"/>
+  <resource name="trgBlockFake" type="RESOURCE"/>
+  <resource name="trgBlockInvisible" type="RESOURCE"/>
 </resources>

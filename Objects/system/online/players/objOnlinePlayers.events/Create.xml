@@ -16,8 +16,6 @@
         <argument kind="STRING">image_speed = 0.5
 
 dsPlayerInfo = ds_map_create()
-timer = 0
-
 
 </argument>
       </arguments>

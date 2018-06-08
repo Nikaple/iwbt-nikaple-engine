@@ -2,7 +2,7 @@
 var name, lobbyId, password, retry, cmd;
 
 if (!ns_is_logged_in()) {
-    i18n_show('login_needed')
+    i18n_show_message('login_needed')
     exit
 }
 

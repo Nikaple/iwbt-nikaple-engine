@@ -14,18 +14,19 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">//draw miku
-draw_sprite(sprite_index,-1,x,y);
+draw_sprite(sprite_index, -1, x, y)
 //set drawing parameters
-draw_set_color(c_red);
-draw_set_font(font12);
+draw_set_color(c_red)
+draw_set_font(font12)
 //draw the timeline_position in the debug mode(F6)
 //this can be used in:
 //1. see if the attacks is synched with the song directly
 //2. record a video with timeline_position number on the screen,
 //   so the video can be used for timing when making the boss
-if(debug_mode){
-    draw_text(64,64,string(4*(timeline_position div 4)));
+if (debug_mode) {
+    draw_text(64, 64, string(4 * (timeline_position div 4)))
 }
+
 </argument>
       </arguments>
     </action>

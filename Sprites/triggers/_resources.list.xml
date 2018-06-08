@@ -8,5 +8,4 @@
   <resource name="sprBlueButtonLeft" type="RESOURCE"/>
   <resource name="maskTrigger" type="RESOURCE"/>
   <resource name="maskSequenceTrigger" type="RESOURCE"/>
-  <resource name="maskKeyTrigger" type="RESOURCE"/>
 </resources>

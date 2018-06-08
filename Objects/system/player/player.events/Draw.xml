@@ -14,6 +14,11 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">drawSelf()
+
+if (global.difficulty == 0 &amp;&amp; isInGameRoom()) {
+    draw_sprite_ext(bowSpr, -1, xprevious, yprevious, image_xscale, image_yscale, image_angle, image_blend,image_alpha)
+}
+
 </argument>
       </arguments>
     </action>

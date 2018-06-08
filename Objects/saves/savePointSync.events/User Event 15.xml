@@ -13,8 +13,8 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">image_index = 1;
-image_speed = 0.017;
+        <argument kind="STRING">image_index = 2;
+alarm[0] = 80
 </argument>
       </arguments>
     </action>

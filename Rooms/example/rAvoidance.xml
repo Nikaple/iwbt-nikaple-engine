@@ -187,6 +187,20 @@ roomTo=rHub;
       <locked>false</locked>
     </instance>
     <instance>
+      <object>bossItem</object>
+      <position x="672" y="544"/>
+      <creationCode>spr = sprBossIcon1
+num = 1
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>playerStart</object>
+      <position x="32" y="544"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
       <object>objBlock</object>
       <position x="0" y="0"/>
       <creationCode/>
@@ -945,12 +959,6 @@ roomTo=rHub;
     <instance>
       <object>objBlock</object>
       <position x="320" y="480"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>playerStart</object>
-      <position x="32" y="544"/>
       <creationCode/>
       <locked>false</locked>
     </instance>

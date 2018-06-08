@@ -10,5 +10,6 @@
   <resource name="audio_playmusic" type="RESOURCE"/>
   <resource name="audio_stopmusic" type="RESOURCE"/>
   <resource name="audio_loopmusic" type="RESOURCE"/>
+  <resource name="audio_pausemusic" type="RESOURCE"/>
   <resource name="audio_resumemusic" type="RESOURCE"/>
 </resources>

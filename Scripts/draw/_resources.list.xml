@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
+  <resource name="drawSelf" type="RESOURCE"/>
+  <resource name="drawLife" type="RESOURCE"/>
   <resource name="draw_set_align" type="RESOURCE"/>
   <resource name="draw_rectangle_view" type="RESOURCE"/>
   <resource name="draw_rectangle_width" type="RESOURCE"/>

@@ -2,7 +2,7 @@
 /// @param {ds_map} command map
 
 if (!ns_is_connected()) {
-    i18n_show('network_disconnect')
+    i18n_show_message('network_disconnect')
     ns_connect()
 }
 

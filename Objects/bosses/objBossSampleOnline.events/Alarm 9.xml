@@ -30,14 +30,14 @@ repeat (2) {
     )
 }
 //play sound effects
-audio_playsound(sndShoot)
+music_play(sndShoot)
 //size decrease
 if (image_xscale &gt; 0) {
     image_xscale -= 0.02
     image_yscale = image_xscale
     alarm[9] = 1
 } else {
-    audio_playsound(sndDeath)
+    music_play(sndDeath)
     instance_destroy()
 }
 

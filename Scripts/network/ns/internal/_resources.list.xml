@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
-  <resource name="_ns_recv_tcp" type="RESOURCE"/>
-  <resource name="_ns_recv_udp" type="RESOURCE"/>
-  <resource name="_ns_resolve" type="RESOURCE"/>
-  <resource name="_ns_handle" type="RESOURCE"/>
-  <resource name="_ns_recv_instance" type="RESOURCE"/>
-  <resource name="_ns_recv_event" type="RESOURCE"/>
-  <resource name="_ns_recv_wait" type="RESOURCE"/>
-  <resource name="_ns_add_handler" type="RESOURCE"/>
-  <resource name="_ns_connect_tcp" type="RESOURCE"/>
-  <resource name="_ns_connect_udp" type="RESOURCE"/>
-  <resource name="_ns_fetch_map_clone" type="RESOURCE"/>
+  <resource name="ns_init" type="RESOURCE"/>
+  <resource name="ns_free" type="RESOURCE"/>
+  <resource name="ns_connect" type="RESOURCE"/>
+  <resource name="tcp" type="GROUP"/>
+  <resource name="udp" type="GROUP"/>
 </resources>

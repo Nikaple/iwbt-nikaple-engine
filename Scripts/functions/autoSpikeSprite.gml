@@ -1,6 +1,6 @@
 // set the spike sprite automatically, used in playerKiller Create Event
 
-if (global.auto_spike_sprite) {
+if (global.enable_auto_spike_sprite) {
     switch (room) {
         case rTraps:
             spikeSprite(sprGreenSpikeM)

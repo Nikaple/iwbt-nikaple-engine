@@ -12,8 +12,9 @@
   <resource name="i18n_get" type="RESOURCE"/>
   <resource name="i18n_set_lang" type="RESOURCE"/>
   <resource name="i18n_get_lang" type="RESOURCE"/>
-  <resource name="i18n_show" type="RESOURCE"/>
   <resource name="i18n_free" type="RESOURCE"/>
+  <resource name="i18n_auto_encoding" type="RESOURCE"/>
+  <resource name="i18n_should_use_builtin_drawing" type="RESOURCE"/>
   <resource name="draw" type="GROUP"/>
   <resource name="message" type="GROUP"/>
 </resources>

@@ -15,6 +15,7 @@
       <arguments>
         <argument kind="STRING">if (ns_is_in_game()) {
     global.__cmd_sync = cmd_init('sync')
+    bufferLengthAfterInit = _ns_send_udp_init()
 }
 
 </argument>

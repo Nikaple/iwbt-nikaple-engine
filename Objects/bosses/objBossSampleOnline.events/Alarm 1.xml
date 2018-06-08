@@ -16,7 +16,7 @@
         <argument kind="STRING">///simple boss intro
 //play sound effects
 if (image_xscale == 1) {
-    audio_playsound(sndBlockChange)
+    music_play(sndBlockChange)
 }
 //increase x&amp;yscale until 6 times bigger
 if (image_xscale &lt; 6) {

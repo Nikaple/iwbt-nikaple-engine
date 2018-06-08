@@ -185,49 +185,55 @@ roomTo = rOnlineHub
     </instance>
     <instance>
       <object>blockConveyorL</object>
+      <position x="512" y="224"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>blockConveyorL</object>
+      <position x="544" y="224"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>blockConveyorL</object>
+      <position x="576" y="224"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>blockConveyorL</object>
+      <position x="608" y="224"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>blockConveyorL</object>
+      <position x="640" y="224"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>blockConveyorL</object>
+      <position x="672" y="224"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>blockConveyorR</object>
+      <position x="480" y="320"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>blockConveyorR</object>
       <position x="512" y="320"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
       <object>blockConveyorL</object>
-      <position x="480" y="320"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>blockConveyorL</object>
-      <position x="512" y="256"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>blockConveyorL</object>
-      <position x="544" y="256"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>blockConveyorL</object>
-      <position x="576" y="256"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>blockConveyorL</object>
-      <position x="608" y="256"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>blockConveyorL</object>
-      <position x="640" y="256"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>blockConveyorL</object>
-      <position x="672" y="256"/>
+      <position x="704" y="224"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
@@ -2723,7 +2729,7 @@ roomTo = rOnlineHub
     </instance>
     <instance>
       <object>objGravUp</object>
-      <position x="32" y="32"/>
+      <position x="192" y="544"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
@@ -2834,7 +2840,13 @@ h = 2
     </instance>
     <instance>
       <object>blockPush</object>
-      <position x="672" y="192"/>
+      <position x="704" y="128"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="704" y="320"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
@@ -2854,7 +2866,8 @@ h = 2
     <instance>
       <object>spikeUp</object>
       <position x="160" y="320"/>
-      <creationCode/>
+      <creationCode>
+</creationCode>
       <locked>false</locked>
     </instance>
     <instance>
@@ -2902,6 +2915,30 @@ h = 2
     <instance>
       <object>spikeRight</object>
       <position x="288" y="96"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>spikeUp</object>
+      <position x="672" y="128"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>spikeRight</object>
+      <position x="672" y="128"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>spikeDown</object>
+      <position x="672" y="128"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>spikeLeft</object>
+      <position x="672" y="128"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
@@ -2999,30 +3036,6 @@ h = 2
     </instance>
     <instance>
       <object>objWaterNoJump</object>
-      <position x="704" y="320"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objWaterNoJump</object>
-      <position x="704" y="352"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objWaterNoJump</object>
-      <position x="704" y="384"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objWaterNoJump</object>
-      <position x="704" y="416"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objWaterNoJump</object>
       <position x="736" y="32"/>
       <creationCode/>
       <locked>false</locked>
@@ -3096,12 +3109,6 @@ h = 2
     <instance>
       <object>objWaterNoJump</object>
       <position x="736" y="416"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objWaterNoJump</object>
-      <position x="704" y="256"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
@@ -4175,6 +4182,14 @@ h = 2
       <background>Alltiles</background>
       <backgroundPosition x="32" y="32"/>
       <roomPosition x="768" y="544"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>Alltiles</background>
+      <backgroundPosition x="0" y="32"/>
+      <roomPosition x="704" y="320"/>
       <size height="32" width="32"/>
       <depth>1000000</depth>
       <locked>false</locked>

@@ -4,4 +4,5 @@
   <resource name="httpdll" type="GROUP"/>
   <resource name="supersound" type="GROUP"/>
   <resource name="cleanmem" type="GROUP"/>
+  <resource name="focus" type="GROUP"/>
 </resources>

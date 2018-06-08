@@ -19,7 +19,7 @@ if (global.frozen) {
     image_yscale = image_xscale
     alarm[1] = 0
     alarm[2] = 1
-    audio_playsound(sndGlass)
+    music_play(sndGlass)
     screenFlash()
 }
 

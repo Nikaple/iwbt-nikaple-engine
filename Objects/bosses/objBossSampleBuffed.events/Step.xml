@@ -18,7 +18,7 @@ path_speed = (4 + 2 * buff) * move
 if (windy) {
     with (player) {
         // more wind hype!
-        if (!place_meeting(x - (1 + buff), y, objBlock)) {
+        if (!place_meeting(x - (1 + buff) + player.hspeed, y, objBlock)) {
             x -= 1 + buff
         }
     }

@@ -13,9 +13,16 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if keyboard_check_pressed(global.restartbutton){
-    part_system_destroy(Sname);
-    instance_destroy();
+        <argument kind="STRING">// Create Blood Particles
+
+if (emit) {
+    repeat (60) {
+        b[bi] = instance_create(x, y, objBlood)
+        b[bi].parent = id
+        b[bi].direction = 360 * fake_random()
+        b[bi].speed = 2 + 10 * fake_random()
+        bi += 1
+    }
 }
 </argument>
       </arguments>

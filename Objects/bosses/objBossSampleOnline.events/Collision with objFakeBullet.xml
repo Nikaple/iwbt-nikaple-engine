@@ -13,9 +13,9 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">// this is a fake bullet, will not decrease boss' HP.
-// It's responsible for the visual effects, to make
-// the animation more natural and smooth
+        <argument kind="STRING">// this is a fake bullet, so it will not decrease boss' HP.
+// It's only responsible for the visual effects, thus making
+// the animation more natural and smooth.
 
 //destroy the bullet
 with (other) {

@@ -14,8 +14,9 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">//shoots an cherry towards player every beat
-splitObject(1,6,YellowCherry,1,0)
-alarm[1]=SPB;
+splitObject(1, 6, YellowCherry, 1, 0)
+alarm[1] = SPB
+
 </argument>
       </arguments>
     </action>

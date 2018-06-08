@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="KEYPRESS" id="32">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (debug_mode) {
+    global.online_mode = false
+    global.savenum = 1
+    if (file_exists(getSaveFile(global.savenum))) {
+        loadGame()
+    } else {
+        global.death = 0
+        global.timestep = 0
+        global.difficulty = 1
+        room_goto(global.first_stage)
+    }
+}
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

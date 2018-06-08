@@ -13,11 +13,12 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if(place_meeting(x,y,roomChanger) == false){
+        <argument kind="STRING">if (!place_meeting(x, y, roomChanger)) {
     if (shouldDieWhenOutsideRoom) {
-        killPlayer();
+        killPlayer()
     }
 }
+
 </argument>
       </arguments>
     </action>

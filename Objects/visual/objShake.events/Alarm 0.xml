@@ -13,12 +13,10 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">{
-    //restoring original views
-    view_xview[0]=xview;
-    view_yview[0]=yview;
-    instance_destroy();
-}
+        <argument kind="STRING">//restoring original views
+view_xview[0] = xview
+view_yview[0] = yview
+instance_destroy()
 
 </argument>
       </arguments>

@@ -25,7 +25,10 @@ onCollide = true;
 if (!color) {
   color = c_black
 }
+
 alpha = set_default(alpha, 1)
+
+spritable()
 </argument>
       </arguments>
     </action>

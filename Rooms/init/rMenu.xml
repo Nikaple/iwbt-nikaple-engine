@@ -96,7 +96,7 @@
   <enableViews>false</enableViews>
   <instances>
     <instance>
-      <object>menuSelect</object>
+      <object>objMenuSelect2</object>
       <position x="96" y="160"/>
       <creationCode/>
       <locked>false</locked>

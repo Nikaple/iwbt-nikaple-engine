@@ -1,27 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
-  <resource name="objBlock" type="RESOURCE"/>
-  <resource name="deliciousFruit" type="RESOURCE"/>
-  <resource name="spikeDown" type="RESOURCE"/>
-  <resource name="spikeLeft" type="RESOURCE"/>
-  <resource name="spikeUp" type="RESOURCE"/>
-  <resource name="spikeRight" type="RESOURCE"/>
-  <resource name="playerStart" type="RESOURCE"/>
-  <resource name="savePoint" type="RESOURCE"/>
-  <resource name="block" type="GROUP"/>
+  <resource name="blocks" type="GROUP"/>
+  <resource name="killers" type="GROUP"/>
   <resource name="triggers" type="GROUP"/>
-  <resource name="gimmick" type="GROUP"/>
+  <resource name="gimmicks" type="GROUP"/>
   <resource name="host" type="GROUP"/>
   <resource name="guest" type="GROUP"/>
-  <resource name="spikes" type="GROUP"/>
   <resource name="saves" type="GROUP"/>
   <resource name="warp" type="GROUP"/>
-  <resource name="slope" type="GROUP"/>
-  <resource name="item" type="GROUP"/>
-  <resource name="system" type="GROUP"/>
+  <resource name="items" type="GROUP"/>
   <resource name="room" type="GROUP"/>
   <resource name="visual" type="GROUP"/>
   <resource name="parent" type="GROUP"/>
   <resource name="bosses" type="GROUP"/>
+  <resource name="system" type="GROUP"/>
   <resource name="object121" type="RESOURCE"/>
 </resources>

@@ -14,11 +14,11 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">//shoots an self-spliting blue cherry from hand every beat
-var a;
-a=instance_create(x,y,objBigCherryblue);
-a.direction=random_range(135,225);
-a.speed=6;
-alarm[7]=SPB;
+a = instance_create(x, y, objBigCherryblue)
+a.direction = random_range(135, 225)
+a.speed = 6
+alarm[7] = SPB
+
 </argument>
       </arguments>
     </action>

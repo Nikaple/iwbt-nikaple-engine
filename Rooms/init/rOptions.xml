@@ -128,28 +128,28 @@ text = "return"
       <locked>false</locked>
     </instance>
     <instance>
-      <object>objButton</object>
+      <object>objOptionButton</object>
       <position x="96" y="96"/>
       <creationCode>button = 'global.leftbutton';
 sprite_index = sprButtonLeft;</creationCode>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>objButton</object>
+      <object>objOptionButton</object>
       <position x="256" y="96"/>
       <creationCode>button = 'global.rightbutton';
 sprite_index = sprButtonRight;</creationCode>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>objButton</object>
+      <object>objOptionButton</object>
       <position x="432" y="96"/>
       <creationCode>button = 'global.jumpbutton';
 sprite_index = sprButtonJump;</creationCode>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>objButton</object>
+      <object>objOptionButton</object>
       <position x="592" y="96"/>
       <creationCode>button = 'global.shootbutton';
 sprite_index = sprButtonShoot;</creationCode>

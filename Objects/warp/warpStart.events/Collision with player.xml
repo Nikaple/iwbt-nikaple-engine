@@ -13,41 +13,41 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if (!noSave) {
-    global.__sync_position = true
+        <argument kind="STRING">with (player) {
+    instance_destroy()
 }
 
-player.speed = 0
+instance_create(0, 0, warpWaitingBG)
 
-//load game
-if(dif == 4){
-    if (!file_exists(get_save_file(global.savenum))){
-        with(player){
-            instance_destroy();
+// load game
+if (dif == -1 &amp;&amp; !file_exists(getSaveFile(global.savenum))) {
+    room_restart()
+} else {
+    if (dif != -1) {
+        global.difficulty = dif
+        if (file_exists(getSaveFile(global.savenum))) {
+            shouldDelete = show_question('delete_save')
+            if (shouldDelete) {
+                file_delete(getSaveFile(global.savenum))
+            } else {
+                room_restart()
+            }
         }
-        room_restart();
+        global.death = 0
+        global.timestep = 0
+        roomTo = global.first_stage
+    } else {
+        roomTo = rLoad
     }
-    else{
-        with(player) {
-            instance_destroy()
-        }
-        room_goto(rLoad);
-    }
+    ns_send_wait(
+        'warp',
+        string(room) + '-start-' + string(dif),
+        2,
+        'room', room,
+        'roomTo', roomTo
+    )
 }
-//new game
-else{
-    global.difficulty = dif;
-    if(file_exists(get_save_file(global.savenum)) == true){
-        file_delete(get_save_file(global.savenum));
-    }
-    global.death = 0;
-    global.timestep = 0;
-    roomTo = global.first_stage;
-    room_goto(roomTo);
-    with(player){
-        instance_destroy();
-    }
-}
+
 
 </argument>
       </arguments>

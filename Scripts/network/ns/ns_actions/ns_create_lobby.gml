@@ -2,13 +2,13 @@
 var name, lobbyName, password, needPassword, retry, cmd;
 
 if (!ns_is_logged_in()) {
-    i18n_show('login_needed')
+    i18n_show_message('login_needed')
     exit
 }
 
 lobbyName = i18n_get_string(
     'input_lobby_name',
-    global.__player_name + i18n_get('default_lobby_name')
+    i18n_get('default_lobby_name', global.__player_name)
 )
 password = i18n_get_string('password', '')
 

@@ -4,11 +4,12 @@
   <size height="608" width="1200"/>
   <grid>
     <isometric>false</isometric>
-    <snap x="16" y="32"/>
+    <snap x="16" y="16"/>
   </grid>
   <speed>50</speed>
   <persistent>false</persistent>
-  <creationCode/>
+  <creationCode>scrSealRoom(1, 0, 1, 0)
+</creationCode>
   <backgroundColor>60AFFF</backgroundColor>
   <drawBackgroundColor>true</drawBackgroundColor>
   <backgrounds>
@@ -146,7 +147,7 @@
   </views>
   <instances>
     <instance>
-      <object>freeTrigger</object>
+      <object>objTrigger</object>
       <position x="976" y="0"/>
       <creationCode>trg = 1
 snd = sndSpikeTrap
@@ -155,7 +156,7 @@ setScale(2, 3)
       <locked>false</locked>
     </instance>
     <instance>
-      <object>freeTrigger</object>
+      <object>objTrigger</object>
       <position x="320" y="0"/>
       <creationCode>snd = sndSpikeTrap
 trg = 2
@@ -171,7 +172,7 @@ setScale(1, 4)
       <locked>false</locked>
     </instance>
     <instance>
-      <object>freeTrigger</object>
+      <object>objTrigger</object>
       <position x="432" y="216"/>
       <creationCode>key = 2;
 trg = 3;
@@ -179,32 +180,8 @@ trg = 3;
       <locked>false</locked>
     </instance>
     <instance>
-      <object>block</object>
-      <position x="1168" y="0"/>
-      <creationCode>x+=32;
-setScale(1,19);
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>block</object>
-      <position x="0" y="0"/>
-      <creationCode>x-=32;
-setScale(1,19);
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>block</object>
-      <position x="0" y="576"/>
-      <creationCode>y+=32;
-image_xscale=31;
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
       <object>roundingCherry</object>
-      <position x="336" y="352"/>
+      <position x="336" y="336"/>
       <creationCode>num = 10
 spd = -0.3
 rad = 160
@@ -259,7 +236,8 @@ spr = sprCherryYellow
     <instance>
       <object>secretItem</object>
       <position x="32" y="576"/>
-      <creationCode>num = 2;
+      <creationCode>spr = sprItemIcon2
+num = 2
 depth = 1000010
 </creationCode>
       <locked>false</locked>
@@ -273,6 +251,12 @@ depth = 1000010
     <instance>
       <object>savePoint</object>
       <position x="32" y="512"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>savePoint</object>
+      <position x="656" y="512"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
@@ -297,54 +281,6 @@ depth = 1000010
     <instance>
       <object>spikeDown</object>
       <position x="528" y="384"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>slopeSpike4</object>
-      <position x="480" y="480"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>slopeSpike4</object>
-      <position x="456" y="504"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>slopeSpike1</object>
-      <position x="584" y="456"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>slopeSpike1</object>
-      <position x="608" y="480"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>slopeSpike1</object>
-      <position x="632" y="504"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>slopeSpike4</object>
-      <position x="736" y="448"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>slopeSpike4</object>
-      <position x="760" y="424"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>slopeSpike4</object>
-      <position x="712" y="472"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
@@ -397,30 +333,6 @@ depth = 1000010
       <locked>false</locked>
     </instance>
     <instance>
-      <object>slopeSpike4</object>
-      <position x="780" y="148"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>slopeSpike4</object>
-      <position x="828" y="100"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>slopeSpike4</object>
-      <position x="852" y="76"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>slopeSpike4</object>
-      <position x="804" y="124"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
       <object>spikeLeft</object>
       <position x="720" y="176"/>
       <creationCode/>
@@ -435,18 +347,6 @@ depth = 1000010
     <instance>
       <object>spikeUp</object>
       <position x="624" y="224"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>slopeSpike1</object>
-      <position x="560" y="160"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>slopeSpike4</object>
-      <position x="496" y="160"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
@@ -510,1240 +410,979 @@ spd = 6
     <instance>
       <object>spikeUp</object>
       <position x="1008" y="0"/>
-      <creationCode>y -= 32;
-pth = pD1;
-scl = 3.5;
-spd = 8;
-trg = 1;
+      <creationCode>y -= 32
+pth = pD1
+scl = 3.5
+spd = 8
+trg = 1
+
 </creationCode>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>objSlope3</object>
-      <position x="192" y="480"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objSlope3</object>
-      <position x="224" y="448"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objSlope1</object>
-      <position x="256" y="448"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objSlope1</object>
-      <position x="288" y="480"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objSlope1</object>
-      <position x="320" y="512"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="128" y="544"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="160" y="544"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="192" y="512"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="224" y="480"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="256" y="480"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="288" y="512"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="352" y="544"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="320" y="544"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objSlope1</object>
-      <position x="608" y="512"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objSlope1</object>
-      <position x="576" y="480"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objSlope1</object>
-      <position x="544" y="448"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objSlope3</object>
-      <position x="512" y="448"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objSlope3</object>
-      <position x="480" y="480"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objSlope3</object>
-      <position x="448" y="512"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="416" y="544"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="448" y="544"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="480" y="544"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="480" y="512"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="512" y="480"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="544" y="480"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="576" y="512"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="576" y="544"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="608" y="544"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="640" y="544"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="192" y="544"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="288" y="544"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objSlope3</object>
-      <position x="160" y="512"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objSlope3</object>
-      <position x="672" y="512"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objSlope3</object>
-      <position x="704" y="480"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objSlope3</object>
-      <position x="736" y="448"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objSlope3</object>
-      <position x="768" y="416"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objSlope3</object>
-      <position x="800" y="384"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="672" y="544"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="704" y="512"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="736" y="480"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="768" y="448"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="800" y="416"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="832" y="384"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="96" y="544"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="32" y="544"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="64" y="544"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
+      <object>objBlock</object>
       <position x="0" y="544"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>obj_wall</object>
-      <position x="864" y="384"/>
+      <object>objBlock</object>
+      <position x="32" y="544"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>obj_wall</object>
-      <position x="896" y="384"/>
+      <object>objBlock</object>
+      <position x="64" y="544"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>obj_wall</object>
-      <position x="928" y="384"/>
+      <object>objBlock</object>
+      <position x="96" y="544"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>obj_wall</object>
-      <position x="960" y="384"/>
+      <object>objBlock</object>
+      <position x="128" y="544"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>obj_wall</object>
-      <position x="992" y="384"/>
+      <object>objBlock</object>
+      <position x="160" y="544"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>obj_wall</object>
-      <position x="464" y="352"/>
+      <object>objBlock</object>
+      <position x="160" y="512"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>obj_wall</object>
-      <position x="496" y="352"/>
+      <object>objBlock</object>
+      <position x="192" y="480"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>obj_wall</object>
-      <position x="528" y="352"/>
+      <object>objBlock</object>
+      <position x="224" y="448"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>obj_wall</object>
-      <position x="560" y="352"/>
+      <object>objBlock</object>
+      <position x="256" y="448"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>obj_wall</object>
-      <position x="592" y="352"/>
+      <object>objBlock</object>
+      <position x="288" y="480"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>obj_wall</object>
-      <position x="592" y="256"/>
+      <object>objBlock</object>
+      <position x="320" y="512"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>objSlope1</object>
-      <position x="592" y="224"/>
+      <object>objBlock</object>
+      <position x="224" y="480"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>objSlope1</object>
-      <position x="560" y="192"/>
+      <object>objBlock</object>
+      <position x="192" y="512"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>objSlope1</object>
-      <position x="528" y="160"/>
+      <object>objBlock</object>
+      <position x="256" y="480"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>objSlope3</object>
-      <position x="496" y="160"/>
+      <object>objBlock</object>
+      <position x="288" y="512"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>objSlope3</object>
-      <position x="464" y="192"/>
+      <object>objBlock</object>
+      <position x="320" y="544"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>obj_wall</object>
-      <position x="496" y="192"/>
+      <object>objBlock</object>
+      <position x="352" y="544"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>obj_wall</object>
-      <position x="464" y="224"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="560" y="224"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="528" y="192"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="432" y="224"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="432" y="256"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="432" y="288"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="432" y="320"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="432" y="352"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="624" y="256"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="624" y="288"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="624" y="320"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="624" y="352"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="96" y="160"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="96" y="192"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="96" y="224"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="128" y="224"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="160" y="224"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="192" y="224"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="224" y="224"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="256" y="224"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="288" y="224"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="320" y="224"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="320" y="160"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="320" y="192"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="224" y="160"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="256" y="160"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="288" y="160"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="128" y="160"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objSlope3</object>
-      <position x="160" y="128"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objSlope1</object>
-      <position x="192" y="128"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="160" y="160"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="192" y="160"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="1168" y="304"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="1072" y="176"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="1072" y="208"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="1072" y="240"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="1072" y="272"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="1040" y="176"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="1008" y="176"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="976" y="176"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objSlope1</object>
-      <position x="944" y="144"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objSlope1</object>
-      <position x="912" y="112"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objSlope1</object>
-      <position x="880" y="80"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objSlope3</object>
-      <position x="848" y="80"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objSlope3</object>
-      <position x="816" y="112"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objSlope3</object>
-      <position x="784" y="144"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="752" y="176"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="752" y="208"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="784" y="176"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="816" y="144"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="848" y="112"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="880" y="112"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="912" y="144"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="944" y="176"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="752" y="240"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="752" y="272"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="784" y="272"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="816" y="272"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="848" y="272"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="880" y="272"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="912" y="272"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="944" y="272"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="976" y="272"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="1008" y="272"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="1040" y="272"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="1104" y="336"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="1168" y="368"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="992" y="416"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="992" y="448"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="992" y="512"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="992" y="544"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="992" y="576"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="928" y="512"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="928" y="448"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="928" y="480"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="896" y="480"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="864" y="512"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="832" y="416"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="240" y="576"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
-      <position x="528" y="576"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>obj_wall</object>
+      <object>objBlock</object>
       <position x="384" y="544"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>obj_wall</object>
-      <position x="1136" y="336"/>
+      <object>objBlock</object>
+      <position x="416" y="544"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>obj_wall</object>
+      <object>objBlock</object>
+      <position x="448" y="544"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="448" y="512"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="480" y="512"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="480" y="480"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="512" y="480"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="512" y="448"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="544" y="448"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="544" y="480"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="576" y="480"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="576" y="512"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="608" y="512"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="608" y="544"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="640" y="544"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="672" y="544"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="704" y="544"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="704" y="512"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="736" y="512"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="736" y="480"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="768" y="480"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="768" y="448"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="800" y="448"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="800" y="416"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="832" y="416"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="832" y="384"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="864" y="384"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="896" y="384"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="928" y="384"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="960" y="384"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="992" y="384"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="992" y="416"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="992" y="448"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="96" y="160"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="128" y="160"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="160" y="128"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="192" y="128"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="160" y="160"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="192" y="160"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="224" y="160"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="256" y="160"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="288" y="160"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="320" y="160"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="96" y="192"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="96" y="224"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="128" y="224"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="160" y="224"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="192" y="224"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="224" y="224"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="256" y="224"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="288" y="224"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="320" y="224"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="320" y="192"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="432" y="224"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="432" y="256"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="432" y="288"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="432" y="320"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="432" y="352"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="464" y="352"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="496" y="352"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="528" y="352"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="560" y="352"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="592" y="352"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="624" y="352"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="624" y="256"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="624" y="288"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="624" y="320"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="464" y="192"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="464" y="224"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="496" y="160"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="496" y="192"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="528" y="192"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="528" y="224"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="560" y="224"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="560" y="256"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="592" y="256"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="752" y="176"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="752" y="208"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="752" y="240"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="752" y="272"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="784" y="176"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="816" y="112"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="816" y="144"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="784" y="144"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="848" y="80"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="848" y="112"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="880" y="80"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="880" y="112"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="912" y="112"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="912" y="144"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="944" y="144"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="944" y="176"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="976" y="176"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="1008" y="176"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="1040" y="176"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="1072" y="176"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="1072" y="208"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="1072" y="240"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="1072" y="272"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="784" y="272"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="816" y="272"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="848" y="272"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="880" y="272"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="912" y="272"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="944" y="272"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="976" y="272"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="1008" y="272"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="1040" y="272"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="1104" y="336"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
       <position x="1104" y="368"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>obj_wall</object>
+      <object>objBlock</object>
       <position x="1136" y="368"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>objSlope3</object>
-      <position x="1136" y="304"/>
+      <object>objBlock</object>
+      <position x="1168" y="368"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>objSlope3</object>
-      <position x="832" y="512"/>
+      <object>objBlock</object>
+      <position x="1168" y="304"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>obj_wall</object>
-      <position x="800" y="544"/>
+      <object>objBlock</object>
+      <position x="1168" y="336"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>obj_wall</object>
-      <position x="832" y="544"/>
+      <object>objBlock</object>
+      <position x="1136" y="336"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>objSlope3</object>
-      <position x="768" y="544"/>
+      <object>objBlock</object>
+      <position x="992" y="512"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>obj_wall</object>
-      <position x="768" y="576"/>
+      <object>objBlock</object>
+      <position x="992" y="544"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>obj_wall</object>
-      <position x="736" y="576"/>
+      <object>objBlock</object>
+      <position x="992" y="576"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>obj_wall</object>
-      <position x="960" y="512"/>
+      <object>objBlock</object>
+      <position x="208" y="576"/>
       <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="240" y="576"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="240" y="544"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="528" y="544"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="496" y="576"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="528" y="576"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="560" y="576"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="784" y="544"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="816" y="544"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="816" y="512"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="848" y="480"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="880" y="448"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="880" y="480"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="848" y="512"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="752" y="576"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="784" y="576"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="912" y="448"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="944" y="448"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="944" y="480"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="944" y="512"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="944" y="544"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="960" y="576"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="272" y="576"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="0" y="576"/>
+      <creationCode>y += 32
+xs = 31
+</creationCode>
       <locked>false</locked>
     </instance>
   </instances>
   <tiles>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="0" y="96"/>
-      <roomPosition x="160" y="512"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="0" y="96"/>
-      <roomPosition x="192" y="480"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="0" y="96"/>
-      <roomPosition x="224" y="448"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="96"/>
-      <roomPosition x="256" y="448"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="96"/>
-      <roomPosition x="288" y="480"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="96"/>
-      <roomPosition x="320" y="512"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="96"/>
-      <roomPosition x="544" y="448"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="96"/>
-      <roomPosition x="576" y="480"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="96"/>
-      <roomPosition x="608" y="512"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="0" y="96"/>
-      <roomPosition x="512" y="448"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="0" y="96"/>
-      <roomPosition x="480" y="480"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="0" y="96"/>
-      <roomPosition x="448" y="512"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="0" y="128"/>
-      <roomPosition x="192" y="512"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="0" y="128"/>
-      <roomPosition x="224" y="480"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="128"/>
-      <roomPosition x="256" y="480"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="128"/>
-      <roomPosition x="288" y="512"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="128"/>
-      <roomPosition x="544" y="480"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="128"/>
-      <roomPosition x="576" y="512"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="0" y="128"/>
-      <roomPosition x="512" y="480"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="0" y="128"/>
-      <roomPosition x="480" y="512"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="128"/>
-      <roomPosition x="320" y="544"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="128"/>
-      <roomPosition x="608" y="544"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="0" y="128"/>
-      <roomPosition x="160" y="544"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="0" y="128"/>
-      <roomPosition x="448" y="544"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="192" y="544"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="288" y="544"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="480" y="544"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="576" y="544"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="0"/>
-      <roomPosition x="64" y="544"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="0"/>
-      <roomPosition x="96" y="544"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="0"/>
-      <roomPosition x="128" y="544"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="0"/>
-      <roomPosition x="352" y="544"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="0"/>
-      <roomPosition x="384" y="544"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="0"/>
-      <roomPosition x="416" y="544"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="0"/>
-      <roomPosition x="640" y="544"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="0"/>
-      <roomPosition x="32" y="544"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
     <tile>
       <background>background70</background>
       <backgroundPosition x="0" y="32"/>
@@ -1890,38 +1529,6 @@ trg = 1;
     </tile>
     <tile>
       <background>background70</background>
-      <backgroundPosition x="0" y="96"/>
-      <roomPosition x="160" y="128"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="0" y="128"/>
-      <roomPosition x="160" y="160"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="96"/>
-      <roomPosition x="192" y="128"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="128"/>
-      <roomPosition x="192" y="160"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
       <backgroundPosition x="32" y="0"/>
       <roomPosition x="128" y="160"/>
       <size height="32" width="32"/>
@@ -1948,222 +1555,6 @@ trg = 1;
       <background>background70</background>
       <backgroundPosition x="32" y="0"/>
       <roomPosition x="288" y="160"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="0" y="128"/>
-      <roomPosition x="672" y="544"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="0" y="96"/>
-      <roomPosition x="672" y="512"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="0" y="96"/>
-      <roomPosition x="704" y="480"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="0" y="96"/>
-      <roomPosition x="736" y="448"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="0" y="96"/>
-      <roomPosition x="768" y="416"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="0" y="96"/>
-      <roomPosition x="800" y="384"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="0" y="128"/>
-      <roomPosition x="736" y="480"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="0" y="128"/>
-      <roomPosition x="768" y="448"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="0" y="128"/>
-      <roomPosition x="800" y="416"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="0"/>
-      <roomPosition x="832" y="384"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="0"/>
-      <roomPosition x="864" y="384"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="0"/>
-      <roomPosition x="896" y="384"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="0"/>
-      <roomPosition x="928" y="384"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="0"/>
-      <roomPosition x="960" y="384"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="832" y="416"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="64" y="0"/>
-      <roomPosition x="992" y="384"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="64" y="32"/>
-      <roomPosition x="992" y="416"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="64" y="32"/>
-      <roomPosition x="992" y="448"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="64" y="32"/>
-      <roomPosition x="992" y="512"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="64" y="32"/>
-      <roomPosition x="992" y="544"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="64" y="32"/>
-      <roomPosition x="992" y="576"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="96"/>
-      <roomPosition x="528" y="160"/>
-      <size height="64" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="96"/>
-      <roomPosition x="560" y="192"/>
-      <size height="64" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="96"/>
-      <roomPosition x="592" y="224"/>
-      <size height="64" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="0" y="96"/>
-      <roomPosition x="496" y="160"/>
-      <size height="64" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="0" y="96"/>
-      <roomPosition x="464" y="192"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="0" y="128"/>
-      <roomPosition x="464" y="224"/>
       <size height="32" width="32"/>
       <depth>1000000</depth>
       <locked>false</locked>
@@ -2410,54 +1801,6 @@ trg = 1;
     </tile>
     <tile>
       <background>background70</background>
-      <backgroundPosition x="0" y="96"/>
-      <roomPosition x="848" y="80"/>
-      <size height="64" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="0" y="96"/>
-      <roomPosition x="816" y="112"/>
-      <size height="64" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="0" y="96"/>
-      <roomPosition x="784" y="144"/>
-      <size height="64" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="96"/>
-      <roomPosition x="880" y="80"/>
-      <size height="64" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="96"/>
-      <roomPosition x="912" y="112"/>
-      <size height="64" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="96"/>
-      <roomPosition x="944" y="144"/>
-      <size height="64" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
       <backgroundPosition x="0" y="0"/>
       <roomPosition x="752" y="176"/>
       <size height="64" width="32"/>
@@ -2587,14 +1930,6 @@ trg = 1;
     <tile>
       <background>background70</background>
       <backgroundPosition x="32" y="32"/>
-      <roomPosition x="848" y="144"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
       <roomPosition x="848" y="176"/>
       <size height="32" width="32"/>
       <depth>1000000</depth>
@@ -2612,14 +1947,6 @@ trg = 1;
       <background>background70</background>
       <backgroundPosition x="32" y="32"/>
       <roomPosition x="848" y="240"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="880" y="144"/>
       <size height="32" width="32"/>
       <depth>1000000</depth>
       <locked>false</locked>
@@ -2794,32 +2121,8 @@ trg = 1;
     </tile>
     <tile>
       <background>background70</background>
-      <backgroundPosition x="0" y="96"/>
-      <roomPosition x="1136" y="304"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="0" y="128"/>
-      <roomPosition x="1136" y="336"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
       <backgroundPosition x="0" y="0"/>
       <roomPosition x="1104" y="336"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="64" y="0"/>
-      <roomPosition x="1168" y="304"/>
       <size height="32" width="32"/>
       <depth>1000000</depth>
       <locked>false</locked>
@@ -2842,8 +2145,48 @@ trg = 1;
     </tile>
     <tile>
       <background>background70</background>
-      <backgroundPosition x="0" y="32"/>
-      <roomPosition x="0" y="576"/>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="608" y="544"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="0"/>
+      <roomPosition x="1136" y="336"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="64" y="96"/>
+      <roomPosition x="1168" y="304"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="64" y="0"/>
+      <roomPosition x="944" y="144"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="64" y="0"/>
+      <roomPosition x="912" y="112"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="64" y="0"/>
+      <roomPosition x="880" y="80"/>
       <size height="32" width="32"/>
       <depth>1000000</depth>
       <locked>false</locked>
@@ -2851,15 +2194,23 @@ trg = 1;
     <tile>
       <background>background70</background>
       <backgroundPosition x="0" y="0"/>
-      <roomPosition x="0" y="544"/>
+      <roomPosition x="848" y="80"/>
       <size height="32" width="32"/>
       <depth>1000000</depth>
       <locked>false</locked>
     </tile>
     <tile>
       <background>background70</background>
-      <backgroundPosition x="0" y="128"/>
-      <roomPosition x="704" y="512"/>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="816" y="112"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="784" y="144"/>
       <size height="32" width="32"/>
       <depth>1000000</depth>
       <locked>false</locked>
@@ -2867,9 +2218,161 @@ trg = 1;
     <tile>
       <background>background70</background>
       <backgroundPosition x="32" y="32"/>
-      <roomPosition x="992" y="480"/>
+      <roomPosition x="784" y="176"/>
       <size height="32" width="32"/>
       <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="816" y="144"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="848" y="112"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="848" y="144"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="880" y="112"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="880" y="144"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="912" y="144"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="944" y="176"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="464" y="192"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="64" y="0"/>
+      <roomPosition x="528" y="192"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="64" y="0"/>
+      <roomPosition x="560" y="224"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="0"/>
+      <roomPosition x="592" y="256"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="496" y="192"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="464" y="224"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="64" y="96"/>
+      <roomPosition x="496" y="160"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="160" y="128"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="64" y="0"/>
+      <roomPosition x="192" y="128"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="160" y="160"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="192" y="160"/>
+      <size height="32" width="32"/>
+      <depth>1000000</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="0" y="576"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
       <locked>false</locked>
     </tile>
     <tile>
@@ -2877,7 +2380,7 @@ trg = 1;
       <backgroundPosition x="32" y="32"/>
       <roomPosition x="32" y="576"/>
       <size height="32" width="32"/>
-      <depth>1000000</depth>
+      <depth>-100</depth>
       <locked>false</locked>
     </tile>
     <tile>
@@ -2885,7 +2388,7 @@ trg = 1;
       <backgroundPosition x="32" y="32"/>
       <roomPosition x="64" y="576"/>
       <size height="32" width="32"/>
-      <depth>1000000</depth>
+      <depth>-100</depth>
       <locked>false</locked>
     </tile>
     <tile>
@@ -2893,7 +2396,7 @@ trg = 1;
       <backgroundPosition x="32" y="32"/>
       <roomPosition x="96" y="576"/>
       <size height="32" width="32"/>
-      <depth>1000000</depth>
+      <depth>-100</depth>
       <locked>false</locked>
     </tile>
     <tile>
@@ -2901,7 +2404,7 @@ trg = 1;
       <backgroundPosition x="32" y="32"/>
       <roomPosition x="128" y="576"/>
       <size height="32" width="32"/>
-      <depth>1000000</depth>
+      <depth>-100</depth>
       <locked>false</locked>
     </tile>
     <tile>
@@ -2909,7 +2412,7 @@ trg = 1;
       <backgroundPosition x="32" y="32"/>
       <roomPosition x="160" y="576"/>
       <size height="32" width="32"/>
-      <depth>1000000</depth>
+      <depth>-100</depth>
       <locked>false</locked>
     </tile>
     <tile>
@@ -2917,7 +2420,7 @@ trg = 1;
       <backgroundPosition x="32" y="32"/>
       <roomPosition x="192" y="576"/>
       <size height="32" width="32"/>
-      <depth>1000000</depth>
+      <depth>-100</depth>
       <locked>false</locked>
     </tile>
     <tile>
@@ -2925,7 +2428,7 @@ trg = 1;
       <backgroundPosition x="32" y="32"/>
       <roomPosition x="224" y="576"/>
       <size height="32" width="32"/>
-      <depth>1000000</depth>
+      <depth>-100</depth>
       <locked>false</locked>
     </tile>
     <tile>
@@ -2933,7 +2436,7 @@ trg = 1;
       <backgroundPosition x="32" y="32"/>
       <roomPosition x="256" y="576"/>
       <size height="32" width="32"/>
-      <depth>1000000</depth>
+      <depth>-100</depth>
       <locked>false</locked>
     </tile>
     <tile>
@@ -2941,7 +2444,7 @@ trg = 1;
       <backgroundPosition x="32" y="32"/>
       <roomPosition x="288" y="576"/>
       <size height="32" width="32"/>
-      <depth>1000000</depth>
+      <depth>-100</depth>
       <locked>false</locked>
     </tile>
     <tile>
@@ -2949,7 +2452,7 @@ trg = 1;
       <backgroundPosition x="32" y="32"/>
       <roomPosition x="320" y="576"/>
       <size height="32" width="32"/>
-      <depth>1000000</depth>
+      <depth>-100</depth>
       <locked>false</locked>
     </tile>
     <tile>
@@ -2957,7 +2460,7 @@ trg = 1;
       <backgroundPosition x="32" y="32"/>
       <roomPosition x="352" y="576"/>
       <size height="32" width="32"/>
-      <depth>1000000</depth>
+      <depth>-100</depth>
       <locked>false</locked>
     </tile>
     <tile>
@@ -2965,7 +2468,7 @@ trg = 1;
       <backgroundPosition x="32" y="32"/>
       <roomPosition x="384" y="576"/>
       <size height="32" width="32"/>
-      <depth>1000000</depth>
+      <depth>-100</depth>
       <locked>false</locked>
     </tile>
     <tile>
@@ -2973,7 +2476,7 @@ trg = 1;
       <backgroundPosition x="32" y="32"/>
       <roomPosition x="416" y="576"/>
       <size height="32" width="32"/>
-      <depth>1000000</depth>
+      <depth>-100</depth>
       <locked>false</locked>
     </tile>
     <tile>
@@ -2981,7 +2484,7 @@ trg = 1;
       <backgroundPosition x="32" y="32"/>
       <roomPosition x="448" y="576"/>
       <size height="32" width="32"/>
-      <depth>1000000</depth>
+      <depth>-100</depth>
       <locked>false</locked>
     </tile>
     <tile>
@@ -2989,7 +2492,7 @@ trg = 1;
       <backgroundPosition x="32" y="32"/>
       <roomPosition x="480" y="576"/>
       <size height="32" width="32"/>
-      <depth>1000000</depth>
+      <depth>-100</depth>
       <locked>false</locked>
     </tile>
     <tile>
@@ -2997,39 +2500,7 @@ trg = 1;
       <backgroundPosition x="32" y="32"/>
       <roomPosition x="512" y="576"/>
       <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="512" y="544"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="512" y="512"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="544" y="512"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="544" y="544"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
+      <depth>-100</depth>
       <locked>false</locked>
     </tile>
     <tile>
@@ -3037,7 +2508,7 @@ trg = 1;
       <backgroundPosition x="32" y="32"/>
       <roomPosition x="544" y="576"/>
       <size height="32" width="32"/>
-      <depth>1000000</depth>
+      <depth>-100</depth>
       <locked>false</locked>
     </tile>
     <tile>
@@ -3045,7 +2516,7 @@ trg = 1;
       <backgroundPosition x="32" y="32"/>
       <roomPosition x="576" y="576"/>
       <size height="32" width="32"/>
-      <depth>1000000</depth>
+      <depth>-100</depth>
       <locked>false</locked>
     </tile>
     <tile>
@@ -3053,7 +2524,7 @@ trg = 1;
       <backgroundPosition x="32" y="32"/>
       <roomPosition x="608" y="576"/>
       <size height="32" width="32"/>
-      <depth>1000000</depth>
+      <depth>-100</depth>
       <locked>false</locked>
     </tile>
     <tile>
@@ -3061,7 +2532,7 @@ trg = 1;
       <backgroundPosition x="32" y="32"/>
       <roomPosition x="640" y="576"/>
       <size height="32" width="32"/>
-      <depth>1000000</depth>
+      <depth>-100</depth>
       <locked>false</locked>
     </tile>
     <tile>
@@ -3069,343 +2540,7 @@ trg = 1;
       <backgroundPosition x="32" y="32"/>
       <roomPosition x="672" y="576"/>
       <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="704" y="544"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="736" y="544"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="736" y="512"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="800" y="512"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="768" y="512"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="768" y="480"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="800" y="480"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="800" y="448"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="832" y="448"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="864" y="448"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="864" y="416"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="896" y="416"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="928" y="416"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="960" y="416"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="960" y="448"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="960" y="480"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="960" y="512"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="960" y="544"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="960" y="576"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="928" y="576"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="928" y="544"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="928" y="512"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="928" y="480"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="928" y="448"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="896" y="448"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="896" y="480"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="896" y="512"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="896" y="544"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="896" y="576"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="864" y="576"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="864" y="544"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="864" y="512"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="864" y="480"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="832" y="480"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="832" y="512"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="832" y="544"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="832" y="576"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="768" y="544"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="800" y="544"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="800" y="576"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="768" y="576"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
-      <locked>false</locked>
-    </tile>
-    <tile>
-      <background>background70</background>
-      <backgroundPosition x="32" y="32"/>
-      <roomPosition x="736" y="576"/>
-      <size height="32" width="32"/>
-      <depth>1000000</depth>
+      <depth>-100</depth>
       <locked>false</locked>
     </tile>
     <tile>
@@ -3413,23 +2548,79 @@ trg = 1;
       <backgroundPosition x="32" y="32"/>
       <roomPosition x="704" y="576"/>
       <size height="32" width="32"/>
-      <depth>1000000</depth>
+      <depth>-100</depth>
       <locked>false</locked>
     </tile>
     <tile>
       <background>background70</background>
       <backgroundPosition x="32" y="32"/>
-      <roomPosition x="256" y="544"/>
+      <roomPosition x="736" y="576"/>
       <size height="32" width="32"/>
-      <depth>1000000</depth>
+      <depth>-100</depth>
       <locked>false</locked>
     </tile>
     <tile>
       <background>background70</background>
       <backgroundPosition x="32" y="32"/>
-      <roomPosition x="256" y="512"/>
+      <roomPosition x="768" y="576"/>
       <size height="32" width="32"/>
-      <depth>1000000</depth>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="800" y="576"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="832" y="576"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="864" y="576"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="896" y="576"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="928" y="576"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="960" y="576"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="192" y="544"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
       <locked>false</locked>
     </tile>
     <tile>
@@ -3437,7 +2628,7 @@ trg = 1;
       <backgroundPosition x="32" y="32"/>
       <roomPosition x="224" y="544"/>
       <size height="32" width="32"/>
-      <depth>1000000</depth>
+      <depth>-100</depth>
       <locked>false</locked>
     </tile>
     <tile>
@@ -3445,7 +2636,751 @@ trg = 1;
       <backgroundPosition x="32" y="32"/>
       <roomPosition x="224" y="512"/>
       <size height="32" width="32"/>
-      <depth>1000000</depth>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="256" y="512"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="256" y="544"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="288" y="544"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="480" y="544"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="512" y="544"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="512" y="512"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="544" y="512"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="544" y="544"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="576" y="544"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="736" y="544"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="768" y="544"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="800" y="544"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="832" y="544"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="864" y="544"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="896" y="544"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="928" y="544"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="960" y="544"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="768" y="512"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="800" y="512"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="832" y="512"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="864" y="512"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="896" y="512"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="928" y="512"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="960" y="512"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="800" y="480"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="832" y="480"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="864" y="480"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="896" y="480"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="928" y="480"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="960" y="480"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="832" y="448"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="864" y="448"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="896" y="448"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="928" y="448"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="960" y="448"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="864" y="416"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="896" y="416"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="928" y="416"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="960" y="416"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="992" y="480"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="0"/>
+      <roomPosition x="0" y="544"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="0"/>
+      <roomPosition x="32" y="544"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="0"/>
+      <roomPosition x="64" y="544"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="0"/>
+      <roomPosition x="96" y="544"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="0"/>
+      <roomPosition x="128" y="544"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="160" y="512"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="192" y="480"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="224" y="448"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="448" y="512"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="480" y="480"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="512" y="448"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="704" y="512"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="736" y="480"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="768" y="448"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="800" y="416"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="0" y="0"/>
+      <roomPosition x="832" y="384"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="64" y="0"/>
+      <roomPosition x="256" y="448"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="64" y="0"/>
+      <roomPosition x="544" y="448"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="64" y="0"/>
+      <roomPosition x="576" y="480"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="64" y="0"/>
+      <roomPosition x="608" y="512"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="64" y="0"/>
+      <roomPosition x="288" y="480"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="64" y="0"/>
+      <roomPosition x="320" y="512"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="64" y="0"/>
+      <roomPosition x="992" y="384"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="0"/>
+      <roomPosition x="864" y="384"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="0"/>
+      <roomPosition x="896" y="384"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="0"/>
+      <roomPosition x="928" y="384"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="0"/>
+      <roomPosition x="960" y="384"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="160" y="544"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="192" y="512"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="224" y="480"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="256" y="480"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="288" y="512"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="320" y="544"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="448" y="544"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="480" y="512"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="512" y="480"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="544" y="480"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="576" y="512"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="704" y="544"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="736" y="512"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="768" y="480"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="800" y="448"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="832" y="416"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="992" y="416"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="992" y="448"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="0"/>
+      <roomPosition x="352" y="544"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="0"/>
+      <roomPosition x="384" y="544"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="0"/>
+      <roomPosition x="416" y="544"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="0"/>
+      <roomPosition x="640" y="544"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="0"/>
+      <roomPosition x="672" y="544"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="992" y="512"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="992" y="544"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
+      <locked>false</locked>
+    </tile>
+    <tile>
+      <background>background70</background>
+      <backgroundPosition x="32" y="32"/>
+      <roomPosition x="992" y="576"/>
+      <size height="32" width="32"/>
+      <depth>-100</depth>
       <locked>false</locked>
     </tile>
   </tiles>

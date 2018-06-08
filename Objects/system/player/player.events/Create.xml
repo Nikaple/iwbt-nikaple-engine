@@ -16,42 +16,47 @@
         <argument kind="STRING">playerInit()
 
 //save game when playing for the 1st time
-if(isInGameRoom()){
-    if(file_exists(global.saving_directory+"SaveData"+string(global.savenum)) == false){
-      global.death = 0;
-      global.timestep = 0;
-      saveGame();
+if (isInGameRoom()) {
+    if (!file_exists(getSaveFile(global.savenum))) {
+        global.death = 0
+        global.timestep = 0
+        saveGame()
     }
 }
 
-//reverse gravity init
-if(global.reverse == 0){
-    yflag = 1;
+if (global.reverse) {
+    player.image_yscale = -1
+    yflag = -1
+    y -= 4
+    view_angle += 180
 }
-if(global.reverse == 1){
-    yflag = -1;
-    y -= 4;
-}
-//current jump times
-image_yscale = yflag
+
 image_speed = 0.5
 curJumps = 2
-spr = 0
+spr = IDLING
 gravity = grav
 if (ns_is_host()) {
     activeBlock = blockHost
+    bowSpr = sprBow
 } else {
     activeBlock = blockGuest
+    bowSpr = sprBowGuest
 }
+
+// init other variables
+shootTimer = shootInterval
+canShoot = true
 
 // sync room
 alarm[11] = 1
 timer = 0
+forceSync = false
+forceSyncTimer = 0
+forceSyncTimerAll = 0
 idleTime = 0
-minTimer = 0
-jumpTimer = 0
 syncTimer = 0
-syncThreshold = global.maxSyncCycle
+syncThreshold = global.max_sync_cycle
+
 </argument>
       </arguments>
     </action>

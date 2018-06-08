@@ -14,8 +14,9 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">//shoots an cherry towards somewhere near player every beat
-instance_create(x,y,nottoplayerCheery);
-alarm[4]=SPB;
+instance_create(x, y, nottoplayerCheery)
+alarm[4] = SPB
+
 </argument>
       </arguments>
     </action>

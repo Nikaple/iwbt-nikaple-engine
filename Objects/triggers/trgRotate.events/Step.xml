@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (triggered) {
+    if (timer &lt; time) {
+        timer += 1
+        theta += angle / time
+    }
+    image_angle = theta
+    dx = -(cx * cos(theta * pi / 180) + cy * sin(theta * pi / 180))
+    dy = -(-cx * sin(theta * pi / 180) + cy * cos(theta * pi / 180))
+    x = xstart + cx + dx
+    y = ystart + cy + dy
+}
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

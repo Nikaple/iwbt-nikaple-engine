@@ -22,7 +22,7 @@ if(debug_mode){
     visible = true;
 }
 
-
+spritable()
 </argument>
       </arguments>
     </action>

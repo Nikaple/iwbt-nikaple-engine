@@ -17,6 +17,8 @@
 
 image_speed=0;
 saveTimer = -1;
+
+spritable()
 </argument>
       </arguments>
     </action>

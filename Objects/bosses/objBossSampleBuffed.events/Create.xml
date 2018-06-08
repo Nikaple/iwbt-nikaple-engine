@@ -17,6 +17,11 @@
 // but every attack has a second phase ...
 // the buff starts after 5 hits, enjoy the hype !
 
+if (global.boss[3]) {
+    instance_destroy()
+}
+
+
 // initialize variables
 image_speed = 1 / 15
 //initialize hp

@@ -16,11 +16,9 @@
         <argument kind="STRING">//if the miku was destroyed, she should give you an bossitem
 //
 //if we use bossblocks to go out, we do not need to create the bossWarp
-//
-var inst;
-inst = instance_create(688,544,bossItem);
-inst.num = 1;
-inst.sprite_index = bossicon1;
+
+bossItem.visible = true
+
 </argument>
       </arguments>
     </action>

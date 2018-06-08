@@ -14,7 +14,8 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">//unfreeze the player
-global.frozen = false;
+global.frozen = false
+
 </argument>
       </arguments>
     </action>

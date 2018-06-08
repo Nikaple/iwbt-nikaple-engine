@@ -19,13 +19,13 @@
     scrWorldPause()
         
     if (keyboard_check_pressed(global.restartbutton)) {
-        scrWorldRestart()
+        scrWorldReset()
     }
 }
 
 scrWorldCleanmem()
 scrWorldCenterMessage()
-scrWorldFixBug()
+scrWorldMisc()
 </argument>
       </arguments>
     </action>

@@ -14,8 +14,9 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">//creates an bounding cherry every beat
-instance_create(x+76,y-168,boundCherry);
-alarm[2]=SPB;
+instance_create(x + 76, y - 168, boundCherry)
+alarm[2] = SPB
+
 </argument>
       </arguments>
     </action>

@@ -29,12 +29,12 @@ if (udpsocket_get_state(global.udpSockId) == 2) {
 }
 
 // send udp handshake packet
-buffer_clear(global.udpBufId)
-buffer_write_int8(global.udpBufId, CMD_TYPE_INIT)
-buffer_write_int8(global.udpBufId, times)
-buffer_write_string(global.udpBufId, global.__player_id)
-udpsocket_send(global.udpSockId, global.udpBufId);
-buffer_clear(global.udpBufId)
+buffer = buffer_create()
+buffer_write_int8(buffer, CMD_TYPE_INIT)
+buffer_write_int8(buffer, times)
+buffer_write_string(buffer, global.__player_id)
+udpsocket_send(global.udpSockId, buffer);
+buffer_destroy(buffer)
 </argument>
       </arguments>
     </action>

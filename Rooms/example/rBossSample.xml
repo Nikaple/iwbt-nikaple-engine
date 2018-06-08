@@ -4,7 +4,7 @@
   <size height="608" width="800"/>
   <grid>
     <isometric>false</isometric>
-    <snap x="32" y="32"/>
+    <snap x="16" y="16"/>
   </grid>
   <speed>30</speed>
   <persistent>false</persistent>
@@ -655,6 +655,21 @@ image_xscale = 23;
       <object>objBlock</object>
       <position x="224" y="96"/>
       <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>bossItem</object>
+      <position x="688" y="544"/>
+      <creationCode>num = 2
+spr = sprBossIcon2
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>bossWarp</object>
+      <position x="160" y="416"/>
+      <creationCode>roomTo = rHub
+</creationCode>
       <locked>false</locked>
     </instance>
     <instance>

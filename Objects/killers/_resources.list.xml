@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="deliciousFruit" type="RESOURCE"/>
+  <resource name="spikeDown" type="RESOURCE"/>
+  <resource name="spikeLeft" type="RESOURCE"/>
+  <resource name="spikeUp" type="RESOURCE"/>
+  <resource name="spikeRight" type="RESOURCE"/>
+  <resource name="minispikeDown" type="RESOURCE"/>
+  <resource name="minispikeRight" type="RESOURCE"/>
+  <resource name="minispikeLeft" type="RESOURCE"/>
+  <resource name="minispikeUp" type="RESOURCE"/>
+  <resource name="borderKiller" type="RESOURCE"/>
+</resources>

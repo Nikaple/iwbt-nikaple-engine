@@ -25,7 +25,7 @@
     draw_set_color(c_white)
     draw_set_alpha(1)
     draw_set_font(font12)
-    draw_text_ext(10, view_yview + view_hview - 10, str, -1, 750)
+    draw_text_ext(view_xview + 10, view_yview + view_hview - 10, str, -1, 750)
     
     draw_set_valign(fa_top)
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
-  <resource name="itemicon1" type="RESOURCE"/>
-  <resource name="itemicon2" type="RESOURCE"/>
+  <resource name="sprItemIcon1" type="RESOURCE"/>
+  <resource name="sprItemIcon2" type="RESOURCE"/>
 </resources>

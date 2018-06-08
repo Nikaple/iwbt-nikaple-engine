@@ -13,12 +13,12 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if(!jumpKey &amp;&amp; yflag*vspeed &lt; 0){
-    vspeed *= 0.45;
-    alarm[0] = 0;
-}
-else{
-    alarm[0] = 1;
+        <argument kind="STRING">if (!jumpKey &amp;&amp; yflag * vspeed &lt; 0) {
+    vspeed *= 0.45
+    eventSync = true
+    alarm[0] = 0
+} else {
+    alarm[0] = 1
 }
 
 </argument>

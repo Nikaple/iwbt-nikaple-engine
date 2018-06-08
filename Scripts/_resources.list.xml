@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
-  <resource name="player" type="GROUP"/>
-  <resource name="system" type="GROUP"/>
   <resource name="functions" type="GROUP"/>
-  <resource name="audio" type="GROUP"/>
-  <resource name="controls" type="GROUP"/>
+  <resource name="music" type="GROUP"/>
   <resource name="network" type="GROUP"/>
   <resource name="util" type="GROUP"/>
   <resource name="draw" type="GROUP"/>
+  <resource name="system" type="GROUP"/>
   <resource name="lib" type="GROUP"/>
   <resource name="plugins" type="GROUP"/>
 </resources>

@@ -8,11 +8,7 @@ var list, itemCount, size, key, origSize;
 list = argument0
 itemCount = argument1
 
-if (itemCount) {
-    if (!is_real(itemCount)) {
-        show_error('Error in script `cmd_list_add`, argument[1]: itemCount should be a number', 0)
-    }
-}
+error_item('cmd_list_add', itemCount)
 
 // find current size
 key = ds_map_find_first(list)

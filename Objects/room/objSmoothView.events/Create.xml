@@ -20,11 +20,14 @@
 // DO NOT PUT 'camera' IN THE ROOM
 //
 
-view_object = id;
-view_hborder[0] = 400;
-view_vborder[0] = 304;
-x=player.x;
-y=player.y;
+destroy_if_exists(camera)
+
+view_object = id
+view_hborder[0] = 400
+view_vborder[0] = 304
+x = player.x
+y = player.y
+
 </argument>
       </arguments>
     </action>

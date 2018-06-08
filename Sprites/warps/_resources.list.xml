@@ -5,4 +5,5 @@
   <resource name="sprWarpCyan" type="RESOURCE"/>
   <resource name="maskRoomChanger" type="RESOURCE"/>
   <resource name="maskSyncRoomChanger" type="RESOURCE"/>
+  <resource name="maskWaitRoomChanger" type="RESOURCE"/>
 </resources>

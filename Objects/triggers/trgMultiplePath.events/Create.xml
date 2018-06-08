@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">// this is almost the same with pathFree
+// but it can be triggered multiple times sequentially
+// see rTraps for creation code help
+
+depth = 1000002;
+
+ensure('trg[1]', trg[1])
+ensure('pth[1]', pth[1])
+ensure('spd[1]', spd[1])
+
+// maximum trigger times
+for (i = 1; i &lt; 10; i += 1) {
+    if (trg[i] == 0 &amp;&amp; pth[i] == 0) {
+        maxTraps = i - 1
+    }
+}
+
+event_inherited()
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

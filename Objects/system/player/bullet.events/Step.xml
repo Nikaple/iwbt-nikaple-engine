@@ -15,7 +15,7 @@
       <arguments>
         <argument kind="STRING">if (collision_line(x, y, x + hspeed, y, block, 0, 0)) {
     a = instance_place(x + hspeed, y, block)
-    if (a != noone &amp;&amp; a.object_index == block) {
+    if (a != noone &amp;&amp; a.object_index == objBlock) {
         instance_destroy()
     } else if ((a.visible = 1)) {
         instance_destroy()

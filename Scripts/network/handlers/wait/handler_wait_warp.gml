@@ -1,6 +1,7 @@
 var fromName, data, _room, roomTo, IsAllPlayersInWarp, warpX, warpY, screens, kind, info, seed;
 fromName = argument0
 data = argument1
+IsAllPlayersInWarp = argument2
 
 _room = json_pick(data, 'room')
 roomTo = json_pick(data, 'roomTo')
@@ -9,7 +10,6 @@ warpY = json_pick(data, 'warpY')
 screens = json_pick(data, 'screens')
 kind = json_pick(data, 'kind')
 seed = json_pick(data, 'seed') 
-IsAllPlayersInWarp = json_pick(data, 'fin')
 
 if (ds_map_exists(objOnlinePlayers.dsPlayerInfo, fromName)) {
     info = json_pick(objOnlinePlayers.dsPlayerInfo, fromName)

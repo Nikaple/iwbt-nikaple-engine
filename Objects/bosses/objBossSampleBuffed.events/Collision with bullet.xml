@@ -24,12 +24,12 @@ if (flash == 0 &amp;&amp; curHP != 0) {
     //flash the object, so it's invincible
     flashObject(3, 3)
     //play the sound effect when boss get hit
-    audio_playsound(sndBossHit)
+    music_play(sndBossHit)
     if (curHP == 35) {
         //activate second phase
         //now code the second phase using this 'buff' variable
         buff = true
-        audio_playsound(sndBlockChange)
+        music_play(sndBlockChange)
     }
     //if the boss is going to die
     if (curHP == 0) {

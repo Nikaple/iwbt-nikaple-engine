@@ -13,11 +13,9 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">{
-    //get the x,y value of current view
-    xview=view_xview[0];
-    yview=view_yview[0];
-}
+        <argument kind="STRING">//get the x,y value of current view
+xview = view_xview[0]
+yview = view_yview[0]
 
 </argument>
       </arguments>

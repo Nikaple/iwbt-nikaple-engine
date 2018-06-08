@@ -13,16 +13,11 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">//create boss item
-var inst;
-inst = instance_create(688,544,bossItem);
-inst.num = 3;
-inst.sprite_index = bossicon3;
-//create the warp to teleport out
-inst = instance_create(160,416,bossWarp);
-inst.roomTo = rHub;
+        <argument kind="STRING">bossItem.visible = true
+bossWarp.visible = true
 //stop the music
-SS_StopSound(curMusic);
+SS_StopSound(curMusic)
+
 </argument>
       </arguments>
     </action>

@@ -3,7 +3,7 @@
 // WARNING: this script will not destroy the ds_map for you,
 // you must DESTROY THE MAP BY YOURSELF!
 
-if (!ns_is_in_game()) exit
+if (!ns_is_in_game() || noSync) exit
 
 var eventName, mapId, eventMap, map, i, size, current;
 eventName = argument0

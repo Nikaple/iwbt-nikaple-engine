@@ -13,11 +13,7 @@ map = ds_map_create()
 ds_map_add(pid, key, map)
 _cmd_mark_as_ds(pid, key)
 
-if (kvCount) {
-    if (!is_real(kvCount)) {
-        show_error('Error in script `cmd_add_map`, argument[2]: kvCount should be a number', 0)
-    }
-}
+error_kv('cmd_add_map', kvCount)
 
 for (i = 0; i < kvCount; i += 1) {
     _cmd_check_key(argument[i * 2 + 3], 'cmd_add_map')

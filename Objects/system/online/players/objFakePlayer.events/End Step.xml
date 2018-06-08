@@ -13,17 +13,15 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">
-
-playerPlatform()
+        <argument kind="STRING">playerPlatform()
 
 wy = y
 wSpeed = vspeed
 
-if (place_meeting(x, y, objBlock) || place_meeting(x, y, activeBlock)) {
+if (!onIvy &amp;&amp; (place_meeting(x, y, objBlock) || place_meeting(x, y, activeBlock))) {
     y = yprevious
-    move_contact_object(point_direction(x, y, x, wy), -1, objBlock)
-    move_contact_object(point_direction(x, y, x, wy), -1, activeBlock)
+    move_contact_object(270, -1, objBlock)
+    move_contact_object(270, -1, activeBlock)
 } else {
     gravity = yflag * 0.4
 }

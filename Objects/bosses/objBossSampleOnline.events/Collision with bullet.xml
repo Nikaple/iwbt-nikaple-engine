@@ -22,9 +22,9 @@ if (flash == 0 &amp;&amp; curHP != 0) {
     // trigger visual effects
     event_user(0)
     // update boss status
-    event_user(1)
+    event_user(15)
     // tell other players we hit the boss
-    ns_send_event('boss_hit', 1, 'id', id)
+    ns_send_instance()
 }
 
 </argument>

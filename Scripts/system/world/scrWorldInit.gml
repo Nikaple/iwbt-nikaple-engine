@@ -11,4 +11,4 @@ global.timestep = 0
 
 scrWorldInitPlugins()
 scrWorldInitMessageBox()
-
+scrWorldInitRunCheck()

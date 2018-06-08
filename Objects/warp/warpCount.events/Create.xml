@@ -13,7 +13,7 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">// this warp will be available when certain 
+        <argument kind="STRING">// this warp will be available when certain
 // amount of bosses (or items) are defeated(obtained)
 
 //Creation Code:
@@ -28,22 +28,22 @@
 
 event_inherited()
 
-if(countBoss == true){
-    for(i=1;i&lt;=global.boss_number;i+=1){
-        count += global.boss[i];
+if (countBoss == true) {
+    for (i = 1; i &lt;= global.boss_number; i += 1) {
+        count += global.boss[i]
     }
 }
-if(countItem == true){
-    for(i=1;i&lt;=global.item_number;i+=1){
-        count += global.item[i];
+if (countItem == true) {
+    for (i = 1; i &lt;= global.item_number; i += 1) {
+        count += global.item[i]
     }
 }
-if(count &gt;= total){
-    visible = true;
+if (count &gt;= total) {
+    visible = true
+} else {
+    visible = false
 }
-else{
-    visible = false;
-}
+
 </argument>
       </arguments>
     </action>

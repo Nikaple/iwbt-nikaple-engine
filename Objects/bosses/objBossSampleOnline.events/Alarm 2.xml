@@ -16,7 +16,7 @@
         <argument kind="STRING">//play boss music
 audio_loopmusic(BGM_BOSS2)
 //start moving
-path_start(p_boss1, 4, 1, 0)
+path_start(pBoss1, 4, 1, 0)
 move = true
 //unfreeze the player
 global.frozen = false

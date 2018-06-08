@@ -3,7 +3,7 @@ var isSilent, cmd;
 isSilent = argument0
 
 if (!ns_is_in_lobby()) {
-    i18n_show('not_in_lobby')
+    i18n_show_message('not_in_lobby')
     exit
 }
 

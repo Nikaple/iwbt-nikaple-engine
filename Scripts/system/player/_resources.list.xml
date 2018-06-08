@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="killPlayer" type="RESOURCE"/>
+  <resource name="playerInit" type="RESOURCE"/>
+  <resource name="playerSprite" type="RESOURCE"/>
+  <resource name="playerCheckKeyboard" type="RESOURCE"/>
+  <resource name="playerMove" type="RESOURCE"/>
+  <resource name="playerJump" type="RESOURCE"/>
+  <resource name="playerVJump" type="RESOURCE"/>
+  <resource name="playerWallJump" type="RESOURCE"/>
+  <resource name="playerPlatform" type="RESOURCE"/>
+  <resource name="playerShoot" type="RESOURCE"/>
+  <resource name="playerCollideBlock" type="RESOURCE"/>
+  <resource name="playerReverse" type="RESOURCE"/>
+  <resource name="playerSlope" type="RESOURCE"/>
+  <resource name="playerSync" type="RESOURCE"/>
+  <resource name="playerForceSync" type="RESOURCE"/>
+  <resource name="playerMisc" type="RESOURCE"/>
+  <resource name="fakePlayerCollideBlock" type="RESOURCE"/>
+  <resource name="fakePlayerClearSpeed" type="RESOURCE"/>
+  <resource name="outsideRoom" type="RESOURCE"/>
+  <resource name="outsideView" type="RESOURCE"/>
+</resources>

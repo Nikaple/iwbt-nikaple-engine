@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">ns_fetch_lobby()
+
+for (i = 0; i &lt; 6; i += 1) {
+  h = i mod 2
+  v = i div 2
+  _room[i] = instance_create(80 + 352 * h, 80 + 128 * v, objLobbyRoomDrawer)
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

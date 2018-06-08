@@ -13,27 +13,32 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if saveTimer &gt; 0{
-    saveTimer -= 1;
+        <argument kind="STRING">if (saveTimer &gt; 0) {
+    saveTimer -= 1
 }
-if place_meeting(x,y,bullet) || (place_meeting(x,y,player) &amp;&amp; keyboard_check_pressed(global.shootbutton)){
-    if(saveTimer &lt;= 0 &amp;&amp; instance_exists(player) == true){
-        saveTimer = 30;
-        image_index = 1;
-        image_speed = 0.017;
+if (
+    place_meeting(x, y, bullet) ||
+    (place_meeting(x, y, player) &amp;&amp; keyboard_check_pressed(global.shootbutton))
+) {
+    if (saveTimer &lt;= 0 &amp;&amp; instance_exists(player)) {
+        saveTimer = 30
+        image_index = 2
+        alarm[0] = 80
+        saveGame()
         // sync save
         ns_send_event(
-            'save_sync', 6,
+            'save_sync', 7,
             'id', id,
             'room', room,
             'x', player.x,
             'y', player.y,
             'xs', player.image_xscale,
+            'rev', global.reverse,
             'scope', SCOPE_OTHERS
         )
-        saveGame();
     }
 }
+
 </argument>
       </arguments>
     </action>

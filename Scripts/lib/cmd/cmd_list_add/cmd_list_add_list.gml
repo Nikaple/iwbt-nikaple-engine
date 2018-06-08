@@ -17,11 +17,7 @@ _cmd_mark_as_ds(pid, key)
 // list setting
 _cmd_mark_as_list(map)
 
-if (itemCount) {
-    if (!is_real(itemCount)) {
-        show_error('Error in script `cmd_list_add_list`, argument[1]: itemCount should be a number', 0)
-    }
-}
+error_item('cmd_list_add_list', itemCount)
 
 for (i = 0; i < itemCount; i += 1) {
     ds_map_add(map, string(i), argument[i + 2])

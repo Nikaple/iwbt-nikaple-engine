@@ -20,7 +20,6 @@ with (player) {
 }
 
 instance_create(0, 0, warpWaitingBG)
-argCount = 2
 
 var map;
 map = ds_map_create()

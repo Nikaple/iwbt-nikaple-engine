@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
+  <resource name="playerStart" type="RESOURCE"/>
   <resource name="camera" type="RESOURCE"/>
   <resource name="objSmoothView" type="RESOURCE"/>
   <resource name="objResetSync" type="RESOURCE"/>

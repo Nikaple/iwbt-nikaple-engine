@@ -14,6 +14,11 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">///initialize variables
+
+if (global.boss[2]) {
+    instance_destroy()
+}
+
 image_speed = 1 / 15
 //initialize hp
 maxHP = 30

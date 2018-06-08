@@ -16,14 +16,14 @@
         <argument kind="STRING">///line attack
 
 sprite_index = sprCherryPink
-//stop moving
+// stop moving
 move = false
 // this will make the 'shoot_count' variable loop like this:
-// 0,1,2,3,4,5,6,7,0,1,2,3,4,,5,6,7,0,1,...
+// 0,1,2,3,4,5,6,7,0,1,2,3,4,5,6,7,0,1,...
 shoot_count = (shoot_count + 1) mod 8
 //aims player at the beginning of the 8 bullets
-if ((shoot_count = 0)) {
-    dir = point_direction(x, y, player.x, player.y)
+if (shoot_count == 0) {
+    dir = towardsPlayer('host')
 }
 // create bullets
 inst = instance_create(x, y, objBossBullet)
@@ -31,9 +31,9 @@ inst.speed = 12
 inst.direction = dir
 inst.sprite_index = sprite_index
 
-//play sound effect
-audio_playsound(sndShoot)
-//shoot timer
+// play sound effect
+music_play(sndShoot)
+// shoot timer
 if (shoot_count &lt; 7) {
     //shoot the cherry of current line
     alarm[7] = 2

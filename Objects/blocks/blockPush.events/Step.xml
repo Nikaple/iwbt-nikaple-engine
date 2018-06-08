@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (global.reverse) {
+    yflag = -1
+    yt = y + 32
+    yb = y + vspeed - 1
+} else {
+    yflag = 1
+    yt = y - 1
+    yb = y + vspeed + 32
+}
+colBlock = collision_rectangle(x + 1, yb, x + 30, yb + 6, block, false, true)
+isRightFree = !place_meeting(x + 1, y, block) || !place_meeting(x + 1, y, player)
+isLeftFree = !place_meeting(x - 1, y, block) || !place_meeting(x - 1, y, player)
+conveyor = collision_line(x + 1, yb, x + 30, yb, blockConveyor, false, true)
+playerOnTop = collision_line(x + 1, bbox_top - 2, x + 30, bbox_top - 2, player, false, true)
+playerOnLeft = collision_line(x - 1, y, x - 1, y + 31, player, true, false)
+playerOnRight = collision_line(x + 32, y, x + 32, y + 31, player, true, false)
+shouldMoveRight = isRightFree &amp;&amp; playerOnLeft &amp;&amp; player.image_xscale == 1
+shouldMoveLeft = isLeftFree &amp;&amp; playerOnRight &amp;&amp; player.image_xscale == -1
+
+if (playerOnTop) {
+    player.y += y - yprevious
+}
+
+if (colBlock != noone) {
+    // only pushable when on ground
+    gravity = 0
+    vspeed = 0
+    fallFlag = false
+    y = colBlock.y - 32 * yflag
+    h = conveyor.h
+    
+    // pushable by player
+    if (shouldMoveRight || shouldMoveLeft) {
+        h += player.hsp
+        event_user(0)
+    }
+    if (isRightFree || isLeftFree) {
+        hspeed = h
+    }
+} else {
+    // sync once when fall
+    if (!fallFlag) {
+        event_user(0)
+        fallFlag = true
+    }
+    gravity = grav * yflag
+    if (vspeed * yflag &gt; maxVspeed) {
+        vspeed = yflag * maxVspeed
+    }
+}
+
+if (conveyor == noone) {
+    // horizontal friction setup
+    if (hspeed &gt; frc) {
+        hspeed -= frc
+    } else if (hspeed &lt; -frc) {
+        hspeed += frc
+    } else {
+        hspeed = 0
+    }
+}
+
+/*if (x == xprevious &amp;&amp; abs(y - yprevious) &lt;= grav * 2) {
+    event_user(0)
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

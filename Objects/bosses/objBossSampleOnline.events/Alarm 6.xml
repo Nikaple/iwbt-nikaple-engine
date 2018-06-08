@@ -24,9 +24,10 @@ inst.friction = 0.2
 // set alarms for the instance, make it accelerate
 inst.alarm[0] = 35
 inst.alarm[1] = 35
+inst.dir = 'guest'
 inst.sprite_index = sprite_index
 //play sound effect
-audio_playsound(sndShoot)
+music_play(sndShoot)
 alarm[6] = 5
 
 </argument>

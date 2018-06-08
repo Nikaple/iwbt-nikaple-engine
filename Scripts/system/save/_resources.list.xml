@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="saveGame" type="RESOURCE"/>
+  <resource name="loadGame" type="RESOURCE"/>
+  <resource name="saveDeathTime" type="RESOURCE"/>
+  <resource name="loadIcons" type="RESOURCE"/>
+</resources>

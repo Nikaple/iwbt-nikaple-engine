@@ -7,3 +7,7 @@ audio_init()
 cleanmem_init(0)
 ns_init()
 i18n_init()
+fake_random_init()
+if (global.enable_dll_focus) {
+    focus_init()
+}

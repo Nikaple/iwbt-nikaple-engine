@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">spritable()
+snd = set_default(snd, sndBlockChange)
+
+global.__block_sync_time = 0
+active = false
+time = 0
+
+u = collision_point(
+    bbox_left + sprite_width / 2,
+    bbox_top - sprite_height / 2,
+    blockReveal,
+    0,
+    1
+)
+d = collision_point(
+    bbox_left + sprite_width / 2,
+    bbox_bottom + sprite_height / 2,
+    blockReveal,
+    0,
+    1
+)
+l = collision_point(
+    bbox_left - sprite_width / 2,
+    bbox_top + sprite_height / 2,
+    blockReveal,
+    0,
+    1
+)
+r = collision_point(
+    bbox_right + sprite_width / 2,
+    bbox_top + sprite_height / 2,
+    blockReveal,
+    0,
+    1
+)
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

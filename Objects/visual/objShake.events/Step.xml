@@ -13,11 +13,9 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">{
-    //shaking views
-    view_xview[0]=xview+random_range(-shakeX,shakeX);
-    view_yview[0]=yview+random_range(-shakeY,shakeY);
-}
+        <argument kind="STRING">//shaking views
+view_xview[0] = xview + random_range(-shakeX, shakeX)
+view_yview[0] = yview + random_range(-shakeY, shakeY)
 
 </argument>
       </arguments>

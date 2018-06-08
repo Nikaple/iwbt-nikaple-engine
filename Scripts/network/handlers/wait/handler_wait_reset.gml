@@ -1,8 +1,7 @@
 var fromName, data, isAllPlayersReset;
 fromName = argument0
 data = argument1
-
-isAllPlayersReset = json_pick(data, 'fin')
+isAllPlayersReset = argument2
 
 if (isAllPlayersReset) {
     with (world) {

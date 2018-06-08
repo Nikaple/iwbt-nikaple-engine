@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="player">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">var i;
+
+if (global.triggered != trg[1] &amp;&amp; !triggered[1]) {
+    triggered[1] = true
+    if (snd[1]) {
+        music_play(snd[1])
+    }
+    
+    if (ns_is_in_game() &amp;&amp; !noSync) {
+        map = cmd_add_map(global.__cmd_sync, string(id - 100000))
+        trgList = cmd_add_list(map, 't')
+        sndList = cmd_add_list(map, 'snd')
+        timeList = cmd_add_list(map, 'time')
+        for (i = 1; i &lt;= 12; i += 1) {
+            if (trg[i] != 0) {
+                cmd_list_add(trgList, 1, trg[i])
+                cmd_list_add(sndList, 1, snd[i])
+                cmd_list_add(timeList, 1, time[i])
+            } else {
+                break;
+            }
+        }
+    }
+    event_user(EVENT_TCP)
+}
+
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

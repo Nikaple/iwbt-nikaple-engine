@@ -8,11 +8,7 @@ var map;
 map = argument
 kvCount = argument1
 
-if (kvCount) {
-    if (!is_real(kvCount)) {
-        show_error('Error in script `cmd_add`, argument[1]: kvCount should be a number', 0)
-    }
-}
+error_kv('cmd_add', kvCount)
 
 for (i = 0; i < kvCount; i += 1) {
     _cmd_check_key(argument[i * 2 + 2], 'cmd_add')

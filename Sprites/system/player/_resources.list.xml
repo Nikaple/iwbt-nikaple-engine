@@ -3,6 +3,7 @@
   <resource name="maskPlayer" type="RESOURCE"/>
   <resource name="sprBlood" type="RESOURCE"/>
   <resource name="sprBow" type="RESOURCE"/>
+  <resource name="sprBowGuest" type="RESOURCE"/>
   <resource name="sprBullet" type="RESOURCE"/>
   <resource name="sprPlayerFall" type="RESOURCE"/>
   <resource name="sprPlayerIdle" type="RESOURCE"/>

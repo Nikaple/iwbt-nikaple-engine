@@ -7,7 +7,7 @@ fontJP = argument2
 
 return ds_map_init(
     3,
-    'cn', fontCN,
-    'en', fontEN,
-    'jp', fontJP
+    LANG_CN, fontCN,
+    LANG_EN, fontEN,
+    LANG_JP, fontJP
 )

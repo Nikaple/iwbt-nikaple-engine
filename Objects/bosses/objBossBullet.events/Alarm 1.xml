@@ -14,7 +14,9 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">///homing
-move_towards_point(player.x,player.y,7)
+speed = 7
+direction = towardsPlayer(target)
+
 //acceleration 
 friction = -0.1;
 

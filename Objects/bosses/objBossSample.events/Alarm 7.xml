@@ -32,7 +32,7 @@ inst.direction = dir
 inst.sprite_index = sprite_index
 
 //play sound effect
-audio_playsound(sndShoot)
+music_play(sndShoot)
 //shoot timer
 if (shoot_count &lt; 7) {
     //shoot the cherry of current line

@@ -32,7 +32,7 @@ if (buff) {
     inst.alarm[3] = 1
 }
 //play sound effect
-audio_playsound(sndShoot)
+music_play(sndShoot)
 //more spam!
 alarm[4] = 2 - buff * 0.5
 

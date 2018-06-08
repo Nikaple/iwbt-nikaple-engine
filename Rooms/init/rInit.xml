@@ -97,13 +97,13 @@
   <enableViews>false</enableViews>
   <instances>
     <instance>
-      <object>effect_parent</object>
+      <object>objEffectParent</object>
       <position x="32" y="0"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>init</object>
+      <object>objInit</object>
       <position x="16" y="0"/>
       <creationCode/>
       <locked>false</locked>

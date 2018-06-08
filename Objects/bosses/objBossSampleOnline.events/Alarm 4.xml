@@ -26,7 +26,7 @@ inst.direction = random(360);
 //set the sprite of the instance
 inst.sprite_index = sprite_index;
 //play sound effect
-audio_playsound(sndShoot)
+music_play(sndShoot)
 //continue to spam next instance
 alarm[4] = 2;
 </argument>

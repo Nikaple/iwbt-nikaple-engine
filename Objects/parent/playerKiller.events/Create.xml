@@ -14,6 +14,12 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">autoSpikeSprite();
+
+if (outsideRoom()) {
+    noDes = true
+}
+
+spritable()
 </argument>
       </arguments>
     </action>

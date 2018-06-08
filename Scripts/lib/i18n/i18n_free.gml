@@ -9,5 +9,7 @@ for (i = 0; i < size; i += 1) {
 }
 
 ds_map_destroy(global.__i18n_map)
-fw_cleanup()
 
+if (global.enable_internationalization) {
+    fw_cleanup()
+}

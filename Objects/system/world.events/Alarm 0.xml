@@ -13,13 +13,11 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">//make up for the frame that player presses 'R'
+        <argument kind="STRING">scrWorldStopDeathSound()
+//make up for the frame that player presses 'R'
 global.timestep += 2
 saveDeathTime()
 with (player) {
-    instance_destroy()
-}
-with (bow) {
     instance_destroy()
 }
 with (bloodEmitter) {
@@ -28,7 +26,11 @@ with (bloodEmitter) {
 global.frozen = 0
 global.frozen2 = 0
 randomize()
-loadGame()
+if (global.__save_id == -1) {
+    loadGame()
+} else {
+    scrWorldLoadGlobalSave()
+}
 </argument>
       </arguments>
     </action>

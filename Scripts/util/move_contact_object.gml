@@ -35,7 +35,6 @@ if (
     }
     _dx = lengthdir_x(_sublength, _dir)
     _dy = lengthdir_y(_sublength, _dir)
-
     x += _dx - sign(_dx) * 0.1
     y += _dy - sign(_dy) * 0.1
 

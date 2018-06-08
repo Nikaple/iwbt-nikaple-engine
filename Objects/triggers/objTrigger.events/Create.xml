@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//  when player touch this object, it will trigger
+//  the object(s) with the same trg value
+//
+//      in the creation code, put:
+//          trg                         trigger number;
+//          key                         key trigger number;
+//          snd                         sound effect(optional);
+//          setScale(xscale,yscale)     region scaling(optional);
+//
+//
+
+// make the triggers visible in debug mode (F6)
+if (debug_mode) {
+    visible = true
+    image_alpha = 0.5
+    depth = -10
+}
+
+image_xscale = set_default(xs, image_xscale)
+image_yscale = set_default(ys, image_yscale)
+
+ensure('trg', trg)
+
+keyTriggered = false
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">for (i = 0; i &lt; num; i += 1) {
+    inst[i].x = x + lengthdir_x(rad, 360 / num * i + ang)
+    inst[i].y = y + lengthdir_y(rad, 360 / num * i + ang)
+}
+ang += spd
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

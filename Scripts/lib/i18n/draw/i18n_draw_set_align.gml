@@ -1,4 +1,4 @@
-if (i18n_get_lang() == 'en' && global.use_builtin_drawing) {
+if (i18n_should_use_builtin_drawing()) {
     draw_set_halign(argument0)
     draw_set_valign(argument1)
 } else {

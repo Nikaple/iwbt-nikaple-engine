@@ -10,9 +10,13 @@ if (!is_string(key)) {
     } else {
         err = 'Error: '
     }
-    show_error(
-        err + 'Keys in command should be string type. Found: ' + string(key),
-        0
-    )
+    if (!global.production_mode) {
+        show_error(
+            err +
+                'Keys in command should be string type. Found: ' +
+                string(key),
+            0
+        )
+    }
 }
 

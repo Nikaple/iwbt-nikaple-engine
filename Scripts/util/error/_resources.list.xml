@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
   <resource name="ensure" type="RESOURCE"/>
+  <resource name="error_ind_zero" type="RESOURCE"/>
   <resource name="error_kv" type="RESOURCE"/>
+  <resource name="error_item" type="RESOURCE"/>
   <resource name="error_kv_zero" type="RESOURCE"/>
-  <resource name="error_info" type="RESOURCE"/>
   <resource name="error_arg_exceed" type="RESOURCE"/>
+  <resource name="error_info" type="RESOURCE"/>
 </resources>

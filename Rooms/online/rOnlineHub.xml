@@ -148,7 +148,7 @@
     <instance>
       <object>warp</object>
       <position x="128" y="320"/>
-      <creationCode>text = "host_guest_block"
+      <creationCode>text = "warp_host_guest"
 color = c_red
 roomTo = rOnlineHostGuestBlock
 </creationCode>
@@ -157,7 +157,7 @@ roomTo = rOnlineHostGuestBlock
     <instance>
       <object>warp</object>
       <position x="128" y="416"/>
-      <creationCode>text = "triggers_and_buttons"
+      <creationCode>text = "warp_triggers_and_buttons"
 roomTo = rOnlineTriggerAndButton
 color = c_green
 </creationCode>
@@ -166,27 +166,25 @@ color = c_green
     <instance>
       <object>warp</object>
       <position x="640" y="416"/>
-      <creationCode>text = "test_warp_spikes"
+      <creationCode>text = "warp_spikes"
 color = c_teal
 roomTo = rOnlineSpike
-warpX = 384
-warpY = 288
 </creationCode>
       <locked>false</locked>
     </instance>
     <instance>
       <object>warp</object>
       <position x="384" y="320"/>
-      <creationCode>text = "host_guest_spike_warp"
+      <creationCode>text = "warp_seamless_warping"
 color = c_purple
-roomTo = rOnlineHostGuestSpike
+roomTo = rSeamlessWarping
 </creationCode>
       <locked>false</locked>
     </instance>
     <instance>
       <object>warp</object>
       <position x="128" y="224"/>
-      <creationCode>text = "sync_save"
+      <creationCode>text = "warp_sync_save"
 roomTo = rOnlineSaveSync
 color = c_maroon
 </creationCode>
@@ -203,18 +201,9 @@ roomTo = rHub
     <instance>
       <object>warp</object>
       <position x="128" y="128"/>
-      <creationCode>text = "wait_save"
+      <creationCode>text = "warp_wait_save"
 roomTo = rOnlineSaveWait
 color = c_navy
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>warp</object>
-      <position x="640" y="224"/>
-      <creationCode>text = "sync_reset"
-color = merge_color(c_red, c_black, 0.5)
-roomTo = rOnlineResetSync
 </creationCode>
       <locked>false</locked>
     </instance>
@@ -222,6 +211,81 @@ roomTo = rOnlineResetSync
       <object>camera</object>
       <position x="32" y="32"/>
       <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>warpWait</object>
+      <position x="384" y="128"/>
+      <creationCode>text = "warp_wait_warp"
+roomTo = rOnlineWarpWait
+color = c_navy
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>warpWait</object>
+      <position x="640" y="128"/>
+      <creationCode>text = "warp_wait_reset"
+roomTo = rOnlineResetWait
+color = c_navy
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>warpWait</object>
+      <position x="640" y="320"/>
+      <creationCode>text = "warp_online_boss"
+roomTo = rOnlineBossSample
+color = c_teal
+seed = true
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>warpSync</object>
+      <position x="384" y="224"/>
+      <creationCode>text = "warp_sync_warp"
+color = merge_color(c_red, c_black, 0.5)
+roomTo = rOnlineWarpSync
+noSave = true
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>warpWait</object>
+      <position x="384" y="416"/>
+      <creationCode>text = "warp_platforms"
+roomTo = rOnlinePlatforms
+color = c_blue
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>blockBullet</object>
+      <position x="96" y="544"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>savePoint</object>
+      <position x="32" y="544"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>warpWait</object>
+      <position x="640" y="224"/>
+      <creationCode>text = "warp_sync_reset"
+color = merge_color(c_red, c_black, 0.5)
+roomTo = rOnlineResetSync
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>playerStart</object>
+      <position x="64" y="544"/>
+      <creationCode>infJump = true
+</creationCode>
       <locked>false</locked>
     </instance>
     <instance>
@@ -726,71 +790,6 @@ roomTo = rOnlineResetSync
       <object>objBlock</object>
       <position x="0" y="0"/>
       <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>warpWait</object>
-      <position x="384" y="128"/>
-      <creationCode>text = "wait_warp"
-roomTo = rOnlineWarpWait
-color = c_navy
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>warpWait</object>
-      <position x="640" y="128"/>
-      <creationCode>text = "wait_reset"
-roomTo = rOnlineResetWait
-color = c_navy
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>warpWait</object>
-      <position x="640" y="320"/>
-      <creationCode>text = "online_boss"
-roomTo = rOnlineBossSample
-color = c_teal
-seed = true
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>warpSync</object>
-      <position x="384" y="224"/>
-      <creationCode>text = "sync_warp"
-color = merge_color(c_red, c_black, 0.5)
-roomTo = rOnlineWarpSync
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>warpWait</object>
-      <position x="384" y="416"/>
-      <creationCode>text = "test_warp_platforms"
-roomTo = rOnlinePlatforms
-color = c_blue
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>bulletBlock</object>
-      <position x="96" y="544"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>savePoint</object>
-      <position x="32" y="544"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>playerStart</object>
-      <position x="64" y="544"/>
-      <creationCode>infJump = true
-</creationCode>
       <locked>false</locked>
     </instance>
   </instances>

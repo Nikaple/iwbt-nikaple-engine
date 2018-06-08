@@ -18,6 +18,8 @@ if(debug_mode){
     visible = true;
 }
 
+image_xscale = set_default(xs, image_xscale)
+image_yscale = set_default(ys, image_yscale)
 </argument>
       </arguments>
     </action>

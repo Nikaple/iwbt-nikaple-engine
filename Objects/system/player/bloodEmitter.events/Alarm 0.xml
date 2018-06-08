@@ -13,7 +13,7 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">part_emitter_destroy(Sname,emitter1)
+        <argument kind="STRING">emit = false
 </argument>
       </arguments>
     </action>

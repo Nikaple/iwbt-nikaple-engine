@@ -10,16 +10,11 @@ type = argument0
 kvCount = argument1
 map = ds_map_create()
 
-ds_map_add(map, 'cmd', type)
-
-if (kvCount) {
-    if (!is_real(kvCount)) {
-        show_error(
-            'Error in script `cmd_init`, argument[1]: kvCount should be a number',
-            0
-        )
-    }
+if (type != '') {
+    ds_map_add(map, 'cmd', type)
 }
+
+error_kv('cmd_init', kvCount)
 
 for (i = 0; i < kvCount; i += 1) {
     _cmd_check_key(argument[i * 2 + 2], 'cmd_init')

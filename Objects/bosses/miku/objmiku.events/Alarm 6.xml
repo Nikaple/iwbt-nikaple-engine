@@ -15,10 +15,11 @@
       <arguments>
         <argument kind="STRING">//shoots cherries towards somewhere near player every beat from both hands
 //shoots bounding cherries from mouth each beat
-instance_create(x,y,nottoplayerCheery);
-instance_create(x+120,y,nottoplayerCheery);
-instance_create(x+76,y-168,boundCherry);
-alarm[6]=SPB;
+instance_create(x, y, nottoplayerCheery)
+instance_create(x + 120, y, nottoplayerCheery)
+instance_create(x + 76, y - 168, boundCherry)
+alarm[6] = SPB
+
 </argument>
       </arguments>
     </action>

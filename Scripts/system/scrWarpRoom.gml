@@ -1,4 +1,4 @@
-// scrWarpRoom(roomTo, warpX, warpY, screens, kind)
+// scrWarpRoom(roomTo, warpX, warpY, clearSpeed, screens, kind)
 var roomTo, warpX, warpY, clearSpeed, kind, screens, h, v;
 roomTo = argument0
 warpX = argument1
@@ -11,31 +11,21 @@ transition_kind = kind
 if (roomTo != -1) {
     if (room_exists(roomTo)) {
         room_goto(roomTo)
-    } else {
+    } else if (!global.production_mode) {
         show_error(
-            'Cannnot warp to an unexisting room. Object name: ' +
-                object_get_name(id.object_index) +
-                ', object id: ' +
-                string(id) +
-                ', current room: ' +
-                room_get_name(room) +
-                ', roomTo: ' +
-                string(roomTo),
+            'Cannnot warp to an unexisting room, roomTo: ' +
+                string(roomTo) + '. ' + error_info(),
             0
         )
     }
 }
 
 if (warpX != 0 || warpY != 0) {
-    h = player.h
-    v = player.v
-
-    if (!instance_exists(player)) {
-        instance_create(warpX, warpY, player)
-    }
+    player.canJump = false
+    
     if (clearSpeed) {
-        player.hspeed = h
-        player.vspeed = v
+        player.hspeed = 0
+        player.vspeed = 0
     }
     //when warping vertically(warpY!=0)
     //the player's x coordinate shouldn't move
@@ -46,6 +36,8 @@ if (warpX != 0 || warpY != 0) {
     //roomTo = room2;
     //warpY = 0;
     //screens = -2;
+    
+    
     if (warpX != 0) {
         player.x = warpX + 17
     } else {
@@ -57,8 +49,17 @@ if (warpX != 0 || warpY != 0) {
     } else {
         player.y += screens * 608
     }
+    // prevent the bug that player could move into block
+    with (player) {
+        if (place_free(x, y - yflag)) {
+            player.y -= yflag
+        }
+    }
 } else {
+    global.__player_maxJumps = player.maxJumps
+    global.__player_maxSpeed = player.maxSpeed
+    global.__player_grav = player.grav
+    global.__player_shootInterval = player.shootInterval
     destroy_if_exists(player)
-    destroy_if_exists(bow)
 }
 

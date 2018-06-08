@@ -3,7 +3,7 @@
   <resource name="miku" type="GROUP"/>
   <resource name="objHPBar" type="RESOURCE"/>
   <resource name="objBossSample" type="RESOURCE"/>
-  <resource name="objBossSampleOnline" type="RESOURCE"/>
   <resource name="objBossSampleBuffed" type="RESOURCE"/>
+  <resource name="objBossSampleOnline" type="RESOURCE"/>
   <resource name="objBossBullet" type="RESOURCE"/>
 </resources>

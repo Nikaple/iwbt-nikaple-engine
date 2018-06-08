@@ -7,7 +7,7 @@ while (1) {
         pauseon = false
         background_delete(pauseback)
         if (isBossRoom()) {
-            audio_resumemusic(curMusic)
+            music_resume(curMusic)
         } else {
             SS_SetSoundVol(curMusic, 2000 + 80 * global.audio_music_volume)
         }

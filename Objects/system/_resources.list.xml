@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
   <resource name="options" type="GROUP"/>
-  <resource name="rTitle, rLobby, rRoom" type="GROUP"/>
-  <resource name="online" type="GROUP"/>
+  <resource name="title" type="GROUP"/>
+  <resource name="lobby" type="GROUP"/>
+  <resource name="room" type="GROUP"/>
   <resource name="player" type="GROUP"/>
-  <resource name="init" type="RESOURCE"/>
+  <resource name="online" type="GROUP"/>
+  <resource name="menu" type="GROUP"/>
+  <resource name="objInit" type="RESOURCE"/>
+  <resource name="objLoad" type="RESOURCE"/>
   <resource name="world" type="RESOURCE"/>
-  <resource name="effect_parent" type="RESOURCE"/>
-  <resource name="titleButton" type="RESOURCE"/>
-  <resource name="menuSelect" type="RESOURCE"/>
-  <resource name="menuSelect2" type="RESOURCE"/>
+  <resource name="objEffectParent" type="RESOURCE"/>
   <resource name="objGameover" type="RESOURCE"/>
   <resource name="objDeathSound" type="RESOURCE"/>
-  <resource name="objLoad" type="RESOURCE"/>
   <resource name="objNothing" type="RESOURCE"/>
   <resource name="objDebug" type="RESOURCE"/>
 </resources>

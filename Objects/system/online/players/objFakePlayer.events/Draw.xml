@@ -18,6 +18,13 @@
 }
 
 drawSelf()
+
+// draw bow
+if (global.difficulty == 0 &amp;&amp; isInGameRoom()) {
+    draw_sprite_ext(bowSpr, -1, xprevious, yprevious, image_xscale, image_yscale, image_angle, image_blend,image_alpha)
+}
+
+// draw name
 draw_set_color(c_white)
 draw_set_font(font12)
 draw_set_halign(fa_center)
@@ -25,15 +32,15 @@ draw_set_valign(fa_bottom)
 if (is_string(name)) {
   if (global.reverse) {
     if (reverse) {
-      draw_text_transformed_outline(x, y + 14, name, 1, 1, angle - 180)
+      draw_text_transformed_outline(round(x), round(y) + 14, name, 1, 1, angle - 180)
     } else {
-      draw_text_transformed_outline(x, y - 32, name, 1, 1, angle - 180)
+      draw_text_transformed_outline(round(x), round(y) - 32, name, 1, 1, angle - 180)
     }
   } else {
     if (reverse) {
-      draw_text_transformed_outline(x, y + 32, name, 1, 1, angle)
+      draw_text_transformed_outline(round(x), round(y) + 32, name, 1, 1, angle)
     } else {
-      draw_text_transformed_outline(x, y - 14, name, 1, 1, angle)
+      draw_text_transformed_outline(round(x), round(y) - 14, name, 1, 1, angle)
     }
   }
   

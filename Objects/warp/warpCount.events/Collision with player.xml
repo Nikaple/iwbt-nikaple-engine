@@ -13,9 +13,10 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if(visible){
-    event_inherited();
+        <argument kind="STRING">if (visible) {
+    event_inherited()
 }
+
 </argument>
       </arguments>
     </action>

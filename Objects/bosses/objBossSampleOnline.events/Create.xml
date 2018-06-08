@@ -24,10 +24,14 @@
 // uncomment the line below:
 // randomize()
 
+if (global.boss[4]) {
+    instance_destroy()
+}
+
 ///initialize variables
 image_speed = 1/15;
 //initialize hp
-maxHP = 1;
+maxHP = 30;
 curHP = maxHP;
 //create the HP bar
 inst = instance_create(0,0,objHPBar);

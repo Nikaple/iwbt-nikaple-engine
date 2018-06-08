@@ -15,10 +15,8 @@
       <arguments>
         <argument kind="STRING">if (!visible) exit;
 
-if (!noSave) {
-    global.__sync_position = true
-    global.__sync_boss_number = num
-}
+global.__sync_position = true
+global.__player_auto_save = true
 
 event_inherited()
 

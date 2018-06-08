@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="handler_cmd_register_success" type="RESOURCE"/>
+  <resource name="handler_cmd_register_failed" type="RESOURCE"/>
+  <resource name="handler_cmd_login_success" type="RESOURCE"/>
+  <resource name="handler_cmd_login_failed" type="RESOURCE"/>
+  <resource name="handler_cmd_login_already" type="RESOURCE"/>
+  <resource name="handler_cmd_login_needed" type="RESOURCE"/>
+  <resource name="handler_cmd_logout" type="RESOURCE"/>
+</resources>

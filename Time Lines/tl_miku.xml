@@ -16,7 +16,7 @@
         <argument kind="STRING">alarm[0] = 1;
 alarm[1] = 1;
 sound_stop_all();
-audio_playmusic(BGM_BOSS1);
+music_play(BGM_BOSS1);
 </argument>
       </arguments>
     </action>
@@ -298,7 +298,7 @@ global.reset2=0;
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">//song ends, destroy miku
-audio_playsound(sndDeath);
+music_play(sndDeath);
 global.reset2=1;
 instance_destroy();
 </argument>

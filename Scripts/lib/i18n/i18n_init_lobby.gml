@@ -1,18 +1,10 @@
 // lobby pop up
-i18n_add("lobby_name", "房间名", "Lobby name", "ロビー名")
-i18n_add("lobby_id", "房间ID", "Lobby id", "ロビー番号")
+i18n_add("lobby_info", "房间名：${0}，房间ID：${1}", "Lobby name: ${0}, Lobby id: ${1}", "ロビー名：${0}、ロビー番号：${1}")
 i18n_add("input_lobby_name", "请输入房间名：", "Input lobby name:", "ロビー名を入力してください：")
 i18n_add("input_lobby_id", "请输入房间ID：", "Input lobby id:", "ロビー番号を入力してください：")
-i18n_add("default_lobby_name", "'s room", "'s room", "'s room")
+i18n_add("default_lobby_name", "${0} 's room", "${0} 's room", " ${0} 's room")
 
 // lobby response
-i18n_add("lobby_create_success_self", "成功创建房间！房间号为：", "Succesfully created the lobby. Lobby id: ", "ロビーを作成しました。ロビー番号：")
-i18n_add("lobby_create_success_other", "创建了一个房间。房间ID：", " created a lobby. Lobby id: ", "さんはロビーを作った。 ロビー番号：")
-i18n_add("lobby_join_success_self", "成功加入房间！", "Successfully joined the lobby.", "ロビーに参加しました。")
-i18n_add("lobby_join_success_other", "加入了房间。", " joined the lobby.", "さんはロビーに参加しました。")
-i18n_add("lobby_leave_success_self", "成功离开房间。", "Successfullly left the lobby.", "部屋を去った。")
-i18n_add("lobby_leave_success_other", "离开了房间。", " left the lobby.", "さんは部屋を去った。")
-i18n_add("lobby_leave_success_host", "房间已解散。", "The lobby has been dismissed.", "ロビーは解散しました")
 i18n_add("lobby_not_exists", "该房间号不存在。", "Lobby does not exist.", "ロビー番号は存在しません。")
 i18n_add("lobby_not_found", "您还没有加入房间。", "You are not in any lobby.", "あなたはまだ部屋に入っていません。")
 i18n_add("lobby_pass_not_valid", "房间密码错误。", "Lobby password not valid.", "ロビーのパスワードが間違っています。")

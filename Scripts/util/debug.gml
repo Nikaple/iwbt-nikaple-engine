@@ -1,6 +1,8 @@
 // debug any string, number except 0 and '0'
 // for zeros, use something as debug("blabla: " + string(str_to_log))
 
+if (!debug_mode) exit;
+
 var str, len, newStr, i;
 str = ''
 i = 0

@@ -24,9 +24,10 @@ inst.friction = 0.2
 inst.alarm[0] = 35
 // see alarm[1] of objBossBullet for buff !
 inst.alarm[1] = 35
+inst.target = 'host'
 inst.sprite_index = sprite_index
 //play sound effect
-audio_playsound(sndShoot)
+music_play(sndShoot)
 alarm[6] = 5
 
 </argument>

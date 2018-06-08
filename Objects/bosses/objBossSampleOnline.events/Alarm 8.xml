@@ -27,7 +27,7 @@ inst.gravity = 0.1
 inst.gravity_direction = 180
 inst.sprite_index = sprite_index
 //play sound effect
-audio_playsound(sndShoot)
+music_play(sndShoot)
 alarm[8] = 4
 
 </argument>

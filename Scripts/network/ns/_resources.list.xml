@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
-  <resource name="ns_init" type="RESOURCE"/>
-  <resource name="ns_free" type="RESOURCE"/>
-  <resource name="ns_connect" type="RESOURCE"/>
   <resource name="ns_get" type="GROUP"/>
   <resource name="ns_is" type="GROUP"/>
   <resource name="ns_actions" type="GROUP"/>
   <resource name="ns_send" type="GROUP"/>
+  <resource name="ns_sync" type="GROUP"/>
   <resource name="internal" type="GROUP"/>
 </resources>

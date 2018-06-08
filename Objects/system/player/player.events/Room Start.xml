@@ -13,25 +13,17 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">//creating bow
-if !instance_exists(bow){
-    var a;
-    a = instance_create(x,y,bow);
-    a.image_xscale = image_xscale;
-    a.image_yscale = image_yscale;
-}
+        <argument kind="STRING">keyboard_clear(vk_shift)
+io_clear()
 //spin view
-if(global.reverse == 1){
-    view_angle[0] = 180;
-}
-else{
-    view_angle[0] = 0;
+if (global.reverse == 1) {
+    view_angle[0] = 180
+} else {
+    view_angle[0] = 0
 }
 
 // sync room
 alarm[11] = 1
-
-
 </argument>
       </arguments>
     </action>

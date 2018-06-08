@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="music_init" type="RESOURCE"/>
+  <resource name="music_config" type="RESOURCE"/>
+  <resource name="music_load" type="RESOURCE"/>
+  <resource name="music_loop" type="RESOURCE"/>
+  <resource name="music_play" type="RESOURCE"/>
+  <resource name="music_stop" type="RESOURCE"/>
+  <resource name="music_pause" type="RESOURCE"/>
+  <resource name="music_resume" type="RESOURCE"/>
+</resources>

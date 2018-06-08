@@ -14,7 +14,7 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">//spam after get killed
-with (2) {
+repeat (2) {
     inst = instance_create(x, y, objBossBullet)
     inst.speed = random_range(1, 7)
     inst.direction = random(360)
@@ -29,14 +29,14 @@ with (2) {
     )
 }
 //play sound effects
-audio_playsound(sndShoot)
+music_play(sndShoot)
 //size decrease
 if (image_xscale &gt; 0) {
     image_xscale -= 0.02
     image_yscale = image_xscale
     alarm[9] = 1
 } else {
-    audio_playsound(sndDeath)
+    music_play(sndDeath)
     instance_destroy()
 }
 

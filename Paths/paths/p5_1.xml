@@ -6,9 +6,9 @@
     <point speed="100" x="992" y="384"/>
     <point speed="100" x="832" y="384"/>
   </points>
-  <backgroundRoom/>
+  <backgroundRoom>rSlopes</backgroundRoom>
   <closed>true</closed>
   <precision>4</precision>
   <smooth>false</smooth>
-  <snap x="16" y="16"/>
+  <snap x="32" y="32"/>
 </path>

@@ -17,24 +17,31 @@
 // so I rewrote this version of timeline using simple setting and stopping alarms
 // Hope that this version can make you understand avoidance bosses better
 
+if (global.boss[1]) {
+    instance_destroy()
+} else {
+    global.frozen = true
+}
+
 globalvar SPB;
 //stop previous music
-SS_StopSound(curMusic);
+SS_StopSound(curMusic)
 //the beats per minute variable of a song
 //you can get this from softwares like "MixMeister BPM Analyzer"
-BPM = 210;
+BPM = 210
 //how many timeline steps are there in one beat
-beat = 4;
+beat = 4
 //calculating "Step Per Beat", that is, how many frames are there during one beat
 //this variable is extremely useful for building timelines
-SPB = 3000 / BPM;
+SPB = 3000 / BPM
 //set the timeline
-timeline_index = tl_miku;
-timeline_running = 1;
+timeline_index = tl_miku
+timeline_running = 1
 //calculating timeline speed
-timeline_speed = BPM * beat / 3000;
+timeline_speed = BPM * beat / 3000
 //freeze the player using global.frozen
-global.frozen = true;
+
+
 </argument>
       </arguments>
     </action>

@@ -24,7 +24,7 @@ if (flash == 0 &amp;&amp; curHP != 0) {
     //flash the object, so it's invincible
     flashObject(3, 3)
     //play the sound effect when boss get hit
-    audio_playsound(sndBossHit)
+    music_play(sndBossHit)
     //if the boss is going to die
     if (curHP == 0) {
         //stop all the alarms

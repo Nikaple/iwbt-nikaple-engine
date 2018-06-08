@@ -147,14 +147,6 @@
   </views>
   <instances>
     <instance>
-      <object>warp</object>
-      <position x="672" y="544"/>
-      <creationCode>text = "return_hub"
-roomTo = rOnlineHub
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
       <object>blockHost</object>
       <position x="64" y="480"/>
       <creationCode/>
@@ -926,6 +918,22 @@ roomTo = rOnlineHub
       <object>objBlock</object>
       <position x="384" y="576"/>
       <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>warpHost</object>
+      <position x="512" y="32"/>
+      <creationCode>text = "return_hub"
+roomTo = rOnlineHub
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>warpGuest</object>
+      <position x="672" y="544"/>
+      <creationCode>text = "return_hub"
+roomTo = rOnlineHub
+</creationCode>
       <locked>false</locked>
     </instance>
     <instance>

@@ -1,14 +1,16 @@
 // ns_send_wait(waitName, flag, kvCount, k1, v1, k2, v2, ...)
 // Send a command to sync an wait wait of `waitName` flagged with `flag` with key-value pairs
-if (!ns_is_in_game()) exit
+if (!ns_is_in_game() || noSync) exit
 
 var kvCount, i, map, waitMap, waitName, flag;
 waitName = argument0
 flag = argument1
 kvCount = argument2
 
-if (flag == -1) {
-    flag = id - 100000
+if (is_real(flag)) {
+    if (flag == -1 || flag == 0) {
+        flag = id - 100000
+    }
 }
 
 debug('Syncing `wait`... `wait` name:', argument0)

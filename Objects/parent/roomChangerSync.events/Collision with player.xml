@@ -13,27 +13,10 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if (!onCollide) exit;
+        <argument kind="STRING">global.__sync_position = true
+global.__player_auto_save = true
 
-with (player) {
-    instance_destroy()
-}
-
-instance_create(0, 0, warpWaitingBG)
-argCount = 2
-
-var map;
-map = ds_map_create()
-ds_map_add_if_exists(map, 'room', room)
-ds_map_add_if_exists(map, 'roomTo', roomTo)
-ds_map_add_if_exists(map, 'kind', kind)
-ds_map_add_if_exists(map, 'warpX', warpX)
-ds_map_add_if_exists(map, 'warpY', warpY)
-ds_map_add_if_exists(map, 'screens', screens)
-ds_map_add_if_exists(map, 'clearSpeed', clearSpeed)
-
-ns_send_event_direct('warp_wait', map)
-ds_map_destroy(map)
+event_inherited()
 </argument>
       </arguments>
     </action>

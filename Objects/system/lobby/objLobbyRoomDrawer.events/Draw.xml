@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!roomId) exit;
+drawSelf()
+
+draw_set_color(c_black)
+draw_set_alpha(1)
+draw_set_halign(fa_center)
+draw_set_valign(fa_middle)
+draw_text(x + 40, y + 20, roomId)
+draw_text(x + 188, y + 20, roomName)
+for (i = 0; i &lt; playerCount; i += 1) {
+  draw_sprite_ext(sprPlayerHead, -1, x + 28 + i * 36, y + 50, 2, 2, 0, c_white, 1)
+}
+
+draw_set_halign(fa_left)
+draw_text(x + 12, y + 78, "Host: " + string(hostName))
+
+draw_sprite(sprLobbyRoomLock, needPass, x + 273, y + 66)
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>
