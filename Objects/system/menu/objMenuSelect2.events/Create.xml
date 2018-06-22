@@ -21,6 +21,7 @@ str[3] = 'Data3'
 bossicon[1] = sprBossIcon1
 bossicon[2] = sprBossIcon2
 bossicon[3] = sprBossIcon3
+bossicon[4] = sprBossIcon3
 difText[0] = 'Medium'
 difText[1] = 'Hard'
 difText[2] = 'Very Hard'

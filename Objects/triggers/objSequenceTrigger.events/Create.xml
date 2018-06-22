@@ -25,7 +25,7 @@
 //
 
 // make the triggers visible in debug mode (F6)
-if (debug_mode) {
+if (debug_mode &amp;&amp; global.__debug_mode) {
     visible = true
 }
 

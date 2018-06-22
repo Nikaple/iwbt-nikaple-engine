@@ -1,3 +1,5 @@
+syncTimer += 1
+
 if (
     leftPressed ||
     rightPressed ||
@@ -7,7 +9,7 @@ if (
     jumpReleased
 ) {
     eventSync = true
-    syncTimer = 0
+    timer = 0
 }
 
 
@@ -27,7 +29,7 @@ if (forceSync) {
 }
 
 // when player is not moving, do not sync
-if (x == xprevious && abs(y - yprevious) <= grav * 2) {
+if (hspeed == 0 && abs(y - yprevious) <= grav * 2) {
     idleTime += 1
     if (idleTime == 10) {
         idleTime = 0
@@ -42,7 +44,7 @@ syncThreshold = set_default(syncThreshold, global.max_sync_cycle)
 
 timer = (timer + 1) mod syncThreshold
 
-if ((shouldSync && timer == 0) || eventSync) {
+if (syncTimer >= 4 && ((shouldSync && timer == 0) || eventSync)) {
     ns_sync_player(id)
     eventSync = false
 }

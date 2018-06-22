@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="_json_move_pointer" type="RESOURCE"/>
+  <resource name="_json_pointer_pos" type="RESOURCE"/>
+  <resource name="_json_current_char" type="RESOURCE"/>
+  <resource name="_json_is_number_char" type="RESOURCE"/>
+  <resource name="_json_is_space_char" type="RESOURCE"/>
+  <resource name="_json_map_store" type="RESOURCE"/>
+  <resource name="_json_list_store" type="RESOURCE"/>
+  <resource name="_json_error" type="RESOURCE"/>
+  <resource name="_json_skip_space" type="RESOURCE"/>
+</resources>

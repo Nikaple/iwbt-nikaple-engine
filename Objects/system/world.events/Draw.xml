@@ -13,7 +13,7 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if (pauseon == true) {
+        <argument kind="STRING">if (pauseon) {
     draw_background(pauseback, view_xview[0], view_yview[0])
     draw_set_alpha(0.5)
     draw_set_color(c_black)

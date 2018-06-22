@@ -1,6 +1,6 @@
 // ns_send_instance(kvCount, k1, v1, k2, v2, ...)
 // Send a command to sync the instance
-if (!ns_is_in_game() || noSync) exit
+if (!ns_is_in_game() || noSync || global.tournament_mode) exit
 
 var i, syncId, kvCount, map;
 syncId = string(id - 100000)

@@ -3,7 +3,7 @@
 // WARNING: this script will not destroy the ds_map for you,
 // you must DESTROY THE MAP BY YOURSELF!
 
-if (!ns_is_in_game() || noSync) exit
+if (!ns_is_in_game() || noSync || global.tournament_mode) exit
 
 var waitName, flag, mapId, waitMap, map, i, size, current;
 waitName = argument0
@@ -24,15 +24,8 @@ if (ds_map_exists(global.__cmd_sync, 'e')) {
     waitMap = cmd_add_map(global.__cmd_sync, 'e')
 }
 
-map = cmd_add_map(waitMap, "wait")
-ds_map_add(map, 'name', waitName)
-ds_map_add(map, 'flag', flag)
-
-size = ds_map_size(mapId)
-current = ds_map_find_first(mapId)
-
-for (i = 0; i < size; i += 1) {
-    ds_map_add(map, current, ds_map_find_value(mapId, current))
-    current = ds_map_find_next(mapId, current)
-}
+ds_map_add(waitMap, 'wait', mapId)
+_cmd_mark_as_ds(waitMap, 'wait')
+ds_map_add(mapId, 'name', waitName)
+ds_map_add(mapId, 'flag', flag)
 

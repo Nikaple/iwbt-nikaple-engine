@@ -14,7 +14,7 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">image_alpha = 0
-alarm[0] = 1
+alarm[0] = time
 </argument>
       </arguments>
     </action>

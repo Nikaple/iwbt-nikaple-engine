@@ -13,13 +13,20 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">autoSpikeSprite();
+        <argument kind="STRING">if (tarx == 0 &amp;&amp; tary == 0 &amp;&amp; angle == 0) {
+    autoSpikeSprite()
+}
 
 if (outsideRoom()) {
     noDes = true
 }
 
+if (trg != 0 &amp;&amp; debug_mode &amp;&amp; global.__debug_mode) {
+    image_blend = merge_color(c_red, c_white, 0.5)
+}
+
 spritable()
+
 </argument>
       </arguments>
     </action>

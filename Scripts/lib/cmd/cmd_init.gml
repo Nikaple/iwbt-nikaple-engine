@@ -7,18 +7,23 @@
 
 var map, kvCount, type;
 type = argument0
-kvCount = argument1
 map = ds_map_create()
 
-if (type != '') {
+if (is_string(type)) {
+    kvCount = argument1
+    error_kv('cmd_init', kvCount)
     ds_map_add(map, 'cmd', type)
-}
-
-error_kv('cmd_init', kvCount)
-
-for (i = 0; i < kvCount; i += 1) {
-    _cmd_check_key(argument[i * 2 + 2], 'cmd_init')
-    ds_map_add(map, argument[i * 2 + 2], argument[i * 2 + 3])
+    for (i = 0; i < kvCount; i += 1) {
+        _cmd_check_key(argument[i * 2 + 2], 'cmd_init')
+        ds_map_add(map, argument[i * 2 + 2], argument[i * 2 + 3])
+    }
+} else {
+    kvCount = type
+    error_kv('cmd_init', kvCount)
+    for (i = 0; i < kvCount; i += 1) {
+        _cmd_check_key(argument[i * 2 + 1], 'cmd_init')
+        ds_map_add(map, argument[i * 2 + 1], argument[i * 2 + 2])
+    }
 }
 
 return map

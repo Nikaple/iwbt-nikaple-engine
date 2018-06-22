@@ -13,12 +13,8 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if (image_alpha &lt; 0.5) {
-    image_alpha += 0.005
-    alarm[0] = 1
-} else {
-    alarm[1] = 1
-}
+        <argument kind="STRING">fadeIn(20)
+alarm[0] = 1
 </argument>
       </arguments>
     </action>

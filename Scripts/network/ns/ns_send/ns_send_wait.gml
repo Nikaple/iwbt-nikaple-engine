@@ -1,8 +1,8 @@
 // ns_send_wait(waitName, flag, kvCount, k1, v1, k2, v2, ...)
 // Send a command to sync an wait wait of `waitName` flagged with `flag` with key-value pairs
-if (!ns_is_in_game() || noSync) exit
+if (!ns_is_in_game() || noSync || global.tournament_mode) exit
 
-var kvCount, i, map, waitMap, waitName, flag;
+var kvCount, i, map, waitMap, waitName, flag, waitEventMap;
 waitName = argument0
 flag = argument1
 kvCount = argument2

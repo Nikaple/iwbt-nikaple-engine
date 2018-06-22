@@ -66,7 +66,7 @@ for (i = 1; i &lt;= 3; i += 1) {
         draw_sprite(sprCherry, -1, x + (i - 1) * 239 + 5, y + 310)
         draw_sprite(sprCherry, -1, x + (i - 1) * 239 + 25, y + 310)
         draw_sprite(sprCherry, -1, x + (i - 1) * 239 + 45, y + 310)
-        draw_sprite(sprPlayerIdle, -1, x + (i - 1) * 239 + 67, y + 312)
+        draw_sprite(sprPlayerRunning, -1, x + (i - 1) * 239 + 67, y + 312)
         draw_sprite(sprCherry, -1, x + (i - 1) * 239 + 85, y + 310)
         draw_sprite(sprCherry, -1, x + (i - 1) * 239 + 105, y + 310)
         draw_sprite(sprCherry, -1, x + (i - 1) * 239 + 125, y + 310)

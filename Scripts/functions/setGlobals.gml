@@ -1,6 +1,8 @@
 /****** GAME SETTINGS ******/
 // game title
 global.game_title = 'I wanna be the Engine Nikaple Edition'
+// game mode
+global.game_mode = MODE_USER_SELECT
 // first room
 global.first_stage = rHub
 // enable production mode
@@ -8,16 +10,21 @@ global.enable_production_mode = false
 // internationalization
 global.enable_internationalization = true
 // language, defined in Resources -> Define Constants...
-global.language = LANG_CN
+global.default_language = LANG_CN
+// Encoding of your operating system. You should change this if you're not using
+// a simplified Chinese operating system. Check Microsoft Dev Center for your encoding:
+// https://msdn.microsoft.com/en-us/library/windows/desktop/dd317756(v=vs.85).aspx
+global.encoding = 'gb2312'
 // use built-in draw functions or not
 global.enable_builtin_drawing = false
+// room width & height
+global.game_room_width = 800
+global.game_room_height = 608
 // if we want to stream music, music volume will be decreased after player's death, but it will not be paused.
 // as a result, the loading of music files will be extremely fast.
 global.enable_stream_music = true
 // if focus is enabled, player won't move when game loses focus
-global.enable_dll_focus = false
-// use keyboard_key_press to simulate focus
-global.enable_simulate_focus = true
+global.enable_focus = true
 // key code used for check focus
 global.focus_key_code = 1
 // enable save encryption

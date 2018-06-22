@@ -14,7 +14,7 @@ if (curMusic != argument0 && !global.audio_music_muted) {
     curMusic = argument0
     if (!global.audio_music_muted) {
         if (!SS_IsSoundPlaying(curMusic)) {
-            SS_SetSoundVol(curMusic, 2000 + 80 * global.audio_music_volume)
+            music_volume(global.audio_music_volume)
             SS_LoopSound(curMusic)
         }
     }

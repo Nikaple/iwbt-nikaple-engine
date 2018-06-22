@@ -13,12 +13,16 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if mouse_x &gt; x and mouse_x &lt; x+sprite_width
-    and mouse_y &gt; y and mouse_y &lt; y+sprite_height
-{
-    global.audio_music_volume = floor(100*(mouse_x - x)/sprite_width) ; 
-    audio_update();
+        <argument kind="STRING">if (
+    mouse_x &gt; x &amp;&amp;
+    mouse_x &lt; x + sprite_width &amp;&amp;
+    mouse_y &gt; y &amp;&amp;
+    mouse_y &lt; y + sprite_height
+) {
+    global.audio_music_volume = floor(100 * (mouse_x - x) / sprite_width)
+    audio_update()
 }
+
 </argument>
       </arguments>
     </action>

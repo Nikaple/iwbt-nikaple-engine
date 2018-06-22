@@ -20,7 +20,7 @@
     }
     else{
         if(global.stream_music == false){
-            SS_PauseSound(curMusic);
+            music_pause(curMusic);
             global.paused = 1;
         }
     }

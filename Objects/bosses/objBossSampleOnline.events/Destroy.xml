@@ -20,7 +20,7 @@ bossItem.visible = true
 bossWarpSync.visible = true
 
 //stop the music
-SS_StopSound(curMusic);
+music_stop(curMusic);
 </argument>
       </arguments>
     </action>

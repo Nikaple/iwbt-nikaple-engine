@@ -8,6 +8,7 @@
   <resource name="spritable" type="RESOURCE"/>
   <resource name="spikeSprite" type="RESOURCE"/>
   <resource name="getSaveFile" type="RESOURCE"/>
+  <resource name="getFocus" type="RESOURCE"/>
   <resource name="gamePause" type="RESOURCE"/>
   <resource name="gameResume" type="RESOURCE"/>
   <resource name="gameReset" type="RESOURCE"/>

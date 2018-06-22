@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<path>
+  <points>
+    <point speed="100" x="1040" y="424"/>
+    <point speed="100" x="1040" y="512"/>
+    <point speed="100" x="1168" y="512"/>
+    <point speed="100" x="1232" y="576"/>
+    <point speed="100" x="1296" y="512"/>
+    <point speed="100" x="1424" y="512"/>
+    <point speed="100" x="1424" y="576"/>
+    <point speed="100" x="1552" y="576"/>
+    <point speed="100" x="1552" y="296"/>
+  </points>
+  <backgroundRoom>rGimmick</backgroundRoom>
+  <closed>false</closed>
+  <precision>4</precision>
+  <smooth>false</smooth>
+  <snap x="16" y="16"/>
+</path>

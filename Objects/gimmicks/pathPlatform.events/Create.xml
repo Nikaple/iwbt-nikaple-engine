@@ -30,6 +30,11 @@
 //          scl = scale;
 
 spritable()
+
+drawPath = set_default(pth, path_index)
+color = set_default(color, c_black)
+width = set_default(width, 1)
+
 isTouchPlatform = pth != 0
 </argument>
       </arguments>

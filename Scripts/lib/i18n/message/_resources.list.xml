@@ -2,6 +2,7 @@
 <resources>
   <resource name="i18n_show_message" type="RESOURCE"/>
   <resource name="i18n_show_message_ext" type="RESOURCE"/>
+  <resource name="i18n_show_question" type="RESOURCE"/>
   <resource name="i18n_get_integer" type="RESOURCE"/>
   <resource name="i18n_get_string" type="RESOURCE"/>
 </resources>

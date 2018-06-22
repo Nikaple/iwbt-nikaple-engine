@@ -1,15 +1,18 @@
 //check whether player is outside of the room
 
-if (x < 0) {
+var obj;
+obj = set_default(argument0, id)
+
+if (obj.x < 0) {
     return true
 }
-if (x > room_width) {
+if (obj.x > room_width) {
     return true
 }
-if (y < 0) {
+if (obj.y < 0) {
     return true
 }
-if (y > room_height) {
+if (obj.y > room_height) {
     return true
 }
 return false

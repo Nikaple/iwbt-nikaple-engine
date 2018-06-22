@@ -16,7 +16,7 @@
         <argument kind="STRING">bossItem.visible = true
 bossWarp.visible = true
 //stop the music
-SS_StopSound(curMusic)
+music_stop(curMusic)
 
 </argument>
       </arguments>

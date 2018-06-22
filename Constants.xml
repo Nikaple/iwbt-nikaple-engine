@@ -32,4 +32,7 @@
   <constant name="PATH_ACTION_CONTINUE_FROM_START" value="1"/>
   <constant name="PATH_ACTION_CONTINUE_FROM_CURRENT" value="2"/>
   <constant name="PATH_ACTION_REVERSE" value="3"/>
+  <constant name="MODE_TOURNAMENT" value="1"/>
+  <constant name="MODE_COOPERATION" value="2"/>
+  <constant name="MODE_USER_SELECT" value="3"/>
 </constants>

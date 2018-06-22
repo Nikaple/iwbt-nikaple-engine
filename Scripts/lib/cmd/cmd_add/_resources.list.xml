@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
   <resource name="cmd_add" type="RESOURCE"/>
+  <resource name="cmd_add_if_exists" type="RESOURCE"/>
   <resource name="cmd_add_list" type="RESOURCE"/>
   <resource name="cmd_add_map" type="RESOURCE"/>
 </resources>

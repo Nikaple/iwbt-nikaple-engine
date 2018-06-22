@@ -5,6 +5,7 @@ data = argument1
 roomTo = json_pick(data, 'roomTo')
 _x = json_pick(data, 'x')
 _y = json_pick(data, 'y')
+debug(_y)
 xs = json_pick(data, 'xs')
 rev = json_pick(data, 'rev')
 sync = json_pick(data, 'sync')

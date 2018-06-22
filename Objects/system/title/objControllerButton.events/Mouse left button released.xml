@@ -16,29 +16,46 @@
         <argument kind="STRING">image_index = 0
 
 message_caption(1, text)
-switch(text) {
-    case "register":
-        ns_register();
-        break;
-    case "login":
-        ns_login();
-        break;
-    case "logout":
-        ns_logout();
-        break;
-    case "create_lobby":
-        ns_create_lobby();
-        break;
-    case "join_lobby":
-        ns_join_lobby();
-        break;
-    case "leave_lobby":
-        ns_leave_lobby();
-        break;
-    case "start_game":
-        ns_start_game();
-        break;
+switch (text) {
+    case 'single_player':
+        ns_single_player()
+        break
+    case 'multiple_player':
+        ns_multiple_player()
+        break
+    case 'exit':
+        game_end()
+        break
+    case 'register':
+        ns_register()
+        break
+    case 'login':
+        ns_login()
+        break
+    case 'back':
+        with (objTitleController) {
+            for (i = 0; i &lt; 3; i += 1) {
+                inst[i].text = buttonText[i]
+            }
+        }
+        break
+    case 'logout':
+        ns_logout()
+        break
+    case 'create_lobby':
+        ns_create_lobby()
+        break
+    case 'join_lobby':
+        ns_join_lobby()
+        break
+    case 'leave_lobby':
+        ns_leave_lobby()
+        break
+    case 'start_game':
+        ns_start_game()
+        break
 }
+
 </argument>
       </arguments>
     </action>

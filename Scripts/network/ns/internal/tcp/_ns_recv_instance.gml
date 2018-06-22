@@ -25,6 +25,7 @@ for (i = 0; i < size; i += 1) {
     with (_id) {
         variable_local_set(cur, json_pick(data, cur))
     }
+    cur = ds_map_find_next(data, cur)
 }
 
 _id.fromName = fromName

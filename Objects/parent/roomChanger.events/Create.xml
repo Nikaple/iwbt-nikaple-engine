@@ -21,6 +21,7 @@
 //    text = "textToDisplay"
 
 onCollide = true;
+mode = 'normal'
 
 if (!color) {
   color = c_black
@@ -29,6 +30,10 @@ if (!color) {
 alpha = set_default(alpha, 1)
 
 spritable()
+
+if (warpX != 0 || warpY != 0) {
+    show_error('warpX and warpY is deprecated. See: https://nikaple.github.io/iwbt-nikaple-engine-doc/#/objectref?id=warps-传送点', 0)
+}
 </argument>
       </arguments>
     </action>

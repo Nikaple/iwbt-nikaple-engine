@@ -33,7 +33,7 @@ enda = set_default(enda, PATH_ACTION_CONTINUE_FROM_START)
 
 for (i = 0; i &lt; num; i += 1) {
     inst = instance_create(x, y, playerKiller)
-    inst.depth = 1000002
+    inst.depth = set_default(depth, 2000002)
     with (inst) {
         path_start(other.pth, other.spd, other.enda, 0)
     }

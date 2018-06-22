@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="KEYPRESS" id="32">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!isInGameRoom()) exit;
+
+with (objBlock) {
+    if (object_index == objBlock) {
+        visible = !visible
+    }
+}
+
+with (objTrigger) {
+    visible = !visible
+    image_alpha = 0.5
+}
+
+with (playerKiller) {
+    if (trg != 0) {
+        if (image_blend == c_white) {
+            image_blend = merge_color(c_red, c_white, 0.5)
+        } else {
+            image_blend = c_white
+        }
+    }
+}
+
+global.__debug_mode = !global.__debug_mode
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

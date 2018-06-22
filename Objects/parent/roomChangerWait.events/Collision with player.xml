@@ -15,6 +15,12 @@
       <arguments>
         <argument kind="STRING">if (!onCollide) exit;
 
+if (!ns_is_in_game() || noSync || global.tournament_mode) {
+    scrWarpRoom(roomTo, num, mode, width, height, clearSpeed, screens, kind)
+    exit;
+}
+
+
 with (player) {
     instance_destroy()
 }
@@ -23,22 +29,28 @@ instance_create(0, 0, warpWaitingBG)
 
 var map;
 map = ds_map_create()
-ds_map_add_if_exists(map, 'room', room)
-ds_map_add_if_exists(map, 'roomTo', roomTo)
-ds_map_add_if_exists(map, 'kind', kind)
-ds_map_add_if_exists(map, 'warpX', warpX)
-ds_map_add_if_exists(map, 'warpY', warpY)
-ds_map_add_if_exists(map, 'screens', screens)
-ds_map_add_if_exists(map, 'clearSpeed', clearSpeed)
-ds_map_add_if_exists(map, 'seed', seed)
-
+cmd_add_if_exists(
+    map, 6,
+    'room', room,
+    'roomTo', roomTo,
+    'kind', kind,
+    'num', num,
+    'mode', mode,
+    'width', width,
+)
+cmd_add_if_exists(
+    map, 4,
+    'height', height,
+    'screens', screens,
+    'clearSpeed', clearSpeed,
+    'seed', seed
+)
 ns_send_wait_direct(
     'warp', 
     // setting the flag to start room and warp room
     string(room) + '-' + string(roomTo), 
     map
 )
-ds_map_destroy(map)
 </argument>
       </arguments>
     </action>

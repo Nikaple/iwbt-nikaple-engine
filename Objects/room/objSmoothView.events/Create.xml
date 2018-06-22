@@ -17,8 +17,6 @@
 //  in the room view settings, set the object following to this object
 //  and the Hbor should be 400, Vbor should be 304.
 //
-// DO NOT PUT 'camera' IN THE ROOM
-//
 
 destroy_if_exists(camera)
 

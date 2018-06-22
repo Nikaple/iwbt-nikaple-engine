@@ -13,7 +13,9 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">///Player movements
+        <argument kind="STRING">playerSync()
+
+///Player movements
 if (global.frozen2 == 0) {
     playerCheckKeyboard()
     playerMove()

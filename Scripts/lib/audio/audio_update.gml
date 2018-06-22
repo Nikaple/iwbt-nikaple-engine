@@ -25,5 +25,5 @@ global.audio_sound_muted = ini_read_real('Audio', 'sound_muted', 0)
 ini_close()
 
 //change music volume instantly
-SS_SetSoundVol(global.curMusic, 2000 + 80 * global.audio_music_volume)
+music_volume(global.audio_music_volume)
 

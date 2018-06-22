@@ -7,5 +7,5 @@
   <resource name="spikeRightHost" type="RESOURCE"/>
   <resource name="warpHost" type="RESOURCE"/>
   <resource name="playerStartHost" type="RESOURCE"/>
-  <resource name="freeButtonHost" type="RESOURCE"/>
+  <resource name="objButtonHost" type="RESOURCE"/>
 </resources>

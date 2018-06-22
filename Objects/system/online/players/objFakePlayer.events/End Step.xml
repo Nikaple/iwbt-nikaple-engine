@@ -15,17 +15,15 @@
       <arguments>
         <argument kind="STRING">playerPlatform()
 
-wy = y
-wSpeed = vspeed
 
-if (!onIvy &amp;&amp; (place_meeting(x, y, objBlock) || place_meeting(x, y, activeBlock))) {
+if ((place_meeting(x, y, objBlock) || place_meeting(x, y, activeBlock)) &amp;&amp; vspeed * yflag &gt;= 0) {
     y = yprevious
-    move_contact_object(270, -1, objBlock)
-    move_contact_object(270, -1, activeBlock)
 } else {
-    gravity = yflag * 0.4
+    gravity = yflag * grav
 }
-vspeed = wSpeed
+
+y = round(y)
+x = round(x)
 
 </argument>
       </arguments>

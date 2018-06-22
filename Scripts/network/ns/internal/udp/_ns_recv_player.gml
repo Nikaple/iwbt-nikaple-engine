@@ -15,7 +15,7 @@ h = (tmp & 3) - 1
 v = buffer_read_int16(global.udpBufId) / 100
 
 // raw debug message
-if (global.__debug_verbose_mode) {
+if (global.__debug_udp_verbose_mode) {
     sprite[IDLING] = "Idle"
     sprite[RUNNING] = "Run"
     sprite[FALLING] = "Fall"

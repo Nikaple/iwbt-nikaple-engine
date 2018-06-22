@@ -22,11 +22,11 @@ if (global.triggered != trg[1] &amp;&amp; !triggered[1]) {
     }
     
     if (ns_is_in_game() &amp;&amp; !noSync) {
-        map = cmd_add_map(global.__cmd_sync, string(id - 100000))
+        map = cmd_init()
         trgList = cmd_add_list(map, 't')
         sndList = cmd_add_list(map, 'snd')
         timeList = cmd_add_list(map, 'time')
-        for (i = 1; i &lt;= 12; i += 1) {
+        for (i = 1; i &lt;= maxTriggers; i += 1) {
             if (trg[i] != 0) {
                 cmd_list_add(trgList, 1, trg[i])
                 cmd_list_add(sndList, 1, snd[i])
@@ -35,6 +35,7 @@ if (global.triggered != trg[1] &amp;&amp; !triggered[1]) {
                 break;
             }
         }
+        ns_send_instance_direct(map)
     }
     event_user(EVENT_TCP)
 }

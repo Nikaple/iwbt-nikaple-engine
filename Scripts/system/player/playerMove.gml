@@ -1,8 +1,7 @@
 nearPlatform = place_meeting(x, y + yflag * 4, platform)
 onBlock =
     place_meeting(x, y + yflag, objBlock) ||
-    place_meeting(x, y + yflag, activeBlock) ||
-    place_meeting(x, y + yflag, obj_wall)
+    place_meeting(x, y + yflag, activeBlock)
 onConveyor = place_meeting(x, y + yflag, blockConveyor)
 onIvyL = place_meeting(x - 1, y, WalljumpL) && !onBlock && !onPlatform
 onIvyR = place_meeting(x + 1, y, WalljumpR) && !onBlock && !onPlatform
@@ -19,6 +18,7 @@ if (!onIvy) {
         image_xscale = h
         hspeed = maxSpeed * h + conveyorSpeed
         hsp = hspeed
+        isRunning = true
         spr = RUNNING
     } else {
         hspeed = conveyorSpeed
@@ -30,7 +30,7 @@ if (!onIvy) {
 if (!onIvy && abs(vspeed) > grav * 2 && !onPlatform) {
     if (vspeed * yflag < 0) {
         spr = JUMPING
-    } else if (vspeed * yflag > 0) {
+    } else {
         spr = FALLING
     }
 }
@@ -51,5 +51,6 @@ if (inWater) {
 if (vspeed * yflag > maxVspeed) {
     vspeed = sign(vspeed) * maxVspeed
 }
+
 
 

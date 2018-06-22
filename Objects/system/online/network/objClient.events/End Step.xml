@@ -22,7 +22,7 @@
     }
     
     bufferLength = buffer_get_length(global.udpSyncBufId)
-    if (bufferLength  &gt; bufferLengthAfterInit) {
+    if (bufferLength &gt; bufferLengthAfterInit) {
         udpsocket_send(global.udpSockId, global.udpSyncBufId)
         buffer_clear(global.udpSyncBufId)
     }

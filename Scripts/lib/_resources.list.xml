@@ -5,4 +5,5 @@
   <resource name="json" type="GROUP"/>
   <resource name="cmd" type="GROUP"/>
   <resource name="fake_random" type="GROUP"/>
+  <resource name="auto_tile" type="GROUP"/>
 </resources>

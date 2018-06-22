@@ -1,6 +1,7 @@
-//load game
+// load global save
 var buffer, roomTo, rev, xx, yy, xs, spd, grav;
 
+// the global save is not reset until game is saved
 roomTo = global.__save_room
 rev = global.__save_rev
 xx = global.__save_x
@@ -17,7 +18,6 @@ player.y = yy
 player.image_xscale = xs
 player.rev = rev
 player.alarm[11] = 2
-
 
 // clear fakePlayer speed
 fakePlayerClearSpeed()

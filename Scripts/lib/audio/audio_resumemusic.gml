@@ -10,7 +10,7 @@ music = set_default(argument0, curMusic)
 
 if (!global.audio_music_muted) {
     if (SS_IsSoundPaused(music)) {
-        SS_SetSoundVol(music, 2000 + 80 * global.audio_music_volume)
+        music_volume(global.audio_music_volume, music)
         SS_ResumeSound(music)
     }
 }

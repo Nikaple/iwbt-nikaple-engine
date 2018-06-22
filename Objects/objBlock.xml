@@ -3,8 +3,8 @@
   <sprite>maskBlock</sprite>
   <solid>true</solid>
   <visible>false</visible>
-  <depth>0</depth>
+  <depth>-200</depth>
   <persistent>false</persistent>
-  <parent>block</parent>
+  <parent>objVisibleTile</parent>
   <mask/>
 </object>

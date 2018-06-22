@@ -28,4 +28,5 @@
   <resource name="demo" type="RESOURCE"/>
   <resource name="sprSlideBlockL" type="RESOURCE"/>
   <resource name="sprSlideBlockR" type="RESOURCE"/>
+  <resource name="sprBlockRevealMario" type="RESOURCE"/>
 </resources>

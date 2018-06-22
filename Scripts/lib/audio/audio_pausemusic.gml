@@ -6,6 +6,4 @@
 //
 //
 
-var music;
-music = set_default(argument0, curMusic)
-SS_PauseSound(music)
+SS_PauseSound(argument0)

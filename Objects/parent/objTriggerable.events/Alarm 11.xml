@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="11">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">// scaling trigger
+if (tarx != 0) {
+    if (time == 0) {
+        if (tarx * (image_xscale - (tarx - xsp)) &lt; 0) {
+            image_xscale += xsp
+            x -= (cx - xoff) * xsp
+        } else {
+            image_xscale = tarx
+            x = xstart - (cx - xoff) * (tarx - xs)
+        }
+    } else {
+        if (tarx * (image_xscale - tarx) &lt; 0) {
+            image_xscale += (tarx - 1) / time
+            x -= (cx - xoff) * (tarx - xs) / time
+        }
+    }
+}
+if (tary != 0) {
+    if (time == 0) {
+        if (tary * (image_yscale - (tary - ysp)) &lt; 0) {
+            image_yscale += ysp
+            y -= (cy - yoff) * ysp
+        } else {
+            image_yscale = tary
+            y = ystart - (cy - yoff) * (tary - ys)
+        }
+    } else {
+        if (tary * (image_yscale - tary) &lt; 0) {
+            image_yscale += (tary - 1) / time
+            y -= (cy - yoff) * (tary - ys) / time
+        }
+    }
+}
+
+alarm[11] = 1
+
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

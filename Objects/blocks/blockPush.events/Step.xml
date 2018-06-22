@@ -22,9 +22,9 @@
     yt = y - 1
     yb = y + vspeed + 32
 }
-colBlock = collision_rectangle(x + 1, yb, x + 30, yb + 6, block, false, true)
-isRightFree = !place_meeting(x + 1, y, block) || !place_meeting(x + 1, y, player)
-isLeftFree = !place_meeting(x - 1, y, block) || !place_meeting(x - 1, y, player)
+colBlock = collision_rectangle(x + 1, yb, x + 30, yb + 6, objBlock, false, true)
+isRightFree = !place_meeting(x + 1, y, objBlock) || !place_meeting(x + 1, y, player)
+isLeftFree = !place_meeting(x - 1, y, objBlock) || !place_meeting(x - 1, y, player)
 conveyor = collision_line(x + 1, yb, x + 30, yb, blockConveyor, false, true)
 playerOnTop = collision_line(x + 1, bbox_top - 2, x + 30, bbox_top - 2, player, false, true)
 playerOnLeft = collision_line(x - 1, y, x - 1, y + 31, player, true, false)
@@ -75,9 +75,6 @@ if (conveyor == noone) {
     }
 }
 
-/*if (x == xprevious &amp;&amp; abs(y - yprevious) &lt;= grav * 2) {
-    event_user(0)
-}
 </argument>
       </arguments>
     </action>

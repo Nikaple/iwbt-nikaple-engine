@@ -1,7 +1,11 @@
 // lobby pop up
 i18n_add("lobby_info", "房间名：${0}，房间ID：${1}", "Lobby name: ${0}, Lobby id: ${1}", "ロビー名：${0}、ロビー番号：${1}")
 i18n_add("input_lobby_name", "请输入房间名：", "Input lobby name:", "ロビー名を入力してください：")
+i18n_add("input_lobby_password", "请输入房间密码：（不填则为空）", "Input lobby password: (can be empty)", "部屋のパスワードを入力してください：（空でもよい）")
+i18n_add("input_lobby_mode", "请选择游戏模式：", "Choose game mode: ", "ゲームモードを選択してください：")
 i18n_add("input_lobby_id", "请输入房间ID：", "Input lobby id:", "ロビー番号を入力してください：")
+i18n_add("tournament_mode", "竞技", "Tournament", "トーナメントモード")
+i18n_add("cooperation_mode", "合作", "Cooperation", "協力モード")
 i18n_add("default_lobby_name", "${0} 's room", "${0} 's room", " ${0} 's room")
 
 // lobby response

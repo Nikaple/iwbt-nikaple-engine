@@ -7,6 +7,7 @@
   <resource name="flashObject" type="RESOURCE"/>
   <resource name="splitObject" type="RESOURCE"/>
   <resource name="towardsPlayer" type="RESOURCE"/>
+  <resource name="autoBlockTile" type="RESOURCE"/>
   <resource name="autoSpikeSprite" type="RESOURCE"/>
   <resource name="screenShake" type="RESOURCE"/>
   <resource name="screenFlash" type="RESOURCE"/>

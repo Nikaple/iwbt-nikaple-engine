@@ -7,17 +7,16 @@ if (!ns_is_logged_in()) {
 }
 
 lobbyId = i18n_get_integer('input_lobby_id', 0)
-password = i18n_get_string('password', '')
-
-ensure_not_empty(lobbyId, 'lobby_id')
-
 if (lobbyId == 0) {
+    show_message(i18n_get('cannot_be_empty', i18n_get('lobby_id')))
     retry = i18n_show_message_ext('retry', '&Yes', '', '&No')
     if (retry == 1) {
         ns_join_lobby()
     }
     exit
 }
+
+password = i18n_get_string('password', '')
 
 cmd = cmd_init('join_lobby', 1, 'lobbyId', lobbyId)
 

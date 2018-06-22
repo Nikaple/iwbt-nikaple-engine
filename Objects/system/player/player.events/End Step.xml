@@ -15,20 +15,16 @@
       <arguments>
         <argument kind="STRING">/// Checking for Slopes
 playerPlatform()
-wy = y
-wSpeed = vspeed
 
-if (place_meeting(x, y, objBlock) || place_meeting(x, y, activeBlock)) {
+if ((place_meeting(x, y, objBlock) || place_meeting(x, y, activeBlock)) &amp;&amp; vspeed * yflag &gt;= 0) {
     y = yprevious
-    move_contact_solid(point_direction(x, y, x, wy), -1)
-    move_contact_solid(point_direction(x, y, x, wy), -1)
 } else {
     gravity = yflag * grav
 }
 
-vspeed = wSpeed
+y = round(y)
+x = round(x)
 
-playerSync()
 </argument>
       </arguments>
     </action>

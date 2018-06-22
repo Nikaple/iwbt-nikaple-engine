@@ -20,34 +20,11 @@ global.__block_sync_time = 0
 active = false
 time = 0
 
-u = collision_point(
-    bbox_left + sprite_width / 2,
-    bbox_top - sprite_height / 2,
-    blockReveal,
-    0,
-    1
-)
-d = collision_point(
-    bbox_left + sprite_width / 2,
-    bbox_bottom + sprite_height / 2,
-    blockReveal,
-    0,
-    1
-)
-l = collision_point(
-    bbox_left - sprite_width / 2,
-    bbox_top + sprite_height / 2,
-    blockReveal,
-    0,
-    1
-)
-r = collision_point(
-    bbox_right + sprite_width / 2,
-    bbox_top + sprite_height / 2,
-    blockReveal,
-    0,
-    1
-)
+u = collision_point(bbox_left + 1, bbox_top - 1, blockReveal, 0, 1)
+d = collision_point(bbox_left + 1, bbox_bottom + 1, blockReveal, 0, 1)
+l = collision_point(bbox_left - 1, bbox_top + 1, blockReveal, 0, 1)
+r = collision_point(bbox_right + 1, bbox_top + 1, blockReveal, 0, 1)
+
 </argument>
       </arguments>
     </action>

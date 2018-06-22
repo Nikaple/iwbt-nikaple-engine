@@ -24,6 +24,9 @@ for (i = 1; i <= global.item_number; i += 1) {
 for (i = 1; i <= global.data_number; i += 1) {
     buffer_write_float32(buffer, global.data[i])
 }
+for (i = 1; i <= global.text_number; i += 1) {
+    buffer_write_string(buffer, global.text[i])
+}
 buffer_write_uint16(buffer, room)
 buffer_write_int8(buffer, global.reverse)
 buffer_write_float32(buffer, saveX)

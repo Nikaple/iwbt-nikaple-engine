@@ -4,9 +4,9 @@
   <resource name="warpSync" type="RESOURCE"/>
   <resource name="warpWait" type="RESOURCE"/>
   <resource name="warpWaitingBG" type="RESOURCE"/>
-  <resource name="invisibleWarp" type="RESOURCE"/>
-  <resource name="invisibleWarpSync" type="RESOURCE"/>
-  <resource name="invisibleWarpWait" type="RESOURCE"/>
+  <resource name="borderWarp" type="RESOURCE"/>
+  <resource name="borderWarpSync" type="RESOURCE"/>
+  <resource name="borderWarpWait" type="RESOURCE"/>
   <resource name="warpStart" type="RESOURCE"/>
   <resource name="bossWarp" type="RESOURCE"/>
   <resource name="bossWarpSync" type="RESOURCE"/>

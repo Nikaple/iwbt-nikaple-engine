@@ -23,12 +23,18 @@ if (
     if (saveTimer &lt;= 0 &amp;&amp; instance_exists(player) &amp;&amp; image_index != 2) {
         saveTimer = 30
         image_index = 1
-        ns_send_wait(
-            'save', -1, 3,
-            'id', id,
-            'x', player.xprevious,
-            'y', player.yprevious
-        )
+        if (!ns_is_online_mode()) {
+            saveGame()
+            image_index = 2
+            alarm[0] = 80
+        } else {
+            ns_send_wait(
+                'save', -1, 3,
+                'id', id,
+                'x', player.xprevious,
+                'y', player.yprevious
+            )
+        }
     }
 }
 

@@ -1,6 +1,6 @@
 // ns_send_event(eventName, kvCount, k1, v1, k2, v2, ...)
 // Send a command to sync an event with key-value pairs
-if (!ns_is_in_game() || noSync) exit
+if (!ns_is_in_game() || noSync || (global.tournament_mode && argument0 != 'warp')) exit
 
 var kvCount, i, map, eventMap, eventName;
 eventName = argument0

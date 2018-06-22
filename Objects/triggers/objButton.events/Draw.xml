@@ -13,8 +13,9 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if (debug_mode) {
-    drawSelf()
+        <argument kind="STRING">drawSelf()
+
+if (debug_mode) {
     draw_set_font(font9)
     draw_set_color(c_black)
     draw_set_align(fa_right, fa_top)

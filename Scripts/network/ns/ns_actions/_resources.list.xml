@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
+  <resource name="ns_single_player" type="RESOURCE"/>
+  <resource name="ns_multiple_player" type="RESOURCE"/>
   <resource name="ns_register" type="RESOURCE"/>
   <resource name="ns_login" type="RESOURCE"/>
   <resource name="ns_logout" type="RESOURCE"/>

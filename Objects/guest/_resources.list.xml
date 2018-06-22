@@ -7,5 +7,5 @@
   <resource name="spikeRightGuest" type="RESOURCE"/>
   <resource name="warpGuest" type="RESOURCE"/>
   <resource name="playerStartGuest" type="RESOURCE"/>
-  <resource name="freeButtonGuest" type="RESOURCE"/>
+  <resource name="objButtonGuest" type="RESOURCE"/>
 </resources>

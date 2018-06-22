@@ -13,18 +13,18 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">global.paused = 0;
-if !global.audio_sound_muted{
+        <argument kind="STRING">global.paused = 0
+if (!global.audio_sound_muted) {
     //audio_playsound(sndDeath);
 }
-if SS_IsHandleValid(curMusic){
-    start_vol = SS_GetSoundVol(curMusic);
+if (SS_IsHandleValid(curMusic)) {
+    start_vol = (SS_GetSoundVol(curMusic) - 2000) / 80
+} else {
+    start_vol = 0
 }
-else{
-    start_vol = 0;
-}
-now_vol = start_vol;
-alarm[0]=1;
+now_vol = start_vol
+alarm[0] = 1
+
 </argument>
       </arguments>
     </action>

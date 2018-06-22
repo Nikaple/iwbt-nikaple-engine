@@ -9,7 +9,7 @@ while (1) {
         if (isBossRoom()) {
             music_resume(curMusic)
         } else {
-            SS_SetSoundVol(curMusic, 2000 + 80 * global.audio_music_volume)
+            music_volume(global.audio_music_volume)
         }
         if (fps != 0 && !global.clear) {
             global.timestep += 2

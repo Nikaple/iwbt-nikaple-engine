@@ -3,10 +3,10 @@
 //  plays a sound using global sound volume, and avoiding win8 crashes
 //
 //      snd      the sound to play
-//   volumn      the sound volumn, default can be configured   
+//   volume      the sound volume, default can be configured   
 //
 
-var sound, sound_default_volume, volumn;
+var sound, sound_default_volume, volume;
 sound = argument0
 
 //set the default volume of sound resources
@@ -28,7 +28,7 @@ switch (sound) {
         sound_default_volume = 1
 }
 
-volumn = set_default(argument1, sound_default_volume)
+volume = set_default(argument1, sound_default_volume)
 
 if (!global.audio_sound_muted) {
     sound_volume(

@@ -2,7 +2,7 @@
 <resources>
   <resource name="rHub" type="RESOURCE"/>
   <resource name="rTraps" type="RESOURCE"/>
-  <resource name="rSlopes" type="RESOURCE"/>
+  <resource name="rGimmick" type="RESOURCE"/>
   <resource name="rAvoidance" type="RESOURCE"/>
   <resource name="rBossSample" type="RESOURCE"/>
   <resource name="rBossSampleBuffed" type="RESOURCE"/>

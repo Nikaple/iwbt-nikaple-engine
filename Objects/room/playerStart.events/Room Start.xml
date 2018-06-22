@@ -13,8 +13,16 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if (!instance_exists(player)) {
+        <argument kind="STRING">if (num != global.__player_start_num) {
+    exit;
+}
+
+if (!instance_exists(player)) {
     instance_create(x, y, player)
+    if (instance_exists(objSmoothView)) {
+        objSmoothView.x = x
+        objSmoothView.y = y
+    }
 }
 
 if (autoSave) {
@@ -38,6 +46,7 @@ player.maxSpeed = set_default(global.__player_maxSpeed, player.maxSpeed)
 player.grav = set_default(global.__player_grav, player.grav)
 player.shootInterval = set_default(global.__player_shootInterval, player.shootInterval)
 
+global.__player_start_num = 0
 global.__player_maxJumps = 0
 global.__player_maxSpeed = 0
 global.__player_grav = 0

@@ -1,12 +1,14 @@
-var fromName, data, _room, roomTo, IsAllPlayersInWarp, warpX, warpY, screens, kind, info, seed;
+var fromName, data, _room, roomTo, IsAllPlayersInWarp, num, mode, width, height, screens, kind, info, seed;
 fromName = argument0
 data = argument1
 IsAllPlayersInWarp = argument2
 
 _room = json_pick(data, 'room')
 roomTo = json_pick(data, 'roomTo')
-warpX = json_pick(data, 'warpX')
-warpY = json_pick(data, 'warpY')
+num = json_pick(data, 'num')
+mode = json_pick(data, 'mode')
+width = json_pick(data, 'width')
+height = json_pick(data, 'height')
 screens = json_pick(data, 'screens')
 kind = json_pick(data, 'kind')
 seed = json_pick(data, 'seed') 
@@ -24,6 +26,6 @@ if (IsAllPlayersInWarp && _room == room) {
     if (seed > 0) {
         random_set_seed(seed)
     }
-    scrWarpRoom(roomTo, warpX, warpY, clearSpeed, screens, kind)
+    scrWarpRoom(roomTo, num, mode, width, height, clearSpeed, screens, kind)
 }
 

@@ -13,7 +13,7 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">depth = 1000002;
+        <argument kind="STRING">depth = 2000002;
 event_inherited();
 </argument>
       </arguments>

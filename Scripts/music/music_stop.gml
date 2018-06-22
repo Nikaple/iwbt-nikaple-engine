@@ -1,5 +1,5 @@
 var music;
-music = argument0
+music = set_default(argument0, curMusic)
 
 if (sound_exists(music)) {
     sound_stop(music)

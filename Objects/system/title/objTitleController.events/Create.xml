@@ -26,6 +26,21 @@ if (global.enable_lite_mode) {
     }
 }
 
+buttonText[0] = 'single_player'
+buttonText[1] = 'multiple_player'
+buttonText[2] = 'exit'
+buttonText[3] = 'register'
+buttonText[4] = 'login'
+buttonText[5] = 'back'
+
+for (i = 0; i &lt; 3; i += 1) {
+    inst[i] = instance_create(112 + 216 * i, 450, objControllerButton)
+    inst[i].text = buttonText[i]
+}
+
+if (debug_mode &amp;&amp; !instance_exists(objServerConnector)) {
+    instance_create(0, 0, objServerConnector)
+}
 </argument>
       </arguments>
     </action>

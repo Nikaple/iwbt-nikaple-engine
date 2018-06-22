@@ -3,7 +3,7 @@ keyboard_check_direct(global.leftbutton)
 keyboard_check_direct(global.rightbutton)
 
 // focus setup
-if (global.enable_simulate_focus) {
+if (global.enable_focus) {
     if (isFocus) {
         if (!keyboard_check(vk_alt)) {
             keyboard_key_press(global.focus_key_code)

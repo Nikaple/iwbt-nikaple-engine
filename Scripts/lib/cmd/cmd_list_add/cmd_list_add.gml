@@ -1,10 +1,11 @@
 /// cmd_list_add(listId, itemCount, ...items)
+
 /// @desc append items to a list
 /// @param {DSMap} list         Current list
 /// @param {Number} itemCount   How many items to append to the list ?
 /// @param {Any} items          items
 
-var list, itemCount, size, key, origSize;
+var list, itemCount, size, key, origSize, i;
 list = argument0
 itemCount = argument1
 

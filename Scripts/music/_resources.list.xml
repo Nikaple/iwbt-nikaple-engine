@@ -8,4 +8,5 @@
   <resource name="music_stop" type="RESOURCE"/>
   <resource name="music_pause" type="RESOURCE"/>
   <resource name="music_resume" type="RESOURCE"/>
+  <resource name="music_volume" type="RESOURCE"/>
 </resources>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
+  <resource name="objBlock" type="RESOURCE"/>
   <resource name="blocks" type="GROUP"/>
   <resource name="killers" type="GROUP"/>
   <resource name="triggers" type="GROUP"/>
@@ -14,5 +15,5 @@
   <resource name="parent" type="GROUP"/>
   <resource name="bosses" type="GROUP"/>
   <resource name="system" type="GROUP"/>
-  <resource name="object121" type="RESOURCE"/>
+  <resource name="example" type="GROUP"/>
 </resources>

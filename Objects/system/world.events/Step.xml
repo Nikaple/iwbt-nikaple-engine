@@ -14,8 +14,7 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">if (isInGameRoom()) {
-    scrWorldUpdateTime()
-    scrWorldUpdateCaption()
+    scrWorldUpdate()
     scrWorldPause()
         
     if (keyboard_check_pressed(global.restartbutton)) {

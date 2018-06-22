@@ -14,7 +14,9 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">str = ''
+global.__debug_mode = true
 global.__debug_verbose_mode = false
+global.__debug_udp_verbose_mode = false
 </argument>
       </arguments>
     </action>

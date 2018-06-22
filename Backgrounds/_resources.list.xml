@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
-  <resource name="backgroundMessageBox" type="RESOURCE"/>
+  <resource name="Alltiles" type="RESOURCE"/>
   <resource name="bacJumpThrough" type="RESOURCE"/>
   <resource name="background_tree" type="RESOURCE"/>
-  <resource name="background65" type="RESOURCE"/>
-  <resource name="background72" type="RESOURCE"/>
-  <resource name="background70" type="RESOURCE"/>
   <resource name="background71" type="RESOURCE"/>
-  <resource name="Alltiles" type="RESOURCE"/>
+  <resource name="bgMegaman" type="RESOURCE"/>
+  <resource name="bgCastle" type="RESOURCE"/>
+  <resource name="bgLine" type="RESOURCE"/>
+  <resource name="bgMario" type="RESOURCE"/>
+  <resource name="bgVVVVVV_16" type="RESOURCE"/>
+  <resource name="bgVVVVVV_32" type="RESOURCE"/>
+  <resource name="bgMetal" type="RESOURCE"/>
+  <resource name="bgGrass" type="RESOURCE"/>
+  <resource name="bgIndoor" type="RESOURCE"/>
+  <resource name="engine" type="GROUP"/>
 </resources>

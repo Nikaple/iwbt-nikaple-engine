@@ -3,6 +3,7 @@
   <resource name="platform" type="RESOURCE"/>
   <resource name="block" type="RESOURCE"/>
   <resource name="blockConveyor" type="RESOURCE"/>
+  <resource name="objVisibleTile" type="RESOURCE"/>
   <resource name="objTriggerable" type="RESOURCE"/>
   <resource name="playerKiller" type="RESOURCE"/>
   <resource name="playerKillerHost" type="RESOURCE"/>

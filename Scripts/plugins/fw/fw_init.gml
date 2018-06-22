@@ -16,7 +16,7 @@ FontStyleUnderline  = 4;
 FontStyleStrikeout  = 8;
 */
 
-global.__NF_W_DLL = working_directory+'\Data\Plugin\FoxWriting.dll';
+global.__NF_W_DLL = global.plugin_directory + 'FoxWriting.dll';
 
 global.__NF_W_ED_Init = external_define(global.__NF_W_DLL, "FWInit", dll_stdcall, ty_real, 2, ty_real, ty_real);
 global.__NF_W_ED_ReleaseCache = external_define(global.__NF_W_DLL, "FWReleaseCache", dll_stdcall, ty_real, 0);

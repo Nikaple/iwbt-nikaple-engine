@@ -26,9 +26,13 @@ with (bloodEmitter) {
 global.frozen = 0
 global.frozen2 = 0
 randomize()
+
 if (global.__save_id == -1) {
+    // If there is data from savePointSync,
+    // load local data
     loadGame()
 } else {
+    // load data from savePointSync
     scrWorldLoadGlobalSave()
 }
 </argument>

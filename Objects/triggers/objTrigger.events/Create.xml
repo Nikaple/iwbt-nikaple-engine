@@ -25,8 +25,9 @@
 //
 
 // make the triggers visible in debug mode (F6)
-if (debug_mode) {
+if (debug_mode &amp;&amp; global.__debug_mode) {
     visible = true
+    debug_visible = true
     image_alpha = 0.5
     depth = -10
 }

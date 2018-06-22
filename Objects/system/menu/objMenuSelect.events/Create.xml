@@ -20,6 +20,7 @@ str[3] = "Data3";
 bossicon[1] = sprBossIcon1;
 bossicon[2] = sprBossIcon2;
 bossicon[3] = sprBossIcon3;
+bossicon[4] = sprBossIcon3;
 
 //load boss&amp;item icon information
 loadIcons();

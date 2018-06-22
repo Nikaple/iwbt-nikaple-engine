@@ -10,6 +10,6 @@ if (ds_map_exists(global.__ns_wait_handler_map, waitName)) {
     fin = json_pick(data, 'fin')
     script_execute(handler, fromName, data, fin)
 } else if (!global.production_mode){
-    show_error('Error in script `ns_recv_wait`: Handler of wait `' + waitName + '` does not exist!', 0)
+    show_error('Error in script `_ns_recv_wait`: Handler of wait `' + waitName + '` does not exist!', 0)
 }
 

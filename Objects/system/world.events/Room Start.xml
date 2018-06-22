@@ -14,9 +14,9 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">// set the game speed, 1 second = 50 steps
-room_speed = 50
+room_speed = global.frame_rate
 
-// set focus to true
+// set focus
 isFocus = true
 
 // set reset behavior
@@ -26,18 +26,24 @@ resetSync = instance_exists(objResetSync)
 // set room captions
 room_caption = global.game_title
 
-scrWorldAppendDifficulty()
+if (isInGameRoom()) {
+    room_caption += ' Mode[' + difText[global.difficulty] + ']'
+}
 
 global.room_caption_def = room_caption
 
 //play music
 music_config()
 
+// init views and blocks
 scrWorldInitViews()
 scrWorldInitBlocks()
 
 // init triggers
 global.triggered = 0
+
+// fix warp bug
+keyboard_key_release(global.jumpbutton)
 
 </argument>
       </arguments>

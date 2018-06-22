@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
-  <resource name="ns_init" type="RESOURCE"/>
-  <resource name="ns_free" type="RESOURCE"/>
+  <resource name="_ns_init" type="RESOURCE"/>
+  <resource name="_ns_free" type="RESOURCE"/>
   <resource name="ns_connect" type="RESOURCE"/>
   <resource name="tcp" type="GROUP"/>
   <resource name="udp" type="GROUP"/>

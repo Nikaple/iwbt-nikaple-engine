@@ -1,10 +1,11 @@
 /// cmd_add_map(cmdId, key, kvCount, k1, v1, k2, v2, ...)
+
 /// @param {DSMap} parentId     Parent to append to
 /// @param {String} key         The key of list in parent DSMap
 /// @param {Number} kvCount     How many key-value pairs to append to the map ? Max is 7
 /// @param {Any[]} k...,v...    Key-value pairs
 
-var pid, key, map, i;
+var pid, key, kvCount, map, i;
 pid = argument0
 key = argument1
 kvCount = argument2

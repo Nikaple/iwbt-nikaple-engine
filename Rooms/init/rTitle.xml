@@ -15,7 +15,7 @@
     <backgroundDef>
       <visibleOnRoomStart>true</visibleOnRoomStart>
       <isForeground>false</isForeground>
-      <backgroundImage>background65</backgroundImage>
+      <backgroundImage>backgroundTitle</backgroundImage>
       <offset x="0" y="0"/>
       <speed x="0" y="0"/>
       <tileHorizontally>true</tileHorizontally>
@@ -96,28 +96,8 @@
   <enableViews>false</enableViews>
   <instances>
     <instance>
-      <object>objControllerButton</object>
-      <position x="176" y="480"/>
-      <creationCode>text = "register"
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objControllerButton</object>
-      <position x="480" y="480"/>
-      <creationCode>text = "login"
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
       <object>objTitleController</object>
       <position x="32" y="32"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objServerConnector</object>
-      <position x="48" y="32"/>
       <creationCode/>
       <locked>false</locked>
     </instance>

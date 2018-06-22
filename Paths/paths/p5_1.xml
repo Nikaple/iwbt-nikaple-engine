@@ -6,7 +6,7 @@
     <point speed="100" x="992" y="384"/>
     <point speed="100" x="832" y="384"/>
   </points>
-  <backgroundRoom>rSlopes</backgroundRoom>
+  <backgroundRoom>rGimmick</backgroundRoom>
   <closed>true</closed>
   <precision>4</precision>
   <smooth>false</smooth>

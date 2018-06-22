@@ -15,15 +15,16 @@
       <arguments>
         <argument kind="STRING">///unload the dlls
 
-SS_StopSound(curMusic)
-if (SS_IsSoundPlaying(SE_Death)) {
-    SS_StopSound(SE_Death)
-}
+music_stop(curMusic)
+music_stop(BGM_Death)
+
 SS_Unload();
 cleanmem_init(1);
-ns_free()
-i18n_free()
-
+_ns_free()
+_i18n_free()
+if (global.enable_auto_tile) {
+    _autotile_free()
+}
 </argument>
       </arguments>
     </action>

@@ -18,15 +18,16 @@ if ((curJumps = 1)) {
 if (curJumps <= maxJumps) {
     music_play(jumpSound)
     vspeed = -yflag * set_default(jump[curJumps], jump[2])
+    isJumping = true
     playerVJump()
     //next jump
     curJumps += 1
-}
-//infinite jump
-else if (infJump || place_meeting(x, y + yflag, objWaterNo2ndJump)) {
+} else if (infJump || place_meeting(x, y + yflag, objWaterNo2ndJump)) {
+    //infinite jump
     music_play(jumpSound)
     //this will set the jumping speed to the last jump
     vspeed = -yflag * set_default(jump[maxJumps], jump[2])
+    isJumping = true
     playerVJump()
     curJumps = maxJumps + 1
 }

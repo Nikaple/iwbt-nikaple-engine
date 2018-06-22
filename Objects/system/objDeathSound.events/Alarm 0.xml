@@ -13,12 +13,13 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if !global.audio_sound_muted{
-    if !SS_IsSoundPlaying(SE_Death){
-        SS_SetSoundVol(SE_Death,0.9*(2000+80*global.audio_sound_volume));
-        SS_PlaySound(SE_Death);
+        <argument kind="STRING">if (!global.audio_sound_muted) {
+    if (!SS_IsSoundPlaying(BGM_Death)) {
+        SS_SetSoundVol(BGM_Death, 0.9 * (2000 + 80 * global.audio_sound_volume))
+        SS_PlaySound(BGM_Death)
     }
 }
+
 </argument>
       </arguments>
     </action>

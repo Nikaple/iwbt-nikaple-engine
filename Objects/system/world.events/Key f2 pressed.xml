@@ -17,8 +17,8 @@
 if (pauseon) {
     gameResume()
 }
-SS_StopSound(curMusic)
-SS_StopSound(SE_Death)
+music_stop(curMusic)
+music_stop(BGM_Death)
 sound_stop_all()
 if (isInGameRoom()) {
     saveDeathTime()

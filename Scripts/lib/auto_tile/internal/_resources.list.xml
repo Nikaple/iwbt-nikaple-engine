@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="_autotile_init" type="RESOURCE"/>
+  <resource name="_autotile_free" type="RESOURCE"/>
+  <resource name="_autotile2" type="RESOURCE"/>
+  <resource name="_autotile2_check" type="RESOURCE"/>
+  <resource name="_autotile4" type="RESOURCE"/>
+  <resource name="_autotile4_check" type="RESOURCE"/>
+  <resource name="_autotile8" type="RESOURCE"/>
+  <resource name="_autotile8_check" type="RESOURCE"/>
+</resources>

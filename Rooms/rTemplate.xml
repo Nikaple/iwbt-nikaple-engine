@@ -158,6 +158,12 @@
       <locked>false</locked>
     </instance>
     <instance>
+      <object>playerStart</object>
+      <position x="64" y="544"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
       <object>objBlock</object>
       <position x="0" y="0"/>
       <creationCode/>
@@ -658,12 +664,6 @@
     <instance>
       <object>objBlock</object>
       <position x="32" y="0"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>playerStart</object>
-      <position x="64" y="544"/>
       <creationCode/>
       <locked>false</locked>
     </instance>

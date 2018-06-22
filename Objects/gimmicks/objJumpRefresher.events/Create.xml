@@ -14,6 +14,8 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">spritable()
+
+time = set_default(50)
 </argument>
       </arguments>
     </action>

@@ -4,7 +4,8 @@
 /// @param {DSMap} type         Command map
 /// @param {Number} kvCount     How many key-value pairs to append to the map ? Max is 7
 /// @param {Any[]} k...,v...    Key-value pairs
-var map;
+
+var map, kvCount, i;
 map = argument
 kvCount = argument1
 

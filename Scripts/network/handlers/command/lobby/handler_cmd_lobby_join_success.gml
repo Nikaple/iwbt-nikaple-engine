@@ -6,21 +6,22 @@ _id = json_pick(data, 'id')
 guest = json_pick(data, 'guest')
 players = ds_list_clone(json_pick(data, 'players'))
 
-// If we are in room and a player comes in, update lobby members
+// If the player is in room and a player comes in, update lobby members
 if (room == rRoom && ns_get_lobby_id() == _id) {
     global.__current_lobby_players = players
 }
 
 if (room == rLobby) {
-    // If we want to join a room, update information
+    // If the player wants to join a room, update information
     if (guest == ns_get_player_name()) {
         global.__is_host = false
+        global.tournament_mode = json_pick(data, 'mode') == MODE_TOURNAMENT
         global.__current_lobby_id = json_pick(data, 'id')
         global.__current_lobby_name = json_pick(data, 'name')
         global.__current_lobby_players = players
         room_goto(rRoom)
     } else {
-        // If somebody else want to join a room, update lobby rooms information
+        // If somebody else wants to join a room, update lobby rooms information
         if (objLobbyController.fetched) {
             var lobbies, size, i, lobby, players;
             lobbies = objLobbyController.lobbies

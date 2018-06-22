@@ -18,18 +18,20 @@ eventSync = true
 
 debug('alarm[11]: syncing room', room)
 
-eventMap = ds_map_init(
-    5,
+eventMap = cmd_init(
+    4,
     'roomTo', room,
     'x', x,
     'y', floor(y),
     'xs', image_xscale,
+)
+cmd_add_if_exists(
+    eventMap, 2, 
+    'sync', global.__sync_position,
     'rev', global.reverse
 )
-ds_map_add_if_exists(eventMap, 'sync', global.__sync_position)
 ns_send_event_direct('warp', eventMap)
 global.__sync_position = false
-ds_map_destroy(eventMap)
 
 // auto save
 if (global.__player_auto_save) {
@@ -46,6 +48,7 @@ if (global.__player_auto_save) {
     global.__save_rev = -1
     global.__player_auto_save = false
 }
+
 
 </argument>
       </arguments>

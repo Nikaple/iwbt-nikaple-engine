@@ -31,6 +31,9 @@ for (i = 1; i <= global.item_number; i += 1) {
 for (i = 1; i <= global.data_number; i += 1) {
     global.data[i] = buffer_read_float32(buffer)
 }
+for (i = 1; i <= global.text_number; i += 1) {
+    global.text[i] = buffer_read_string(buffer)
+}
 roomTo = buffer_read_uint16(buffer)
 room_goto(roomTo)
 global.reverse = buffer_read_int8(buffer)
