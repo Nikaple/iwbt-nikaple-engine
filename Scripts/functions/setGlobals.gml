@@ -1,6 +1,6 @@
 /****** GAME SETTINGS ******/
 // game title
-global.game_title = 'I wanna be the Engine Nikaple Edition v2.0.0'
+global.game_title = 'I wanna be the Engine Nikaple Edition'
 // game mode, available options:
 // MODE_SINGLE_PLAYER: single player only.
 // MODE_TOURNAMENT: tournament mode only, only synchronize the players' positions.

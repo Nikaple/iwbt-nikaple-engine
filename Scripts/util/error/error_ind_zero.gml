@@ -2,7 +2,7 @@ var type, name;
 type = argument0
 name = argument1
 
-if (!global.production_mode) {
+if (!global.enable_production_mode) {
     show_error(
         type +
             ' of index 0 exists! This could cause unknown behaviors in game. ' +

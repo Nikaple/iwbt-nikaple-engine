@@ -73,7 +73,7 @@
     xx = 0
     yy = 0
     alarm[0] = 1
-} else if (!global.production_mode) {
+} else if (!global.enable_production_mode) {
     show_error('Please specify an appropriate tile. ' + error_info(), 0)
 }
 

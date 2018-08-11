@@ -5,7 +5,7 @@ fromName = argument0
 _id = argument1
 data = argument2
 
-if (!instance_exists(_id) && !global.production_mode) {
+if (!instance_exists(_id) && !global.enable_production_mode) {
     show_error(
         'Trying to sync an unexisting instance, id: ' +
             string(_id) +

@@ -18,7 +18,7 @@ transition_kind = kind
 if (roomTo != -1) {
     if (room_exists(roomTo)) {
         room_goto(roomTo)
-    } else if (!global.production_mode) {
+    } else if (!global.enable_production_mode) {
         show_error(
             'Cannnot warp to an unexisting room, roomTo: ' +
                 string(roomTo) +

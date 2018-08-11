@@ -31,7 +31,7 @@
                 }
             }
         }
-    } else if (!global.production_mode) {
+    } else if (!global.enable_production_mode) {
         show_error('Please specify an appropriate sprite. ' + error_info(), 0)
     }
 }
@@ -50,7 +50,7 @@ if (!is_zero(sprH)) {
                 }
             }
         }
-    } else if (!global.production_mode) {
+    } else if (!global.enable_production_mode) {
         show_error('Please specify an appropriate sprite. ' + error_info(), 0)
     }
 }
@@ -69,7 +69,7 @@ if (!is_zero(sprG)) {
                 }
             }
         }
-    } else if (!global.production_mode) {
+    } else if (!global.enable_production_mode) {
         show_error('Please specify an appropriate sprite. ' + error_info(), 0)
     }
 }

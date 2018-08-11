@@ -33,7 +33,7 @@ current = ds_map_find_first(map)
 size = ds_map_size(map)
 
 for (i = 0; i < size; i += 1) {
-    if (is_real(current) && !global.production_mode) {
+    if (is_real(current) && !global.enable_production_mode) {
         show_error("You should always use string in a ds_map's key! Your current key is: " + string(current), 0)
     }
     result += '"' + current + '":'
