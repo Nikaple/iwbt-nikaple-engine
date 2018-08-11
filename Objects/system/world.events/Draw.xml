@@ -22,20 +22,25 @@
     draw_set_color(c_white)
     draw_set_blend_mode(bm_normal)
     draw_sprite(sprPause, -1, view_xview[0] + 400, view_yview[0] + 304)
-    draw_set_font(font2)
-    draw_set_halign(fa_left)
-    draw_set_valign(fa_top)
-    draw_text(
-        38,
-        500,
-        'Time  : ' +
+    draw_set_font(fontMonospace20)
+    draw_set_align(fa_left, fa_bottom)
+    draw_text_ext(
+        view_xview[0] + 16,
+        view_yview[0] + view_hview[0],
+        'Music: ' + 
+            string(global.audio_music_volume) +
+            ' %#Sound: ' + 
+            string(global.audio_sound_volume) + 
+            ' %#Time : ' +
             string(hour) +
             ':' +
             string(muni) +
             ':' +
             string(sec) +
-            '#Death : ' +
-            string(global.death)
+            '#Death: ' +
+            string(global.death),
+        36,
+        -1
     )
 }
 

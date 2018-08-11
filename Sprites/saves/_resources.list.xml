@@ -2,5 +2,5 @@
 <resources>
   <resource name="sprSave" type="RESOURCE"/>
   <resource name="sprSaveMedium" type="RESOURCE"/>
-  <resource name="sprSaveVhard" type="RESOURCE"/>
+  <resource name="sprSaveVHard" type="RESOURCE"/>
 </resources>

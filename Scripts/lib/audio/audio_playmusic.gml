@@ -5,19 +5,22 @@
 //      music         the music to play
 //
 //
-{
-    if (!SS_IsHandleValid(argument0)) {
-        exit
-    }
-    if (curMusic != argument0 && !global.audio_music_muted) {
-        SS_StopSound(curMusic)
-        curMusic = argument0
-        if (!global.audio_music_muted) {
-            if (!SS_IsSoundPlaying(curMusic)) {
-                music_volume(global.audio_music_volume)
-                SS_PlaySound(curMusic)
-            }
+var music, volume;
+music = argument0
+volume = clamp(set_default(argument1, 1), 0, 1)
+
+if (!SS_IsHandleValid(argument0)) {
+    exit
+}
+if (curMusic != music && !global.audio_music_muted) {
+    SS_StopSound(curMusic)
+    curMusic = music
+    if (!global.audio_music_muted) {
+        if (!SS_IsSoundPlaying(curMusic)) {
+            music_volume(global.audio_music_volume * power(volume, 0.3))
+            SS_PlaySound(curMusic)
         }
     }
 }
+
 

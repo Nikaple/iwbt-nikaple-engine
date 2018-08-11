@@ -15,10 +15,10 @@ for (i = 0; i < kvCount; i += 1) {
     _cmd_check_key(argument[i * 2 + 2], 'cmd_add')
     if (is_real(argument[i * 2 + 3])) {
         if (argument[i * 2 + 3] != 0) {
-            ds_map_add(map, argument[i * 2 + 2], argument[i * 2 + 3])
+            ds_map_add(map, _ns_encode(argument[i * 2 + 2]), _ns_encode(argument[i * 2 + 3]))
         }
     } else {
-        ds_map_add(map, argument[i * 2 + 2], argument[i * 2 + 3])
+        ds_map_add(map, _ns_encode(argument[i * 2 + 2]), _ns_encode(argument[i * 2 + 3]))
     }
 }
 

@@ -14,7 +14,7 @@ content = _cmd_encode(dataMap)
 
 // Create the content buffer
 buffer_clear(global.bufId)
-buffer_write_data(global.bufId, content)
+buffer_write_data(global.bufId, content + '-_$$_-')
 
 // As commands are pretty short, compressing will actually cost
 // most space. Do not compress unless the command size is larger than 100.

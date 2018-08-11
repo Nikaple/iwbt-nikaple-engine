@@ -21,7 +21,7 @@ _cmd_mark_as_list(list)
 error_item('cmd_add_list', itemCount)
 
 for (i = 0; i < itemCount; i += 1) {
-    ds_map_add(list, string(i), argument[i + 3])
+    ds_map_add(list, string(i), _ns_encode(argument[i + 3]))
 }
 
 return list

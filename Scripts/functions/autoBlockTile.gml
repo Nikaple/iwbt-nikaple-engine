@@ -2,12 +2,6 @@
 
 if (global.enable_auto_tile) {
     switch (room) {
-        case rSelectStage:
-        case rOptions:
-            autotile(2, bgIndoor)
-            break
-        case rHub:
-        case rTraps:
         case rOnlineHub:
         case rSeamlessWarping2:
             autotile(2, bgGrass)
@@ -15,13 +9,10 @@ if (global.enable_auto_tile) {
         case rSeamlessWarping:
             autotile(2, bgCastle)
             break
-        case rGimmick:
-            autotile(4, bgMario, 32, -10)
+        case rOnlineWarpWait:
+            // tile depth = -10
+            autotile(4, bgMario, 32, -10, 4)
             break
-        case rAvoidance:
-            autotile(4, bgMegaman, 32)
-            break
-        case rBossSample:
         case rOnlineWarpSync:
             autotile(4, bgMetal, 32)
             break

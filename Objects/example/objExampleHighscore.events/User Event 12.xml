@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="OTHER" id="22">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (success) {
+    shouldDrawHighscore = true
+    size = min(size, 10)
+    for (i = 0; i &lt; size; i += 1) {
+        name[i] = json_pick(data[i], 'name')
+        _score[i] = json_pick(data[i], 'score')
+        time[i] = json_pick(data[i], 'updateAt')
+        if (is_zero(_score[i])) {
+            name[i] = '-'
+            _score[i] = '-'
+            time[i] = '-'
+        }
+    }
+} else {
+    show_message('fetch highscore failed. Msg: ' + string(msg))
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -13,7 +13,10 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if (debug_mode) {
+        <argument kind="STRING">// used in rSeamlessWarping2
+// for auto place 2 different tiles in one room
+
+if (debug_mode) {
     visible = true
 }
 

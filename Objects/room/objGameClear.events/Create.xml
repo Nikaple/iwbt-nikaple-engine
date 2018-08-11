@@ -13,7 +13,9 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">//this should be put at where game ends.
+        <argument kind="STRING">// this should be put at where game ends.
+
+spritable()
 </argument>
       </arguments>
     </action>

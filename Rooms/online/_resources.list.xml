@@ -5,8 +5,6 @@
   <resource name="rOnlinePlatforms" type="RESOURCE"/>
   <resource name="rOnlineTriggerAndButton" type="RESOURCE"/>
   <resource name="rOnlineHostGuestBlock" type="RESOURCE"/>
-  <resource name="rSeamlessWarping" type="RESOURCE"/>
-  <resource name="rSeamlessWarping2" type="RESOURCE"/>
   <resource name="rOnlineWarpWait" type="RESOURCE"/>
   <resource name="rOnlineWarpSync" type="RESOURCE"/>
   <resource name="rOnlineSaveWait" type="RESOURCE"/>
@@ -14,4 +12,6 @@
   <resource name="rOnlineResetWait" type="RESOURCE"/>
   <resource name="rOnlineResetSync" type="RESOURCE"/>
   <resource name="rOnlineBossSample" type="RESOURCE"/>
+  <resource name="rSeamlessWarping" type="RESOURCE"/>
+  <resource name="rSeamlessWarping2" type="RESOURCE"/>
 </resources>

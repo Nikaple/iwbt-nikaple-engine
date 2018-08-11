@@ -1,5 +1,5 @@
 // saveGame(x, y)
-
+debug('save')
 var buffer, i, saveX, saveY, xs, spd, grav, maxJumps, shootInterval;
 
 if (!instance_exists(player)) exit;
@@ -42,7 +42,7 @@ for (i = IDLING; i < LADDER; i += 1) {
 
 // for more save data, add script here
 // If you don't know which buffer_write_* script to use,
-// use buffer_write_float32
+// use buffer_write_float32 for numbers and buffer_write_string for strings
 
 
 if (global.enable_encryption) {

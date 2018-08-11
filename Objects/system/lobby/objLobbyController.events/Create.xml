@@ -15,11 +15,16 @@
       <arguments>
         <argument kind="STRING">ns_fetch_lobby()
 
-for (i = 0; i &lt; 6; i += 1) {
+offset = 0
+size = 6
+
+for (i = 0; i &lt; size; i += 1) {
   h = i mod 2
   v = i div 2
-  _room[i] = instance_create(80 + 352 * h, 80 + 128 * v, objLobbyRoomDrawer)
+  _room[i] = instance_create(72 + 352 * h, 128 + 128 * v, objLobbyRoomDrawer)
 }
+
+
 </argument>
       </arguments>
     </action>

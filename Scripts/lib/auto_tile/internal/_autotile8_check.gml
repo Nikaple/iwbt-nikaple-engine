@@ -3,34 +3,21 @@
     Includes corners.
 */
 
-// query cache
-if (ds_map_exists(global.__autotile_block_index_map, id) && global.__autotile_use_cache) {
-    return ds_map_find_value(global.__autotile_block_index_map, id)
-}
-
-var index, obj;
+var index, obj, key;
 obj = objVisibleTile
+key = string(id) + string(room)
 
-//Directional Check, including corners, returns Boolean
-/*
-north_tile = !!collision_point(x, y - 1, obj, false, true)
-south_tile = !!collision_point(x, y + 32, obj, false, true)
-west_tile = !!collision_point(x - 1, y, obj, false, true)
-east_tile = !!collision_point(x + 32, y, obj, false, true)
-north_west_tile =
-    !!collision_point(x - 1, y - 1, obj, false, true) && west_tile && north_tile
-north_east_tile =
-    !!collision_point(x + 32, y - 1, obj, false, true) && north_tile && east_tile
-south_west_tile =
-    !!collision_point(x - 1, y + 32, obj, false, true) && south_tile && west_tile
-south_east_tile =
-    !!collision_point(x + 32, y + 32, obj, false, true) && south_tile && east_tile
-*/
+// query cache
+index = _autotile_read_cache()
+if (index != -1) {
+    return index
+}
 
 // optimized collision checking
 
 if (!north_tile_checked) {
-    north_tile = collision_point(x, y - 1, obj, false, true)
+    col = collision_point(x, y - 1, obj, false, true)
+    north_tile = col && !autotile_exclude(col)
     if (north_tile) {
         north_tile.south_tile = 1
         north_tile.south_tile_checked = true
@@ -41,7 +28,8 @@ if (!north_tile_checked) {
 }
 
 if (!south_tile_checked) {
-    south_tile = collision_point(x, y + 32, obj, false, true)
+    col = collision_point(x, y + 32, obj, false, true)
+    south_tile = col && !autotile_exclude(col)
     if (south_tile) {
         south_tile.north_tile = 1
         south_tile.north_tile_checked = true
@@ -52,7 +40,8 @@ if (!south_tile_checked) {
 }
 
 if (!west_tile_checked) {
-    west_tile = collision_point(x - 1, y, obj, false, true)
+    col = collision_point(x - 1, y, obj, false, true)
+    west_tile = col && !autotile_exclude(col)
     if (west_tile) {
         west_tile.east_tile = 1
         west_tile.east_tile_checked = true
@@ -63,7 +52,8 @@ if (!west_tile_checked) {
 }
 
 if (!east_tile_checked) {
-    east_tile = collision_point(x + 32, y, obj, false, true)
+    col = collision_point(x + 32, y, obj, false, true)
+    east_tile = col && !autotile_exclude(col)
     if (east_tile) {
         east_tile.west_tile = 1
         east_tile.west_tile_checked = true
@@ -74,7 +64,8 @@ if (!east_tile_checked) {
 }
 
 if (!north_west_tile_checked) {
-    north_west_tile = collision_point(x - 1, y - 1, obj, false, true)
+    col = collision_point(x - 1, y - 1, obj, false, true)
+    north_west_tile = col && !autotile_exclude(col)
     north_west_tile_checked = true
     if (north_west_tile) {
         north_west_tile.south_east_tile = 1
@@ -88,7 +79,8 @@ if (!north_west_tile_checked) {
 }
 
 if (!north_east_tile_checked) {
-    north_east_tile = collision_point(x + 32, y - 1, obj, false, true)
+    col = collision_point(x + 32, y - 1, obj, false, true)
+    north_east_tile = col && !autotile_exclude(col)
     north_east_tile_checked = true
     if (north_east_tile) {
         north_east_tile.south_west_tile = 1
@@ -102,7 +94,8 @@ if (!north_east_tile_checked) {
 }
 
 if (!south_west_tile_checked) {
-    south_west_tile = collision_point(x - 1, y + 32, obj, false, true)
+    col = collision_point(x - 1, y + 32, obj, false, true)
+    south_west_tile = col && !autotile_exclude(col)
     south_west_tile_checked = true
     if (south_west_tile) {
         south_west_tile.north_east_tile = 1
@@ -116,7 +109,8 @@ if (!south_west_tile_checked) {
 }
 
 if (!south_east_tile_checked) {
-    south_east_tile = collision_point(x + 32, y + 32, obj, false, true)
+    col = collision_point(x + 32, y + 32, obj, false, true)
+    south_east_tile = col && !autotile_exclude(col)
     south_east_tile_checked = true
     if (south_east_tile) {
         south_east_tile.north_west_tile = 1
@@ -143,11 +137,10 @@ index =
 // take the previously calculated value and find the relevant value in the data structure to remove redundancies
 if (ds_map_exists(global.__autotile_map, index)) {
     index = ds_map_find_value(global.__autotile_map, index)
-    // cache index
-    if (global.__autotile_use_cache) {
-        ds_map_add(global.__autotile_block_index_map, id, index)
-    }
 }
+
+// cache index
+_autotile_write_cache(index)
 
 return index
 

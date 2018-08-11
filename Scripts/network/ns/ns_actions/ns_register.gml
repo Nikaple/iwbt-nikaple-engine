@@ -1,12 +1,12 @@
 // register
-var name, password, cmd;
+var cmd;
 
-name = i18n_get_string('username', 'username')
-password = i18n_get_string('password', 'password')
+username = i18n_get_string('username', 'username')
+password = i18n_get_string('password', '')
 
 cmd = cmd_init(
     "register", 2,
-    "name", name,
+    "name", username,
     "password", password
 )
 

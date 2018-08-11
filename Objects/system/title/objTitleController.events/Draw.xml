@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (global.game_mode == MODE_SINGLE_PLAYER) exit;
+
+if (!is_zero(version)) {
+    i18n_draw_set_color(make_color_rgb(133, 113, 255))
+    i18n_draw_set_align(fa_left, fa_top)
+    i18n_draw_set_font(fontMsyh24)
+    i18n_draw_text(624, 352, 'v' + string(version))
+}
+
+for (i = 0; i &lt; 3; i += 1) {
+    i18n_draw_set_color(make_color_rgb(64, 44, 194))
+    i18n_draw_set_align(fa_left, fa_middle)
+    i18n_draw_set_font(fontMsyh24)
+    i18n_draw_text(drawX, drawY + 50 * i, text[i + status * 3])
+}
+
+draw_sprite(sprPlayerRunning, -1, drawX - 20, drawY + 10 + 50 * pointer)
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

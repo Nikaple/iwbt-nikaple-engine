@@ -26,6 +26,6 @@ if (IsAllPlayersInWarp && _room == room) {
     if (seed > 0) {
         random_set_seed(seed)
     }
-    scrWarpRoom(roomTo, num, mode, width, height, clearSpeed, screens, kind)
+    scrWarpTo(roomTo, num, mode, width, height, clearSpeed, screens, kind)
 }
 

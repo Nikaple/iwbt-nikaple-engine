@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
-  <resource name="tl_miku" type="RESOURCE"/>
+  <resource name="tlMiku" type="RESOURCE"/>
 </resources>

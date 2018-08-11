@@ -25,6 +25,7 @@ if (global.reverse == 1) {
 // sync room
 shouldSync = false
 alarm[11] = 1
+
 </argument>
       </arguments>
     </action>

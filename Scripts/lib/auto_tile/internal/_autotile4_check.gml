@@ -3,24 +3,22 @@
     Do not includes corners.
 */
 
+var index, obj, key, col;
+obj = objVisibleTile
+key = string(id) + string(room)
+
 // query cache
-if (ds_map_exists(global.__autotile_block_index_map, id) && global.__autotile_use_cache) {
-    return ds_map_find_value(global.__autotile_block_index_map, id)
+// query cache
+index = _autotile_read_cache()
+if (index != -1) {
+    return index;
 }
 
-var index, obj;
-obj = objVisibleTile
-
-// Directional check
-/*north_tile = !!collision_point(x, y - 1, objVisibleTile, false, true)
-south_tile = !!collision_point(x, y + 32, objVisibleTile, false, true)
-west_tile = !!collision_point(x - 1, y, objVisibleTile, false, true)
-east_tile = !!collision_point(x + 32, y, objVisibleTile, false, true)
-*/
 
 // optimized collision checking
 if (!north_tile_checked) {
-    north_tile = collision_point(x, y - 1, obj, false, true)
+    col = collision_point(x, y - 1, obj, false, true)
+    north_tile = col && !autotile_exclude(col)
     north_tile_checked = true
     if (north_tile) {
         north_tile.south_tile = 1
@@ -32,7 +30,8 @@ if (!north_tile_checked) {
 }
 
 if (!south_tile_checked) {
-    south_tile = collision_point(x, y + 32, obj, false, true)
+    col = collision_point(x, y + 32, obj, false, true)
+    south_tile = col && !autotile_exclude(col)
     south_tile_checked = true
     if (south_tile) {
         south_tile.north_tile = 1
@@ -44,7 +43,8 @@ if (!south_tile_checked) {
 }
 
 if (!west_tile_checked) {
-    west_tile = collision_point(x - 1, y, obj, false, true)
+    col = collision_point(x - 1, y, obj, false, true)
+    west_tile = col && !autotile_exclude(col)
     west_tile_checked = true
     if (west_tile) {
         west_tile.east_tile = 1
@@ -56,7 +56,8 @@ if (!west_tile_checked) {
 }
 
 if (!east_tile_checked) {
-    east_tile = collision_point(x + 32, y, obj, false, true)
+    col = collision_point(x + 32, y, obj, false, true)
+    east_tile = col && !autotile_exclude(col)
     east_tile_checked = true
     if (east_tile) {
         east_tile.west_tile = 1
@@ -70,8 +71,7 @@ if (!east_tile_checked) {
 //perform 4 bit Bitmasking calculation
 index = north_tile + 2 * west_tile + 4 * east_tile + 8 * south_tile
 // cache index
-if (global.__autotile_use_cache) {
-    ds_map_add(global.__autotile_block_index_map, id, index)
-}
+_autotile_write_cache(index)
+
 return index
 

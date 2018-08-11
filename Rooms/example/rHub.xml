@@ -96,9 +96,16 @@
   <enableViews>false</enableViews>
   <instances>
     <instance>
+      <object>objBlockTile</object>
+      <position x="64" y="32"/>
+      <creationCode>tile = bgGrass
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
       <object>warp</object>
       <position x="192" y="112"/>
-      <creationCode>roomTo = rBossSample;
+      <creationCode>r = rBossSample;
 text = "sample_boss"
 </creationCode>
       <locked>false</locked>
@@ -106,7 +113,7 @@ text = "sample_boss"
     <instance>
       <object>warp</object>
       <position x="576" y="112"/>
-      <creationCode>roomTo = rAvoidance;
+      <creationCode>r = rAvoidance;
 kind = 20;
 text = "sample_avoidance"
 </creationCode>
@@ -115,7 +122,7 @@ text = "sample_avoidance"
     <instance>
       <object>warp</object>
       <position x="576" y="368"/>
-      <creationCode>roomTo = rGimmick
+      <creationCode>r = rGimmick
 text = "sample_gimmick"
 </creationCode>
       <locked>false</locked>
@@ -123,7 +130,7 @@ text = "sample_gimmick"
     <instance>
       <object>warp</object>
       <position x="192" y="368"/>
-      <creationCode>roomTo = rTraps;
+      <creationCode>r = rTraps;
 kind = 21;
 text = "sample_traps"
 </creationCode>
@@ -132,1046 +139,1040 @@ text = "sample_traps"
     <instance>
       <object>warp</object>
       <position x="384" y="480"/>
-      <creationCode>roomTo = rOnlineHub
+      <creationCode>r = rOnlineHub
 text = "sample_online"
 </creationCode>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="32"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="32"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="64"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="64"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="64"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="96"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="96"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="128"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="128"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="160"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="160"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="160"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="192"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="192"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="224"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="224"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="224"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="256"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="256"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="288"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="288"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="288"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="288"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="288"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="320"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="320"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="320"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="320"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="320"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="320"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="320"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="320"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="352"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="352"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="384"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="384"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="384"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="384"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="416"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="416"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="416"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="448"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="448"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="448"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="480"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="480"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="480"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="480"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="480"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="512"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="512"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="512"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="512"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="512"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="512"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="512"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="512"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="512"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="512"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="512"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="512"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="512"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="512"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="512"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="512"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="512"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="512"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="512"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="512"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="544"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="544"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="544"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="544"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="544"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="544"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="544"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="544"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpR</object>
+      <object>objWalljumpR</object>
       <position x="768" y="544"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpL</object>
+      <object>objWalljumpL</object>
       <position x="0" y="32"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpL</object>
+      <object>objWalljumpL</object>
       <position x="0" y="32"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpL</object>
+      <object>objWalljumpL</object>
       <position x="0" y="32"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpL</object>
+      <object>objWalljumpL</object>
       <position x="0" y="64"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpL</object>
+      <object>objWalljumpL</object>
       <position x="0" y="64"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpL</object>
+      <object>objWalljumpL</object>
       <position x="0" y="64"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpL</object>
+      <object>objWalljumpL</object>
       <position x="0" y="64"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpL</object>
+      <object>objWalljumpL</object>
       <position x="0" y="96"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpL</object>
+      <object>objWalljumpL</object>
       <position x="0" y="96"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpL</object>
+      <object>objWalljumpL</object>
       <position x="0" y="96"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpL</object>
+      <object>objWalljumpL</object>
       <position x="0" y="128"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpL</object>
+      <object>objWalljumpL</object>
       <position x="0" y="128"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpL</object>
+      <object>objWalljumpL</object>
       <position x="0" y="160"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpL</object>
+      <object>objWalljumpL</object>
       <position x="0" y="160"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpL</object>
+      <object>objWalljumpL</object>
       <position x="0" y="192"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpL</object>
+      <object>objWalljumpL</object>
       <position x="0" y="192"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>WalljumpL</object>
+      <object>objWalljumpL</object>
+      <position x="0" y="256"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="256"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="256"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="288"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="288"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="288"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="320"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="320"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="320"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="320"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="320"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="352"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="352"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="352"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="352"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="352"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="352"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="352"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="352"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="352"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="352"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="352"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="384"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="384"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="384"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="384"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="384"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="384"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="384"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="384"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="416"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="416"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="416"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="416"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="416"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="448"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="448"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="448"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="448"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="448"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="448"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="448"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="448"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="448"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="448"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="448"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="448"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="448"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="448"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="448"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="448"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="480"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="480"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="480"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="480"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="480"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="480"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="480"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="480"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="512"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="512"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="512"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="512"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="512"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="512"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="512"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="512"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="544"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="544"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="544"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="544"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="544"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="544"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="544"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="544"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="544"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
+      <position x="0" y="544"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objWalljumpL</object>
       <position x="0" y="224"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="224"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="256"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="256"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="256"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="288"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="288"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="288"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="320"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="320"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="320"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="320"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="320"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="352"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="352"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="352"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="352"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="352"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="352"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="352"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="352"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="352"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="352"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="352"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="384"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="384"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="384"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="384"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="384"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="384"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="384"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="384"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="416"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="416"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="416"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="416"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="416"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="448"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="448"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="448"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="448"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="448"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="448"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="448"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="448"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="448"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="448"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="448"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="448"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="448"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="448"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="448"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="448"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="480"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="480"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="480"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="480"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="480"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="480"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="480"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="480"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="512"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="512"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="512"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="512"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="512"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="512"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="512"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="512"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="544"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="544"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="544"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="544"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="544"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="544"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="544"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="544"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="544"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>WalljumpL</object>
-      <position x="0" y="544"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
@@ -1208,7 +1209,7 @@ num = 2
       <locked>false</locked>
     </instance>
     <instance>
-      <object>camera</object>
+      <object>objCamera</object>
       <position x="32" y="32"/>
       <creationCode/>
       <locked>false</locked>
@@ -1228,7 +1229,8 @@ num = 2
     <instance>
       <object>savePoint</object>
       <position x="192" y="416"/>
-      <creationCode/>
+      <creationCode>
+</creationCode>
       <locked>false</locked>
     </instance>
     <instance>
@@ -1240,9 +1242,9 @@ num = 2
     <instance>
       <object>warpCount</object>
       <position x="384" y="240"/>
-      <creationCode>countBoss = true;
-roomTo = rBossSampleBuffed;
-total = 3;
+      <creationCode>r = rBossSampleBuffed;
+countBoss = true;
+total = 2;
 </creationCode>
       <locked>false</locked>
     </instance>
@@ -1257,11 +1259,11 @@ num = 3;
     <instance>
       <object>warpCount</object>
       <position x="384" y="400"/>
-      <creationCode>countBoss = true;
+      <creationCode>r = rEnd;
+countBoss = true;
 countItem = true;
-roomTo = rEnd;
 kind = 20;
-total = 5;
+total = 4;
 </creationCode>
       <locked>false</locked>
     </instance>
@@ -1280,7 +1282,8 @@ total = 5;
     <instance>
       <object>savePointSync</object>
       <position x="384" y="544"/>
-      <creationCode/>
+      <creationCode>
+</creationCode>
       <locked>false</locked>
     </instance>
     <instance>
@@ -1290,16 +1293,7 @@ total = 5;
       <locked>false</locked>
     </instance>
     <instance>
-      <object>objSequenceTrigger</object>
-      <position x="320" y="256"/>
-      <creationCode>trg[1]=1
-trg[2]=2
-time[1]=50
-</creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>playerStart</object>
+      <object>objPlayerStart</object>
       <position x="384" y="288"/>
       <creationCode/>
       <locked>false</locked>
@@ -1348,12 +1342,6 @@ time[1]=50
     </instance>
     <instance>
       <object>objBlock</object>
-      <position x="0" y="224"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objBlock</object>
       <position x="0" y="256"/>
       <creationCode/>
       <locked>false</locked>
@@ -1367,12 +1355,6 @@ time[1]=50
     <instance>
       <object>objBlock</object>
       <position x="0" y="320"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objBlock</object>
-      <position x="0" y="352"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
@@ -1511,24 +1493,6 @@ time[1]=50
     <instance>
       <object>objBlock</object>
       <position x="512" y="576"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objBlock</object>
-      <position x="544" y="576"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objBlock</object>
-      <position x="576" y="576"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objBlock</object>
-      <position x="608" y="576"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
@@ -1864,36 +1828,6 @@ time[1]=50
     </instance>
     <instance>
       <object>objBlock</object>
-      <position x="256" y="448"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objBlock</object>
-      <position x="224" y="448"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objBlock</object>
-      <position x="192" y="448"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objBlock</object>
-      <position x="160" y="448"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objBlock</object>
-      <position x="128" y="448"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objBlock</object>
       <position x="608" y="448"/>
       <creationCode/>
       <locked>false</locked>
@@ -1955,6 +1889,66 @@ time[1]=50
     <instance>
       <object>objBlock</object>
       <position x="320" y="0"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="544" y="576"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="576" y="576"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="608" y="576"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="128" y="448"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="160" y="448"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="192" y="448"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="224" y="448"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="256" y="448"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="0" y="224"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="0" y="352"/>
       <creationCode/>
       <locked>false</locked>
     </instance>

@@ -96,8 +96,8 @@
   <enableViews>false</enableViews>
   <instances>
     <instance>
-      <object>objMenuSelect</object>
-      <position x="96" y="160"/>
+      <object>objMenuController</object>
+      <position x="32" y="32"/>
       <creationCode/>
       <locked>false</locked>
     </instance>

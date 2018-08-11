@@ -23,14 +23,19 @@
     yb = y + vspeed + 32
 }
 colBlock = collision_rectangle(x + 1, yb, x + 30, yb + 6, objBlock, false, true)
-isRightFree = !place_meeting(x + 1, y, objBlock) || !place_meeting(x + 1, y, player)
-isLeftFree = !place_meeting(x - 1, y, objBlock) || !place_meeting(x - 1, y, player)
 conveyor = collision_line(x + 1, yb, x + 30, yb, blockConveyor, false, true)
+isRightFree = !place_meeting(x + 1, y, objBlock) &amp;&amp; !place_meeting(x + 3, y, player)
+isLeftFree = !place_meeting(x - 1, y, objBlock) &amp;&amp; !place_meeting(x - 3, y, player)
 playerOnTop = collision_line(x + 1, bbox_top - 2, x + 30, bbox_top - 2, player, false, true)
 playerOnLeft = collision_line(x - 1, y, x - 1, y + 31, player, true, false)
 playerOnRight = collision_line(x + 32, y, x + 32, y + 31, player, true, false)
 shouldMoveRight = isRightFree &amp;&amp; playerOnLeft &amp;&amp; player.image_xscale == 1
 shouldMoveLeft = isLeftFree &amp;&amp; playerOnRight &amp;&amp; player.image_xscale == -1
+
+if(!isRightFree &amp;&amp; hspeed &gt; 0)
+    hspeed = 0;
+if(!isLeftFree &amp;&amp; hspeed &lt; 0)
+    hspeed = 0;
 
 if (playerOnTop) {
     player.y += y - yprevious
@@ -46,10 +51,14 @@ if (colBlock != noone) {
     
     // pushable by player
     if (shouldMoveRight || shouldMoveLeft) {
-        h += player.hsp
-        event_user(0)
+        if (shouldMoveRight)
+            h = conveyor.h + 3;
+        else if (shouldMoveLeft)
+            h = conveyor.h - 3;
+            event_user(0)
     }
-    if (isRightFree || isLeftFree) {
+    
+    if ((isRightFree &amp;&amp; h &gt; 0) || (isLeftFree &amp;&amp; h &lt; 0)) {
         hspeed = h
     }
 } else {

@@ -13,8 +13,9 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if (debug_mode) {
-    global.online_mode = false
+        <argument kind="STRING">// debug only
+if (debug_mode) {
+    global._online_mode = false
     global.savenum = 1
     if (file_exists(getSaveFile(global.savenum))) {
         loadGame()

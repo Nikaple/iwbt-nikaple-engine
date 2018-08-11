@@ -4,9 +4,15 @@ vFree = place_free(x, y + vspeed)
 if (!vFree) {
     if (vspeed <= 0) {
         move_contact_solid(90, abs(vspeed))
+        if (global.reverse) {
+            canVJump = false
+        }
     }
     if (vspeed > 0) {
         move_contact_solid(270, abs(vspeed))
+        if (!global.reverse) {
+            canVJump = false
+        }
     }
     vspeed = 0
     gravity = 0

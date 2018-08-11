@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">var i;
+
+for (i = 1; i &lt;= 3; i += 1) {
+    draw_set_color(c_black)
+    draw_set_align(fa_left, fa_top)
+    draw_set_font(fontArial24)
+    // draw "Data x"
+    draw_text(xx + 21 + (i - 1) * 239, yy + 9, str[i])
+    draw_set_font(fontArial12)
+    // draw death count
+    draw_text(xx + (i - 1) * 239 + 10, yy + 70, 'death:' + string(menu_death[i]))
+    // draw time
+    draw_text(xx + (i - 1) * 239 + 10, yy + 90, timeStr[i])
+    // draw difficulty
+    draw_set_align(fa_center, fa_top)
+    if (menu_difficulty[i] != 0) {
+        draw_text(xx + (i - 1) * 239 + 65, yy + 49, difText[menu_difficulty[i]])
+    }
+    //draw clear
+    draw_set_font(fontArial24)
+    if ((menu_clear[i] = 1)) {
+        draw_text(xx + (i - 1) * 239 + 65, yy + 215, 'Clear!!')
+    }
+    //draw icon
+    for (j = 1; j &lt;= 8; j += 1) {
+        if (menu_boss[i, j] &amp;&amp; sprite_exists(bossicon[j])) {
+            drawX = xx + (i - 1) * 239 + 32 * ((j - 1) mod 4)
+            drawY = yy + 128 + 32 * ((j - 1) div 4)
+            draw_sprite(bossicon[j], -1, drawX, drawY)
+        }
+    }
+    // draw indicator
+    if (i == currentSave) {
+        for (j = 0; j &lt; 7; j += 1) {
+            if (j != 3) {
+                draw_sprite(sprCherry, -1, xx + (i - 1) * 239 + 5 + 20 * j, yy + 310)
+            } else {
+                draw_sprite(sprPlayerRunning, -1, xx + (i - 1) * 239 + 67, yy + 312)
+            }
+        }
+    }
+}
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

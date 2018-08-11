@@ -452,7 +452,7 @@ roomTo = rOnlineHub
       <locked>false</locked>
     </instance>
     <instance>
-      <object>camera</object>
+      <object>objCamera</object>
       <position x="32" y="32"/>
       <creationCode/>
       <locked>false</locked>
@@ -486,16 +486,15 @@ roomTo = rOnlineHub
       <position x="352" y="0"/>
       <creationCode>xs = 3
 height = 2
-roomTo = rSeamlessWarping2
+r = rSeamlessWarping2
 </creationCode>
       <locked>false</locked>
     </instance>
     <instance>
       <object>borderWarp</object>
       <position x="0" y="384"/>
-      <creationCode>x -= 32
-ys = 2
-roomTo = rSeamlessWarping2
+      <creationCode>ys = 2
+r = rSeamlessWarping2
 </creationCode>
       <locked>false</locked>
     </instance>
@@ -503,7 +502,7 @@ roomTo = rSeamlessWarping2
       <object>borderWarp</object>
       <position x="768" y="160"/>
       <creationCode>ys = 2
-roomTo = rSeamlessWarping2
+r = rSeamlessWarping2
 screens = 1
 </creationCode>
       <locked>false</locked>
@@ -512,12 +511,12 @@ screens = 1
       <object>borderWarp</object>
       <position x="352" y="576"/>
       <creationCode>xs = 3
-roomTo = rSeamlessWarping2
+r = rSeamlessWarping2
 </creationCode>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>playerStart</object>
+      <object>objPlayerStart</object>
       <position x="384" y="288"/>
       <creationCode/>
       <locked>false</locked>

@@ -2,5 +2,4 @@
 <resources>
   <resource name="objTitleController" type="RESOURCE"/>
   <resource name="objLanguageSwitch" type="RESOURCE"/>
-  <resource name="objControllerButton" type="RESOURCE"/>
 </resources>

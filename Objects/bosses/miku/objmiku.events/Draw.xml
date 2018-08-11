@@ -17,7 +17,7 @@
 draw_sprite(sprite_index, -1, x, y)
 //set drawing parameters
 draw_set_color(c_red)
-draw_set_font(font12)
+draw_set_font(fontArial12)
 //draw the timeline_position in the debug mode(F6)
 //this can be used in:
 //1. see if the attacks is synched with the song directly

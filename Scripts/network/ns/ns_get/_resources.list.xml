@@ -2,6 +2,7 @@
 <resources>
   <resource name="ns_get_player_name" type="RESOURCE"/>
   <resource name="ns_get_player_index" type="RESOURCE"/>
+  <resource name="ns_get_player_count" type="RESOURCE"/>
   <resource name="ns_get_other_player_name" type="RESOURCE"/>
   <resource name="ns_get_other_player_index" type="RESOURCE"/>
   <resource name="ns_get_lobby_id" type="RESOURCE"/>

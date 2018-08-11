@@ -25,6 +25,8 @@
   <constant name="LANG_CN" value="1"/>
   <constant name="LANG_EN" value="2"/>
   <constant name="LANG_JP" value="3"/>
+  <constant name="EVENT_SET_DATA" value="11"/>
+  <constant name="EVENT_GET_DATA" value="12"/>
   <constant name="EVENT_TRIGGER" value="13"/>
   <constant name="EVENT_UDP" value="14"/>
   <constant name="EVENT_TCP" value="15"/>
@@ -35,4 +37,13 @@
   <constant name="MODE_TOURNAMENT" value="1"/>
   <constant name="MODE_COOPERATION" value="2"/>
   <constant name="MODE_USER_SELECT" value="3"/>
+  <constant name="MODE_SINGLE_PLAYER" value="4"/>
+  <constant name="DIF_LOAD" value="0"/>
+  <constant name="DIF_MEDIUM" value="1"/>
+  <constant name="DIF_HARD" value="2"/>
+  <constant name="DIF_VERYHARD" value="3"/>
+  <constant name="DIF_IMPOSSIBLE" value="4"/>
+  <constant name="SAVE_MODE_SHOOT" value="1"/>
+  <constant name="SAVE_MODE_TOUCH" value="2"/>
+  <constant name="SAVE_MODE_PRESS" value="3"/>
 </constants>

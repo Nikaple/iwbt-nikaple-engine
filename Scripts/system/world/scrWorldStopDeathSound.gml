@@ -1,4 +1,4 @@
-music_stop(BGM_Death)
+music_stop(SE_Death)
 music_stop(sndDeath)
 
 if (instance_exists(objDeathSound)) {

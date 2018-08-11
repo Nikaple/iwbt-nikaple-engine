@@ -45,7 +45,9 @@ syncThreshold = set_default(syncThreshold, global.max_sync_cycle)
 timer = (timer + 1) mod syncThreshold
 
 if (syncTimer >= 4 && ((shouldSync && timer == 0) || eventSync)) {
-    ns_sync_player(id)
+    if (ds_list_size(global.__player_list) > 1) {
+        ns_sync_player(id)
+    }
     eventSync = false
 }
 

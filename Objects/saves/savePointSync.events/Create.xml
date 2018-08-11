@@ -15,6 +15,12 @@
       <arguments>
         <argument kind="STRING">// This save will sync to all players
 
+mode = set_default(mode, global.save_mode)
+
+if (mode == SAVE_MODE_PRESS) {
+    key = set_default(key, global.savebutton)
+}
+
 image_speed=0;
 saveTimer = -1;
 

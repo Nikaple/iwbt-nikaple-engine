@@ -25,6 +25,10 @@
 if (wrap) {
     move_wrap(true, true, 0)
 }
+
+if (dirspd != 0) {
+    direction += dirspd
+}
 </argument>
       </arguments>
     </action>

@@ -11,6 +11,7 @@
   <resource name="bgVVVVVV_16" type="RESOURCE"/>
   <resource name="bgVVVVVV_32" type="RESOURCE"/>
   <resource name="bgMetal" type="RESOURCE"/>
+  <resource name="bgMetal2" type="RESOURCE"/>
   <resource name="bgGrass" type="RESOURCE"/>
   <resource name="bgIndoor" type="RESOURCE"/>
   <resource name="engine" type="GROUP"/>

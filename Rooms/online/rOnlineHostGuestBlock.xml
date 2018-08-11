@@ -773,21 +773,23 @@
     <instance>
       <object>warpHost</object>
       <position x="512" y="32"/>
-      <creationCode>text = "return_hub"
-roomTo = rOnlineHub
+      <creationCode>r = rOnlineHub
+text = "return_hub"
+
 </creationCode>
       <locked>false</locked>
     </instance>
     <instance>
       <object>warpGuest</object>
       <position x="672" y="544"/>
-      <creationCode>text = "return_hub"
-roomTo = rOnlineHub
+      <creationCode>r = rOnlineHub
+text = "return_hub"
+
 </creationCode>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>playerStart</object>
+      <object>objPlayerStart</object>
       <position x="32" y="544"/>
       <creationCode/>
       <locked>false</locked>

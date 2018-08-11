@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
   <resource name="objMiku" type="RESOURCE"/>
-  <resource name="YellowCherry" type="RESOURCE"/>
-  <resource name="nottoplayerCheery" type="RESOURCE"/>
-  <resource name="boundCherry" type="RESOURCE"/>
-  <resource name="objnegi" type="RESOURCE"/>
+  <resource name="objYellowCherry" type="RESOURCE"/>
+  <resource name="objNotToPlayerCherry" type="RESOURCE"/>
+  <resource name="objBoundCherry" type="RESOURCE"/>
+  <resource name="objNegi" type="RESOURCE"/>
   <resource name="objBigCherryblue" type="RESOURCE"/>
   <resource name="objCherryblue" type="RESOURCE"/>
 </resources>

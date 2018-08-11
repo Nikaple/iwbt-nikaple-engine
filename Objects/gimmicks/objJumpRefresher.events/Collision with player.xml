@@ -14,9 +14,7 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">if (image_alpha &gt; 0) {
-    if (other.curJumps == 3) {
-        other.curJumps = 2
-    }
+    other.curJumps -= 1
     ns_send_instance()
     event_user(15)
 }

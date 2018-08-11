@@ -22,7 +22,12 @@
                 event_user(EVENT_TRIGGER)
             }
         }
-
+        with (objTriggerableBlock) {
+            if (trg == global.triggered) {
+                triggered = true
+                event_user(EVENT_TRIGGER)
+            }
+        }
         time[i] -= 1
         if (time[i] == -1) {
             if (trg[i + 1] &gt; 0) {

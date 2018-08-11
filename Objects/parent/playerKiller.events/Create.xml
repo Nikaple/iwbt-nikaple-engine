@@ -13,11 +13,7 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if (tarx == 0 &amp;&amp; tary == 0 &amp;&amp; angle == 0) {
-    autoSpikeSprite()
-}
-
-if (outsideRoom()) {
+        <argument kind="STRING">if (outsideRoom()) {
     noDes = true
 }
 

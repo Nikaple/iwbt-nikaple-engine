@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="OTHER" id="10">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">// update disabled status
+if (room != rLobby) exit;
+
+if (objLobbyController.fetched) {
+    switch (text) {
+        case 'join_lobby':
+            if (objLobbyController.roomCount == 0) {
+                disabled = true
+            } else {
+                disabled = false
+            }
+            break
+        case 'lobby_prev':
+            if (objLobbyController.offset &lt;= 0) {
+                disabled = true
+            } else {
+                disabled = false
+            }
+            break
+        case 'lobby_next':
+            if (objLobbyController.offset + objLobbyController.size &gt;= objLobbyController.roomCount) {
+                disabled = true
+            } else {
+                disabled = false
+            }
+            break
+    }
+} else {
+    if (is_string(text)){
+        if (text == 'logout' || text == 'create_lobby') {
+            disabled = false
+        } else {
+            disabled = true
+        }
+    }
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -96,6 +96,13 @@
   <enableViews>false</enableViews>
   <instances>
     <instance>
+      <object>objBlockTile</object>
+      <position x="32" y="32"/>
+      <creationCode>tile = bgIndoor
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
       <object>warp</object>
       <position x="384" y="160"/>
       <creationCode>roomTo = rOptions;
@@ -106,7 +113,7 @@ text = "options"
     <instance>
       <object>warpStart</object>
       <position x="384" y="288"/>
-      <creationCode>dif = 0;
+      <creationCode>dif = DIF_MEDIUM;
 text = "start";
 
 </creationCode>
@@ -115,15 +122,22 @@ text = "start";
     <instance>
       <object>warpStart</object>
       <position x="384" y="416"/>
-      <creationCode>dif = -1;
+      <creationCode>dif = DIF_LOAD;
 text = "load";
 </creationCode>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>playerStart</object>
-      <position x="384" y="512"/>
+      <object>objPlayMusic</object>
+      <position x="544" y="0"/>
       <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objPlayerStart</object>
+      <position x="384" y="512"/>
+      <creationCode>forceSync = true
+</creationCode>
       <locked>false</locked>
     </instance>
     <instance>
@@ -608,18 +622,6 @@ text = "load";
     </instance>
     <instance>
       <object>objBlock</object>
-      <position x="128" y="0"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objBlock</object>
-      <position x="96" y="0"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objBlock</object>
       <position x="64" y="0"/>
       <creationCode/>
       <locked>false</locked>
@@ -633,12 +635,6 @@ text = "load";
     <instance>
       <object>objBlock</object>
       <position x="128" y="64"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objBlock</object>
-      <position x="160" y="64"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
@@ -771,6 +767,24 @@ text = "load";
     <instance>
       <object>objBlock</object>
       <position x="96" y="192"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="96" y="0"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="128" y="0"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="160" y="64"/>
       <creationCode/>
       <locked>false</locked>
     </instance>

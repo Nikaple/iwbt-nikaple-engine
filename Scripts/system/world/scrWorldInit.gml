@@ -9,10 +9,10 @@ global.room_caption_def = ''
 global.death = 0
 global.timestep = 0
 
-difText[0] = 'Medium'
-difText[1] = 'Hard'
-difText[2] = 'VeryHard'
-difText[3] = 'Impossible'
+difText[DIF_MEDIUM] = 'Medium'
+difText[DIF_HARD] = 'Hard'
+difText[DIF_VERYHARD] = 'VeryHard'
+difText[DIF_IMPOSSIBLE] = 'Impossible'
 
 scrWorldInitPlugins()
 scrWorldInitMessageBox()

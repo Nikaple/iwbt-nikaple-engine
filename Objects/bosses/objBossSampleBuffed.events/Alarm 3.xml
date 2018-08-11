@@ -48,7 +48,7 @@ if (nextAttack == HOMING) {
 if (nextAttack == LINE) {
     alarm[LINE] = 50
     //initialize the counter to be used in line attack
-    shoot_count = -1
+    shootCount = -1
     alarm[CHOOSE] = 300
 }
 if (nextAttack == WINDY) {

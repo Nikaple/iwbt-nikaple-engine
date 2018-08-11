@@ -17,10 +17,11 @@
 //  the object(s) sequentially with the same trg value
 //
 //      in the creation code, put:
-//          trg[i]                     trigger number
-//          snd[i]                     sound effect(optional)
-//          time[i]                    time for next trigger (frames)
-//          setScale(xscale,yscale)    region scaling(optional)
+//          trg[i]       trigger number
+//          snd[i]       sound effect(optional)
+//          time[i]      time for next trigger (frames)
+//          xs           image_xscale
+//          ys           image_yscale
 //
 //
 

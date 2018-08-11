@@ -1,6 +1,6 @@
 while (1) {
     if (
-        keyboard_check_pressed(ord('P')) ||
+        keyboard_check_pressed(global.pausebutton) ||
         keyboard_check_pressed(vk_escape) ||
         keyboard_check_pressed(vk_enter)
     ) {
@@ -18,7 +18,4 @@ while (1) {
     }
     sleep(10)
 }
-//anti-cheat initialize
-date_time_previous = date_current_time()
-date_time = date_current_time()
 

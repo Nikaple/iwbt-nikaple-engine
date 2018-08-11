@@ -3,4 +3,5 @@
   <resource name="savePoint" type="RESOURCE"/>
   <resource name="savePointWait" type="RESOURCE"/>
   <resource name="savePointSync" type="RESOURCE"/>
+  <resource name="others" type="GROUP"/>
 </resources>

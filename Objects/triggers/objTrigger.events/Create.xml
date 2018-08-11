@@ -17,12 +17,54 @@
 //  the object(s) with the same trg value
 //
 //      in the creation code, put:
-//          trg                         trigger number;
-//          key                         key trigger number;
-//          snd                         sound effect(optional);
-//          setScale(xscale,yscale)     region scaling(optional);
+//          trg          trigger number;
+//          key          key trigger number;
+//          snd          sound effect(optional);
+//          xs           image_xscale
+//          ys           image_yscale
 //
 //
+
+// Any object whose parent is playerKiller/objTriggerable/objTriggerableBlock
+// will be triggered if player touches objTrigger with same trigger index. 
+// Available trigger modes are:
+// 1. speed mode.
+//    trg = trigger index
+//    h = horizontal speed
+//    v = vertical speed
+//    spd = overall speed
+//    dir = direction
+// 2. path mode.
+//    trg = trigger index
+//    pth = path index
+//    spd = path speed
+//    scl = path scale
+//    enda = path end action
+//    move = continue moving when player died or not
+// 3. scale mode
+//    trg = trigger index
+//    tarx = target image_xscale
+//    tary = target image_yscale
+//    spr = sprite index
+//    origin = quick set scale center (see below)
+//    cx = scale center horizontal distance from origin
+//    cy = scale center vertical distance from origin
+//    time = time to scale to target size
+//    xsp = individual horizontal scale speed
+//    ysp = individual vertical scale speed
+// 4. rotate mode
+//    trg = trigger index
+//    ang = rotate angle
+//    time = rotate time
+//    spr = sprite index
+//    origin = quick set scale center (see below)
+//    cx = scale center horizontal distance from origin
+//    cy = scale center vertical distance from origin
+
+// origin: quickly specify cx/cy to be at edge or corner, see below.
+// 1  2  3
+// 4  5  6
+// 7  8  9
 
 // make the triggers visible in debug mode (F6)
 if (debug_mode &amp;&amp; global.__debug_mode) {

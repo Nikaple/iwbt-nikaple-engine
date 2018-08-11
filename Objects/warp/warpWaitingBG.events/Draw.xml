@@ -31,7 +31,7 @@ i18n_draw_text_ext_transformed(
     view_angle[view_current]
 )
 i18n_draw_set_alpha(1)
-i18n_draw_set_font(font12, fontMsyh12)
+i18n_draw_set_font(fontMsyh12)
 
 </argument>
       </arguments>

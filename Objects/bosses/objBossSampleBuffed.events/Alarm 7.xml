@@ -18,11 +18,10 @@
 sprite_index = sprCherryPink
 //stop moving
 move = false
-// this will make the 'shoot_count' variable loop like this:
-// 0,1,2,3,4,5,6,7,0,1,2,3,4,,5,6,7,0,1,...
-shoot_count = (shoot_count + 1) mod 8
+// generate a sequence from 0 to 7
+shootCount = gen_sequence(shootCount, 0, 7)
 //aims player at the beginning of the 8 bullets
-if ((shoot_count = 0)) {
+if ((shootCount = 0)) {
     dir = point_direction(x, y, player.x, player.y)
 }
 // create bullets
@@ -38,7 +37,7 @@ if (buff) {
 //play sound effect
 music_play(sndShoot)
 //shoot timer
-if (shoot_count &lt; 7) {
+if (shootCount &lt; 7) {
     alarm[7] = 2
 } else {
     alarm[7] = 20

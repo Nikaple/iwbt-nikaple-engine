@@ -13,7 +13,13 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">image_speed = 0
+        <argument kind="STRING">mode = set_default(mode, global.save_mode)
+
+if (mode == SAVE_MODE_PRESS) {
+    key = set_default(key, global.savebutton)
+}
+
+image_speed = 0
 saveTimer = -1
 
 spritable()

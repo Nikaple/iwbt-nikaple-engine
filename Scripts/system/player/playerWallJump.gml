@@ -17,7 +17,7 @@ if (onIvy) {
             hspeed = 15 * image_xscale
             music_play(sndWallJump)
             eventSync = true
-            alarm[0] = 1
+            canVJump = true
         } else {
             hspeed = maxSpeed * image_xscale
             spr = FALLING

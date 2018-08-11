@@ -146,6 +146,13 @@
   </views>
   <instances>
     <instance>
+      <object>objBlockTile</object>
+      <position x="32" y="672"/>
+      <creationCode>tile = bgGrass
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
       <object>objTrigger</object>
       <position x="192" y="480"/>
       <creationCode>trg = 1
@@ -223,12 +230,12 @@ key = 4
     <instance>
       <object>warp</object>
       <position x="736" y="192"/>
-      <creationCode>roomTo = rHub
+      <creationCode>r = rHub
 </creationCode>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>camera</object>
+      <object>objCamera</object>
       <position x="64" y="512"/>
       <creationCode/>
       <locked>false</locked>
@@ -240,7 +247,7 @@ key = 4
       <locked>false</locked>
     </instance>
     <instance>
-      <object>pathSpike</object>
+      <object>objPathSpike</object>
       <position x="320" y="128"/>
       <creationCode>//creates spikes along a path
 //  in the creation code, put:
@@ -256,7 +263,7 @@ spr = sprGreenSpikeUp;
       <locked>false</locked>
     </instance>
     <instance>
-      <object>roundingCherry</object>
+      <object>objRoundingCherry</object>
       <position x="352" y="96"/>
       <creationCode>//creates a rotating fruit
 //  in the creation code, put:
@@ -273,7 +280,7 @@ spr = sprCherryCyan;
       <locked>false</locked>
     </instance>
     <instance>
-      <object>roundingCherry</object>
+      <object>objRoundingCherry</object>
       <position x="416" y="512"/>
       <creationCode>rad = 60
 num = 4
@@ -298,9 +305,10 @@ num = 1
       <locked>false</locked>
     </instance>
     <instance>
-      <object>trgPathBlock</object>
+      <object>trgBlock</object>
       <position x="160" y="128"/>
       <creationCode>sprite_index = sprfloor;
+
 trg = 10;
 pth = pR1;
 scl = 2;
@@ -346,7 +354,7 @@ spr = sprfloor
       <locked>false</locked>
     </instance>
     <instance>
-      <object>pathSpike</object>
+      <object>objPathSpike</object>
       <position x="640" y="320"/>
       <creationCode>spr = sprGreenSpikeUp
 pth = pD1U1
@@ -355,12 +363,25 @@ spd = 1
       <locked>false</locked>
     </instance>
     <instance>
-      <object>pathSpike</object>
+      <object>objPathSpike</object>
       <position x="672" y="320"/>
       <creationCode>spr = sprGreenSpikeUp
 pth = pD1U1
 spd = 1
 </creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objSpikeSprite</object>
+      <position x="32" y="640"/>
+      <creationCode>spr = sprGreenSpikeM
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>blockBullet</object>
+      <position x="704" y="416"/>
+      <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
@@ -587,7 +608,7 @@ spd = 1
       <locked>false</locked>
     </instance>
     <instance>
-      <object>playerStart</object>
+      <object>objPlayerStart</object>
       <position x="32" y="544"/>
       <creationCode/>
       <locked>false</locked>
@@ -895,7 +916,7 @@ move = true
 trg = 7
 cx = 0
 cy = 32
-angle = radtodeg(pi - arctan(2))
+ang = radtodeg(pi - arctan(2))
 time = 20
 </creationCode>
       <locked>false</locked>
@@ -1640,12 +1661,6 @@ ys = 0.5
     </instance>
     <instance>
       <object>objBlock</object>
-      <position x="1184" y="736"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objBlock</object>
       <position x="1216" y="736"/>
       <creationCode/>
       <locked>false</locked>
@@ -1995,6 +2010,12 @@ ys = 0.5
     <instance>
       <object>objBlock</object>
       <position x="448" y="176"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="1184" y="736"/>
       <creationCode/>
       <locked>false</locked>
     </instance>

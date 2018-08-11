@@ -5,6 +5,7 @@
   <resource name="blockConveyor" type="RESOURCE"/>
   <resource name="objVisibleTile" type="RESOURCE"/>
   <resource name="objTriggerable" type="RESOURCE"/>
+  <resource name="objTriggerableBlock" type="RESOURCE"/>
   <resource name="playerKiller" type="RESOURCE"/>
   <resource name="playerKillerHost" type="RESOURCE"/>
   <resource name="playerKillerGuest" type="RESOURCE"/>

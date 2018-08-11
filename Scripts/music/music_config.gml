@@ -11,17 +11,28 @@ switch (room) {
     case rRoom:
     case rSelectStage:
         //indicates that BGM_Title should be played in the rooms above
-        music_loop(global.BGM_Title)
+        music_loop(BGM_Title)
         break
     case rHub:
-    case rOnlineHub:
     case rTraps:
     case rGimmick:
-        music_loop(global.BGM_Rock)
+    case rOnlineHub:
+    case rOnlineSpike:
+    case rOnlinePlatforms:
+    case rOnlineTriggerAndButton:
+    case rOnlineHostGuestBlock:
+    case rSeamlessWarping:
+    case rSeamlessWarping2:
+    case rOnlineWarpWait:
+    case rOnlineWarpSync:
+    case rOnlineSaveWait:
+    case rOnlineSaveSync:
+    case rOnlineResetWait:
+    case rOnlineResetSync:
+        music_loop(BGM_Rock)
         break
     //add your code here
-    
     default:
-        music_play(global.BGM_Null)
+        music_play(BGM_Null)
 }
 

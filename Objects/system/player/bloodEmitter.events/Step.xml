@@ -17,7 +17,9 @@
 
 if (emit) {
     repeat (60) {
-        b[bi] = instance_create(x, y, objBlood)
+        xx = x + irandom_range(-4, 4)
+        yy = y + irandom_range(-8, 8)
+        b[bi] = instance_create(xx, yy, objBlood)
         b[bi].parent = id
         b[bi].direction = 360 * fake_random()
         b[bi].speed = 2 + 10 * fake_random()

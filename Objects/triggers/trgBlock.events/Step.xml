@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (path_position &gt; 0 &amp;&amp; path_position &lt; 1 &amp;&amp; place_meeting(x, y, player)) {
+    with (player) {
+        killPlayer()
+    }
+}
+
+//  if player dies during when the block is still moving
+//  it continue moving along the previous direction
+//  you can choose to disable this by deleting this event
+if (!instance_exists(player)) {
+    if (move &amp;&amp; path_position != 1 &amp;&amp; path_endaction == PATH_ACTION_STOP) {
+        speed = path_speed
+        path_end()
+        move = false
+    }
+}
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

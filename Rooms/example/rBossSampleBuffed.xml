@@ -146,6 +146,13 @@
   </views>
   <instances>
     <instance>
+      <object>objBlockTile</object>
+      <position x="64" y="32"/>
+      <creationCode>tile = bgMetal
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
       <object>block</object>
       <position x="0" y="0"/>
       <creationCode/>
@@ -158,7 +165,7 @@
       <locked>false</locked>
     </instance>
     <instance>
-      <object>camera</object>
+      <object>objCamera</object>
       <position x="32" y="32"/>
       <creationCode/>
       <locked>false</locked>
@@ -172,7 +179,7 @@
     <instance>
       <object>bossWarp</object>
       <position x="160" y="416"/>
-      <creationCode>roomTo = rHub
+      <creationCode>r = rHub
 </creationCode>
       <locked>false</locked>
     </instance>
@@ -185,14 +192,17 @@ spr = sprBossIcon3
       <locked>false</locked>
     </instance>
     <instance>
-      <object>playerStart</object>
-      <position x="32" y="544"/>
-      <creationCode/>
+      <object>objSealRoom</object>
+      <position x="32" y="0"/>
+      <creationCode>noBottom = true
+noRight = true
+noLeft = true
+</creationCode>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>objBlock</object>
-      <position x="0" y="0"/>
+      <object>objPlayerStart</object>
+      <position x="32" y="544"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
@@ -548,14 +558,6 @@ spr = sprBossIcon3
       <object>objBlock</object>
       <position x="768" y="0"/>
       <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objBlock</object>
-      <position x="32" y="0"/>
-      <creationCode>y -= 32;
-image_xscale = 23;
-</creationCode>
       <locked>false</locked>
     </instance>
     <instance>

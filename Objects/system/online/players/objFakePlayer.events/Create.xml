@@ -44,14 +44,25 @@ image_alpha = 0.5;
 gravity = grav;
 
 // sprite
-playerSprite(
-    sprPlayerIdle,
-    sprPlayerRunning,
-    sprPlayerFall,
-    sprPlayerJump,
-    sprPlayerSliding
-)
-
+if (idx &gt; 1) {
+    // guest
+    playerSprite(
+        sprPlayerIdle,
+        sprPlayerRunning,
+        sprPlayerFall,
+        sprPlayerJump,
+        sprPlayerSliding
+    )
+} else {
+    // host
+    playerSprite(
+        sprPlayerIdle,
+        sprPlayerRunning,
+        sprPlayerFall,
+        sprPlayerJump,
+        sprPlayerSliding
+    )
+}
 </argument>
       </arguments>
     </action>

@@ -15,11 +15,10 @@
       <arguments>
         <argument kind="STRING">if (debug_mode &amp;&amp; global.__debug_mode) {
     visible = true
-    debug_visible = true
 }
 
 spritable()
-autoBlockTile()
+
 
 </argument>
       </arguments>

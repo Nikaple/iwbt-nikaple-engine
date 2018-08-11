@@ -15,6 +15,8 @@
       <arguments>
         <argument kind="STRING">//only use this object in the room `rSelectStage`!
 
+saveFile = getSaveFile(global.savenum)
+
 event_inherited()
 </argument>
       </arguments>

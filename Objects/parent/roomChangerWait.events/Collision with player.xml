@@ -16,7 +16,8 @@
         <argument kind="STRING">if (!onCollide) exit;
 
 if (!ns_is_in_game() || noSync || global.tournament_mode) {
-    scrWarpRoom(roomTo, num, mode, width, height, clearSpeed, screens, kind)
+    roomTo = set_default(r, roomTo)
+    scrWarpTo(roomTo, num, mode, width, height, clearSpeed, screens, kind)
     exit;
 }
 

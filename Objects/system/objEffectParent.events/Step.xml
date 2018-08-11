@@ -14,11 +14,17 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">var a, i
+
+// keypad setup
 if (!global.enable_keypad) {
     if (keyboard_get_numlock()) {
-        keyboard_set_numlock(off)
+        keyboard_set_numlock(false)
+    }
+    if (isInGameRoom() &amp;&amp; keyboard_check_direct(144) &amp;&amp; instance_exists(player)) {
+        killPlayer()
     }
 }
+// flash object setup
 for (i = 0; i &lt;= 100; i += 1) {
     if (global.flash_object[i] != 0) {
         a = global.flash_object[i]

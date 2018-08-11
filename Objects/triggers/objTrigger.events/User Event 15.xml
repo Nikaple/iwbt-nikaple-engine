@@ -26,6 +26,12 @@ with (objTriggerable) {
         event_user(EVENT_TRIGGER)
     }
 }
+with (objTriggerableBlock) {
+    if (trg == other.trg) {
+        triggered = true
+        event_user(EVENT_TRIGGER)
+    }
+}
 
 if (snd != 0) {
     music_play(snd)

@@ -12,6 +12,7 @@ ini_write_real('Controls', 'Shoot', global.shootbutton)
 ini_write_real('Controls', 'Restart', global.restartbutton)
 ini_write_real('Controls', 'Pause', global.pausebutton)
 ini_write_real('Controls', 'Skip', global.skipbutton)
+ini_write_real('Controls', 'Save', global.savebutton)
 
 ini_close()
 

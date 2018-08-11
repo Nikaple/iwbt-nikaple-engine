@@ -34,6 +34,8 @@ if (ns_is_host()) {
     image_alpha = 0.5
 }
 
+event_inherited()
+
 </argument>
       </arguments>
     </action>

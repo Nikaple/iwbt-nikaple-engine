@@ -22,8 +22,10 @@ if ((place_meeting(x, y, objBlock) || place_meeting(x, y, activeBlock)) &amp;&am
     gravity = yflag * grav
 }
 
-y = round(y)
-x = round(x)
+if (!global.enable_bunny_hop) {
+    y = round(y)
+}
+
 
 </argument>
       </arguments>

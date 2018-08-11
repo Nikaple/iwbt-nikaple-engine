@@ -1,7 +1,7 @@
 var bg, size, _depth, index;
 bg = argument0
 size = set_default(argument1, 16)
-_depth = 1000000
+_depth = 2000000
 index = _autotile8_check()
 
 if (size == 32) {

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="savePointMedium" type="RESOURCE"/>
+  <resource name="savePointWaitMedium" type="RESOURCE"/>
+  <resource name="savePointSyncMedium" type="RESOURCE"/>
+  <resource name="savePointVeryHard" type="RESOURCE"/>
+  <resource name="savePointWaitVeryHard" type="RESOURCE"/>
+  <resource name="savePointSyncVeryHard" type="RESOURCE"/>
+</resources>

@@ -74,12 +74,14 @@ if (yflag == 1) {
         bbox_right + hspeed - 1, bbox_top + vspeed + gravity - abs(tempvpf),
         platform, 1, 1
     )
+    
     if (pf == noone)
         pf = collision_line(
-            bbox_left, bbox_bottom,
-            bbox_left + hspeed, bbox_top + vspeed + gravity - abs(tempvpf),
+            bbox_left + 2, bbox_bottom,
+            bbox_left + 2 + hspeed, bbox_top + vspeed + gravity - abs(tempvpf),
             platform, 1, 1
         )
+        debug(pf)
 
     if (pf == noone) {
         if (

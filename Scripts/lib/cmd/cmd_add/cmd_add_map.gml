@@ -18,7 +18,7 @@ error_kv('cmd_add_map', kvCount)
 
 for (i = 0; i < kvCount; i += 1) {
     _cmd_check_key(argument[i * 2 + 3], 'cmd_add_map')
-    ds_map_add(map, argument[i * 2 + 3], argument[i * 2 + 4])
+    ds_map_add(map, _ns_encode(argument[i * 2 + 3]), _ns_encode(argument[i * 2 + 4]))
 }
 
 return map

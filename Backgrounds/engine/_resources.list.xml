@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
-  <resource name="backgroundMessageBox" type="RESOURCE"/>
-  <resource name="backgroundTitle" type="RESOURCE"/>
-  <resource name="backgroundThxForPlaying" type="RESOURCE"/>
+  <resource name="bgEngineMessageBox" type="RESOURCE"/>
+  <resource name="bgEngineTitleOnline" type="RESOURCE"/>
+  <resource name="bgEngineThxForPlaying" type="RESOURCE"/>
+  <resource name="bgEngineTitleIWanna" type="RESOURCE"/>
+  <resource name="bgEngineHighscore" type="RESOURCE"/>
 </resources>

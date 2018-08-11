@@ -8,4 +8,6 @@
   <resource name="_autotile4_check" type="RESOURCE"/>
   <resource name="_autotile8" type="RESOURCE"/>
   <resource name="_autotile8_check" type="RESOURCE"/>
+  <resource name="_autotile_write_cache" type="RESOURCE"/>
+  <resource name="_autotile_read_cache" type="RESOURCE"/>
 </resources>

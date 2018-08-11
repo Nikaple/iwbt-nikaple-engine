@@ -13,46 +13,53 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">with (player) {
-    instance_destroy()
-}
-
-instance_create(0, 0, warpWaitingBG)
-
-// load game
-if (dif == -1 &amp;&amp; !file_exists(getSaveFile(global.savenum))) {
-    room_restart()
-} else {
-    if (dif != -1) {
-        global.difficulty = dif
-        if (file_exists(getSaveFile(global.savenum))) {
-            shouldDelete = i18n_show_question('delete_save')
-            if (shouldDelete) {
-                file_delete(getSaveFile(global.savenum))
-            } else {
-                room_restart()
-            }
-        }
-        global.death = 0
-        global.timestep = 0
-        roomTo = global.first_stage
-    } else {
+        <argument kind="STRING">if (dif == DIF_LOAD) {
+    // load game
+    if (file_exists(saveFile)) {
         roomTo = rLoad
-    }
-    
-    if (!ns_is_in_game() || noSync || global.tournament_mode) {
-        scrWarpRoom(roomTo)
     } else {
-        ns_send_wait(
-            'warp',
-            string(room) + '-start-' + string(dif),
-            2,
-            'room', room,
-            'roomTo', roomTo
-        )
+        player.x = player.xstart
+        player.y = player.ystart
+        exit
     }
+} else {
+    // new game
+    if (file_exists(saveFile)) {
+        shouldDelete = i18n_show_question('delete_save')
+        if (shouldDelete) {
+            file_delete(saveFile)
+        } else {
+            player.x = player.xstart
+            player.y = player.ystart
+            exit
+        }
+    }
+    global.difficulty = dif
+    global.death = 0
+    global.timestep = 0
+    roomTo = global.first_stage
 }
 
+if (!ns_is_in_game()) {
+    // single player
+    scrWarpTo(roomTo)
+} else if (global.tournament_mode) {
+    // tournament
+    global.__sync_position = true
+    global.__player_auto_save = true
+    scrWarpTo(roomTo)
+} else {
+    destroy_if_exists(player)
+    instance_create(0, 0, warpWaitingBG)
+    // cooperation
+    ns_send_wait(
+        'warp',
+        string(room) + '-start-' + string(dif),
+        2,
+        'room', room,
+        'roomTo', roomTo
+    )
+}
 
 </argument>
       </arguments>

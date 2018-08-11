@@ -7,8 +7,8 @@
   <resource name="borderWarp" type="RESOURCE"/>
   <resource name="borderWarpSync" type="RESOURCE"/>
   <resource name="borderWarpWait" type="RESOURCE"/>
-  <resource name="warpStart" type="RESOURCE"/>
   <resource name="bossWarp" type="RESOURCE"/>
   <resource name="bossWarpSync" type="RESOURCE"/>
+  <resource name="warpStart" type="RESOURCE"/>
   <resource name="warpCount" type="RESOURCE"/>
 </resources>

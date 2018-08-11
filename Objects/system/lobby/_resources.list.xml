@@ -2,4 +2,5 @@
 <resources>
   <resource name="objLobbyController" type="RESOURCE"/>
   <resource name="objLobbyRoomDrawer" type="RESOURCE"/>
+  <resource name="objControllerButton" type="RESOURCE"/>
 </resources>

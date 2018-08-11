@@ -2,6 +2,8 @@
 <resources>
   <resource name="_ns_init" type="RESOURCE"/>
   <resource name="_ns_free" type="RESOURCE"/>
+  <resource name="_ns_encode" type="RESOURCE"/>
+  <resource name="_ns_decode" type="RESOURCE"/>
   <resource name="ns_connect" type="RESOURCE"/>
   <resource name="tcp" type="GROUP"/>
   <resource name="udp" type="GROUP"/>

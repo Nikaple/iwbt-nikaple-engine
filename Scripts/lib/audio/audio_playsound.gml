@@ -8,6 +8,7 @@
 
 var sound, sound_default_volume, volume;
 sound = argument0
+volume = clamp(set_default(argument1, 1), 0, 1)
 
 //set the default volume of sound resources
 switch (sound) {
@@ -28,12 +29,10 @@ switch (sound) {
         sound_default_volume = 1
 }
 
-volume = set_default(argument1, sound_default_volume)
-
 if (!global.audio_sound_muted) {
     sound_volume(
         sound,
-        sound_default_volume * (0.3 + 0.007 * global.audio_sound_volume)
+        sound_default_volume * (0.3 + 0.007 * global.audio_sound_volume) * power(volume, 0.3)
     )
     sound_stop(sound)
     sound_play(sound)

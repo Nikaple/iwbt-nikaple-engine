@@ -33,7 +33,7 @@ buffer = buffer_create()
 buffer_write_int8(buffer, CMD_TYPE_INIT)
 buffer_write_int8(buffer, times)
 buffer_write_string(buffer, global.__player_id)
-udpsocket_send(global.udpSockId, buffer);
+_ns_udp_send(global.udpSockId, buffer);
 buffer_destroy(buffer)
 </argument>
       </arguments>

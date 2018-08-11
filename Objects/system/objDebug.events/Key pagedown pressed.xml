@@ -13,13 +13,11 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if (i18n_get_lang() == LANG_CN) {
-    i18n_set_lang(LANG_EN)
-} else if (i18n_get_lang() == LANG_EN) {
-    i18n_set_lang(LANG_JP)
-} else if (i18n_get_lang() == LANG_JP) {
-    i18n_set_lang(LANG_CN)
-}
+        <argument kind="STRING">if (!debug_mode) exit;
+
+i18n_set_lang(
+    gen_sequence(i18n_get_lang(), LANG_CN, LANG_JP)
+)
 </argument>
       </arguments>
     </action>

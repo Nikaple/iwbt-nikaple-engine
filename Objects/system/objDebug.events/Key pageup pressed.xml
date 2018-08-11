@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="KEYPRESS" id="33">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!debug_mode) exit;
+
+i18n_set_lang(
+    gen_sequence(i18n_get_lang(), LANG_CN, LANG_JP, true)
+)
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

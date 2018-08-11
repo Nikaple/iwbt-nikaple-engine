@@ -10,6 +10,5 @@ for (i = 0; i < size; i += 1) {
 
 ds_map_destroy(global.__i18n_map)
 
-if (global.enable_internationalization) {
-    fw_cleanup()
-}
+fw_cleanup()
+

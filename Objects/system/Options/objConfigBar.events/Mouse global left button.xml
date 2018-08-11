@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="MOUSE" id="50">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (
+    mouse_x &gt; x &amp;&amp;
+    mouse_x &lt; x + sprite_width &amp;&amp;
+    mouse_y &gt; y &amp;&amp;
+    mouse_y &lt; y + sprite_height
+) {
+    val = floor(100 * (mouse_x - x) / sprite_width)
+    switch (target) {
+        case 'music':
+            global.audio_music_volume = val
+            break
+        case 'sound':
+            global.audio_sound_volume = val
+            break
+    }
+    audio_update()
+}
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

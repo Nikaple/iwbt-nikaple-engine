@@ -10,7 +10,7 @@ var type;
 
 type = set_default(argument0, UDP_SYNC_INSTANCE)
 
-buffer_write_uint8(global.udpSyncBufId, type)
+buffer_write_int8(global.udpSyncBufId, type)
 if (type == UDP_SYNC_INSTANCE) {
     buffer_write_uint16(global.udpSyncBufId, id - 100000)
 }

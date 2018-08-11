@@ -15,7 +15,7 @@
     <backgroundDef>
       <visibleOnRoomStart>true</visibleOnRoomStart>
       <isForeground>false</isForeground>
-      <backgroundImage>backgroundTitle</backgroundImage>
+      <backgroundImage>bgEngineTitleOnline</backgroundImage>
       <offset x="0" y="0"/>
       <speed x="0" y="0"/>
       <tileHorizontally>true</tileHorizontally>
@@ -98,12 +98,6 @@
     <instance>
       <object>objTitleController</object>
       <position x="32" y="32"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objLanguageSwitch</object>
-      <position x="688" y="64"/>
       <creationCode/>
       <locked>false</locked>
     </instance>

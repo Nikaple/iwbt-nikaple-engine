@@ -14,20 +14,27 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">if (!roomId) exit;
-drawSelf()
 
-draw_set_color(c_black)
-draw_set_alpha(1)
-draw_set_halign(fa_center)
-draw_set_valign(fa_middle)
-draw_text(x + 40, y + 20, roomId)
-draw_text(x + 188, y + 20, roomName)
+if (roomMode == MODE_TOURNAMENT) {
+    idx = 0
+} else {
+    idx = 1
+}
+
+draw_sprite(sprite_index, idx, x, y)
+
+i18n_draw_set_color(c_black)
+i18n_draw_set_alpha(1)
+i18n_draw_set_align(fa_center, fa_middle)
+i18n_draw_set_font(fontMsyh12)
+i18n_draw_text(x + 40, y + 20, roomId)
+i18n_draw_text(x + 188, y + 20, httprequest_urldecode(roomName))
 for (i = 0; i &lt; playerCount; i += 1) {
   draw_sprite_ext(sprPlayerHead, -1, x + 28 + i * 36, y + 50, 2, 2, 0, c_white, 1)
 }
 
-draw_set_halign(fa_left)
-draw_text(x + 12, y + 78, "Host: " + string(hostName))
+i18n_draw_set_halign(fa_left)
+i18n_draw_text(x + 12, y + 78, "Host: " + string(httprequest_urldecode(hostName)))
 
 draw_sprite(sprLobbyRoomLock, needPass, x + 273, y + 66)
 </argument>

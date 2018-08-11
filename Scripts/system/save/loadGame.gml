@@ -50,7 +50,7 @@ for (i = IDLING; i < LADDER; i += 1) {
 
 // for more save data, add script here
 // If you don't know which buffer_read_* script to use,
-// use buffer_read_float32
+// use buffer_read_float32 for numbers and buffer_read_string for strings
 
 buffer_destroy(buffer)
 

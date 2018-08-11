@@ -3,7 +3,7 @@ data = argument0
 droppedPlayer = json_pick(data, 'name')
 dsPlayerInfo = objOnlinePlayers.dsPlayerInfo
 
-debug('Player ' + droppedPlayer + ' has dropped.')
+i18n_show_message(i18n_get('player_dropped', droppedPlayer))
 
 with (objOnlinePlayers) {
     inst = variable_local_get(droppedPlayer)

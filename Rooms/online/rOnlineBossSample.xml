@@ -146,13 +146,20 @@
   </views>
   <instances>
     <instance>
+      <object>objBlockTile</object>
+      <position x="64" y="32"/>
+      <creationCode>tile = bgMetal
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
       <object>objBossSampleOnline</object>
       <position x="640" y="272"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>camera</object>
+      <object>objCamera</object>
       <position x="32" y="32"/>
       <creationCode/>
       <locked>false</locked>
@@ -180,22 +187,23 @@ sprite_index = sprBossIcon2;
     <instance>
       <object>bossWarpSync</object>
       <position x="160" y="416"/>
-      <creationCode>roomTo = rHub
+      <creationCode>r = rHub
 </creationCode>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>playerStart</object>
+      <object>objSealRoom</object>
+      <position x="32" y="0"/>
+      <creationCode>noBottom = true
+noRight = true
+noLeft = true
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objPlayerStart</object>
       <position x="32" y="544"/>
       <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objBlock</object>
-      <position x="32" y="0"/>
-      <creationCode>y -= 32;
-image_xscale = 23;
-</creationCode>
       <locked>false</locked>
     </instance>
     <instance>

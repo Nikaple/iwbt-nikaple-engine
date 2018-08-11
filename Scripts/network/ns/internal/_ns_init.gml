@@ -65,7 +65,7 @@ for (i = 0; i < 2048; i += 1) {
         _ns_add_handler(global.__ns_wait_handler_map, i, waitPrefix);
     }
 }
-if (script_exists(2049)) {
+if (script_exists(2048) && !global.enable_production_mode) {
     // change 2048 to a bigger number
     show_error('Wow you have so many scripts! Check `_ns_init` for more information.', 1)
 }

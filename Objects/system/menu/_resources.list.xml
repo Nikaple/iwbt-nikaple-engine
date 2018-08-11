@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
-  <resource name="objMenuSelect" type="RESOURCE"/>
-  <resource name="objMenuSelect2" type="RESOURCE"/>
+  <resource name="objMenuController" type="RESOURCE"/>
 </resources>

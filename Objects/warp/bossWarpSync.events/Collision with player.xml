@@ -13,13 +13,11 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if (!visible) exit;
-
-global.__sync_position = true
-global.__player_auto_save = true
-
-event_inherited()
-
+        <argument kind="STRING">if (visible) {
+    global.__sync_position = true
+    global.__player_auto_save = true
+    event_inherited()
+}
 </argument>
       </arguments>
     </action>

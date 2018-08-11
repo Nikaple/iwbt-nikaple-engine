@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="2">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (instance_exists(player)) {
+    //set this object as the view object
+    view_object[0] = id
+    if (noSmooth) {
+        x = player.x
+        y = player.y
+    } else {
+        //follow player smoothly
+        hspeed = (player.x - x) / 16
+        vspeed = (player.y - y) / 12
+        if (player.x &lt;= x + 2 &amp;&amp; player.x &gt;= x - 2) {
+            hspeed = 0
+        }
+        if (player.y &lt;= y + 2 &amp;&amp; player.y &gt;= y - 2) {
+            vspeed = 0
+        }
+    }
+} else {
+    vspeed = 0
+    hspeed = 0
+}
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

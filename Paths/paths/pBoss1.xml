@@ -11,7 +11,7 @@
     <point speed="75" x="608" y="476"/>
     <point speed="100" x="640" y="380"/>
   </points>
-  <backgroundRoom/>
+  <backgroundRoom>rm_</backgroundRoom>
   <closed>true</closed>
   <precision>4</precision>
   <smooth>true</smooth>

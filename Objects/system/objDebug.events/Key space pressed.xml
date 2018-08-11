@@ -13,10 +13,10 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if (!isInGameRoom()) exit;
+        <argument kind="STRING">if (!debug_mode) exit;
 
 with (objBlock) {
-    if (object_index == objBlock) {
+    if (object_index == objBlock || object_index == objExampleAutoTileBlock) {
         visible = !visible
     }
 }

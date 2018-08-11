@@ -1,6 +1,14 @@
 //load the music
-var stream, ext;
-stream = set_default(argument1, global.enable_stream_music)
-ext = set_default(argument2, 'ogg')
-return SS_LoadSound(global.music_directory + argument0 + '.' + ext, stream)
+var name, stream, dir, ext, loaded;
+name = argument0
+stream = argument1
+dir = set_default(argument2, global.music_directory)
+ext = set_default(argument3, '.ogg')
+
+loaded = variable_global_get('BGM_' + name)
+if (SS_IsHandleValid(loaded)) {
+    SS_FreeSound(loaded)
+}
+
+return SS_LoadSound(dir + name + ext, stream)
 

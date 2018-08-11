@@ -26,21 +26,46 @@ if (global.enable_lite_mode) {
     }
 }
 
-buttonText[0] = 'single_player'
-buttonText[1] = 'multiple_player'
-buttonText[2] = 'exit'
-buttonText[3] = 'register'
-buttonText[4] = 'login'
-buttonText[5] = 'back'
+image_speed = 0.3
+sent = false
 
-for (i = 0; i &lt; 3; i += 1) {
-    inst[i] = instance_create(112 + 216 * i, 450, objControllerButton)
-    inst[i].text = buttonText[i]
+text[0] = 'single_player'
+text[1] = 'multiple_player'
+text[2] = 'exit'
+text[3] = 'register'
+text[4] = 'login'
+text[5] = 'back'
+
+CHOOSE_MODE = 0
+CHOOSE_ACTION = 1
+ACTION_SINGLE = 0
+ACTION_MULTIPLE = 1
+ACTION_EXIT = 2
+ACTION_REGISTER = 0
+ACTION_LOGIN = 1
+ACTION_RETURN = 2
+pointer = ACTION_MULTIPLE
+
+drawX = 340
+drawY = 420
+
+if (ns_is_online_mode()) {
+    if (debug_mode &amp;&amp; !instance_exists(objServerConnector)) {
+        instance_create(0, 0, objServerConnector)
+    }
+} else {
+    if (background_index[0] == bgEngineTitleOnline) {
+        background_index[0] = bgEngineTitleIWanna
+    }
 }
 
-if (debug_mode &amp;&amp; !instance_exists(objServerConnector)) {
-    instance_create(0, 0, objServerConnector)
+if (global.enable_internationalization) {
+    instance_create(688, 64, objLanguageSwitch)
 }
+
+ini_open(global.option_file_name)
+lastuser = ini_read_string('Account', 'lastuser', '')
+ini_close()
 </argument>
       </arguments>
     </action>

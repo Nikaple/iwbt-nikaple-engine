@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">// draw background
+draw_rectangle_single_color(x, y, x + width, y + height, c_light_blue, 0)
+draw_set_color(c_dark_blue)
+draw_rectangle_width(x, y, x + width, y + height, 4)
+draw_line_width(x, y + 40, x + width, y + 40, 2)
+for (i = 0; i &lt; 10; i += 1) {
+    yy = y + 40 + 32 * i
+    draw_line_width(x, yy, x + width, yy, 2)
+}
+draw_line_width(x + 182, y, x + 182, y + height, 2)
+draw_line_width(x + 351, y, x + 351, y + height, 2)
+
+// draw highscore
+if (!shouldDrawHighscore) exit;
+
+i18n_draw_set_color(c_black)
+i18n_draw_set_align(fa_center, fa_middle)
+x1 = x + 91
+x2 = x + 266
+x3 = x + 444
+i18n_draw_text(x1, y + 24, 'highscore_name')
+i18n_draw_text(x2, y + 24, 'highscore_score')
+i18n_draw_text(x3, y + 24, 'highscore_time')
+
+for (i = 0; i &lt; 10; i += 1) {    
+    yy = y + 58 + 32 * i
+    i18n_draw_text(x1, yy, name[i], true)
+    i18n_draw_text(x2, yy, _score[i])
+    i18n_draw_text(x3, yy, time[i])
+}
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

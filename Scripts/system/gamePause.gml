@@ -4,7 +4,7 @@ if (isBossRoom() && !global.enable_pause_in_boss_room) {
     exit;
 }
 
-if (keyboard_check_pressed(ord('P'))) {
+if (keyboard_check_pressed(global.pausebutton)) {
     if (instance_exists(player)) {
         pauseon = true
         pauseback = background_create_from_screen(

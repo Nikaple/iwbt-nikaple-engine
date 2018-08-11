@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="OTHER" id="4">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (num != global.__player_start_num) {
+    exit;
+}
+
+if (!instance_exists(player)) {
+    instance_create(x, y, player)
+    if (instance_exists(objSmoothView)) {
+        objSmoothView.x = x
+        objSmoothView.y = y
+    }
+}
+
+if (autoSave) {
+    player.autoSave = true
+    player.alarm[10] = 1
+}
+
+if (wrap) {
+    player.shouldWrapWhenOutsideRoom = true
+    player.shouldDieWhenOutsideRoom = false
+}
+
+if (infJump) {
+    player.infJump = true
+}
+
+if (forceSync) {
+    playerForceSync(20, 2)
+}
+
+// DO NOT CHANGE THINGS BELOW
+player.maxJumps = set_default(global.__player_maxJumps, player.maxJumps)
+player.maxSpeed = set_default(global.__player_maxSpeed, player.maxSpeed)
+player.grav = set_default(global.__player_grav, player.grav)
+player.shootInterval = set_default(global.__player_shootInterval, player.shootInterval)
+
+global.__player_start_num = 0
+global.__player_maxJumps = 0
+global.__player_maxSpeed = 0
+global.__player_grav = 0
+global.__player_shootInterval = 0
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

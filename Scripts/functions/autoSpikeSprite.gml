@@ -3,7 +3,10 @@
 if (global.enable_auto_spike_sprite) {
     switch (room) {
         case rTraps:
-            spikeSprite(sprGreenSpikeM)
+            spikeSprite(sprCyanSpikeM)
+            break
+        case rOnlineSpike:
+            spikeSprite(sprCyanSpikeM)
             break
         //add code here
         default:

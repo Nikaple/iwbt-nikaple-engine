@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!ns_is_host() &amp;&amp; text == "startGame") exit;
+
+i18n_draw_set_font(fontMsyh12)
+i18n_draw_set_color(c_white)
+i18n_draw_set_halign(fa_center)
+i18n_draw_set_valign(fa_middle)
+
+if (disabled) {
+    image_index = 3
+} else {
+    if (collision_point(mouse_x, mouse_y, id, true, false)) {
+        if (mouse_check_button(mb_left)) {
+            image_index = 1
+        } else {
+            image_index = 2
+        }
+    } else {
+        image_index = 0
+    }
+}
+
+drawSelf()
+i18n_draw_text(
+    x + sprite_width/ 2, 
+    y + sprite_height / 2, 
+    text
+)
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

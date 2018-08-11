@@ -15,11 +15,14 @@ if (global.enable_production_mode) {
         }
     }
     
-    if (global.enable_lite_mode) {
-        show_error('Lite mode is not allowed in production mode.', 0)
-    }
+    global.enable_lite_mode = false
 }
 
+if (global.game_mode = MODE_SINGLE_PLAYER) {
+    global._online_mode = false
+} else {
+    global._online_mode = true
+}
 
 if (sprite_exists(0)) {
     error_ind_zero('sprite', sprite_get_name(0))

@@ -13,8 +13,10 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">global.__sync_position = true
-global.__player_auto_save = true
+        <argument kind="STRING">if (!global.tournament_mode) {
+    global.__sync_position = true
+    global.__player_auto_save = true
+}
 
 event_inherited()
 </argument>

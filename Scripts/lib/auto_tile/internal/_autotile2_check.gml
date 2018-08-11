@@ -2,24 +2,25 @@
     Returns the tile index after checking 2 positions around the tile.
 */
 
-var index, obj;
+var index, obj, key, col;
 obj = objVisibleTile
+key = string(id) + string(room)
 
 // query cache
-if (ds_map_exists(global.__autotile_block_index_map, id) && global.__autotile_use_cache) {
-    return ds_map_find_value(global.__autotile_block_index_map, id)
+index = _autotile_read_cache()
+if (index != -1) {
+    return index;
 }
 
-if (!collision_point(x, y - 1, obj, false, true) && y mod view_hview[view_current] != 0) {
+col = collision_point(x, y - 1, obj, false, true)
+if ((!col || autotile_exclude(col)) && y mod view_hview[view_current] != 0) {
     index = 0
 } else {
     index = 1
 }
 
 // cache index
-if (global.__autotile_use_cache) {
-    ds_map_add(global.__autotile_block_index_map, id, index)
-}
+_autotile_write_cache(index)
 
 return index
 

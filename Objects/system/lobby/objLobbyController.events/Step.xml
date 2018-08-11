@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (fetched) {
+    roomCount = ds_list_size(lobbies)
+    if (offset &gt;= roomCount &amp;&amp; offset &gt; 0) {
+        offset -= size
+    }
+}
+
+if (keyboard_check_pressed(global.jumpbutton)) {
+    music_play(sndJump)
+    if (global.game_mode == MODE_USER_SELECT) {
+        mode = MODE_COOPERATION
+    } else {
+        mode = global.game_mode
+    }
+    
+    if (debug_mode) {
+        cmd = cmd_init(
+            'create_lobby', 2, 
+            'name', 'debug',
+            'mode', mode
+        )
+        ns_send(cmd)
+    } else {
+        ns_create_lobby()
+    }
+}
+
+if (keyboard_check_pressed(global.shootbutton)) {
+    music_play(sndDJump)
+    ns_logout()
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -31,6 +31,10 @@ for (i = 1; i &lt; 10; i += 1) {
 }
 
 event_inherited()
+
+if (trg[1] != 0 &amp;&amp; debug_mode &amp;&amp; global.__debug_mode) {
+    image_blend = merge_color(c_red, c_white, 0.5)
+}
 </argument>
       </arguments>
     </action>

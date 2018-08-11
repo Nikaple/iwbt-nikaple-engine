@@ -7,4 +7,10 @@
   <resource name="handler_cmd_login_already" type="RESOURCE"/>
   <resource name="handler_cmd_login_needed" type="RESOURCE"/>
   <resource name="handler_cmd_logout" type="RESOURCE"/>
+  <resource name="handler_cmd_data_set_success" type="RESOURCE"/>
+  <resource name="handler_cmd_data_set_fail" type="RESOURCE"/>
+  <resource name="handler_cmd_data_get_success" type="RESOURCE"/>
+  <resource name="handler_cmd_data_get_fail" type="RESOURCE"/>
+  <resource name="handler_cmd_data_get_all_success" type="RESOURCE"/>
+  <resource name="handler_cmd_data_get_all_fail" type="RESOURCE"/>
 </resources>

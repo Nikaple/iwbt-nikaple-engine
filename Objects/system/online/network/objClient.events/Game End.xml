@@ -14,6 +14,7 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">//dllfree()
+buffer_destroy(global.tmpBuf)
 socket_destroy(global.sockId)
 </argument>
       </arguments>

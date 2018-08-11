@@ -1,4 +1,4 @@
-//check it so we don't have to load the music for the second time
+// check it so we don't have to load the music for the second time
 if (!SS_IsHandleValid(BGM_Null)) {
     music_init()
 }

@@ -13,18 +13,24 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if (isInGameRoom()) {
+        <argument kind="STRING">var restartPressed;
+restartPressed = keyboard_check_pressed(global.restartbutton)
+if (isInGameRoom()) {
     scrWorldUpdate()
     scrWorldPause()
-        
-    if (keyboard_check_pressed(global.restartbutton)) {
+    if (restartPressed) {
         scrWorldReset()
     }
+}
+if (room == rSelectStage &amp;&amp; restartPressed) {
+    destroy_if_exists(player)
+    room_restart()
 }
 
 scrWorldCleanmem()
 scrWorldCenterMessage()
 scrWorldMisc()
+
 </argument>
       </arguments>
     </action>

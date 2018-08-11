@@ -12,17 +12,20 @@ map = ds_map_create()
 if (is_string(type)) {
     kvCount = argument1
     error_kv('cmd_init', kvCount)
+    if (kvCount < 7) {
+        error_kv_zero('cmd_init', kvCount, argument[kvCount * 2 + 2])
+    }
     ds_map_add(map, 'cmd', type)
     for (i = 0; i < kvCount; i += 1) {
         _cmd_check_key(argument[i * 2 + 2], 'cmd_init')
-        ds_map_add(map, argument[i * 2 + 2], argument[i * 2 + 3])
+        ds_map_add(map, _ns_encode(argument[i * 2 + 2]), _ns_encode(argument[i * 2 + 3]))
     }
 } else {
     kvCount = type
     error_kv('cmd_init', kvCount)
     for (i = 0; i < kvCount; i += 1) {
         _cmd_check_key(argument[i * 2 + 1], 'cmd_init')
-        ds_map_add(map, argument[i * 2 + 1], argument[i * 2 + 2])
+        ds_map_add(map, _ns_encode(argument[i * 2 + 1]), _ns_encode(argument[i * 2 + 2]))
     }
 }
 

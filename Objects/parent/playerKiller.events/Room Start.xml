@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="OTHER" id="4">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (
+    object_index == spikeDown ||
+    object_index == spikeUp ||
+    object_index == spikeLeft ||
+    object_index == spikeRight ||
+    object_index == miniSpikeDown ||
+    object_index == miniSpikeUp ||
+    object_index == miniSpikeLeft ||
+    object_index == miniSpikeRight
+) {
+    if (tarx == 0 &amp;&amp; tary == 0 &amp;&amp; ang == 0) {
+        autoSpikeSprite()
+    }
+}
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

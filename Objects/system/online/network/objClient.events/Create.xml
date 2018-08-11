@@ -23,6 +23,8 @@ if (instance_number(objClient) &gt; 1) {
 
 handshakeTimes = 0
 
+global.tmpBuf = buffer_create()
+
 </argument>
       </arguments>
     </action>

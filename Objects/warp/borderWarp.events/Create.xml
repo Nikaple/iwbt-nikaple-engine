@@ -25,9 +25,8 @@
 //  When roomTo == -1, you can use warpX and warpY to 
 //  teleport in the same room.
 
-event_inherited()
-
 mode = set_default(mode, 'border')
+event_inherited()
 
 if (x == 0) {
     x -= 32

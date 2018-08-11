@@ -16,5 +16,3 @@ if (global.enable_focus) {
     }
     isFocus = keyboard_check(global.focus_key_code)
 }
-
-

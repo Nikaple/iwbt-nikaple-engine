@@ -3,31 +3,36 @@ onBlock =
     place_meeting(x, y + yflag, objBlock) ||
     place_meeting(x, y + yflag, activeBlock)
 onConveyor = place_meeting(x, y + yflag, blockConveyor)
-onIvyL = place_meeting(x - 1, y, WalljumpL) && !onBlock && !onPlatform
-onIvyR = place_meeting(x + 1, y, WalljumpR) && !onBlock && !onPlatform
+onIvyL = place_meeting(x - 1, y, objWalljumpL) && !onBlock && !onPlatform
+onIvyR = place_meeting(x + 1, y, objWalljumpR) && !onBlock && !onPlatform
 onIvy = onIvyL || onIvyR
-inWater = place_meeting(x, y, objWaterParent)
-
+colWater = collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, objWaterParent, 0, 1)
+inWater = !!colWater
+ 
+// moving
 if (!onIvy) {
+    // on conveyor
     if (onConveyor) {
         conveyorSpeed = instance_place(x, y + yflag, blockConveyor).h
     } else {
         conveyorSpeed = 0
     }
     if (h != 0) {
+        // running
         image_xscale = h
         hspeed = maxSpeed * h + conveyorSpeed
         hsp = hspeed
         isRunning = true
         spr = RUNNING
     } else {
+        // idling
         hspeed = conveyorSpeed
         spr = IDLING
     }
 }
 
 //jumping sprites
-if (!onIvy && abs(vspeed) > grav * 2 && !onPlatform) {
+if (!onIvy && !onPlatform && !onBlock) {
     if (vspeed * yflag < 0) {
         spr = JUMPING
     } else {
@@ -42,7 +47,11 @@ if (onBlock || onPlatform) {
 
 // set max vertical speed
 if (inWater) {
-    maxVspeed = maxWaterSpeed
+    if (colWater.spd != 0) {
+        maxVspeed = colWater.spd
+    } else {
+        maxVspeed = maxWaterSpeed
+    }
 } else {
     maxVspeed = maxAirSpeed
 }

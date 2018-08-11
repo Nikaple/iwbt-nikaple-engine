@@ -13,13 +13,14 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">size = ds_list_size(lobbies)
+        <argument kind="STRING">
 
 for (i = 0; i &lt; 6; i += 1) {
-  info[i] = ds_list_find_value(lobbies, i)
+  info[i] = ds_list_find_value(lobbies, i + offset)
   players[i] = json_pick(info[i], 'players')
   _room[i].roomId = json_pick(info[i], 'id')
   _room[i].roomName = json_pick(info[i], 'name')
+  _room[i].roomMode = json_pick(info[i], 'mode')
   _room[i].hostName = ds_list_find_value(players[i], 0)
   _room[i].playerCount = ds_list_size(players[i])
   _room[i].needPass = json_pick(info[i], 'needPass')

@@ -4,7 +4,7 @@ var data, _id, guest, players, size, i;
 data = argument0
 _id = json_pick(data, 'id')
 guest = json_pick(data, 'guest')
-players = ds_list_clone(json_pick(data, 'players'))
+players = _ns_decode_player_list(json_pick(data, 'players'))
 
 // If the player is in room and a player comes in, update lobby members
 if (room == rRoom && ns_get_lobby_id() == _id) {

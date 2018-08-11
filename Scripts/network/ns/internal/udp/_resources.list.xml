@@ -3,5 +3,7 @@
   <resource name="_ns_connect_udp" type="RESOURCE"/>
   <resource name="_ns_send_udp_init" type="RESOURCE"/>
   <resource name="_ns_recv_udp" type="RESOURCE"/>
+  <resource name="_ns_handle_buffer" type="RESOURCE"/>
   <resource name="_ns_recv_player" type="RESOURCE"/>
+  <resource name="_ns_udp_send" type="RESOURCE"/>
 </resources>

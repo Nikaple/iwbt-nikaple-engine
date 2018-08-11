@@ -15,6 +15,17 @@
       <arguments>
         <argument kind="STRING">if (debug_mode) {
     visible = !visible
+    if (visible) {
+        str += '
+            Welcome to the debug console!
+            Press [End] key to toggle console;
+            Press [Home] key to clear console;
+            Press [Delete] key to toggle tcp traffic;
+            Press [Insert] key to toggle udp traffic (player only);
+            Press [PageDown] key to switch language;
+            Press [Space] key to toggle visibility of blocks and triggers;
+        '
+    }
 }
 </argument>
       </arguments>

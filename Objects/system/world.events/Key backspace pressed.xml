@@ -20,10 +20,10 @@ if (!debug_mode) exit
 roomTo = rHub
 
 if (isInGameRoom() &amp;&amp; instance_exists(player)) {
-    music_stop(BGM_Death)
+    music_stop(SE_Death)
     global.frozen = false
     global.frozen2 = false
-    scrWarpRoom(roomTo)
+    scrWarpTo(roomTo)
 }
 
 </argument>

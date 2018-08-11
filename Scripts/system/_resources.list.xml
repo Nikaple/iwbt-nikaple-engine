@@ -4,7 +4,6 @@
   <resource name="world" type="GROUP"/>
   <resource name="controls" type="GROUP"/>
   <resource name="save" type="GROUP"/>
-  <resource name="setGlobalsMinor" type="RESOURCE"/>
   <resource name="spritable" type="RESOURCE"/>
   <resource name="spikeSprite" type="RESOURCE"/>
   <resource name="getSaveFile" type="RESOURCE"/>
@@ -13,5 +12,5 @@
   <resource name="gameResume" type="RESOURCE"/>
   <resource name="gameReset" type="RESOURCE"/>
   <resource name="isInGameRoom" type="RESOURCE"/>
-  <resource name="scrWarpRoom" type="RESOURCE"/>
+  <resource name="scrWarpTo" type="RESOURCE"/>
 </resources>

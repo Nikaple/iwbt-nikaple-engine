@@ -3,7 +3,8 @@ if (ns_is_in_lobby()) exit
 
 var data, players, lobbyId, lobbyName, lobbyMode, needPass, map;
 data = argument0
-players = ds_list_clone(json_pick(data, 'players'))
+players = _ns_decode_player_list(json_pick(data, 'players'))
+debug('players', players)
 lobbyId = json_pick(data, 'id')
 lobbyName = json_pick(data, 'name')
 lobbyMode = json_pick(data, 'mode')

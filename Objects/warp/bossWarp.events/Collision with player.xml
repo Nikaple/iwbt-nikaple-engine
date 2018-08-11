@@ -16,7 +16,6 @@
         <argument kind="STRING">if (visible) {
     event_inherited()
 }
-
 </argument>
       </arguments>
     </action>

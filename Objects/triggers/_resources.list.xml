@@ -4,7 +4,7 @@
   <resource name="objSequenceTrigger" type="RESOURCE"/>
   <resource name="objButton" type="RESOURCE"/>
   <resource name="trgMultiplePath" type="RESOURCE"/>
-  <resource name="trgPathBlock" type="RESOURCE"/>
+  <resource name="trgBlock" type="RESOURCE"/>
   <resource name="trgBlockFake" type="RESOURCE"/>
   <resource name="trgBlockInvisible" type="RESOURCE"/>
 </resources>

@@ -22,7 +22,7 @@ for (i = 0; i < origSize; i += 1) {
 }
 
 for (i = 0; i < itemCount; i += 1) {
-    ds_map_add(list, string(max(0, i + size - 1)), argument[i + 2])
+    ds_map_add(list, string(max(0, i + size - 1)), _ns_encode(argument[i + 2]))
 }
 
 return list

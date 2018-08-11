@@ -148,41 +148,41 @@
     <instance>
       <object>warp</object>
       <position x="448" y="432"/>
-      <creationCode>color = c_white
-roomTo = rOnlineHub
+      <creationCode>r = rOnlineHub
+color = c_white
 text = "return_hub"
 </creationCode>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>camera</object>
+      <object>objCamera</object>
       <position x="32" y="32"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>movingPlatform</object>
+      <object>objMovingPlatform</object>
       <position x="128" y="480"/>
       <creationCode>vspeed = -2
 </creationCode>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>movingPlatform</object>
+      <object>objMovingPlatform</object>
       <position x="192" y="480"/>
       <creationCode>vspeed = -4
 </creationCode>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>movingPlatform</object>
+      <object>objMovingPlatform</object>
       <position x="256" y="480"/>
       <creationCode>vspeed = -8
 </creationCode>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>movingPlatform</object>
+      <object>objMovingPlatform</object>
       <position x="64" y="480"/>
       <creationCode>vspeed = 1
 
@@ -190,60 +190,60 @@ text = "return_hub"
       <locked>false</locked>
     </instance>
     <instance>
-      <object>movingPlatform</object>
+      <object>objMovingPlatform</object>
       <position x="352" y="96"/>
       <creationCode>h = 6
 </creationCode>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>movingPlatform</object>
+      <object>objMovingPlatform</object>
       <position x="352" y="160"/>
       <creationCode>h = 3
 </creationCode>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>movingPlatform</object>
+      <object>objMovingPlatform</object>
       <position x="352" y="224"/>
       <creationCode>h = 1
 </creationCode>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>movingPlatform</object>
+      <object>objMovingPlatform</object>
       <position x="352" y="288"/>
       <creationCode>hspeed = 6
 </creationCode>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>movingPlatform</object>
+      <object>objMovingPlatform</object>
       <position x="352" y="352"/>
       <creationCode>hspeed = 3
 </creationCode>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>movingPlatform</object>
+      <object>objMovingPlatform</object>
       <position x="608" y="240"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>movingPlatform</object>
+      <object>objMovingPlatform</object>
       <position x="608" y="128"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>movingPlatform</object>
+      <object>objMovingPlatform</object>
       <position x="608" y="480"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>movingPlatform</object>
+      <object>objMovingPlatform</object>
       <position x="672" y="480"/>
       <creationCode/>
       <locked>false</locked>
@@ -261,44 +261,44 @@ text = "return_hub"
       <locked>false</locked>
     </instance>
     <instance>
-      <object>pathPlatform</object>
+      <object>objPathPlatform</object>
       <position x="96" y="96"/>
       <creationCode>path_start(path28, 3, 1, false)
 </creationCode>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>movingPlatform</object>
+      <object>objMovingPlatform</object>
       <position x="448" y="512"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>movingPlatform</object>
+      <object>objMovingPlatform</object>
       <position x="480" y="512"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>movingPlatform</object>
+      <object>objMovingPlatform</object>
       <position x="416" y="512"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>movingPlatform</object>
+      <object>objMovingPlatform</object>
       <position x="416" y="464"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>movingPlatform</object>
+      <object>objMovingPlatform</object>
       <position x="448" y="464"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>movingPlatform</object>
+      <object>objMovingPlatform</object>
       <position x="480" y="464"/>
       <creationCode/>
       <locked>false</locked>
@@ -316,7 +316,7 @@ text = "return_hub"
       <locked>false</locked>
     </instance>
     <instance>
-      <object>playerStart</object>
+      <object>objPlayerStart</object>
       <position x="352" y="544"/>
       <creationCode>wrap = true
 </creationCode>

@@ -25,7 +25,7 @@ if (flash == 0 &amp;&amp; curHP != 0) {
     flashObject(3, 3)
     //play the sound effect when boss get hit
     music_play(sndBossHit)
-    if (curHP == 35) {
+    if (curHP == 20) {
         //activate second phase
         //now code the second phase using this 'buff' variable
         buff = true

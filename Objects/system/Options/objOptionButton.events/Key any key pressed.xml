@@ -14,8 +14,8 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">if active {
-    str = button + "=" + string(keyboard_lastkey);
-    execute_string(str);
+    code = button + "=" + string(keyboard_lastkey);
+    execute_string(code);
     active = false;
     if position_meeting(mouse_x,mouse_y,object_index){
         image_index = 1;

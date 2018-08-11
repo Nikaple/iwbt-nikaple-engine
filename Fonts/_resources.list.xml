@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
-  <resource name="font40" type="RESOURCE"/>
-  <resource name="font24" type="RESOURCE"/>
-  <resource name="font12" type="RESOURCE"/>
-  <resource name="font9" type="RESOURCE"/>
+  <resource name="fontArial40" type="RESOURCE"/>
+  <resource name="fontArial24" type="RESOURCE"/>
+  <resource name="fontArial12" type="RESOURCE"/>
+  <resource name="fontArial9" type="RESOURCE"/>
+  <resource name="fontMonospace20" type="RESOURCE"/>
 </resources>

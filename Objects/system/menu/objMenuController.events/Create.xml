@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">image_speed = 0.2
+currentSave = 1
+str[1] = "Data1"
+str[2] = "Data2"
+str[3] = "Data3"
+bossicon[1] = sprBossIcon1
+bossicon[2] = sprBossIcon2
+bossicon[3] = sprBossIcon3
+bossicon[4] = sprBossIcon3
+difText[DIF_MEDIUM] = 'Medium'
+difText[DIF_HARD] = 'Hard'
+difText[DIF_VERYHARD] = 'Very Hard'
+difText[DIF_IMPOSSIBLE] = 'Impossible'
+
+xx = 96
+yy = 160
+
+//load boss&amp;item icon information
+loadIcons();
+
+for (i = 1; i &lt;= 3; i += 1) {
+    time[i] = menu_time[i] div 100
+    hour[i] = time[i] div 3600
+    atime[i] = time[i] mod 3600
+    muni[i] = atime[i] div 60
+    sec[i] = atime[i] mod 60
+    timeStr[i] = 'time:' + string(hour[i]) + ':' + string(muni[i]) + ':' + string(sec[i])
+    str[i] = 'Data' + string(i)
+    hasSave[i] = file_exists(getSaveFile(i))
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

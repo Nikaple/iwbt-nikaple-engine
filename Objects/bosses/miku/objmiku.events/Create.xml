@@ -35,7 +35,7 @@ beat = 4
 //this variable is extremely useful for building timelines
 SPB = 3000 / BPM
 //set the timeline
-timeline_index = tl_miku
+timeline_index = tlMiku
 timeline_running = 1
 //calculating timeline speed
 timeline_speed = BPM * beat / 3000

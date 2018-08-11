@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">// auto tile blocks outside view
+var x1, y1, x2, y2;
+
+x1 = xx
+y1 = yy
+x2 = xx + view_wview[0]
+y2 = yy + view_hview[0]
+
+with (objBlock) {
+    if (object_index == objBlock &amp;&amp; x &gt;= x1 &amp;&amp; x &lt;= x2 &amp;&amp; y &gt;= y1 &amp;&amp; y &lt;= y2) {
+        autotile(
+            other.dir,
+            other.tile,
+            other.size,
+            other.depth,
+            other.sep,
+            other.row
+        )
+    }
+}
+
+xx += view_wview[0]
+if (xx &gt;= room_width) {
+    xx = 0
+    yy += view_hview[0]
+}
+if (yy &gt;= room_height) {
+    alarm[0] = 0
+} else {
+    alarm[0] = 1
+}
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

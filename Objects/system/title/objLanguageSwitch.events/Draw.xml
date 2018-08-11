@@ -15,6 +15,7 @@
       <arguments>
         <argument kind="STRING">drawSelf()
 
+i18n_draw_set_font(fontMsyh12)
 i18n_draw_set_color(c_white)
 i18n_draw_set_halign(fa_center)
 i18n_draw_set_valign(fa_middle)

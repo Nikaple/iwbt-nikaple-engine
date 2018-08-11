@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
-  <resource name="playerStart" type="RESOURCE"/>
-  <resource name="camera" type="RESOURCE"/>
+  <resource name="objPlayerStart" type="RESOURCE"/>
+  <resource name="objPlayMusic" type="RESOURCE"/>
+  <resource name="objSpikeSprite" type="RESOURCE"/>
+  <resource name="objBlockTile" type="RESOURCE"/>
+  <resource name="objCamera" type="RESOURCE"/>
   <resource name="objSmoothView" type="RESOURCE"/>
   <resource name="objResetSync" type="RESOURCE"/>
   <resource name="objResetWait" type="RESOURCE"/>
   <resource name="objGameClear" type="RESOURCE"/>
+  <resource name="objSealRoom" type="RESOURCE"/>
 </resources>

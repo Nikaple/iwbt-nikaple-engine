@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
   <resource name="setGlobals" type="RESOURCE"/>
+  <resource name="setGlobalsMinor" type="RESOURCE"/>
   <resource name="scrSealRoom" type="RESOURCE"/>
   <resource name="fadeIn" type="RESOURCE"/>
   <resource name="fadeOut" type="RESOURCE"/>
@@ -13,5 +14,4 @@
   <resource name="screenFlash" type="RESOURCE"/>
   <resource name="createShadow" type="RESOURCE"/>
   <resource name="isBossRoom" type="RESOURCE"/>
-  <resource name="setScale" type="RESOURCE"/>
 </resources>

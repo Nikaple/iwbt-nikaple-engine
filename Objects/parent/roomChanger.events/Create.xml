@@ -21,7 +21,7 @@
 //    text = "textToDisplay"
 
 onCollide = true;
-mode = 'normal'
+mode = set_default(mode, 'normal')
 
 if (!color) {
   color = c_black

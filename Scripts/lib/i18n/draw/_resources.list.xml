@@ -13,6 +13,7 @@
   <resource name="i18n_draw_text_color" type="RESOURCE"/>
   <resource name="i18n_draw_text_ext_color" type="RESOURCE"/>
   <resource name="i18n_draw_text_transformed_color" type="RESOURCE"/>
+  <resource name="i18n_draw_text_transformed_outline" type="RESOURCE"/>
   <resource name="i18n_draw_text_ext_transformed_color" type="RESOURCE"/>
   <resource name="i18n_string_width" type="RESOURCE"/>
   <resource name="i18n_string_height" type="RESOURCE"/>

@@ -12,7 +12,7 @@ scope = set_default(argument0, SCOPE_DEFAULT)
 buffer_clear(global.udpSyncBufId)
 // CMD_TYPE_SYNC is defined in Resources -> Define Constants
 buffer_write_uint8(global.udpSyncBufId, (CMD_TYPE_SYNC << 4) + scope)
-buffer_write_uint8(global.udpSyncBufId, ns_get_player_index())
+buffer_write_uint16(global.udpSyncBufId, ns_get_player_index())
 buffer_write_uint16(global.udpSyncBufId, room)
 
 return buffer_get_length(global.udpSyncBufId)

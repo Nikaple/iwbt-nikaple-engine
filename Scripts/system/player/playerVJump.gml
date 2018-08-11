@@ -1,8 +1,7 @@
 //playerVJump
 
-if (!global.enable_jump_cancel) {
-    alarm[0] = 1
-} else {
+if (yflag * vspeed < 0 && !firstFrame) {
     vspeed *= 0.45
     eventSync = true
+    canVJump = false
 }

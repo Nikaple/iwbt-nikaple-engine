@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="MOUSE" id="7">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (disabled) exit;
+if (!collision_point(mouse_x, mouse_y, id, true, false)) exit;
+
+music_play(sndJump)
+image_index = 0
+message_caption(1, i18n_get(text))
+
+switch (text) {
+    case 'lobby_prev':
+        with (objLobbyController) {
+            if (offset &gt;= size) {
+                debug('offset minus')
+                offset -= size
+            }
+            alarm[0] = 1
+        }
+        break
+    case 'lobby_next':
+        with (objLobbyController) {
+            if (offset + size &lt; roomCount) {
+                offset += size
+            }
+            alarm[0] = 1
+        }
+        break
+    case 'logout':
+        ns_logout()
+        break
+    case 'create_lobby':
+        ns_create_lobby()
+        break
+    case 'join_lobby':
+        ns_join_lobby()
+        break
+    case 'leave_lobby':
+        ns_leave_lobby()
+        break
+    case 'start_game':
+        ns_start_game()
+        break
+}
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

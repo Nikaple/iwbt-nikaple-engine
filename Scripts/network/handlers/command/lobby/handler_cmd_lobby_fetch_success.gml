@@ -5,7 +5,6 @@ var data, lobbies, list, size, i;
 data = argument0
 lobbies = json_pick(data, 'lobbies')
 
-objLobbyController.fetched = true
 list = ds_list_create()
 size = ds_list_size(lobbies)
 
@@ -15,5 +14,6 @@ for (i = 0; i < size; i += 1) {
 
 objLobbyController.fetched = true
 objLobbyController.lobbies = list
+objLobbyController.roomCount = size
 objLobbyController.alarm[0] = 1
 

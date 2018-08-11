@@ -16,12 +16,14 @@
         <argument kind="STRING">///unload the dlls
 
 music_stop(curMusic)
-music_stop(BGM_Death)
+music_stop(SE_Death)
 
 SS_Unload();
 cleanmem_init(1);
 _ns_free()
-_i18n_free()
+if (global.enable_internationalization) {
+    _i18n_free()
+}
 if (global.enable_auto_tile) {
     _autotile_free()
 }

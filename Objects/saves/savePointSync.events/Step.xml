@@ -16,26 +16,52 @@
         <argument kind="STRING">if (saveTimer &gt; 0) {
     saveTimer -= 1
 }
-if (
-    place_meeting(x, y, bullet) ||
-    (place_meeting(x, y, player) &amp;&amp; keyboard_check_pressed(global.shootbutton))
-) {
+
+switch (mode) {
+    case SAVE_MODE_SHOOT:
+        shouldSave =
+            place_meeting(x, y, bullet) ||
+            (place_meeting(x, y, player) &amp;&amp;
+                keyboard_check_pressed(global.shootbutton))
+        break
+    case SAVE_MODE_TOUCH:
+        shouldSave = place_meeting(x, y, player)
+        break
+    case SAVE_MODE_PRESS:
+        if (ord(key) != 0) {
+            // letters
+            shouldSave =
+                place_meeting(x, y, player) &amp;&amp;
+                keyboard_check_pressed(
+                    ord(string_upper(string_char_at(key, 1)))
+                )
+        } else {
+            // function keys, such as vk_up
+            shouldSave =
+                place_meeting(x, y, player) &amp;&amp; keyboard_check_pressed(key)
+        }
+        break
+}
+
+if (shouldSave) {
     if (saveTimer &lt;= 0 &amp;&amp; instance_exists(player)) {
         saveTimer = 30
         image_index = 2
         alarm[0] = 80
         saveGame()
-        // sync save
-        ns_send_event(
-            'save_sync', 7,
-            'id', id,
-            'room', room,
-            'x', player.x,
-            'y', player.y,
-            'xs', player.image_xscale,
-            'rev', global.reverse,
-            'scope', SCOPE_OTHERS
-        )
+        if (ns_is_online_mode() &amp;&amp; ns_get_player_count() &gt; 1) {
+            // sync save
+            ns_send_event(
+                'save_sync', 7,
+                'id', id,
+                'room', room,
+                'x', player.x,
+                'y', player.y,
+                'xs', player.image_xscale,
+                'rev', global.reverse,
+                'scope', SCOPE_OTHERS
+            )
+        }
     }
 }
 

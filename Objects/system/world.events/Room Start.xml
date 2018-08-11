@@ -26,6 +26,7 @@ resetSync = instance_exists(objResetSync)
 // set room captions
 room_caption = global.game_title
 
+
 if (isInGameRoom()) {
     room_caption += ' Mode[' + difText[global.difficulty] + ']'
 }

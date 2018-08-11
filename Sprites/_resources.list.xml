@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
   <resource name="maskNothing" type="RESOURCE"/>
+  <resource name="blocks" type="GROUP"/>
   <resource name="spikes" type="GROUP"/>
   <resource name="cherries" type="GROUP"/>
   <resource name="enrivonment" type="GROUP"/>
@@ -11,5 +12,4 @@
   <resource name="miku" type="GROUP"/>
   <resource name="icons" type="GROUP"/>
   <resource name="system" type="GROUP"/>
-  <resource name="blocks" type="GROUP"/>
 </resources>

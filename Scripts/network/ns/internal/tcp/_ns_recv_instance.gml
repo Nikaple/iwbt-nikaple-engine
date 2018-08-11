@@ -30,6 +30,6 @@ for (i = 0; i < size; i += 1) {
 
 _id.fromName = fromName
 with (_id) {
-    event_user(15)
+    event_user(EVENT_TCP)
 }
 

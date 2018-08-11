@@ -4,4 +4,5 @@
   <resource name="sprMiniSpikeM" type="RESOURCE"/>
   <resource name="sprPathSpike" type="RESOURCE"/>
   <resource name="sprGreenSpikeM" type="RESOURCE"/>
+  <resource name="sprCyanSpikeM" type="RESOURCE"/>
 </resources>

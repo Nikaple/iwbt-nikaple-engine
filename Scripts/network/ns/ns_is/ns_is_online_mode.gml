@@ -1,1 +1,1 @@
-return global.online_mode
+return global._online_mode

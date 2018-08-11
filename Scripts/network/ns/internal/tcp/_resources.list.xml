@@ -9,4 +9,5 @@
   <resource name="_ns_recv_wait" type="RESOURCE"/>
   <resource name="_ns_recv_instance" type="RESOURCE"/>
   <resource name="_ns_fetch_map_clone" type="RESOURCE"/>
+  <resource name="_ns_decode_player_list" type="RESOURCE"/>
 </resources>

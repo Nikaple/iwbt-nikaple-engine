@@ -13,14 +13,9 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if (!ns_is_host()) {
-    exit;
+        <argument kind="STRING">if (ns_is_host()) {
+    event_inherited()
 }
-
-if(!instance_exists(player)){
-  instance_create(x,y,player);
-}
-
 </argument>
       </arguments>
     </action>

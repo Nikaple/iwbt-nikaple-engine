@@ -37,7 +37,7 @@ if (global.triggered != trg[1] &amp;&amp; !triggered[1]) {
         }
         ns_send_instance_direct(map)
     }
-    event_user(EVENT_TCP)
+    triggered[1] = true
 }
 
 

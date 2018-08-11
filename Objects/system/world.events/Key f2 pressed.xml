@@ -18,10 +18,15 @@ if (pauseon) {
     gameResume()
 }
 music_stop(curMusic)
-music_stop(BGM_Death)
+music_stop(SE_Death)
 sound_stop_all()
 if (isInGameRoom()) {
     saveDeathTime()
+}
+if (global.game_mode == MODE_SINGLE_PLAYER) {
+    global._online_mode = false
+} else {
+    global._online_mode = true
 }
 with (player) {
     instance_destroy()

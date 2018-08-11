@@ -146,13 +146,20 @@
   </views>
   <instances>
     <instance>
+      <object>objBlockTile</object>
+      <position x="64" y="32"/>
+      <creationCode>tile = bgMegaman
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
       <object>objMiku</object>
       <position x="639" y="355"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>camera</object>
+      <object>objCamera</object>
       <position x="32" y="32"/>
       <creationCode/>
       <locked>false</locked>
@@ -177,7 +184,7 @@ sprite_index = sprfloor6;</creationCode>
       <creationCode>mode = 'normal'
 x += 64
 ys = 2
-roomTo = rHub
+r = rHub
 
 </creationCode>
       <locked>false</locked>
@@ -197,8 +204,8 @@ num = 1
       <locked>false</locked>
     </instance>
     <instance>
-      <object>playerStart</object>
-      <position x="32" y="544"/>
+      <object>objPlayerStart</object>
+      <position x="64" y="544"/>
       <creationCode/>
       <locked>false</locked>
     </instance>

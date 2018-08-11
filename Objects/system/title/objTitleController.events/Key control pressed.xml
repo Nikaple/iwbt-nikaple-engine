@@ -13,15 +13,16 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if (debug_mode) {
-    // send the tcp packet
+        <argument kind="STRING">// debug only
+if (debug_mode) {
+    username = global.debug_guest_name
+    password = global.debug_guest_pass
     cmd = cmd_init(
         "login", 2,
-        "name", global.debug_guest_name,
-        "password", global.debug_guest_pass
+        "name", username,
+        "password", password
     )
     ns_send(cmd)
-    global.online_mode = true
     global.savenum = 2
 }
 </argument>

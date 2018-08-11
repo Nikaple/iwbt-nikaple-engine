@@ -4,11 +4,16 @@
   <resource name="tempIcons" type="GROUP"/>
   <resource name="player" type="GROUP"/>
   <resource name="sprCamera" type="RESOURCE"/>
-  <resource name="sprite163" type="RESOURCE"/>
+  <resource name="sprPlayMusic" type="RESOURCE"/>
+  <resource name="sprSpikeSprite" type="RESOURCE"/>
+  <resource name="sprBlockTile" type="RESOURCE"/>
+  <resource name="sprSmoothView" type="RESOURCE"/>
+  <resource name="sprSealRoom" type="RESOURCE"/>
   <resource name="sprPlayerStart" type="RESOURCE"/>
   <resource name="sprPlayerStartHost" type="RESOURCE"/>
   <resource name="sprPlayerStartGuest" type="RESOURCE"/>
   <resource name="sprTriggerable" type="RESOURCE"/>
+  <resource name="sprTriggableBlock" type="RESOURCE"/>
   <resource name="sprGAMEOVER" type="RESOURCE"/>
   <resource name="sprPause" type="RESOURCE"/>
   <resource name="sprMessageButton" type="RESOURCE"/>
@@ -16,5 +21,6 @@
   <resource name="sprLanguageSelect" type="RESOURCE"/>
   <resource name="sprLobbyRoom" type="RESOURCE"/>
   <resource name="sprLobbyRoomLock" type="RESOURCE"/>
+  <resource name="sprSubmitScore" type="RESOURCE"/>
   <resource name="sprJumpRefresher" type="RESOURCE"/>
 </resources>

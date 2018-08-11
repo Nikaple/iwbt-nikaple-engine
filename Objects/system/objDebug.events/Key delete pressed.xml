@@ -13,9 +13,10 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if (debug_mode) {
-    global.__debug_verbose_mode = !global.__debug_verbose_mode
-}
+        <argument kind="STRING">if (!debug_mode) exit;
+
+global.__debug_verbose_mode = !global.__debug_verbose_mode
+
 </argument>
       </arguments>
     </action>

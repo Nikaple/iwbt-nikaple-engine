@@ -16,10 +16,10 @@
         <argument kind="STRING">//creates leeks from left or right
 i = choose(0, 1)
 if (i == 0) {
-    a = instance_create(0, random(608), objnegi)
+    a = instance_create(0, random(608), objNegi)
     a.hspeed = 2
 } else {
-    a = instance_create(800, random(608), objnegi)
+    a = instance_create(800, random(608), objNegi)
     a.hspeed = -2
     a.image_xscale = -1
 }

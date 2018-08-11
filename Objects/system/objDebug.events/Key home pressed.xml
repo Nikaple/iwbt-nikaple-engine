@@ -13,7 +13,8 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">str = ''
+        <argument kind="STRING">if (!debug_mode) exit;
+str = ''
 </argument>
       </arguments>
     </action>

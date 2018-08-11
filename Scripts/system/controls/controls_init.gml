@@ -10,6 +10,7 @@ global.shootbutton = ini_read_real('Controls', 'Shoot', ord('Z'))
 global.restartbutton = ini_read_real('Controls', 'Restart', ord('R'))
 global.pausebutton = ini_read_real('Controls', 'Pause', ord('P'))
 global.skipbutton = ini_read_real('Controls', 'Skip', ord('S'))
+global.savebutton = ini_read_real('Controls', 'Save', ord('S'))
 
 ini_close()
 

@@ -13,7 +13,7 @@ error_kv('cmd_add', kvCount)
 
 for (i = 0; i < kvCount; i += 1) {
     _cmd_check_key(argument[i * 2 + 2], 'cmd_add')
-    ds_map_add(map, argument[i * 2 + 2], argument[i * 2 + 3])
+    ds_map_add(map, _ns_encode(argument[i * 2 + 2]), _ns_encode(argument[i * 2 + 3]))
 }
 
 return map

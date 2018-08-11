@@ -5,6 +5,10 @@
   <resource name="ns_register" type="RESOURCE"/>
   <resource name="ns_login" type="RESOURCE"/>
   <resource name="ns_logout" type="RESOURCE"/>
+  <resource name="ns_set_data" type="RESOURCE"/>
+  <resource name="ns_get_data" type="RESOURCE"/>
+  <resource name="ns_get_global_data" type="RESOURCE"/>
+  <resource name="ns_get_all_data" type="RESOURCE"/>
   <resource name="ns_fetch_lobby" type="RESOURCE"/>
   <resource name="ns_create_lobby" type="RESOURCE"/>
   <resource name="ns_join_lobby" type="RESOURCE"/>

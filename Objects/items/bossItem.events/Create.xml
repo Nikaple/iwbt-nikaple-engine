@@ -14,7 +14,7 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">//when the boss dies, it should create this object with num and sprite
-//e.g. in the destroy event of objmiku :
+//e.g. in the destroy event of objMiku :
 /*
 var inst;
 inst = instance_create(688,544,bossItem);

@@ -14,8 +14,9 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">if (onCollide) {
+    roomTo = set_default(r, roomTo)
     if (mode == 'normal' || (mode == 'border' &amp;&amp; outsideRoom(player))) {
-        scrWarpRoom(roomTo, num, mode, width, height, clearSpeed, screens, kind)
+        scrWarpTo(roomTo, num, mode, width, height, clearSpeed, screens, kind)
     }
 }
 </argument>

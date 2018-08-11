@@ -146,7 +146,7 @@
   </views>
   <instances>
     <instance>
-      <object>camera</object>
+      <object>objCamera</object>
       <position x="32" y="32"/>
       <creationCode/>
       <locked>false</locked>
@@ -154,13 +154,14 @@
     <instance>
       <object>warpSync</object>
       <position x="384" y="448"/>
-      <creationCode>roomTo = rOnlineHub
-text = "room_online_sync_text"
+      <creationCode>text = "room_online_sync_text"
+r = rOnlineHub
+
 </creationCode>
       <locked>false</locked>
     </instance>
     <instance>
-      <object>playerStart</object>
+      <object>objPlayerStart</object>
       <position x="384" y="544"/>
       <creationCode>autoSave = true
 </creationCode>

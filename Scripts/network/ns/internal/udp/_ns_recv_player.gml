@@ -12,7 +12,7 @@ spr = tmp >> 4
 tmp = tmp & 15
 reverse = tmp >> 2
 h = (tmp & 3) - 1
-v = buffer_read_int16(global.udpBufId) / 100
+v = buffer_read_int16(buffer) / 100
 
 // raw debug message
 if (global.__debug_udp_verbose_mode) {

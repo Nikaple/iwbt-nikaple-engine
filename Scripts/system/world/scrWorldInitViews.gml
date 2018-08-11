@@ -2,8 +2,8 @@
 if (!view_enabled) {
     view_enabled = true
     view_visible[0] = true
-    if (instance_exists(playerStart)) {
-        with (playerStart) {
+    if (instance_exists(objPlayerStart)) {
+        with (objPlayerStart) {
             if (num == global.__player_start_num) {
                 view_xview[0] = floor(x / global.game_room_width) * global.game_room_width
                 view_yview[0] = floor(y / global.game_room_height) * global.game_room_height

@@ -15,7 +15,7 @@
     <backgroundDef>
       <visibleOnRoomStart>true</visibleOnRoomStart>
       <isForeground>false</isForeground>
-      <backgroundImage>backgroundThxForPlaying</backgroundImage>
+      <backgroundImage>bgEngineThxForPlaying</backgroundImage>
       <offset x="0" y="0"/>
       <speed x="0" y="0"/>
       <tileHorizontally>true</tileHorizontally>
@@ -152,7 +152,7 @@
       <locked>false</locked>
     </instance>
     <instance>
-      <object>camera</object>
+      <object>objCamera</object>
       <position x="32" y="32"/>
       <creationCode/>
       <locked>false</locked>
@@ -160,8 +160,15 @@
     <instance>
       <object>objGameClear</object>
       <position x="352" y="512"/>
-      <creationCode>setScale(3,2);
+      <creationCode>xs = 3
+ys = 2
 </creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objPlayerStart</object>
+      <position x="384" y="544"/>
+      <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
@@ -665,12 +672,6 @@
     <instance>
       <object>objBlock</object>
       <position x="0" y="0"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>playerStart</object>
-      <position x="384" y="544"/>
       <creationCode/>
       <locked>false</locked>
     </instance>
