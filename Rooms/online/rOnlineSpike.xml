@@ -2073,6 +2073,12 @@ h = 2
       <locked>false</locked>
     </instance>
     <instance>
+      <object>objJumpRefresher</object>
+      <position x="288" y="400"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
       <object>objPlayerStart</object>
       <position x="96" y="544"/>
       <creationCode>wrap = true

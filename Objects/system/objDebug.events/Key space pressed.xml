@@ -27,7 +27,7 @@ with (objTrigger) {
 }
 
 with (playerKiller) {
-    if (trg != 0) {
+    if (trg != 0 || trg[1] != 0) {
         if (image_blend == c_white) {
             image_blend = merge_color(c_red, c_white, 0.5)
         } else {
