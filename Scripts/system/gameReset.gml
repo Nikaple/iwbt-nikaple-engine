@@ -13,6 +13,31 @@ view_angle[0] = 0
 global.clear = 0
 global.difficulty = 1
 
+// init global variables
+global.__player_id = '';
+global.__player_name = '';
+global.__player_index = 0;
+global.__is_host = false;
+global.__current_lobby_id = 0;
+global.__current_lobby_name = '';
+global.__current_lobby_players = ds_list_create();
+global.__current_game_id = 0;
+
+// save data used in save_sync event
+global.__player_auto_save = 0;
+global.__save_id = -1;
+global.__save_room = -1;
+global.__save_x = -1;
+global.__save_y = -1;
+global.__save_xs = 0;
+global.__save_rev = -1;
+
+// used in warpSync
+global.__sync_position = false;
+
+// used in udp traffic
+global.__sync_time = 0;
+
 curMusic = BGM_Null
 
 // leave current lobby

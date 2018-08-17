@@ -44,6 +44,9 @@ global.__save_rev = -1;
 // used in warpSync
 global.__sync_position = false;
 
+// used in udp traffic
+global.__sync_time = 0;
+
 // init handlers, max scripts = 2048
 var handlerPrefix, handlerPrefixLength, eventPrefix, eventPrefixLength, i;
 // internal event handler map

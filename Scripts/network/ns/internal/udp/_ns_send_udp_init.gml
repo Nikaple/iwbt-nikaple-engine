@@ -13,6 +13,7 @@ buffer_clear(global.udpSyncBufId)
 // CMD_TYPE_SYNC is defined in Resources -> Define Constants
 buffer_write_uint8(global.udpSyncBufId, (CMD_TYPE_SYNC << 4) + scope)
 buffer_write_uint16(global.udpSyncBufId, ns_get_player_index())
-buffer_write_uint16(global.udpSyncBufId, room)
+buffer_write_uint16(global.udpSyncBufId, room) 
+buffer_write_uint64(global.udpSyncBufId, round(100000 * date_current_datetime()))
 
 return buffer_get_length(global.udpSyncBufId)
