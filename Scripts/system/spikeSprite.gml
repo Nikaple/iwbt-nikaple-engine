@@ -16,81 +16,59 @@ sprMini = argument1
 sprSpeed = argument2
 switch (object_index) {
     case spikeUp:
-        sprite_index = spr
+        drawSpr = spr
         image_speed = sprSpeed
-        x += 16
-        y += 16
         break
     case spikeDown:
-        sprite_index = spr
-        image_angle = 180
-        x += 15
-        y += 15
+        drawSpr = spr
         image_speed = sprSpeed
         break
     case spikeLeft:
-        sprite_index = spr
-        image_angle = 90
-        x += 16
-        y += 15
+        drawSpr = spr
         image_speed = sprSpeed
         break
     case spikeRight:
-        sprite_index = spr
-        image_angle = 270
-        x += 15
-        y += 16
+        drawSpr = spr
         image_speed = sprSpeed
         break
     case miniSpikeUp:
         if (sprMini) {
-            sprite_index = sprMini
+            drawSpr = sprMini
         } else {
-            sprite_index = spr
+            drawSpr = spr
             image_xscale = 0.5
             image_yscale = 0.5
         }
         image_speed = sprSpeed
-        x += 8
-        y += 8
         break
     case miniSpikeDown:
         if (sprMini) {
-            sprite_index = sprMini
+            drawSpr = sprMini
         } else {
-            sprite_index = spr
+            drawSpr = spr
             image_xscale = 0.5
             image_yscale = 0.5
         }
-        image_angle = 180
-        x += 7
-        y += 7
         image_speed = sprSpeed
         break
     case miniSpikeLeft:
         if (sprMini) {
-            sprite_index = sprMini
+            drawSpr = sprMini
         } else {
-            sprite_index = spr
+            drawSpr = spr
             image_xscale = 0.5
             image_yscale = 0.5
         }
-        image_angle = 90
-        x += 8
-        y += 7
         image_speed = sprSpeed
         break
     case miniSpikeRight:
         if (sprMini) {
-            sprite_index = sprMini
+            drawSpr = sprMini
         } else {
-            sprite_index = spr
+            drawSpr = spr
             image_xscale = 0.5
             image_yscale = 0.5
         }
-        image_angle = 270
-        x += 7
-        y += 8
         image_speed = sprSpeed
         break
     default:

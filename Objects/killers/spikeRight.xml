@@ -6,5 +6,5 @@
   <depth>-10</depth>
   <persistent>false</persistent>
   <parent>playerKiller</parent>
-  <mask/>
+  <mask>sprSpikeRight</mask>
 </object>
