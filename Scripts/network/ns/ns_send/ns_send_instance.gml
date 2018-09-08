@@ -14,6 +14,7 @@ error_kv_zero('ns_send_instance', kvCount, argument[kvCount * 2 + 1])
 
 
 for (i = 0; i < kvCount; i += 1) {
+    _cmd_check_key(argument[i * 2 + 1], 'ns_send_instance')
     ds_map_add(map, argument[i * 2 + 1], argument[i * 2 + 2])
 }
 

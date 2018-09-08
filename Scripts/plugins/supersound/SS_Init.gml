@@ -24,5 +24,5 @@ global.dll_SS_IsSoundPaused = external_define(dll, "SS_IsSoundPaused", dll_stdca
 global.dll_SS_ResumeSound = external_define(dll, "SS_ResumeSound", dll_stdcall, ty_string, 1, ty_string);
 global.dll_SS_PauseSound = external_define(dll, "SS_PauseSound", dll_stdcall, ty_string, 1, ty_string);
 if external_call(global.dll_SS_Init) = "No" then begin
-  show_error("Initialization of the sound system failed!",0);
+  i18n_show_error("Initialization of the sound system failed!", true);
 end;

@@ -196,7 +196,7 @@ pth = pR1
 scl = 10
 spd = 2
 
-roomTo = -1
+r = -1
 num = 1
 </creationCode>
       <locked>false</locked>

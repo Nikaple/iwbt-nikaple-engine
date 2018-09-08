@@ -14,6 +14,7 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">scrWorldInit()
+
 </argument>
       </arguments>
     </action>

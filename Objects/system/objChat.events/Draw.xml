@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!active) exit;
+
+var i, ptext, cmd, vx, vy, vw, vh;
+
+vx = view_xview[view_current]
+vy = view_yview[view_current]
+vw = view_wview[view_current]
+vh = view_hview[view_current]
+
+i18n_draw_set_font(fontMsyh12)
+i18n_draw_set_align(fa_left, fa_top)
+i18n_draw_set_color(c_white)
+
+// sad truth: There is no way you can display the typed "#"
+// characters and get string width of those.
+
+name = global.__player_name + ': '
+
+i18n_draw_set_alpha(alpha)
+draw_line(vx, vy + y - 8, vx + vw, vy + y - 8)
+if (text == "" &amp;&amp; showPlaceholder) {
+    // draw placeholder
+    i18n_draw_text(vx + x, vy + y, name, true)
+    i18n_draw_set_alpha(0.5 * alpha)
+    i18n_draw_text(vx + x + i18n_string_width(name), vy + y, "say_something")
+    caretPosition = i18n_string_width(
+        name + i18n_get("say_something") + string_copy(text, 1, caret)
+    )
+} else {
+    // draw text
+    caretPosition = i18n_string_width(name + string_copy(text, 1, caret))
+    i18n_draw_text(vx + x, vy + y, name + text, true)
+}
+
+// draw caret
+if (caretVisible) {
+    draw_line(vx + x + caretPosition, vy + y, vx + x + caretPosition, vy + y + h)
+}
+
+i18n_draw_set_alpha(1)
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

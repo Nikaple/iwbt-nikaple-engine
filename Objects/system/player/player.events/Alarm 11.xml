@@ -31,6 +31,7 @@ cmd_add_if_exists(
     'rev', global.reverse
 )
 ns_send_event_direct('warp', eventMap, true)
+
 global.__sync_position = false
 
 // auto save
@@ -49,7 +50,6 @@ if (global.__player_auto_save) {
     global.__player_auto_save = false
 }
 
-firstFrame = false
 
 </argument>
       </arguments>

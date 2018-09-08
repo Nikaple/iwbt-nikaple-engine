@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">// max chat logs
+maxLength = 200
+maxChatLogsOnScreen = 10
+
+// line width
+height = i18n_string_height("\\") + 5
+
+// default text
+text = i18n_get('welcome_chat')
+
+// height of main chat window
+rectHeight = (maxChatLogsOnScreen + 2) * height
+
+// scrollbar width
+scrollbarWidth = 8
+useRoundScrollbar = true
+
+// title setting
+titleText = i18n_get('chat_room')
+titleTextMargin = 20
+titleWidth = i18n_string_width(titleText)
+titleHeight = 32
+
+// internals
+yy = rectHeight
+tarAlpha = 0.6
+tarTextAlpha = 1
+tary = yy
+tarTitleWidth = titleWidth
+tarTitleTextAlpha = 1
+titleTextAlpha = 1
+length = 1
+chatPointer = 0
+inputHeight = 32
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

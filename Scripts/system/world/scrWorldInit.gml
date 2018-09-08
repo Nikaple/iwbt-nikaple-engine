@@ -8,6 +8,7 @@ global.difficulty = 3
 global.room_caption_def = ''
 global.death = 0
 global.timestep = 0
+global.__keypad_status = keyboard_get_numlock()
 
 difText[DIF_MEDIUM] = 'Medium'
 difText[DIF_HARD] = 'Hard'
@@ -17,3 +18,5 @@ difText[DIF_IMPOSSIBLE] = 'Impossible'
 scrWorldInitPlugins()
 scrWorldInitMessageBox()
 scrWorldInitRunCheck()
+
+instance_create(0, 0, objChat)

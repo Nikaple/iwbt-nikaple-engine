@@ -10,6 +10,9 @@ if (ds_map_exists(global.__ns_wait_handler_map, waitName)) {
     fin = json_pick(data, 'fin')
     script_execute(handler, fromName, data, fin)
 } else if (!global.enable_production_mode){
-    show_error('Error in script `_ns_recv_wait`: Handler of wait `' + waitName + '` does not exist!', 0)
+    i18n_show_error(
+        '`Wait` ' + eventName + ' 的处理函数不存在！请增加 handler_wait_' + eventName + ' 脚本。',
+        'Error in script `_ns_recv_wait`: Handler of wait `' + waitName + '` does not exist!'
+    )
 }
 

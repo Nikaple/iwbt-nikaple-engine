@@ -6,14 +6,19 @@ _id = argument1
 data = argument2
 
 if (!instance_exists(_id) && !global.enable_production_mode) {
-    show_error(
+    i18n_show_error(
+        '试图同步一个不存在的实例，实例 id 为：' +
+            string(_id) +
+            '。请检查它是不是动态创建的，或者已经被摧毁了（动态创建即用 instance_create 创建，而不是直接摆放到房间中）' +
+            '当前同步信息：' +
+            ds_map_log(data) +
+            '。',
         'Trying to sync an unexisting instance, id: ' +
             string(_id) +
             '. Was the instance created dynamically, or was it already destroyed? ' +
             '(dynamically means that you did not place the instance in room, but creates it from `instance_create`). ' +
             'Current sync data: ' +
-            ds_map_log(data),
-        0
+            ds_map_log(data)
     )
 }
 

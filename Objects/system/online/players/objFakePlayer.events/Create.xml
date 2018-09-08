@@ -53,6 +53,7 @@ if (idx &gt; 1) {
         sprPlayerJump,
         sprPlayerSliding
     )
+    bowSpr = sprBowGuest
 } else {
     // host
     playerSprite(
@@ -62,6 +63,7 @@ if (idx &gt; 1) {
         sprPlayerJump,
         sprPlayerSliding
     )
+    bowSpr = sprBow
 }
 </argument>
       </arguments>

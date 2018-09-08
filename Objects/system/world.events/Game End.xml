@@ -27,6 +27,7 @@ if (global.enable_internationalization) {
 if (global.enable_auto_tile) {
     _autotile_free()
 }
+keyboard_set_numlock(global.__keypad_status)
 </argument>
       </arguments>
     </action>

@@ -20,7 +20,7 @@
     }
 }
 
-if (keyboard_check_pressed(global.jumpbutton)) {
+if (key_check_pressed(global.jumpbutton)) {
     music_play(sndJump)
     if (global.game_mode == MODE_USER_SELECT) {
         mode = MODE_COOPERATION
@@ -40,9 +40,20 @@ if (keyboard_check_pressed(global.jumpbutton)) {
     }
 }
 
-if (keyboard_check_pressed(global.shootbutton)) {
+if (key_check_pressed(global.shootbutton)) {
     music_play(sndDJump)
     ns_logout()
+}
+
+if (key_check_pressed(vk_control)) {
+    _id = _room[0].roomId
+    if (_id) {
+        cmd = cmd_init(
+            "join_lobby", 1,
+            "lobbyId", _id
+        )
+        ns_send(cmd)
+    }
 }
 </argument>
       </arguments>

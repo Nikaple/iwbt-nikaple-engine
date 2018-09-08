@@ -13,7 +13,7 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if (keyboard_check_pressed(global.upbutton)) {
+        <argument kind="STRING">if (key_check_pressed(global.upbutton)) {
     _score = i18n_get_integer('submit_score', '0')
     if (_score &lt;= 0) {
         i18n_show_message('submit_not_number')

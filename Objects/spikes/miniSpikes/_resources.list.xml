@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<resources>
-  <resource name="minispikeDown" type="RESOURCE"/>
-  <resource name="minispikeRight" type="RESOURCE"/>
-  <resource name="minispikeLeft" type="RESOURCE"/>
-  <resource name="minispikeUp" type="RESOURCE"/>
-</resources>

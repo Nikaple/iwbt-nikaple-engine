@@ -13,9 +13,7 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">
-
-for (i = 0; i &lt; 6; i += 1) {
+        <argument kind="STRING">for (i = 0; i &lt; 6; i += 1) {
   info[i] = ds_list_find_value(lobbies, i + offset)
   players[i] = json_pick(info[i], 'players')
   _room[i].roomId = json_pick(info[i], 'id')

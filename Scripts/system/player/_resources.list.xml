@@ -20,7 +20,4 @@
   <resource name="fakePlayerClearSpeed" type="RESOURCE"/>
   <resource name="outsideRoom" type="RESOURCE"/>
   <resource name="outsideView" type="RESOURCE"/>
-  <resource name="key_check_pressed" type="RESOURCE"/>
-  <resource name="key_check_released" type="RESOURCE"/>
-  <resource name="key_exists" type="RESOURCE"/>
 </resources>

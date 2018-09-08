@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!ns_is_logged_in() || !shouldDraw) exit
+
+vx = view_xview[view_current]
+vy = view_yview[view_current]
+vw = view_wview[view_current]
+vh = view_hview[view_current]
+
+if (parent.x &lt; vx + width / 2 + minSpace) {
+    offset = max(minOffset, parent.x - vx - minSpace)
+} else if (parent.x + width / 2 + minSpace &gt; vx + vw) {
+    offset = min(width - minOffset, width - (vx + vw - parent.x - minSpace))
+} else  {
+    offset = width / 2
+}
+
+x = parent.x - offset
+y = parent.y - triangleLength / 2 - height - 20
+if (parent != player) {
+    y -= 12
+}
+
+// draw background
+right = x + width
+bottom = y + height
+draw_set_color(c_white)
+draw_set_alpha(image_alpha)
+draw_roundrect_ext(x, y, right, bottom, false, radius, precision)
+
+// draw border
+draw_set_color(c_black)
+for (i = 0.5; i &lt; 2; i += 0.5) {
+    draw_roundrect_ext(x - i + 1, y - i + 1, x + width + i, y + height + i, true, radius, precision)
+}
+
+// draw triangle
+draw_set_color(c_white)
+triangleLeft = x + offset - triangleLength / 2
+draw_triangle(
+    triangleLeft, bottom, 
+    triangleLeft + triangleLength, bottom, 
+    triangleLeft + triangleLength / 2, bottom + triangleLength / 2,
+    0
+)
+
+// draw triangle border
+draw_set_color(c_black)
+draw_line_width(triangleLeft, bottom, triangleLeft + triangleLength / 2, bottom + triangleLength / 2, 2)
+draw_line_width(triangleLeft + triangleLength, bottom, triangleLeft + triangleLength / 2, bottom + triangleLength / 2, 2)
+
+i18n_draw_set_font(fontMsyh12)
+i18n_draw_set_align(fa_center, fa_middle)
+i18n_draw_text_ext(round(x + width / 2), round(y + height / 2 + 1), text, -1, maxWidth - textSpace)
+
+draw_set_alpha(1)
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

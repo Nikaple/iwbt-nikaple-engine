@@ -14,7 +14,7 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">var restartPressed;
-restartPressed = keyboard_check_pressed(global.restartbutton)
+restartPressed = key_check_pressed(global.restartbutton)
 if (isInGameRoom()) {
     scrWorldUpdate()
     scrWorldPause()
@@ -30,6 +30,7 @@ if (room == rSelectStage &amp;&amp; restartPressed) {
 scrWorldCleanmem()
 scrWorldCenterMessage()
 scrWorldMisc()
+scrWorldKeyboardEvents()
 
 </argument>
       </arguments>

@@ -1,6 +1,6 @@
 ///collision with blocks
 //vertical
-vFree = place_free(x, y + vspeed)
+vFree = place_free(x, y + vspeed) || place_free(x + hspeed, y + vspeed)
 if (!vFree) {
     if (vspeed <= 0) {
         move_contact_solid(90, abs(vspeed))

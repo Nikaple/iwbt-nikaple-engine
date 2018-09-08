@@ -13,9 +13,9 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">isRunning = false
+        <argument kind="STRING">isShooting = false
+isRunning = false
 isJumping = false
-
 </argument>
       </arguments>
     </action>

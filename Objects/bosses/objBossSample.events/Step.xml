@@ -13,7 +13,17 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">//set the movement
+        <argument kind="STRING">///skip intro
+if (key_check_pressed(global.skipbutton) &amp;&amp; global.frozen == true) {
+    image_xscale = 6
+    image_yscale = image_xscale
+    alarm[1] = 0
+    alarm[2] = 1
+    music_play(sndGlass)
+    screenFlash()
+}
+
+//set the movement
 path_speed = 4 * move
 //the wind blows!
 if (windy) {

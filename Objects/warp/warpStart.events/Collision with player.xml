@@ -16,7 +16,7 @@
         <argument kind="STRING">if (dif == DIF_LOAD) {
     // load game
     if (file_exists(saveFile)) {
-        roomTo = rLoad
+        r = rLoad
     } else {
         player.x = player.xstart
         player.y = player.ystart
@@ -37,17 +37,17 @@
     global.difficulty = dif
     global.death = 0
     global.timestep = 0
-    roomTo = global.first_stage
+    r = global.first_stage
 }
 
 if (!ns_is_in_game()) {
     // single player
-    scrWarpTo(roomTo)
+    scrWarpTo(r)
 } else if (global.tournament_mode) {
     // tournament
     global.__sync_position = true
     global.__player_auto_save = true
-    scrWarpTo(roomTo)
+    scrWarpTo(r)
 } else {
     destroy_if_exists(player)
     instance_create(0, 0, warpWaitingBG)
@@ -57,7 +57,7 @@ if (!ns_is_in_game()) {
         string(room) + '-start-' + string(dif),
         2,
         'room', room,
-        'roomTo', roomTo
+        'r', r
     )
 }
 

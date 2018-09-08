@@ -29,6 +29,7 @@ ds_map_add(map, "name", waitName)
 ds_map_add(map, "flag", flag)
 
 for (i = 0; i < kvCount; i += 1) {
+    _cmd_check_key(argument[i * 2 + 3], 'ns_send_wait')
     ds_map_add(map, argument[i * 2 + 3], argument[i * 2 + 4])
 }
 

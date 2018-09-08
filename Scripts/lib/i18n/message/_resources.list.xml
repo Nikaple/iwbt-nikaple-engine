@@ -5,4 +5,5 @@
   <resource name="i18n_show_question" type="RESOURCE"/>
   <resource name="i18n_get_integer" type="RESOURCE"/>
   <resource name="i18n_get_string" type="RESOURCE"/>
+  <resource name="i18n_show_error" type="RESOURCE"/>
 </resources>

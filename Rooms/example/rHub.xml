@@ -4,7 +4,7 @@
   <size height="608" width="800"/>
   <grid>
     <isometric>false</isometric>
-    <snap x="32" y="32"/>
+    <snap x="32" y="16"/>
   </grid>
   <speed>30</speed>
   <persistent>false</persistent>

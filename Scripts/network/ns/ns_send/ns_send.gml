@@ -14,6 +14,7 @@ content = _cmd_encode(dataMap)
 
 // Create the content buffer
 buffer_clear(global.bufId)
+// Use -_$$_- as the splitter for commands, makes it more convenient for parsing
 buffer_write_data(global.bufId, content + '-_$$_-')
 
 // As commands are pretty short, compressing will actually cost

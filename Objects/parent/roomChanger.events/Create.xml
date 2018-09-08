@@ -33,8 +33,25 @@ spritable()
 
 if (warpX != 0 || warpY != 0) {
     if (!global.enable_production_mode) {
-        show_error('warpX and warpY is deprecated. See: https://nikaple.github.io/iwbt-nikaple-engine-doc/#/objectref?id=warps-传送点', 0)
+        i18n_show_error(
+            'warpX 与 warpY 已经被弃用。详情请参考：https://nikaple.com/engine/#/objectref?id=warps-传送点',
+            'warpX and warpY is deprecated. See: https://nikaple.com/engine/#/objectref?id=warps-传送点',
+            
+        )
     }
+}
+
+if (roomTo != 0 &amp;&amp; r != 0) {
+    if (!global.enable_production_mode) {
+        i18n_show_error(
+            '`roomTo` 参数已被废弃，请将 `roomTo` 参数替换为 r 以实现传送功能',
+            '`roomTo` is deprecated, please use `r` instead.'
+        )
+    }
+}
+
+if (mask_index != maskNothing) {
+    ensure('r', r)
 }
 </argument>
       </arguments>

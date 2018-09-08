@@ -156,90 +156,6 @@ text = "return_hub"
       <locked>false</locked>
     </instance>
     <instance>
-      <object>blockConveyorR</object>
-      <position x="544" y="320"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>blockConveyorR</object>
-      <position x="576" y="320"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>blockConveyorR</object>
-      <position x="608" y="320"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>blockConveyorR</object>
-      <position x="640" y="320"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>blockConveyorR</object>
-      <position x="672" y="320"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>blockConveyorL</object>
-      <position x="512" y="224"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>blockConveyorL</object>
-      <position x="544" y="224"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>blockConveyorL</object>
-      <position x="576" y="224"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>blockConveyorL</object>
-      <position x="608" y="224"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>blockConveyorL</object>
-      <position x="640" y="224"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>blockConveyorL</object>
-      <position x="672" y="224"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>blockConveyorR</object>
-      <position x="480" y="320"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>blockConveyorR</object>
-      <position x="512" y="320"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>blockConveyorL</object>
-      <position x="704" y="224"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
       <object>objWalljumpL</object>
       <position x="0" y="416"/>
       <creationCode/>
@@ -2061,12 +1977,6 @@ h = 2
       <locked>false</locked>
     </instance>
     <instance>
-      <object>blockPush</object>
-      <position x="704" y="128"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
       <object>savePoint</object>
       <position x="256" y="544"/>
       <creationCode/>
@@ -2207,6 +2117,42 @@ h = 2
       <locked>false</locked>
     </instance>
     <instance>
+      <object>spikeUp</object>
+      <position x="512" y="256"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>spikeRight</object>
+      <position x="480" y="224"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>spikeLeft</object>
+      <position x="544" y="224"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>spikeRight</object>
+      <position x="608" y="256"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>spikeLeft</object>
+      <position x="672" y="256"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>spikeDown</object>
+      <position x="640" y="224"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
       <object>objWaterNo2ndJump</object>
       <position x="288" y="128"/>
       <creationCode>xs = 4
@@ -2220,84 +2166,6 @@ ys = 3
       <creationCode>xs = 6
 ys = 4
 </creationCode>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objWaterNoJump</object>
-      <position x="448" y="288"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objWaterNoJump</object>
-      <position x="416" y="288"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objWaterNoJump</object>
-      <position x="416" y="320"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objWaterNoJump</object>
-      <position x="416" y="352"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objWaterNoJump</object>
-      <position x="416" y="384"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objWaterNoJump</object>
-      <position x="480" y="288"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objWaterNoJump</object>
-      <position x="544" y="288"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objWaterNoJump</object>
-      <position x="512" y="288"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objWaterNoJump</object>
-      <position x="576" y="288"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objWaterNoJump</object>
-      <position x="608" y="288"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objWaterNoJump</object>
-      <position x="640" y="288"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objWaterNoJump</object>
-      <position x="672" y="288"/>
-      <creationCode/>
-      <locked>false</locked>
-    </instance>
-    <instance>
-      <object>objWaterNoJump</object>
-      <position x="704" y="288"/>
-      <creationCode/>
       <locked>false</locked>
     </instance>
     <instance>
@@ -3233,6 +3101,90 @@ ys = 4
     <instance>
       <object>objBlock</object>
       <position x="320" y="448"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="480" y="320"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="512" y="320"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="544" y="320"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="576" y="320"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="608" y="320"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="640" y="320"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="672" y="320"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="512" y="288"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="448" y="224"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="576" y="224"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="576" y="256"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="704" y="256"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="704" y="224"/>
+      <creationCode/>
+      <locked>false</locked>
+    </instance>
+    <instance>
+      <object>objBlock</object>
+      <position x="640" y="192"/>
       <creationCode/>
       <locked>false</locked>
     </instance>

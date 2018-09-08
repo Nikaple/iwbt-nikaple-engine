@@ -19,3 +19,5 @@ i18n_add("lobby_not_authorized", "非房主不能开始游戏。", "Guests are n
 i18n_add("lobby_is_full", "房间已满", "Lobby is full.", "部屋はいっぱいです。")
 i18n_add("not_in_lobby", "您没有加入任何房间。", "You are not in any lobby!", "あなたはどの部屋にも参加していません。")
 
+// lobby display
+i18n_add("host_name", "房主：", "Host: ", "ホスト")

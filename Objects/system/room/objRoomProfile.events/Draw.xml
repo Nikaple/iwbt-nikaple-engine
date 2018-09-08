@@ -13,12 +13,12 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">draw_set_halign(fa_center)
+        <argument kind="STRING">draw_set_align(fa_center, fa_bottom)
 draw_set_color(c_black)
 
 if (is_string(name)) {
     i18n_draw_set_font(fontMsyh12)
-    i18n_draw_text(x + width / 2, y + 48, name, true)
+    i18n_draw_text_ext(x + width / 2, y + 48, name, -1, 100, true)
     draw_rectangle_width(x, y, x + width, y + height, 3)
     draw_sprite_ext(sprPlayerIdle, -1, x + width / 2 + 4, y + 32 * 4, 4, 4, 0, c_white, 1)
 }

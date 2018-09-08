@@ -13,14 +13,17 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if (keyboard_check_pressed(global.jumpbutton)) {
+        <argument kind="STRING">if (key_check_pressed(global.jumpbutton)) {
     music_play(sndJump)
     if (ns_is_host()) {
         ns_start_game()
     }
 }
-if (keyboard_check_pressed(global.shootbutton)) {
+if (key_check_pressed(global.shootbutton)) {
     music_play(sndDJump)
+    ns_leave_lobby()
+}
+if (key_check_pressed(vk_control)) {
     ns_leave_lobby()
 }
 </argument>

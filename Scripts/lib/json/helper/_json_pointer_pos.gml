@@ -1,1 +1,0 @@
-return __json_pointer

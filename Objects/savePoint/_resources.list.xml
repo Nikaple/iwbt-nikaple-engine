@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<resources>
-  <resource name="savePointTouch" type="RESOURCE"/>
-  <resource name="savePointWait" type="RESOURCE"/>
-  <resource name="savePointSync" type="RESOURCE"/>
-</resources>

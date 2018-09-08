@@ -9,6 +9,9 @@
   <resource name="player" type="GROUP"/>
   <resource name="world" type="RESOURCE"/>
   <resource name="objInit" type="RESOURCE"/>
+  <resource name="objChat" type="RESOURCE"/>
+  <resource name="objChatLog" type="RESOURCE"/>
+  <resource name="objChatBubble" type="RESOURCE"/>
   <resource name="objLoad" type="RESOURCE"/>
   <resource name="objEffectParent" type="RESOURCE"/>
   <resource name="objGameover" type="RESOURCE"/>

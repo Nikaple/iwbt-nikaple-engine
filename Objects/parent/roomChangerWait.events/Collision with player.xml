@@ -16,8 +16,7 @@
         <argument kind="STRING">if (!onCollide) exit;
 
 if (!ns_is_in_game() || noSync || global.tournament_mode) {
-    roomTo = set_default(r, roomTo)
-    scrWarpTo(roomTo, num, mode, width, height, clearSpeed, screens, kind)
+    scrWarpTo(r, num, mode, width, height, clearSpeed, screens, kind)
     exit;
 }
 
@@ -33,7 +32,7 @@ map = ds_map_create()
 cmd_add_if_exists(
     map, 6,
     'room', room,
-    'roomTo', roomTo,
+    'r', r,
     'kind', kind,
     'num', num,
     'mode', mode,
@@ -49,7 +48,7 @@ cmd_add_if_exists(
 ns_send_wait_direct(
     'warp', 
     // setting the flag to start room and warp room
-    string(room) + '-' + string(roomTo), 
+    string(room) + '-' + string(r), 
     map
 )
 </argument>

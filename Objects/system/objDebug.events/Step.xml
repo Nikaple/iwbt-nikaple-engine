@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!debug_mode) exit;
+
+if (key_check_pressed(vk_space) &amp;&amp; !key_check_pressed(vk_control)) {
+    with (objBlock) {
+        if (object_index == objBlock || object_index == objExampleAutoTileBlock) {
+            visible = !visible
+        }
+    }
+    with (objTrigger) {
+        visible = !visible
+        image_alpha = 0.5
+    }
+    with (playerKiller) {
+        if (trg != 0 || trg[1] != 0) {
+            if (image_blend == c_white) {
+                image_blend = merge_color(c_red, c_white, 0.5)
+            } else {
+                image_blend = c_white
+            }
+        }
+    }
+    global.__debug_mode = !global.__debug_mode
+}
+
+if (key_check_pressed(vk_pageup)) {
+    i18n_set_lang(
+        gen_sequence(i18n_get_lang(), LANG_CN, LANG_JP, true)
+    )
+}
+
+if (key_check_pressed(vk_pagedown)) {
+    i18n_set_lang(
+        gen_sequence(i18n_get_lang(), LANG_CN, LANG_JP)
+    )
+}
+
+if (key_check_pressed(vk_end)) {
+    visible = !visible
+    if (visible &amp;&amp; !showed) {
+        str += '
+            Welcome to the debug console!
+            Press [End] key to toggle console;
+            Press [Home] key to clear console;
+            Press [Delete] key to toggle tcp traffic;
+            Press [Insert] key to toggle udp traffic (player only);
+            Press [PageDown] key to switch language;
+            Press [Space] key to toggle visibility of blocks and triggers;
+        '
+        showed = true
+    }
+}
+
+if (key_check_pressed(vk_home)) {
+    str = ''
+}
+
+if (key_check_pressed(vk_insert)) {
+    global.__debug_udp_verbose_mode = !global.__debug_udp_verbose_mode
+}
+
+if (key_check_pressed(vk_delete)) {
+    global.__debug_verbose_mode = !global.__debug_verbose_mode
+}
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

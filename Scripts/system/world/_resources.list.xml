@@ -6,6 +6,7 @@
   <resource name="scrWorldInitRunCheck" type="RESOURCE"/>
   <resource name="scrWorldInitBlocks" type="RESOURCE"/>
   <resource name="scrWorldInitViews" type="RESOURCE"/>
+  <resource name="scrWorldKeyboardEvents" type="RESOURCE"/>
   <resource name="scrWorldUpdate" type="RESOURCE"/>
   <resource name="scrWorldCleanmem" type="RESOURCE"/>
   <resource name="scrWorldCenterMessage" type="RESOURCE"/>

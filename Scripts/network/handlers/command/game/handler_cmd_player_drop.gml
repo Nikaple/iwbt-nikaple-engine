@@ -3,7 +3,9 @@ data = argument0
 droppedPlayer = json_pick(data, 'name')
 dsPlayerInfo = objOnlinePlayers.dsPlayerInfo
 
-i18n_show_message(i18n_get('player_dropped', droppedPlayer))
+if (!debug_mode && isInGameRoom()) {
+    i18n_show_message(i18n_get('player_dropped', droppedPlayer))
+}
 
 with (objOnlinePlayers) {
     inst = variable_local_get(droppedPlayer)

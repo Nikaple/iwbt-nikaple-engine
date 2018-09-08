@@ -28,7 +28,7 @@ global.enable_bunny_hop = false
 // whether play can switch between fullscreen and window mode or not
 global.enable_fullscreen = true
 // whether enable keypad or not
-global.enable_keypad = true
+global.enable_keypad = false
 // set the spike sprite automaically or not
 // see "playerKiller" and "spikeSprite" for more information
 global.enable_auto_spike_sprite = true

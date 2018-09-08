@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<resources>
-  <resource name="cleanmem_init" type="RESOURCE"/>
-  <resource name="cleanmem_get_mem" type="RESOURCE"/>
-  <resource name="cleanmem" type="RESOURCE"/>
-</resources>

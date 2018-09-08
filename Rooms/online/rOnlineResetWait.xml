@@ -150,6 +150,7 @@
       <position x="384" y="448"/>
       <creationCode>mask_index = maskNothing
 text = "room_online_reset_text"
+onCollide = false
 </creationCode>
       <locked>false</locked>
     </instance>

@@ -13,9 +13,40 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">key_exists(global.jumpbutton)
+        <argument kind="STRING">_key_reset()
+_key_exists(global.leftbutton)
+_key_exists(global.rightbutton)
+_key_exists(global.upbutton)
+_key_exists(global.downbutton)
+_key_exists(global.jumpbutton)
+_key_exists(global.shootbutton)
+_key_exists(global.restartbutton)
+_key_exists(global.pausebutton)
+_key_exists(global.skipbutton)
+_key_exists(global.savebutton)
+_key_exists(global.resetbutton)
+_key_exists(global.quitbutton)
+_key_exists(global.mutebutton)
+_key_exists(global.backbutton)
+_key_exists(global.suicidebutton)
+_key_exists(vk_control)
+_key_exists(vk_shift)
+_key_exists(vk_alt)
+_key_exists(vk_enter)
+_key_exists(vk_pagedown)
+_key_exists(vk_pageup)
+_key_exists(vk_delete)
+_key_exists(vk_home)
+_key_exists(vk_end)
 
-
+if (debug_mode) {
+    _key_exists(vk_space)
+    _key_exists(vk_insert)
+    _key_exists(ord('F'))
+    _key_exists(ord('G'))
+    _key_exists(ord('A'))
+    _key_exists(ord('D'))
+}
 </argument>
       </arguments>
     </action>

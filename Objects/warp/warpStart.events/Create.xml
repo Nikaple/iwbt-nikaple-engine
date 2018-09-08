@@ -17,7 +17,7 @@
 
 saveFile = getSaveFile(global.savenum)
 
-event_inherited()
+alpha = 1
 </argument>
       </arguments>
     </action>

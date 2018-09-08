@@ -13,9 +13,9 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">leftPressed = keyboard_check_pressed(global.leftbutton)
-rightPressed = keyboard_check_pressed(global.rightbutton)
-jumpPressed = keyboard_check_pressed(global.jumpbutton)
+        <argument kind="STRING">leftPressed = key_check_pressed(global.leftbutton)
+rightPressed = key_check_pressed(global.rightbutton)
+jumpPressed = key_check_pressed(global.jumpbutton)
 
 if (leftPressed) {
     music_play(sndJump)

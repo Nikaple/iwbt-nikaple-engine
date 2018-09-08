@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<resources>
-  <resource name="network" type="GROUP"/>
-  <resource name="user" type="GROUP"/>
-  <resource name="lobby" type="GROUP"/>
-  <resource name="game" type="GROUP"/>
-</resources>

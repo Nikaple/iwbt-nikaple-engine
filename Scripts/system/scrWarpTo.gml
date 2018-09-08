@@ -19,12 +19,15 @@ if (roomTo != -1) {
     if (room_exists(roomTo)) {
         room_goto(roomTo)
     } else if (!global.enable_production_mode) {
-        show_error(
-            'Cannnot warp to an unexisting room, roomTo: ' +
+        i18n_show_error(
+            '不能传送到不存在的房间，房间序号：' +
+                string(roomTo) +
+                '。' +
+                error_info(),
+            'Cannot warp to an unexisting room, roomTo: ' +
                 string(roomTo) +
                 '. ' +
-                error_info(),
-            0
+                error_info()
         )
     }
 } else {

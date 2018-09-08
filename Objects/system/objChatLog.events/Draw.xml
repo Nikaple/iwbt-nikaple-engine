@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (!ns_is_logged_in()) exit
+
+// alpha settings
+distanceToPlayer = point_distance(
+    vx + titleWidth / 2, vy + vh - rectHeight + yy - titleHeight / 2,
+    player.x, player.y
+)
+
+inClosingAnimation = !active &amp;&amp; abs(yy - rectHeight) &gt; 10
+shouldShowChatLog = 
+    active || 
+    distanceToPlayer &gt; 100 || 
+    !instance_exists(player) || 
+    inClosingAnimation
+
+if (!shutdown &amp;&amp; shouldShowChatLog) {
+    tarTextAlpha = 1
+} else {
+    tarTextAlpha = 0
+}
+
+titleTextAlpha += sign(tarTitleTextAlpha - titleTextAlpha) * 0.2
+textAlpha += (tarTextAlpha - textAlpha) / 5
+alpha = 0.6 * textAlpha
+objChat.alpha = textAlpha
+
+// draw background
+i18n_draw_set_alpha(alpha)
+i18n_draw_set_color(c_black)
+draw_rectangle(vx, vy + vh - rectHeight + yy, vx + vw, vy + vh + yy, 0)
+// draw title rect
+draw_rectangle(
+    vx,
+    vy + vh - rectHeight + yy - titleHeight,
+    vx + titleWidth + 2 * titleTextMargin,
+    vy + vh - rectHeight + yy,
+    0
+)
+
+i18n_draw_set_color(c_white)
+// draw scrollbar
+if (length &gt; maxChatLogsOnScreen) {
+    scrollbarAlpha = 0.6 * textAlpha
+    i18n_draw_set_alpha(scrollbarAlpha)
+    visiblePercentage = maxChatLogsOnScreen / length
+    maxScrollbarHeight = rectHeight - inputHeight
+    scrollbarHeight = max(round(visiblePercentage * maxScrollbarHeight), scrollbarWidth * 2)
+    scrollBottom = round(
+        vy + vh + yy - inputHeight -
+            (pointer / (length - textCount)) * (maxScrollbarHeight - scrollbarHeight)
+    )
+    scrollTop = scrollBottom - scrollbarHeight
+    scrollRight = vx + vw
+    scrollLeft = scrollRight - scrollbarWidth
+    if (useRoundScrollbar) {
+        scrollbarOffset = scrollbarWidth / 2
+        draw_sprite_part_ext(
+            sprScrollbarPart, -1, 0, 0, scrollbarWidth, scrollbarOffset,
+            scrollLeft, scrollTop, 1, 1, c_white, scrollbarAlpha
+        )
+        draw_sprite_part_ext(
+            sprScrollbarPart, -1, 0, scrollbarOffset - 1, scrollbarWidth, scrollbarWidth / 2,
+            scrollLeft, scrollBottom - scrollbarOffset, 1, 1, c_white, scrollbarAlpha
+        )
+    } else {
+        scrollbarOffset = 0
+    }
+    draw_rectangle(
+        scrollLeft,
+        scrollTop + scrollbarOffset,
+        scrollRight,
+        scrollBottom - scrollbarOffset - 1,
+        0
+    )
+}
+
+i18n_draw_set_alpha(textAlpha)
+i18n_draw_set_font(fontMsyh12)
+// draw chat logs
+i18n_draw_set_align(fa_left, fa_top)
+textCount = min(maxChatLogsOnScreen, length)
+for (i = 0; i &lt; textCount; i += 1) {
+    i18n_draw_text(vx + x, vy + round(y + yy - (i + 1) * height) - 4, text[i + pointer])
+}
+// draw title
+i18n_draw_set_align(fa_middle, fa_center)
+i18n_draw_set_alpha(textAlpha * titleTextAlpha)
+i18n_draw_text(
+    round(vx + titleWidth / 2 + titleTextMargin),
+    round(vy + vh - rectHeight + yy - titleHeight / 2),
+    titleText,
+    true
+)
+i18n_draw_set_alpha(1)
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

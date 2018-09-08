@@ -32,10 +32,10 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">jumpPressed = keyboard_check_pressed(global.jumpbutton)
-shootPressed = keyboard_check_pressed(global.shootbutton)
-prev = keyboard_check_pressed(global.leftbutton) || keyboard_check_pressed(global.upbutton)
-next = keyboard_check_pressed(global.rightbutton) || keyboard_check_pressed(global.downbutton)
+        <argument kind="STRING">jumpPressed = key_check_pressed(global.jumpbutton)
+shootPressed = key_check_pressed(global.shootbutton)
+prev = key_check_pressed(global.leftbutton) || key_check_pressed(global.upbutton)
+next = key_check_pressed(global.rightbutton) || key_check_pressed(global.downbutton)
 
 if (!ns_is_online_mode()) {
     // single player
@@ -108,6 +108,75 @@ if (!ns_is_online_mode()) {
     }
 }
 
+</argument>
+      </arguments>
+    </action>
+    <action id="605" library="1">
+      <!--action name: Comment-->
+      <kind>NORMAL</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>false</canApplyTo>
+      <actionType>NONE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">Debug Only Functions</argument>
+      </arguments>
+    </action>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">// debug only
+if (!debug_mode) exit;
+
+if (key_check_pressed(vk_shift)) {
+    if (ns_is_online_mode()) {
+        username = global.debug_host_name
+        password = global.debug_host_pass
+        // send the tcp packet
+        cmd = cmd_init(
+            'login', 2,
+            'name', username,
+            'password', password
+        )
+        ns_send(cmd)
+    }
+}
+if (key_check_pressed(vk_control)) {
+    username = global.debug_guest_name
+    password = global.debug_guest_pass
+    cmd = cmd_init(
+        "login", 2,
+        "name", username,
+        "password", password
+    )
+    ns_send(cmd)
+    global.savenum = 2
+}
+if (key_check_pressed(vk_space)) {
+    global._online_mode = false
+    global.savenum = 1
+    if (file_exists(getSaveFile(global.savenum))) {
+        loadGame()
+    } else {
+        global.death = 0
+        global.timestep = 0
+        global.difficulty = 1
+        room_goto(global.first_stage)
+    }
+}
 </argument>
       </arguments>
     </action>

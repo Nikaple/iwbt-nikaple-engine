@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">// cache variables
+vx = view_xview[view_current]
+vy = view_yview[view_current]
+vw = view_wview[view_current]
+vh = view_hview[view_current]
+
+// move the chat log by setting yy
+if (active) {
+    tarY = 0
+} else {
+    tarY = rectHeight
+}
+if (abs(yy - tarY) &gt; 3) {
+    yy += sign(tarY - yy) * max(abs((tarY - yy) / 5), 3)
+} else {
+    yy = tarY
+}
+// set title width
+if (abs(titleWidth - tarTitleWidth) &gt; 3) {
+    titleWidth += sign(tarTitleWidth - titleWidth) * max(abs((tarTitleWidth - titleWidth) / 5), 3)
+} else {
+    titleWidth = tarTitleWidth
+}
+
+// open chat by mouse clicking
+isMouseInTitleRegion = 
+    mouse_x &gt;= vx &amp;&amp;
+    mouse_y &gt;= vy + vh - rectHeight + yy - titleHeight &amp;&amp;
+    mouse_x &lt;= vx + titleWidth &amp;&amp;
+    mouse_y &lt;= vy + vh - rectHeight + yy
+    
+if (isMouseInTitleRegion &amp;&amp; mouse_check_button_pressed(mb_left)) {
+    if (ns_is_logged_in() &amp;&amp; objChat.text == '' &amp;&amp; global.enable_chat) {
+        objChat.active = !objChat.active
+        objChat.showPlaceholder = true
+        active = !active
+        keyboard_string = ''
+    }
+}
+
+// chat opening
+if (keyboard_check_pressed(global.chatbutton)) {
+    shutdown = !shutdown
+}
+
+// page up/down
+if (keyboard_check_pressed(vk_pagedown)) {
+    if (pointer &gt; maxChatLogsOnScreen) {
+        pointer -= maxChatLogsOnScreen
+    } 
+}
+
+if (keyboard_check_pressed(vk_pageup)) {
+    if (textCount + maxChatLogsOnScreen &lt; length) {
+        pointer += maxChatLogsOnScreen
+    } 
+}
+
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

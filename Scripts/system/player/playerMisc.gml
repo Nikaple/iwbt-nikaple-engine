@@ -26,6 +26,10 @@ if (shouldWrapWhenOutsideRoom) {
         y -= room_height
     }
 }
+//kill yourself
+if (key_check_pressed(global.suicidebutton)) {
+    killPlayer();
+}
 //debug mode functions (F6)
 if (debug_mode) {
     //mouse warp (left button)
@@ -34,16 +38,16 @@ if (debug_mode) {
         y = mouse_y
     }
     //"S" save
-    if (keyboard_check_pressed(ord('S'))) {
+    if (key_check_pressed(ord('S'))) {
         saveGame()
     }
     // "F" for fps setting
-    if (keyboard_check_pressed(ord('F'))) {
+    if (key_check_pressed(ord('F'))) {
         global.debug_room_speed = get_integer('room speed = ?', 50)
     }
     room_speed = set_default(global.debug_room_speed, room_speed)
     //god mode
-    if (keyboard_check_pressed(ord('G'))) {
+    if (key_check_pressed(ord('G'))) {
         //switch between god mode and non god mode
         music_play(sndBlockChange)
         global.god_mode = !global.god_mode
@@ -53,10 +57,10 @@ if (debug_mode) {
     } else {
         image_alpha = 1
     }
-    if (keyboard_check_pressed(ord('A'))) {
+    if (key_check_pressed(ord('A'))) {
         hspeed -= 1
     }
-    if (keyboard_check_pressed(ord('D'))) {
+    if (key_check_pressed(ord('D'))) {
         hspeed += 1
     }
 }

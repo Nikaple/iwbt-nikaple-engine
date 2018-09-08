@@ -13,7 +13,9 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if (background_exists(tile)) {
+        <argument kind="STRING">ensure('tile', tile)
+
+if (background_exists(tile)) {
     width = background_get_width(tile)
     height = background_get_height(tile)
     if (
@@ -74,7 +76,10 @@
     yy = 0
     alarm[0] = 1
 } else if (!global.enable_production_mode) {
-    show_error('Please specify an appropriate tile. ' + error_info(), 0)
+    i18n_show_error(
+        'Please specify an appropriate tile. ' + error_info(),
+        '请在 tile 参数中提供一个有效的背景。' + error_info()
+    )
 }
 
 </argument>

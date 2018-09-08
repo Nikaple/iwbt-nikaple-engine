@@ -23,4 +23,5 @@
   <resource name="sprLobbyRoomLock" type="RESOURCE"/>
   <resource name="sprSubmitScore" type="RESOURCE"/>
   <resource name="sprJumpRefresher" type="RESOURCE"/>
+  <resource name="sprScrollbarPart" type="RESOURCE"/>
 </resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">x = 12
+y = 584
+instance_create(x, y - 4, objChatLog)
+
+// caret behavior
+caretFlash = 0
+caretFlashRate = 15
+caretVisible = true
+caretMove = 0
+caretMoveRate = 3
+
+// current text
+text = "" 
+// caret position
+caret = 0 
+// used as filler character in input handling
+fillchar = chr(1) 
+filltext = string_repeat(fillchar, 10)
+h = i18n_string_height('\\')
+
+alarm[0] = caretFlashRate
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

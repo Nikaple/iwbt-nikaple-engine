@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">for (i = length - 1; i &gt;= 0; i -= 1) {
+    text[i + 1] = text[i]
+}
+length = min(maxLength, length + 1)
+text[0] = ns_get_player_name() + ': ' + newText
+
+if (!active) {
+    // show message on title if chat panel is not active
+    tarTitleText = text[0]
+    tarTitleWidth = i18n_string_width(tarTitleText, true) 
+    tarTitleTextAlpha = 0
+    alarm[1] = 150
+    alarm[2] = 5
+}
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

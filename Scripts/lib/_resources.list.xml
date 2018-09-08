@@ -6,4 +6,5 @@
   <resource name="cmd" type="GROUP"/>
   <resource name="fake_random" type="GROUP"/>
   <resource name="auto_tile" type="GROUP"/>
+  <resource name="keyboard" type="GROUP"/>
 </resources>

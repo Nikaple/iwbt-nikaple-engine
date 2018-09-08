@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">alarm[0] = 1
+alarm[1] = 150
+
+minSpace = 16
+// max bubble width
+minWidth = 60
+maxWidth = 180
+// space between text and border
+textSpace = 15
+
+// triangle params
+offset = 100
+triangleLength = 20
+minOffset = 16
+
+// round rect params
+radius = 6
+precision = 45
+
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

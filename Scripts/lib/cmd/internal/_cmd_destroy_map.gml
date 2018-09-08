@@ -28,7 +28,17 @@ current = ds_map_find_first(map)
 size = ds_map_size(map)
 for (i = 0; i < size; i += 1) {
     if (is_real(current) && !global.enable_production_mode) {
-        show_error("You should always use string in a ds_map's key! Your current key is: " + string(current), 0)
+        i18n_show_error(
+            '在使用联机功能时，键值对（ds_map）的键（key）必须为字符串，请仔细检查参数。当前键为：' +
+                string(current) +
+                '当前键值对为：' +
+                ds_map_log(map),
+            "You should always use string in a ds_map's key! Your current key is: " + 
+                string(current) +
+                ', Current map: ' +
+                ds_map_log(map) +
+                '.'
+        )
     }
     if (ds_map_find_value(keyMap, current)) {
         // it's a ds_map !

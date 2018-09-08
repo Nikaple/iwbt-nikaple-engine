@@ -3,4 +3,5 @@
   <resource name="handler_cmd_connected" type="RESOURCE"/>
   <resource name="handler_cmd_connect_failed" type="RESOURCE"/>
   <resource name="handler_cmd_udp_shakehand" type="RESOURCE"/>
+  <resource name="handler_cmd_heartbeat" type="RESOURCE"/>
 </resources>

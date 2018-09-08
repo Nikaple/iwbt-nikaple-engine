@@ -22,7 +22,7 @@ switch (mode) {
         shouldSave =
             place_meeting(x, y, bullet) ||
             (place_meeting(x, y, player) &amp;&amp;
-                keyboard_check_pressed(global.shootbutton))
+                key_check_pressed(global.shootbutton))
         break
     case SAVE_MODE_TOUCH:
         shouldSave = place_meeting(x, y, player)
@@ -32,13 +32,13 @@ switch (mode) {
             // letters
             shouldSave =
                 place_meeting(x, y, player) &amp;&amp;
-                keyboard_check_pressed(
+                key_check_pressed(
                     ord(string_upper(string_char_at(key, 1)))
                 )
         } else {
             // function keys, such as vk_up
             shouldSave =
-                place_meeting(x, y, player) &amp;&amp; keyboard_check_pressed(key)
+                place_meeting(x, y, player) &amp;&amp; key_check_pressed(key)
         }
         break
 }

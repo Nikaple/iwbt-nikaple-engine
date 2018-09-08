@@ -7,6 +7,10 @@ fromName = ns_get_other_player_name(fromIdx)
 // current room
 _room = buffer_read_uint16(buf)
 time = buffer_read_uint64(buf)
+// drop packets from self (if some bug happens)
+if (fromIdx == ns_get_player_index()) {
+    exit;
+}
 // drop packets before current time
 if (time < global.__sync_time) {
     exit;

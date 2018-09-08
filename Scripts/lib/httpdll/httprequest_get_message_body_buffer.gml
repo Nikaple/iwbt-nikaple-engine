@@ -1,2 +1,0 @@
-// httprequest_get_message_body_buffer(id,buffer_id)
-external_call(global.define_httprequest_get_message_body_buffer,argument0,argument1);

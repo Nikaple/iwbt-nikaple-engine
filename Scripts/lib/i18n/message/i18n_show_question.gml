@@ -1,1 +1,1 @@
-show_question(i18n_get(argument0))
+return show_question(i18n_get(argument0))

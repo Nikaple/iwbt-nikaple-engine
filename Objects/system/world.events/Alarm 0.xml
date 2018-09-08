@@ -15,7 +15,9 @@
       <arguments>
         <argument kind="STRING">scrWorldStopDeathSound()
 //make up for the frame that player presses 'R'
-global.timestep += 2
+if (!global.clear) {
+    global.timestep += 2
+}
 saveDeathTime()
 with (player) {
     instance_destroy()

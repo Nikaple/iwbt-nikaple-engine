@@ -7,4 +7,5 @@
   <resource name="draw_rectangle_width" type="RESOURCE"/>
   <resource name="draw_rectangle_single_color" type="RESOURCE"/>
   <resource name="draw_text_transformed_outline" type="RESOURCE"/>
+  <resource name="draw_roundrect_ext" type="RESOURCE"/>
 </resources>

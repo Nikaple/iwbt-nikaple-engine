@@ -38,6 +38,17 @@ global.__sync_position = false;
 // used in udp traffic
 global.__sync_time = 0;
 
+// clear chat log
+with (objChatLog) {
+    active = false
+    for (i = 0; i < maxLength; i += 1) {
+        text[i] = ''
+    }
+    text[0] = i18n_get('welcome_chat')
+}
+objChat.active = false
+
+// reset music
 curMusic = BGM_Null
 
 // leave current lobby
@@ -47,7 +58,6 @@ if (ns_is_in_lobby()) {
 if (ns_is_in_game()) {
     ns_logout()
 }
-
 global.__player_index = 0
 global.__is_host = false
 global.__current_lobby_id = 0

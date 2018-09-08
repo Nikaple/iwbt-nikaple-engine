@@ -22,7 +22,7 @@ if (key != 0 &amp;&amp; !keyTriggered) exit;
 
 shouldTrigger =
     place_meeting(x, y, bullet) ||
-    (place_meeting(x, y, player) &amp;&amp; keyboard_check_pressed(global.shootbutton));
+    (place_meeting(x, y, player) &amp;&amp; key_check_pressed(global.shootbutton));
 
 if (global.triggered != trg &amp;&amp; shouldTrigger) {
     ns_send_instance(

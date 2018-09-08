@@ -99,7 +99,7 @@
       <object>warp</object>
       <position x="192" y="544"/>
       <creationCode>text = "return_hub"
-roomTo = rOnlineHub
+r = rOnlineHub
 </creationCode>
       <locked>false</locked>
     </instance>

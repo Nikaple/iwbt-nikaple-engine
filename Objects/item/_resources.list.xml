@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<resources>
-  <resource name="bossItem" type="RESOURCE"/>
-  <resource name="bossItemViewer" type="RESOURCE"/>
-  <resource name="bossBlock" type="RESOURCE"/>
-  <resource name="secretItem" type="RESOURCE"/>
-  <resource name="secretItemViewer" type="RESOURCE"/>
-</resources>

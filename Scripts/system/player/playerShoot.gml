@@ -8,6 +8,7 @@ if (shootKey && canShoot && instance_number(bullet) < 4) {
     inst = instance_create(xx, yy, bullet)
     inst.hspeed = image_xscale * 16
     music_play(sndShoot)
+    isShooting = true
     ns_send_event('player_shoot', 3, 'dir', image_xscale, 'x', xx, 'y', yy)
 }
 

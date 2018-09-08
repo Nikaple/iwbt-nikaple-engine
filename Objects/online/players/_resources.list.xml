@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<resources>
-  <resource name="objOnlinePlayers" type="RESOURCE"/>
-  <resource name="objFakePlayerParent" type="RESOURCE"/>
-  <resource name="objFakePlayerHost" type="RESOURCE"/>
-  <resource name="objFakePlayerGuest" type="RESOURCE"/>
-  <resource name="objOnlineBullet" type="RESOURCE"/>
-</resources>

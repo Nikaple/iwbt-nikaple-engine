@@ -15,7 +15,10 @@ to = string(argument4)
 options = ''
 
 if (is_zero(keys) && !global.enable_production_mode) {
-    show_error('You must specify the keys for the data when getting all user data.', 0)
+    i18n_show_error(
+        '在获取所有用户的数据时必须指定键名。',
+        'You must specify the keys for the data when getting all user data.'
+    )
 }
 
 error_arg_exceed('ns_get_all_data', argument5)

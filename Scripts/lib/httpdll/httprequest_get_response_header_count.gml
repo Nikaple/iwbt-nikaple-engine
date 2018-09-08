@@ -1,2 +1,0 @@
-// httprequest_get_response_header_count(id)
-external_call(global.define_httprequest_get_response_header_count,argument0);
