@@ -1,5 +1,10 @@
 // Initializing
 setGlobals()
+if (!directory_exists(working_directory + '\Data\Plugin\')) {
+    show_error(
+        '游戏需要 Data 文件夹才能运行哦，请将压缩包解压到独立的文件夹再试。This game cannot run without `Data` folder.', 1
+    )
+}
 if (!directory_exists(global.saving_directory)) {
     directory_create(global.saving_directory)
 }
