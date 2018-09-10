@@ -146,6 +146,13 @@
   </views>
   <instances>
     <instance>
+      <object>objBlockTile</object>
+      <position x="64" y="32"/>
+      <creationCode>tile = bgMetal
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
       <object>objCamera</object>
       <position x="32" y="32"/>
       <creationCode/>

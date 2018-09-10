@@ -96,6 +96,13 @@
   <enableViews>false</enableViews>
   <instances>
     <instance>
+      <object>objBlockTile</object>
+      <position x="64" y="32"/>
+      <creationCode>tile = bgCastle
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
       <object>warp</object>
       <position x="192" y="544"/>
       <creationCode>text = "return_hub"

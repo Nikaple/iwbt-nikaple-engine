@@ -146,6 +146,13 @@
   </views>
   <instances>
     <instance>
+      <object>objBlockTile</object>
+      <position x="32" y="32"/>
+      <creationCode>tile = bgLine
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
       <object>objTrigger</object>
       <position x="160" y="320"/>
       <creationCode>trg = 1

@@ -146,6 +146,13 @@
   </views>
   <instances>
     <instance>
+      <object>objBlockTile</object>
+      <position x="32" y="32"/>
+      <creationCode>tile = bgGrass
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
       <object>blockConveyorL</object>
       <position x="64" y="1056"/>
       <creationCode/>

@@ -147,6 +147,14 @@
   </views>
   <instances>
     <instance>
+      <object>objBlockTile</object>
+      <position x="32" y="64"/>
+      <creationCode>tile = bgMario
+depth = -10
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
       <object>objCamera</object>
       <position x="32" y="32"/>
       <creationCode/>

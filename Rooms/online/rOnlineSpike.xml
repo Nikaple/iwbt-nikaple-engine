@@ -146,6 +146,13 @@
   </views>
   <instances>
     <instance>
+      <object>objBlockTile</object>
+      <position x="64" y="32"/>
+      <creationCode>tile = bgVVVVVV_16
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
       <object>warp</object>
       <position x="672" y="448"/>
       <creationCode>r = rOnlineHub

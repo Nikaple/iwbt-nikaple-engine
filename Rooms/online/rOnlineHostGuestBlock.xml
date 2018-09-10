@@ -147,6 +147,15 @@
   </views>
   <instances>
     <instance>
+      <object>objBlockTile</object>
+      <position x="0" y="0"/>
+      <creationCode>tile = bgCastle
+tileH = bgIndoor
+tileG = bgGrass
+</creationCode>
+      <locked>false</locked>
+    </instance>
+    <instance>
       <object>blockHost</object>
       <position x="64" y="480"/>
       <creationCode/>
