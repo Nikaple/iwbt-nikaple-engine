@@ -2,7 +2,7 @@ var name, value;
 name = argument0
 value = argument1
 
-if (is_real(value) && !global.enable_production_mode) {
+if (is_real(value)) {
     if (value == 0) {
         i18n_show_error(
             '在 Object ' + 

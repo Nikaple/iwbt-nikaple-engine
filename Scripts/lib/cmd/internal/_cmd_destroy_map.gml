@@ -27,7 +27,7 @@ for (i = 0; i < size; i += 1) {
 current = ds_map_find_first(map)
 size = ds_map_size(map)
 for (i = 0; i < size; i += 1) {
-    if (is_real(current) && !global.enable_production_mode) {
+    if (is_real(current)) {
         i18n_show_error(
             '在使用联机功能时，键值对（ds_map）的键（key）必须为字符串，请仔细检查参数。当前键为：' +
                 string(current) +

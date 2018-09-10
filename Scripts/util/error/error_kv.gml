@@ -2,7 +2,7 @@ var scriptName, kvCount;
 scriptName = argument0
 kvCount = argument1
 
-if (is_string(kvCount) && !global.enable_production_mode) {
+if (is_string(kvCount)) {
     i18n_show_error(
         '在脚本 ' + 
             scriptName + 

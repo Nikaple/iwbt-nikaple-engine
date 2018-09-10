@@ -2,7 +2,7 @@ var scriptName, itemCount;
 scriptName = argument0
 itemCount = argument1
 
-if (is_string(itemCount) && !global.enable_production_mode) {
+if (is_string(itemCount)) {
     i18n_show_error(
         '在脚本 ' + 
             scriptName + 

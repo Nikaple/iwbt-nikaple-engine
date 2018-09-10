@@ -14,7 +14,7 @@ from = string(argument3)
 to = string(argument4)
 options = ''
 
-if (is_zero(keys) && !global.enable_production_mode) {
+if (is_zero(keys)) {
     i18n_show_error(
         '在获取所有用户的数据时必须指定键名。',
         'You must specify the keys for the data when getting all user data.'

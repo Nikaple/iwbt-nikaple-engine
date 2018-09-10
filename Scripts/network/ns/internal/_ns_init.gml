@@ -67,7 +67,7 @@ for (i = 0; i < 2048; i += 1) {
         _ns_add_handler(global.__ns_wait_handler_map, i, waitPrefix)
     }
 }
-if (script_exists(2048) && !global.enable_production_mode) {
+if (script_exists(2048)) {
     // change 2048 to a bigger number
     i18n_show_error(
         "你的脚本也太多了！请务必在 `_ns_init` 的最后将 2048 修改为一个更大的值！务必！",

@@ -5,7 +5,7 @@ fromName = argument0
 _id = argument1
 data = argument2
 
-if (!instance_exists(_id) && !global.enable_production_mode) {
+if (!instance_exists(_id)) {
     i18n_show_error(
         '试图同步一个不存在的实例，实例 id 为：' +
             string(_id) +

@@ -2,7 +2,7 @@ var scriptName, arg;
 scriptName = argument0
 arg = argument1
 
-if (!is_zero(arg) && !global.enable_production_mode) {
+if (!is_zero(arg)) {
     i18n_show_error(
         '在脚本 ' + 
             scriptName + 

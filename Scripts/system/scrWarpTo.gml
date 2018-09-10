@@ -18,7 +18,7 @@ transition_kind = kind
 if (roomTo != -1) {
     if (room_exists(roomTo)) {
         room_goto(roomTo)
-    } else if (!global.enable_production_mode) {
+    } else {
         i18n_show_error(
             '不能传送到不存在的房间，房间序号：' +
                 string(roomTo) +
