@@ -13,73 +13,192 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">ensure('tile', tile)
+        <argument kind="STRING">if (!global.enable_auto_tile) exit;
 
-if (background_exists(tile)) {
-    width = background_get_width(tile)
-    height = background_get_height(tile)
-    if (
-        width &gt;= 32 &amp;&amp;
-        width &lt; 48 &amp;&amp;
-        height &gt;= 64 &amp;&amp;
-        height &lt; 80 &amp;&amp;
-        width != height
-    ) {
-        dir = 2
-        sep = height - 64
-    } else if (
-        width &gt;= 48 &amp;&amp;
-        width &lt; 128 &amp;&amp;
-        height &gt;= 48 &amp;&amp;
-        height &lt; 128 &amp;&amp;
-        width == height
-    ) {
-        dir = 4
-        sep = (width - 48) / 3
-    } else if (
-        width &gt;= 48 &amp;&amp;
-        width &lt; 256 &amp;&amp;
-        height &gt;= 80 &amp;&amp;
-        height &lt; 192 &amp;&amp;
-        width != height
-    ) {
-        dir = 8
-        sep = (width - 48) / 3
-    } else if (width &gt;= 128 &amp;&amp; height &gt;= 128 &amp;&amp; width == height) {
-        dir = 4
-        size = 32
-        sep = (width - 128) / 3
-    } else if (width &gt;= 256 &amp;&amp; height &gt;= 192) {
-        dir = 8
-        size = 32
-        sep = (width - 128) / 7
-    }
-    if (instance_exists(player)) {
-        px = clamp(player.x, 0, room_width - 1)
-        py = clamp(player.y, 0, room_height - 1)
-        view_xview[0] = floor(px / view_wview[0]) * view_wview[0]
-        view_yview[0] = floor(py / view_hview[0]) * view_hview[0]
-    }
-    with (objBlock) {
-        if (object_index == objBlock &amp;&amp; !outsideView()) {
-            autotile(
-                other.dir,
-                other.tile,
-                other.size,
-                other.depth,
-                other.sep,
-                other.row
-            )
+if (!is_zero(tile)) {
+    if (background_exists(tile)) {
+        width = background_get_width(tile)
+        height = background_get_height(tile)
+        if (
+            width &gt;= 32 &amp;&amp;
+            width &lt; 48 &amp;&amp;
+            height &gt;= 64 &amp;&amp;
+            height &lt; 80 &amp;&amp;
+            width != height
+        ) {
+            dir = 2
+            sep = height - 64
+        } else if (
+            width &gt;= 48 &amp;&amp;
+            width &lt; 128 &amp;&amp;
+            height &gt;= 48 &amp;&amp;
+            height &lt; 128 &amp;&amp;
+            width == height
+        ) {
+            dir = 4
+            sep = (width - 48) / 3
+        } else if (
+            width &gt;= 48 &amp;&amp;
+            width &lt; 256 &amp;&amp;
+            height &gt;= 80 &amp;&amp;
+            height &lt; 192 &amp;&amp;
+            width != height
+        ) {
+            dir = 8
+            sep = (width - 48) / 3
+        } else if (width &gt;= 128 &amp;&amp; height &gt;= 128 &amp;&amp; width == height) {
+            dir = 4
+            size = 32
+            sep = (width - 128) / 3
+        } else if (width &gt;= 256 &amp;&amp; height &gt;= 192) {
+            dir = 8
+            size = 32
+            sep = (width - 128) / 7
         }
+        if (instance_exists(player)) {
+            px = clamp(player.x, 0, room_width - 1)
+            py = clamp(player.y, 0, room_height - 1)
+            view_xview[0] = floor(px / view_wview[0]) * view_wview[0]
+            view_yview[0] = floor(py / view_hview[0]) * view_hview[0]
+        }
+        with (objBlock) {
+            if (object_index == objBlock &amp;&amp; !outsideView()) {
+                autotile(other.dir, other.tile, other.size, other.depth, other.sep, other.row, objVisibleTile, true)
+            }
+        }
+        xx = 0
+        yy = 0
+        alarm[0] = 1
+    } else {
+        i18n_show_error(
+            '请在 tile 参数中提供一个有效的背景。' + error_info(),
+            'Please specify an appropriate tile. ' + error_info()
+        )
     }
-    xx = 0
-    yy = 0
-    alarm[0] = 1
-} else if (!global.enable_production_mode) {
-    i18n_show_error(
-        'Please specify an appropriate tile. ' + error_info(),
-        '请在 tile 参数中提供一个有效的背景。' + error_info()
-    )
+}
+
+if (!is_zero(tileH)) {
+    if (background_exists(tileH)) {
+        width = background_get_width(tileH)
+        height = background_get_height(tileH)
+        if (
+            width &gt;= 32 &amp;&amp;
+            width &lt; 48 &amp;&amp;
+            height &gt;= 64 &amp;&amp;
+            height &lt; 80 &amp;&amp;
+            width != height
+        ) {
+            dir = 2
+            sep = height - 64
+        } else if (
+            width &gt;= 48 &amp;&amp;
+            width &lt; 128 &amp;&amp;
+            height &gt;= 48 &amp;&amp;
+            height &lt; 128 &amp;&amp;
+            width == height
+        ) {
+            dir = 4
+            sep = (width - 48) / 3
+        } else if (
+            width &gt;= 48 &amp;&amp;
+            width &lt; 256 &amp;&amp;
+            height &gt;= 80 &amp;&amp;
+            height &lt; 192 &amp;&amp;
+            width != height
+        ) {
+            dir = 8
+            sep = (width - 48) / 3
+        } else if (width &gt;= 128 &amp;&amp; height &gt;= 128 &amp;&amp; width == height) {
+            dir = 4
+            size = 32
+            sep = (width - 128) / 3
+        } else if (width &gt;= 256 &amp;&amp; height &gt;= 192) {
+            dir = 8
+            size = 32
+            sep = (width - 128) / 7
+        }
+        if (instance_exists(player)) {
+            px = clamp(player.x, 0, room_width - 1)
+            py = clamp(player.y, 0, room_height - 1)
+            view_xview[0] = floor(px / view_wview[0]) * view_wview[0]
+            view_yview[0] = floor(py / view_hview[0]) * view_hview[0]
+        }
+        with (blockHost) {
+            if (!outsideView()) {
+                autotile(other.dir, other.tileH, other.size, other.depth, other.sep, other.row, blockHost, true)
+            }
+        }
+        xx = 0
+        yy = 0
+        alarm[0] = 1
+    } else {
+        i18n_show_error(
+            '请在 tileH 参数中提供一个有效的背景。' + error_info(),
+            'Please specify an appropriate tile for tileH. ' + error_info()
+        )
+    }
+}
+
+if (!is_zero(tileG)) {
+    if (background_exists(tileG)) {
+        width = background_get_width(tileG)
+        height = background_get_height(tileG)
+        if (
+            width &gt;= 32 &amp;&amp;
+            width &lt; 48 &amp;&amp;
+            height &gt;= 64 &amp;&amp;
+            height &lt; 80 &amp;&amp;
+            width != height
+        ) {
+            dir = 2
+            sep = height - 64
+        } else if (
+            width &gt;= 48 &amp;&amp;
+            width &lt; 128 &amp;&amp;
+            height &gt;= 48 &amp;&amp;
+            height &lt; 128 &amp;&amp;
+            width == height
+        ) {
+            dir = 4
+            sep = (width - 48) / 3
+        } else if (
+            width &gt;= 48 &amp;&amp;
+            width &lt; 256 &amp;&amp;
+            height &gt;= 80 &amp;&amp;
+            height &lt; 192 &amp;&amp;
+            width != height
+        ) {
+            dir = 8
+            sep = (width - 48) / 3
+        } else if (width &gt;= 128 &amp;&amp; height &gt;= 128 &amp;&amp; width == height) {
+            dir = 4
+            size = 32
+            sep = (width - 128) / 3
+        } else if (width &gt;= 256 &amp;&amp; height &gt;= 192) {
+            dir = 8
+            size = 32
+            sep = (width - 128) / 7
+        }
+        if (instance_exists(player)) {
+            px = clamp(player.x, 0, room_width - 1)
+            py = clamp(player.y, 0, room_height - 1)
+            view_xview[0] = floor(px / view_wview[0]) * view_wview[0]
+            view_yview[0] = floor(py / view_hview[0]) * view_hview[0]
+        }
+        with (blockGuest) {
+            if (!outsideView()) {
+                autotile(other.dir, other.tileG, other.size, other.depth, other.sep, other.row, blockGuest, true)
+            }
+        }
+        xx = 0
+        yy = 0
+        alarm[0] = 1
+    } else {
+        i18n_show_error(
+            '请在 tileG 参数中提供一个有效的背景。' + error_info(),
+            'Please specify an appropriate tile for tileG. ' + error_info()
+        )
+    }
 }
 
 </argument>

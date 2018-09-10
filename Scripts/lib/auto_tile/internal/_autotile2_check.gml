@@ -3,7 +3,7 @@
 */
 
 var index, obj, key, col;
-obj = objVisibleTile
+obj = set_default(argument0, objVisibleTile)
 key = string(id) + string(room)
 
 // query cache
@@ -13,6 +13,7 @@ if (index != -1) {
 }
 
 col = collision_point(x, y - 1, obj, false, true)
+
 if ((!col || autotile_exclude(col)) && y mod view_hview[view_current] != 0) {
     index = 0
 } else {

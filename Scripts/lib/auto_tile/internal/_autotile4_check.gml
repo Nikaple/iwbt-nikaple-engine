@@ -4,10 +4,9 @@
 */
 
 var index, obj, key, col;
-obj = objVisibleTile
+obj = set_default(argument0, objVisibleTile)
 key = string(id) + string(room)
 
-// query cache
 // query cache
 index = _autotile_read_cache()
 if (index != -1) {

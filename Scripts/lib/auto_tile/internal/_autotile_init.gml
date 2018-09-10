@@ -1,4 +1,8 @@
-global.__autotile_use_cache = true
+// save visited rooms
+global.__autotile_visited_rooms = ds_map_create();
+
+// do not use cache, as it's only added once now.
+global.__autotile_use_cache = false
 if (global.__autotile_use_cache) {
     // create cache map
     global.__autotile_block_index_map = ds_map_create()

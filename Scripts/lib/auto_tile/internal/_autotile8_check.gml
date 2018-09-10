@@ -4,7 +4,7 @@
 */
 
 var index, obj, key;
-obj = objVisibleTile
+obj = set_default(argument0, objVisibleTile)
 key = string(id) + string(room)
 
 // query cache

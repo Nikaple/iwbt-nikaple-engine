@@ -4,9 +4,11 @@ size = set_default(argument1, 16)
 _depth = set_default(argument2, 2000000)
 sep = argument3
 row = set_default(argument4, 4)
-index = _autotile4_check()
+obj = argument5
+index = _autotile4_check(obj)
 
 if (size == 32) {
+    room_tile_add(room, bg, (index mod row) * (size + sep), (index div row) * (size + sep), size, size, x, y, _depth)
     tile_add(bg, (index mod row) * (size + sep), (index div row) * (size + sep), size, size, x, y, _depth)
 } else {
     switch (index) {
@@ -107,6 +109,10 @@ if (size == 32) {
             pos4 = 4
             break
     }
+    room_tile_add(room, bg, (pos1 mod 3) * (size + sep), (pos1 div 3) * (size + sep), size, size, x, y, _depth)
+    room_tile_add(room, bg, (pos2 mod 3) * (size + sep), (pos2 div 3) * (size + sep), size, size, x + size, y, _depth)
+    room_tile_add(room, bg, (pos3 mod 3) * (size + sep), (pos3 div 3) * (size + sep), size, size, x, y + size, _depth)
+    room_tile_add(room, bg, (pos4 mod 3) * (size + sep), (pos4 div 3) * (size + sep), size, size, x + size, y + size, _depth)
     tile_add(bg, (pos1 mod 3) * (size + sep), (pos1 div 3) * (size + sep), size, size, x, y, _depth)
     tile_add(bg, (pos2 mod 3) * (size + sep), (pos2 div 3) * (size + sep), size, size, x + size, y, _depth)
     tile_add(bg, (pos3 mod 3) * (size + sep), (pos3 div 3) * (size + sep), size, size, x, y + size, _depth)
