@@ -15,11 +15,18 @@
       <arguments>
         <argument kind="STRING">if (!debug_mode) exit;
 
+// Toggle debug view
 if (key_check_pressed(vk_space) &amp;&amp; !key_check_pressed(vk_control)) {
     with (objBlock) {
         if (object_index == objBlock || object_index == objExampleAutoTileBlock) {
             visible = !visible
         }
+    }
+    with (blockHost) {
+        visible = !visible
+    }
+    with (blockGuest) {
+        visible = !visible
     }
     with (objTrigger) {
         visible = !visible
@@ -37,18 +44,21 @@ if (key_check_pressed(vk_space) &amp;&amp; !key_check_pressed(vk_control)) {
     global.__debug_mode = !global.__debug_mode
 }
 
+// Toggle language
 if (key_check_pressed(vk_pageup)) {
     i18n_set_lang(
         gen_sequence(i18n_get_lang(), LANG_CN, LANG_JP, true)
     )
 }
 
+// Toggle language
 if (key_check_pressed(vk_pagedown)) {
     i18n_set_lang(
         gen_sequence(i18n_get_lang(), LANG_CN, LANG_JP)
     )
 }
 
+// Toggle console
 if (key_check_pressed(vk_end)) {
     visible = !visible
     if (visible &amp;&amp; !showed) {
@@ -65,14 +75,17 @@ if (key_check_pressed(vk_end)) {
     }
 }
 
+// Clear console
 if (key_check_pressed(vk_home)) {
     str = ''
 }
 
+// Toggle player traffic verbose mode
 if (key_check_pressed(vk_insert)) {
     global.__debug_udp_verbose_mode = !global.__debug_udp_verbose_mode
 }
 
+// Toggle network tcp traffic verbose mode
 if (key_check_pressed(vk_delete)) {
     global.__debug_verbose_mode = !global.__debug_verbose_mode
 }
