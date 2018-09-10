@@ -6,7 +6,10 @@
 var handler, handlerList, i, cmdName, data;
 cmdName = argument0
 data = argument1
-debug('received command: ', cmdName)
+// do not log heartbeat
+if (!is_equal(cmdName, 'heartbeat')) {
+    debug('received command: ', cmdName)
+}
 
 if (ds_map_exists(global.__ns_cmd_handler_map, cmdName)) {
     handler = json_pick(global.__ns_cmd_handler_map, cmdName)

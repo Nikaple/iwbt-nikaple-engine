@@ -10,4 +10,6 @@
   <resource name="clamp" type="RESOURCE"/>
   <resource name="gen_sequence" type="RESOURCE"/>
   <resource name="is_zero" type="RESOURCE"/>
+  <resource name="is_equal" type="RESOURCE"/>
+  <resource name="is_valid_var" type="RESOURCE"/>
 </resources>

@@ -47,3 +47,19 @@ if (room_exists(0)) {
     error_ind_zero('room', room_get_name(0))
 }
 
+// check for music init status
+var err, size;
+size = ds_list_size(global.__music_not_loaded)
+if (size > 0) {
+    err = ''
+    for (i = 0; i < size; i += 1) {
+        err += '`' + filename_name(ds_list_find_value(global.__music_not_loaded, i)) + '`'
+        if (i != size - 1) {
+            err += ', '
+        }
+    }
+    i18n_show_error(
+        '音乐 ' + err + ' 没有被正确加载，请手动初始化后再使用',
+        'Music ' + err + ' are not loaded. Please use them after initialization.'
+    )
+}
