@@ -42,13 +42,19 @@ objChat.alpha = textAlpha
 // draw background
 i18n_draw_set_alpha(alpha)
 i18n_draw_set_color(c_black)
-draw_rectangle(vx, vy + vh - rectHeight + yy, vx + vw, vy + vh + yy, 0)
+draw_rectangle(
+    vx,
+    round(vy + vh - rectHeight + yy + 1),
+    vx + vw,
+    round(vy + vh + yy),
+    0
+)
 // draw title rect
 draw_rectangle(
     vx,
-    vy + vh - rectHeight + yy - titleHeight,
+    round(vy + vh - rectHeight + yy - titleHeight),
     vx + titleWidth + 2 * titleTextMargin,
-    vy + vh - rectHeight + yy,
+    round(vy + vh - rectHeight + yy),
     0
 )
 
