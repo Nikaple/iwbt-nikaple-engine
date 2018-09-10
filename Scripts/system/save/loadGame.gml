@@ -7,9 +7,8 @@ defaultSprite[FALLING] = sprPlayerFall
 defaultSprite[JUMPING] = sprPlayerJump
 defaultSprite[SLIDING] = sprPlayerSliding
 
-if (!instance_exists(player)) {
-    instance_create(0, 0, player)
-}
+destroy_if_exists(player)
+instance_create(0, 0, player)
 
 buffer = buffer_create()
 buffer_read_from_file(buffer, getSaveFile(global.savenum))
