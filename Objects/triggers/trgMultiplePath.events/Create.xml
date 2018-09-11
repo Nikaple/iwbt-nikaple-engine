@@ -19,10 +19,6 @@
 
 depth = 2000002;
 
-ensure('trg[1]', trg[1])
-ensure('pth[1]', pth[1])
-ensure('spd[1]', spd[1])
-
 // maximum trigger times
 for (i = 1; i &lt; 10; i += 1) {
     if (trg[i] == 0 &amp;&amp; pth[i] == 0) {
@@ -35,6 +31,8 @@ event_inherited()
 if (trg[1] != 0 &amp;&amp; debug_mode &amp;&amp; global.__debug_mode) {
     image_blend = merge_color(c_red, c_white, 0.5)
 }
+
+alarm[11] = 1
 </argument>
       </arguments>
     </action>

@@ -77,10 +77,9 @@ if (debug_mode &amp;&amp; global.__debug_mode) {
 image_xscale = set_default(xs, image_xscale)
 image_yscale = set_default(ys, image_yscale)
 
-ensure('trg', trg)
-
 keyTriggered = false
 
+alarm[11] = 1
 </argument>
       </arguments>
     </action>

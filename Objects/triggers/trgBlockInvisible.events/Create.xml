@@ -21,8 +21,9 @@
 //      trg = trigger number;
 //      spr = sprite;
 
-ensure('trg', trg)
 spritable()
+
+alarm[11] = 1
 </argument>
       </arguments>
     </action>

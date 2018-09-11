@@ -29,8 +29,9 @@
 //  2: continue from the current position
 //  3: reverse the path, that is change the sign of the speed
 
-ensure('trg', trg)
 spritable()
+
+alarm[11] = 1
 </argument>
       </arguments>
     </action>

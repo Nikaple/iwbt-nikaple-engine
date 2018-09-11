@@ -50,9 +50,7 @@ if (roomTo != 0 &amp;&amp; r != 0) {
     }
 }
 
-if (mask_index != maskNothing) {
-    ensure('r', r)
-}
+alarm[11] = 1
 </argument>
       </arguments>
     </action>

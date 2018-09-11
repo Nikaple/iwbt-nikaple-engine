@@ -25,8 +25,6 @@
 //
 
 // creating at least 1 spike
-ensure('pth', pth)
-ensure('spd', spd)
 num = set_default(num, 1)
 spr = set_default(spr, sprSpikeUp)
 enda = set_default(enda, PATH_ACTION_CONTINUE_FROM_START)
@@ -40,7 +38,8 @@ for (i = 0; i &lt; num; i += 1) {
     inst.sprite_index = spr
     inst.path_position = frac(i / num + off)
 }
-instance_destroy()
+
+alarm[11] = 1
 
 </argument>
       </arguments>

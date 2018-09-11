@@ -26,9 +26,6 @@
 
 mode = set_default(mode, 'normal')
 
-ensure('num', num)
-ensure('rad', rad)
-ensure('spd', spd)
 for (i = 0; i &lt; num; i += 1) {
     dir = 360 / num * i + ang
     switch (mode) {
@@ -49,6 +46,8 @@ for (i = 0; i &lt; num; i += 1) {
         inst[i].sprite_index = spr
     }
 }
+
+alarm[11] = 1
 </argument>
       </arguments>
     </action>

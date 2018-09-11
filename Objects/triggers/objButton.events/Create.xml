@@ -25,11 +25,11 @@
 
 image_speed = 0
 
-ensure('trg', trg)
-
 spritable()
 
 keyTriggered = false
+
+alarm[11] = 1
 </argument>
       </arguments>
     </action>

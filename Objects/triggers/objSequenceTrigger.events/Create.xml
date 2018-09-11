@@ -33,14 +33,13 @@ if (debug_mode &amp;&amp; global.__debug_mode) {
 image_xscale = set_default(xs, image_xscale)
 image_yscale = set_default(ys, image_yscale)
 
-ensure('trg[1]', trg[1])
-
 for (i = 1; i &lt; 20; i += 1) {
     if (trg[i] == 0) {
         maxTriggers = i - 1
     }
 }
 
+alarm[11] = 1
 </argument>
       </arguments>
     </action>
