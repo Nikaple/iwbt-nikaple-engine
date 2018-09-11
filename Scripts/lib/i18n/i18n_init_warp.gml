@@ -54,6 +54,12 @@ i18n_add(
     'Synchronized Boss Attacks',
     '同期するボス弾幕'
 )
+i18n_add(
+    'huge_room',
+    '超大房间',
+    'Huge room',
+    '巨大な部屋'
+)
 
 i18n_add(
     'room_online_wait_text',

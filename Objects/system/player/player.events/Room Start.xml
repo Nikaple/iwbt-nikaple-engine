@@ -13,9 +13,7 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">//keyboard_clear(vk_shift)
-//io_clear()
-//spin view
+        <argument kind="STRING">//spin view
 if (global.reverse == 1) {
     view_angle[0] = 180
 } else {

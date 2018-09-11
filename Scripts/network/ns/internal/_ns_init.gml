@@ -60,11 +60,13 @@ eventPrefixLength = string_length(eventPrefix)
 waitPrefix = "handler_wait_"
 waitPrefixLength = string_length(waitPrefix)
 
+global.__max_scripts = 0;
 for (i = 0; i < 2048; i += 1) {
     if (script_exists(i)) {
         _ns_add_handler(global.__ns_cmd_handler_map, i, cmdPrefix)
         _ns_add_handler(global.__ns_event_handler_map, i, eventPrefix)
         _ns_add_handler(global.__ns_wait_handler_map, i, waitPrefix)
+        global.__max_scripts = i;
     }
 }
 if (script_exists(2048)) {

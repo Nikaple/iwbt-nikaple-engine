@@ -216,8 +216,9 @@ color = c_navy
     </instance>
     <instance>
       <object>warp</object>
-      <position x="224" y="512"/>
-      <creationCode>r = rHugeRoom
+      <position x="640" y="544"/>
+      <creationCode>text = "huge_room"
+r = rHugeRoom
 </creationCode>
       <locked>false</locked>
     </instance>

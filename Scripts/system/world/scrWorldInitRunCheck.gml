@@ -5,23 +5,19 @@ if (!global.enable_internationalization) {
   global.enable_builtin_drawing = true
 }
 
-if (global.enable_production_mode) {
-  if (global.enable_encryption) {
-      if (global.key == "huYJCGjN3rwG%du!aZc0Phw9P&9WJBYd1*CjXmXdY@tWYW83Tuv%7FHd6Be2GBTS") {
-          i18n_show_error(
-              '你的加密密钥与引擎完全一致！这会带来潜在的风险，请在 `setGlobals` 中修改 `global.key` 的值。',
-              "Your encryption key is the same as engine's! Please change it in `setGlobals`."
-          )
-      }
-      if (string_length(global.key) < 40) {
-          i18n_show_error(
-              '为了存档安全，引擎的加密密钥必须要大于 40 个字符。',
-              'The encryption key should be 40 characters at least to increase safety.'
-          )
-      }
-  }
-  
-  global.enable_lite_mode = false
+if (global.enable_encryption) {
+    if (global.key == "huYJCGjN3rwG%du!aZc0Phw9P&9WJBYd1*CjXmXdY@tWYW83Tuv%7FHd6Be2GBTS") {
+        i18n_show_error(
+            '你的加密密钥与引擎完全一致！这会带来潜在的风险，请在 `setGlobals` 中修改 `global.key` 的值。',
+            "Your encryption key is the same as engine's! Please change it in `setGlobals`."
+        )
+    }
+    if (string_length(global.key) < 40) {
+        i18n_show_error(
+            '为了存档安全，引擎的加密密钥必须要大于 40 个字符。',
+            'The encryption key should be 40 characters at least to increase safety.'
+        )
+    }
 }
 
 if (global.game_mode = MODE_SINGLE_PLAYER) {

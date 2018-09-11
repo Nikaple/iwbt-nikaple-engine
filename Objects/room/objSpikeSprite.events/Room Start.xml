@@ -13,9 +13,7 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">ensure('spr', spr)
-
-if (!is_zero(spr)) {
+        <argument kind="STRING">if (!is_zero(spr)) {
     if (sprite_exists(spr)) {
         with (playerKiller) {
             if (
@@ -33,10 +31,10 @@ if (!is_zero(spr)) {
                 }
             }
         }
-    } else if (!global.enable_production_mode) {
+    } else {
         i18n_show_error(
-            'Please specify an appropriate sprite for spr. ' + error_info(),
-            '请为 spr 提供一个有效的精灵。' + error_info()
+            '请为 spr 提供一个有效的精灵。' + error_info(),
+            'Please specify an appropriate sprite for spr. ' + error_info()
         )
     }
 }
@@ -55,10 +53,10 @@ if (!is_zero(sprH)) {
                 }
             }
         }
-    } else if (!global.enable_production_mode) {
+    } else {
         i18n_show_error(
-            'Please specify an appropriate sprite for sprH. ' + error_info(),
-            '请为 sprH 提供一个有效的精灵。' + error_info()
+            '请为 sprH 提供一个有效的精灵。' + error_info(),
+            'Please specify an appropriate sprite for sprH. ' + error_info()
         )
     }
 }
@@ -77,13 +75,14 @@ if (!is_zero(sprG)) {
                 }
             }
         }
-    } else if (!global.enable_production_mode) {
+    } else {
         i18n_show_error(
-            'Please specify an appropriate sprite for sprG. ' + error_info(),
-            '请为 sprG 提供一个有效的精灵。' + error_info()
+            '请为 sprG 提供一个有效的精灵。' + error_info(),
+            'Please specify an appropriate sprite for sprG. ' + error_info()
         )
     }
 }
+
 </argument>
       </arguments>
     </action>

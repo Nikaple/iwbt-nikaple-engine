@@ -7,11 +7,8 @@
 //      shakeY      the maximum shaking intensity in y axis(pixel)
 //
 
-{
-    var inst;
-    inst = instance_create(view_xview[0], view_yview[0], objShake)
-    inst.alarm[0] = argument0
-    inst.shakeX = argument1
-    inst.shakeY = argument2
-}
-
+var inst;
+inst = instance_create(view_xview[0], view_yview[0], objShake)
+inst.alarm[0] = argument0
+inst.shakeX = argument1
+inst.shakeY = argument2

@@ -25,7 +25,7 @@
   <resource name="sprSlope2" type="RESOURCE"/>
   <resource name="sprSlope3" type="RESOURCE"/>
   <resource name="sprSlope4" type="RESOURCE"/>
-  <resource name="demo" type="RESOURCE"/>
+  <resource name="sprBlockDemo" type="RESOURCE"/>
   <resource name="sprSlideBlockL" type="RESOURCE"/>
   <resource name="sprSlideBlockR" type="RESOURCE"/>
   <resource name="sprBlockRevealMario" type="RESOURCE"/>

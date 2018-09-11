@@ -15,6 +15,10 @@
       <arguments>
         <argument kind="STRING">if (!global.enable_auto_tile) exit;
 
+xx = 0
+yy = 0
+
+// auto configure the params to call autotile
 if (!is_zero(tile)) {
     if (background_exists(tile)) {
         width = background_get_width(tile)
@@ -66,8 +70,6 @@ if (!is_zero(tile)) {
                 autotile(other.dir, other.tile, other.size, other.depth, other.sep, other.row, objVisibleTile, true)
             }
         }
-        xx = 0
-        yy = 0
         alarm[0] = 1
     } else {
         i18n_show_error(
@@ -128,8 +130,6 @@ if (!is_zero(tileH)) {
                 autotile(other.dir, other.tileH, other.size, other.depth, other.sep, other.row, blockHost, true)
             }
         }
-        xx = 0
-        yy = 0
         alarm[0] = 1
     } else {
         i18n_show_error(
@@ -190,8 +190,6 @@ if (!is_zero(tileG)) {
                 autotile(other.dir, other.tileG, other.size, other.depth, other.sep, other.row, blockGuest, true)
             }
         }
-        xx = 0
-        yy = 0
         alarm[0] = 1
     } else {
         i18n_show_error(

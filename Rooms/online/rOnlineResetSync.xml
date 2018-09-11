@@ -9,7 +9,7 @@
   <speed>30</speed>
   <persistent>false</persistent>
   <creationCode/>
-  <backgroundColor>300433</backgroundColor>
+  <backgroundColor>00150B</backgroundColor>
   <drawBackgroundColor>true</drawBackgroundColor>
   <backgrounds>
     <backgroundDef>
@@ -145,6 +145,13 @@
     </view>
   </views>
   <instances>
+    <instance>
+      <object>objBlockTile</object>
+      <position x="96" y="32"/>
+      <creationCode>tile = bgVVVVVV_16
+</creationCode>
+      <locked>false</locked>
+    </instance>
     <instance>
       <object>warp</object>
       <position x="448" y="432"/>

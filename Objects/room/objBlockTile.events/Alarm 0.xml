@@ -14,12 +14,14 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">// auto tile blocks outside view
-var x1, y1, x2, y2;
+var x1, y1, x2, y2, w, h;
+w = view_wview[0] / 2
+h = view_hview[0] / 2
 
 x1 = xx
 y1 = yy
-x2 = xx + view_wview[0]
-y2 = yy + view_hview[0]
+x2 = xx + w
+y2 = yy + h
 
 if (background_exists(tile)) {
     with (objBlock) {
@@ -43,10 +45,10 @@ if (background_exists(tileG)) {
     }
 }
 
-xx += view_wview[0]
+xx += w
 if (xx &gt;= room_width) {
     xx = 0
-    yy += view_hview[0]
+    yy += h
 }
 if (yy &gt;= room_height) {
     alarm[0] = 0
