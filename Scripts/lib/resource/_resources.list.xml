@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="resource_map_sprites" type="RESOURCE"/>
+  <resource name="resource_map_sounds" type="RESOURCE"/>
+  <resource name="resource_map_backgrounds" type="RESOURCE"/>
+  <resource name="resource_map_paths" type="RESOURCE"/>
+  <resource name="resource_map_scripts" type="RESOURCE"/>
+  <resource name="resource_map_fonts" type="RESOURCE"/>
+  <resource name="resource_map_timelines" type="RESOURCE"/>
+  <resource name="resource_map_objects" type="RESOURCE"/>
+  <resource name="resource_map_rooms" type="RESOURCE"/>
+</resources>

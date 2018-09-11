@@ -52,5 +52,7 @@ global.sound_directory = working_directory + '\Data\Sound\'
 global.plugin_directory = working_directory + '\Data\Plugin\'
 // where to load fonts
 global.font_directory = working_directory + "\Data\Font\"
-//the name of options file
+// the name of options file
 global.option_file_name = 'options.ini'
+// whether skip init check or not
+global.skip_init_check = false
