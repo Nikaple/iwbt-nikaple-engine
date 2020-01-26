@@ -8,6 +8,7 @@ onIvyR = place_meeting(x + 1, y, objWalljumpR) && !onBlock && !onPlatform
 onIvy = onIvyL || onIvyR
 colWater = collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, objWaterParent, 0, 1)
 inWater = !!colWater
+keepSecondJump = false;
  
 // moving
 if (!onIvy) {
@@ -47,6 +48,9 @@ if (onBlock || onPlatform) {
 
 // set max vertical speed
 if (inWater) {
+    keepSecondJump = (colWater.object_index == objWater)
+    if (keepSecondJump)
+        curJumps = 2
     if (colWater.spd != 0) {
         maxVspeed = colWater.spd
     } else {
@@ -60,6 +64,5 @@ if (inWater) {
 if (vspeed * yflag > maxVspeed) {
     vspeed = sign(vspeed) * maxVspeed
 }
-
 
 

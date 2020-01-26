@@ -22,7 +22,8 @@ if (jumpPressed) {
         isJumping = true
         canVJump = true
         //next jump
-        curJumps += 1
+        if (!keepSecondJump)
+            curJumps += 1
     } else if (infJump || place_meeting(x, y + yflag, objWaterNo2ndJump)) {
         //infinite jump
         music_play(jumpSound)
