@@ -49,7 +49,7 @@ if (onBlock || onPlatform) {
 // set max vertical speed
 if (inWater) {
     keepSecondJump = (colWater.object_index == objWater)
-    if (keepSecondJump)
+    if (keepSecondJump && curJumps >= 2)
         curJumps = 2
     if (colWater.spd != 0) {
         maxVspeed = colWater.spd
