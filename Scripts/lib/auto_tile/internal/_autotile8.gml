@@ -1,4 +1,4 @@
-var bg, size, _depth, index;
+var bg, size, _depth, sep, row, obj, index;
 bg = argument0
 size = set_default(argument1, 16)
 _depth = 2000000
@@ -348,5 +348,5 @@ if (size == 32) {
     tile_add(bg, (pos1 mod 3) * (size + sep), (pos1 div 3) * (size + sep), size, size, x, y, _depth)
     tile_add(bg, (pos2 mod 3) * (size + sep), (pos2 div 3) * (size + sep), size, size, x + size, y, _depth)
     tile_add(bg, (pos3 mod 3) * (size + sep), (pos3 div 3) * (size + sep), size, size, x, y + size, _depth)
-    tile_add(bgMetal, (pos4 mod 3) * (size + sep), (pos4 div 3) * (size + sep), size, size, x + size, y + size, _depth)
+    tile_add(bg, (pos4 mod 3) * (size + sep), (pos4 div 3) * (size + sep), size, size, x + size, y + size, _depth)
 }

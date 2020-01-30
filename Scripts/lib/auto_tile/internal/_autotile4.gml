@@ -1,4 +1,4 @@
-var bg, size, _depth, index, sep, row;
+var bg, size, _depth, sep, row, obj, index;
 bg = argument0
 size = set_default(argument1, 16)
 _depth = set_default(argument2, 2000000)

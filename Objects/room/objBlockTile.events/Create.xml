@@ -57,7 +57,7 @@ if (!is_zero(tile)) {
         } else if (width &gt;= 256 &amp;&amp; height &gt;= 192) {
             dir = 8
             size = 32
-            sep = (width - 128) / 7
+            sep = (width - 256) / 7
         }
         if (instance_exists(player)) {
             px = clamp(player.x, 0, room_width - 1)
@@ -117,7 +117,7 @@ if (!is_zero(tileH)) {
         } else if (width &gt;= 256 &amp;&amp; height &gt;= 192) {
             dir = 8
             size = 32
-            sep = (width - 128) / 7
+            sep = (width - 256) / 7
         }
         if (instance_exists(player)) {
             px = clamp(player.x, 0, room_width - 1)
@@ -177,7 +177,7 @@ if (!is_zero(tileG)) {
         } else if (width &gt;= 256 &amp;&amp; height &gt;= 192) {
             dir = 8
             size = 32
-            sep = (width - 128) / 7
+            sep = (width - 256) / 7
         }
         if (instance_exists(player)) {
             px = clamp(player.x, 0, room_width - 1)
