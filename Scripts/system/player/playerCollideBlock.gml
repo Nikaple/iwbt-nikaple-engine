@@ -1,15 +1,15 @@
 ///collision with blocks
 //vertical
-vFree = place_free(x, y + vspeed) || place_free(x + hspeed, y + vspeed)
+vFree = place_free(x, y + vspeed + gravity) || place_free(x + hspeed, y + vspeed + gravity)
 if (!vFree) {
     if (vspeed <= 0) {
-        move_contact_solid(90, abs(vspeed))
+        move_contact_solid(90, abs(vspeed + gravity))
         if (global.reverse) {
             canVJump = false
         }
     }
     if (vspeed > 0) {
-        move_contact_solid(270, abs(vspeed))
+        move_contact_solid(270, abs(vspeed + gravity))
         if (!global.reverse) {
             canVJump = false
         }
@@ -31,7 +31,7 @@ if (!hFree) {
     hspeed = 0;
 }
 
-hvFree = place_free(x + hspeed, y + vspeed)
+hvFree = place_free(x + hspeed, y + vspeed + gravity)
 if (!hvFree) {
     hspeed = 0
 }
